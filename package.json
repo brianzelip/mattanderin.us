@@ -1,0 +1,22 @@
+{
+  "name": "mattanderin.us",
+  "version": "0.1.0",
+  "description": "Website for Erin and Matt's wedding 🎉",
+  "main": "src/index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brianzelip/mattanderin.us.git"
+  },
+  "keywords": [
+    "wedding",
+    "vuejs",
+    "website"
+  ],
+  "author": "Brian Zelip <bzelip@gmail.com> (https://zelip.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianzelip/mattanderin.us/issues"
+  },
+  "homepage": "https://github.com/brianzelip/mattanderin.us#readme"
+}
