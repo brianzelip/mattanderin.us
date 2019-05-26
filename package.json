@@ -21,5 +21,8 @@
   "homepage": "https://github.com/brianzelip/mattanderin.us#readme",
   "dependencies": {
     "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
   }
 }
