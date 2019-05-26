@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/brianzelip/mattanderin.us/issues"
   },
-  "homepage": "https://github.com/brianzelip/mattanderin.us#readme"
+  "homepage": "https://github.com/brianzelip/mattanderin.us#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
 }
