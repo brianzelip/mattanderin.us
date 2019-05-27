@@ -9,3 +9,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - add changelog
 - init vue app
 - research wedding sites and make notes on what could/should be available via the site
+
+## [0.1.1] - 2019-05-27
+
+### Added
+
+- CHANGELOG.md
