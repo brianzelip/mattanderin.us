@@ -1,12 +1,22 @@
 @import 'palette.css';
 
+:root {
+  --soft-black: rgb(51, 34, 34);
+  --soft-white: rgb(255, 249, 249);
+}
+
 html,
 body,
 .vh100 {
   min-height: 100vh;
 }
 
-body,
+body {
+  font-family: baskerville, garamond, georgia, serif;
+  color: var(--soft-black);
+  background-color: var(--soft-white);
+}
+
 .sans-serif {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -63,7 +73,6 @@ h6 {
   font-family: 'Mr Bedfort', cursive;
 }
 
-.bg-texture {
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23efefef' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+.lh1 {
+  line-height: 1;
 }
