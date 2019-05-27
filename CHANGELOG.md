@@ -6,12 +6,38 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
-- add changelog
 - init vue app
 - research wedding sites and make notes on what could/should be available via the site
+- prerender
+- purgecss
+- unbundle
 
 ## [0.1.1] - 2019-05-27
 
 ### Added
 
 - CHANGELOG.md
+
+## [0.2.0] - 2019-05-XX
+
+### Added
+
+- Vue app
+
+## [0.3.0] - 2019-XX-XX
+
+### Added
+
+- prerendered static site generation
+
+## [0.4.0] - 2019-XX-XX
+
+### Added
+
+- purgecss for minimal shipping
+
+## [0.5.0] - 2019-XX-XX
+
+### Added
+
+- unbundle parcel bundle
