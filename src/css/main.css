@@ -1,1 +1,36 @@
 @import 'palette.css';
+
+html,
+body,
+.vh100 {
+  min-height: 100vh;
+}
+
+body,
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: baskerville, garamond, georgia, serif;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.georgia {
+  font-family: georgia, serif;
+}
+.garamond {
+  font-family: garamond, serif;
+}
+.baskerville {
+  font-family: baskerville, serif;
+}
