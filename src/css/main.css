@@ -80,3 +80,21 @@ h6 {
 a {
   color: var(--soft-black);
 }
+
+.justify-center {
+  justify-content: center;
+}
+
+.soft-black {
+  color: var(--soft-black);
+}
+.soft-white {
+  color: var(--soft-white);
+}
+
+.bg-soft-black {
+  background-color: var(--soft-black);
+}
+.bg-soft-white {
+  background-color: var(--soft-white);
+}
