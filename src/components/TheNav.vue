@@ -1,6 +1,6 @@
 <template>
-  <nav class="mt3 container mx-auto">
-    <ul class="list-reset flex">
+  <nav class="mt3 flex justify-center">
+    <ul class="list-reset container mx-auto flex-auto flex">
       <li class="flex-auto center">
         <a
           class="block"
@@ -65,5 +65,6 @@ export default {
   position: fixed;
   top: 0;
   width: 64rem;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 </style>
