@@ -1,6 +1,7 @@
 <template>
   <div>
     <TheHero></TheHero>
+    <section class="vh100"></section>
   </div>
 </template>
 
