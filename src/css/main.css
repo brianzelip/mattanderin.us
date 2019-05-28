@@ -12,7 +12,7 @@ body,
 }
 
 body {
-  font-family: baskerville, garamond, georgia, serif;
+  font-family: baskerville, 'baskerville old face', garamond, georgia, serif;
   color: var(--soft-black);
   background-color: var(--soft-white);
 }
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: baskerville, garamond, georgia, serif;
+  font-family: 'baskerville', 'baskerville old face', garamond, georgia, serif;
   font-weight: 700;
   line-height: 1.25;
   margin-top: 1em;
@@ -36,13 +36,13 @@ h6 {
 }
 
 .georgia {
-  font-family: georgia, serif;
+  font-family: 'georgia', serif;
 }
 .garamond {
-  font-family: garamond, serif;
+  font-family: 'garamond', serif;
 }
 .baskerville {
-  font-family: baskerville, serif;
+  font-family: 'baskerville', 'baskerville old face', serif;
 }
 
 .Parisienne {
