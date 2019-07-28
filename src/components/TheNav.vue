@@ -1,33 +1,39 @@
 <template>
   <nav class="mt3 flex justify-center">
-    <ul class="list-reset container mx-auto flex-auto flex">
-      <li class="flex-auto center">
+    <ul class="list-reset container mx-auto flex-auto flex justify-around">
+      <li class="col-12 center">
         <a
-          class="block"
+          class="button"
+          href="/"
+        >Erin &amp; Matt!</a>
+      </li>
+      <li class="col-12 center">
+        <a
+          class="button"
           href
         >Schedule</a>
       </li>
-      <li class="flex-auto center">
+      <li class="col-12 center">
         <a
-          class="block"
+          class="button"
           href
         >Location</a>
       </li>
-      <li class="flex-auto center">
+      <li class="col-12 center">
         <a
-          class="block"
+          class="button"
           href
         >Lodging</a>
       </li>
-      <li class="flex-auto center">
+      <li class="col-12 center">
         <a
-          class="block"
+          class="button"
           href
         >Wedding Party</a>
       </li>
-      <li class="flex-auto center">
+      <li class="col-12 center">
         <a
-          class="block"
+          class="button"
           href
         >Registry</a>
       </li>
@@ -66,5 +72,14 @@ export default {
   top: 0;
   width: 64rem;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: rgba(51, 34, 34, 0.1);
 }
 </style>
