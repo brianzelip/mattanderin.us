@@ -1,15 +1,6 @@
 <template>
   <nav class="mt1 flex justify-center">
     <ul class="list-reset container mx-auto flex-auto flex justify-around">
-      <li
-        class="col-12 center"
-        v-if="listIsSticky"
-      >
-        <a
-          class="button bold"
-          href="/"
-        >Erin &amp; Matt!</a>
-      </li>
       <li class="col-12 center">
         <a
           class="button"
@@ -58,23 +49,15 @@
 
 <script>
 export default {
-  data() {
-    return {
-      listIsSticky: false
-    };
-  },
   mounted() {
-    const vm = this;
-
+    // [sticky header on scroll via](https://www.w3schools.com/howto/howto_js_sticky_header.asp)
     const list = document.querySelector("ul");
     const initialListOffsetTop = list.offsetTop;
 
     function stickyList() {
       if (window.pageYOffset > initialListOffsetTop) {
-        vm.listIsSticky = true;
         list.classList.add("sticky");
       } else {
-        vm.listIsSticky = false;
         list.classList.remove("sticky");
       }
     }
@@ -82,7 +65,6 @@ export default {
     window.onscroll = function() {
       stickyList();
     };
-    // [sticky header on scroll via](https://www.w3schools.com/howto/howto_js_sticky_header.asp)
   }
 };
 </script>
