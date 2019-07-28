@@ -85,6 +85,14 @@ a {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
 .soft-black {
   color: var(--soft-black);
 }
