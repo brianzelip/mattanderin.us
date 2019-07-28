@@ -1,11 +1,20 @@
 <template>
-  <nav class="mt3 flex justify-center">
+  <nav class="mt1 flex justify-center">
     <ul class="list-reset container mx-auto flex-auto flex justify-around">
+      <li
+        class="col-12 center"
+        v-if="listIsSticky"
+      >
+        <a
+          class="button bold"
+          href="/"
+        >Erin &amp; Matt!</a>
+      </li>
       <li class="col-12 center">
         <a
           class="button"
-          href="/"
-        >Erin &amp; Matt!</a>
+          href
+        >Our Story</a>
       </li>
       <li class="col-12 center">
         <a
@@ -37,29 +46,43 @@
           href
         >Registry</a>
       </li>
+      <li class="col-12 center">
+        <a
+          class="button"
+          href
+        >RSVP</a>
+      </li>
     </ul>
   </nav>
 </template>
 
 <script>
 export default {
-  mounted() {
-    // sticky header on scroll via
-    // https://www.w3schools.com/howto/howto_js_sticky_header.asp
-    window.onscroll = function() {
-      myFunction();
+  data() {
+    return {
+      listIsSticky: false
     };
+  },
+  mounted() {
+    const vm = this;
 
-    var nav = document.querySelector("ul");
-    var sticky = nav.offsetTop;
+    const list = document.querySelector("ul");
+    const initialListOffsetTop = list.offsetTop;
 
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        nav.classList.add("sticky");
+    function stickyList() {
+      if (window.pageYOffset > initialListOffsetTop) {
+        vm.listIsSticky = true;
+        list.classList.add("sticky");
       } else {
-        nav.classList.remove("sticky");
+        vm.listIsSticky = false;
+        list.classList.remove("sticky");
       }
     }
+
+    window.onscroll = function() {
+      stickyList();
+    };
+    // [sticky header on scroll via](https://www.w3schools.com/howto/howto_js_sticky_header.asp)
   }
 };
 </script>
