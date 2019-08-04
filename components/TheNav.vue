@@ -1,6 +1,6 @@
 <template>
-  <nav class="mt1 flex justify-center">
-    <ul class="list-reset container mx-auto flex-auto flex justify-around">
+  <nav class="flex justify-center">
+    <ul class="list-reset mb0 container mx-auto flex-auto flex justify-around">
       <li class="col-12 center">
         <a
           class="button"
@@ -51,14 +51,14 @@
 export default {
   mounted() {
     // [sticky header on scroll via](https://www.w3schools.com/howto/howto_js_sticky_header.asp)
-    const list = document.querySelector("ul");
-    const initialListOffsetTop = list.offsetTop;
+    const nav = document.querySelector("nav");
+    const initialListOffsetTop = nav.offsetTop;
 
     function stickyList() {
       if (window.pageYOffset > initialListOffsetTop) {
-        list.classList.add("sticky");
+        nav.classList.add("sticky");
       } else {
-        list.classList.remove("sticky");
+        nav.classList.remove("sticky");
       }
     }
 
@@ -75,13 +75,14 @@ export default {
 .sticky {
   position: fixed;
   top: 0;
-  width: 64rem;
+  left: 0;
+  right: 0;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
 .button {
   display: block;
-  padding: 1rem;
+  padding: 1rem 0;
   text-decoration: none;
 }
 .button:hover {
