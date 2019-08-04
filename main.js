@@ -1,8 +1,8 @@
 import Vue from 'vue';
 
-import App from './components/App.vue';
+import Splash from './components/Splash.vue';
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(Splash)
 });
