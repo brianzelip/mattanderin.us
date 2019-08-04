@@ -4,7 +4,7 @@
       Erin
       <span class="mx2">&amp;</span> Matt
     </h1>
-    <h2 class="m0 h3 regular center lh1">
+    <h2 class="mt0 h3 regular center lh1">
       December 21
       <span class="sup">st</span>, 2019 &sdot; Maurice, Louisiana
     </h2>
