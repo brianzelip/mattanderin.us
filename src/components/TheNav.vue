@@ -29,13 +29,13 @@
         <a
           class="button"
           href
-        >Wedding Party</a>
+        >Bridal Party</a>
       </li>
       <li class="col-12 center">
         <a
           class="button"
           href
-        >Registry</a>
+        >Honeymoon Fund</a>
       </li>
       <li class="col-12 center">
         <a
