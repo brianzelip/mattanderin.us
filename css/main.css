@@ -1,0 +1,108 @@
+@import 'palette.css';
+
+:root {
+  --soft-black: rgb(51, 34, 34);
+  --soft-white: rgb(255, 249, 249);
+}
+
+html,
+body,
+.vh100 {
+  min-height: 100vh;
+}
+
+body {
+  font-family: baskerville, 'baskerville old face', garamond, georgia, serif;
+  color: var(--soft-black);
+  background-color: var(--soft-white);
+}
+
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'baskerville', 'baskerville old face', garamond, georgia, serif;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.georgia {
+  font-family: 'georgia', serif;
+}
+.garamond {
+  font-family: 'garamond', serif;
+}
+.baskerville {
+  font-family: 'baskerville', 'baskerville old face', serif;
+}
+
+.Parisienne {
+  font-family: 'Parisienne', cursive;
+}
+.Satisfy {
+  font-family: 'Satisfy', cursive;
+}
+.GreatVibes {
+  font-family: 'Great Vibes', cursive;
+}
+.KaushanScript {
+  font-family: 'Kaushan Script', cursive;
+}
+.Tangerine {
+  font-family: 'Tangerine', cursive;
+}
+.Italianno {
+  font-family: 'Italianno', cursive;
+}
+.Niconne {
+  font-family: 'Niconne', cursive;
+}
+.EuphoriaScript {
+  font-family: 'Euphoria Script', cursive;
+}
+.MrBedfort {
+  font-family: 'Mr Bedfort', cursive;
+}
+
+.lh1 {
+  line-height: 1;
+}
+
+a {
+  color: var(--soft-black);
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.soft-black {
+  color: var(--soft-black);
+}
+.soft-white {
+  color: var(--soft-white);
+}
+
+.bg-soft-black {
+  background-color: var(--soft-black);
+}
+.bg-soft-white {
+  background-color: var(--soft-white);
+}
