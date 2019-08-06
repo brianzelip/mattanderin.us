@@ -1,25 +1,12 @@
 import VueRouter from 'vue-router';
 
+import TheHero from './components/TheHero.vue';
+
 const routes = [
   {
     path: '/',
     name: 'home',
     component: TheHero
-  },
-  {
-    path: '/add',
-    name: 'add',
-    component: TheItemForm
-  },
-  {
-    path: '/edit/:_id',
-    name: 'edit',
-    component: TheItemForm
-  },
-  {
-    path: '/submit',
-    name: 'submit',
-    component: TheSubmittedList
   }
 ];
 
