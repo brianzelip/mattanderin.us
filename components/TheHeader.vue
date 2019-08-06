@@ -1,5 +1,5 @@
 <template>
-  <header class="pt2">
+  <header class="mb2 pt2">
     <h1 class="m0 h00 regular Italianno center lh1">
       Erin
       <span class="mx2">&amp;</span> Matt
