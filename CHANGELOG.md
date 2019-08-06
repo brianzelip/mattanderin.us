@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Meta
 
-Erin's going the various pages route; this means making a sticky header that is imported only once, and works no matter what other components are, or are not, rendered.
+Erin's going the various pages route (instead of the one-long-page route); this means making a sticky header that is imported only once, and works no matter what other components are, or are not, rendered.
 
 There's a problem with serious scroll jank when rendering the current `<TheHeader>` independent of `<TheHero>`. Here's why:
 
@@ -17,6 +17,12 @@ There's a problem with serious scroll jank when rendering the current `<TheHeade
 - https://developer.mozilla.org/en-US/docs/Web/CSS/position#Values
 
 So, the element is there, get's fixed, then disappears so there's a scroll, but then it reappears since offSetTop, then it disappears, then it reappears, etc. Hence the scroll jank.
+
+FIXED by simply adding some bottom margin to the `<header>`!
+
+### Added
+
+- router.js
 
 ## [0.2.0] - 2019-08-04
 
