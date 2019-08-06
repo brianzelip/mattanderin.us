@@ -1,7 +1,6 @@
 <template>
   <div>
-    <TheHeader></TheHeader>
-    <!-- <TheHero></TheHero> -->
+    <router-view></router-view>
     <section class="vh100"></section>
   </div>
 </template>
