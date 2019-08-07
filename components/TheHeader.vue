@@ -1,5 +1,5 @@
 <template>
-  <header class="mb2 pt2">
+  <header class="pt2" :style="{marginBottom: marginBottom}">
     <h1 class="m0 h00 regular Italianno center lh1">
       Erin
       <span class="mx2">&amp;</span> Matt
@@ -8,7 +8,10 @@
       December 21
       <span class="sup">st</span>, 2019 &sdot; Maurice, Louisiana
     </h2>
-    <TheNav></TheNav>
+    <TheNav
+      v-on:add-margin-bottom="setMarginBottom"
+      v-on:reset-margin-bottom="resetMarginBottom">
+    </TheNav>
   </header>
 </template>
 
@@ -16,8 +19,21 @@
 import TheNav from "./TheNav.vue";
 
 export default {
+  data(){
+    return {
+      marginBottom: '1rem'
+    }
+  },
   components: {
     TheNav
+  },
+  methods: {
+    setMarginBottom(amount) {
+      this.marginBottom = `${amount}px`
+    },
+    resetMarginBottom() {
+      this.marginBottom = `1rem`
+    }
   }
 };
 </script>
