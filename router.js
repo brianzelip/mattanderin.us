@@ -14,6 +14,12 @@ const routes = [
     name: 'honeymoon',
     component: ThePage,
     props: { page: 'TheHoneyMoon'}
+  },
+  {
+    path: '/bridal-party',
+    name: 'bridal party',
+    component: ThePage,
+    props: { page: 'TheBridalParty'}
   }
 ];
 
