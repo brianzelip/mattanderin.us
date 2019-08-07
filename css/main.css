@@ -106,3 +106,7 @@ a {
 .bg-soft-white {
   background-color: var(--soft-white);
 }
+
+.hover-text-decoration-none:hover {
+  text-decoration: none;
+}
