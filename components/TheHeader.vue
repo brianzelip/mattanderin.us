@@ -1,9 +1,11 @@
 <template>
   <header class="pt2" :style="{marginBottom: marginBottom}">
-    <h1 class="m0 h00 regular Italianno center lh1">
-      Erin
-      <span class="mx2">&amp;</span> Matt
-    </h1>
+    <router-link to="/" class="hover-text-decoration-none">
+      <h1 class="m0 h00 regular Italianno center lh1">
+        Erin
+        <span class="mx2">&amp;</span> Matt
+      </h1>
+    </router-link>
     <h2 class="mt0 h3 regular center lh1">
       December 21
       <span class="sup">st</span>, 2019 &sdot; Maurice, Louisiana
