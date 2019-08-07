@@ -26,16 +26,16 @@
         >Lodging</a>
       </li>
       <li class="col-12 center">
-        <a
+        <router-link
           class="button"
-          href
-        >Bridal Party</a>
+          to="/bridal-party"
+        >Bridal Party</router-link>
       </li>
       <li class="col-12 center">
-        <a
+        <router-link
           class="button"
-          href
-        >Honeymoon Fund</a>
+          to="/honeymoon"
+        >Honeymoon Fund</router-link>
       </li>
       <li class="col-12 center">
         <a
