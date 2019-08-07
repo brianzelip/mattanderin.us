@@ -52,12 +52,14 @@ export default {
   mounted() {
     // [sticky header on scroll via](https://www.w3schools.com/howto/howto_js_sticky_header.asp)
     const nav = document.querySelector("nav");
-    const initialListOffsetTop = nav.offsetTop;
+    const initialNavOffsetTop = nav.offsetTop;
 
     function stickyList() {
-      if (window.pageYOffset > initialListOffsetTop) {
+      if (window.pageYOffset > initialNavOffsetTop) {
         nav.classList.add("sticky");
+        // push a custom event for the parent to add 114px of bottom margin
       } else {
+        // push a custom event for the parent to remove 114px of bottom margin
         nav.classList.remove("sticky");
       }
     }
