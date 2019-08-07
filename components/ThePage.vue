@@ -8,12 +8,14 @@
 <script>
 import TheHeader from './TheHeader.vue';
 import TheHoneyMoon from './TheHoneyMoon.vue';
+import TheBridalParty from './TheBridalParty.vue';
 
 export default {
   props: ['page'],
   components: {
     TheHeader,
-    TheHoneyMoon
+    TheHoneyMoon,
+    TheBridalParty
   }
 }
 </script>
