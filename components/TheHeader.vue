@@ -1,19 +1,25 @@
 <template>
-  <header class="pt2" :style="{marginBottom: marginBottom}">
-    <router-link to="/" class="hover-text-decoration-none">
+  <header
+    :style="{marginBottom: marginBottom}"
+    class="pt2"
+  >
+    <router-link
+      class="hover-text-decoration-none"
+      to="/"
+    >
       <h1 class="m0 h00 regular Italianno center lh1">
         Erin
         <span class="mx2">&amp;</span> Matt
       </h1>
     </router-link>
     <h2 class="mt0 h3 regular center lh1">
-      December 21
+      Winter Solstice &sdot; December 21
       <span class="sup">st</span>, 2019 &sdot; Maurice, Louisiana
     </h2>
     <TheNav
       v-on:add-margin-bottom="setMarginBottom"
-      v-on:reset-margin-bottom="resetMarginBottom">
-    </TheNav>
+      v-on:reset-margin-bottom="resetMarginBottom"
+    ></TheNav>
   </header>
 </template>
 
@@ -21,20 +27,20 @@
 import TheNav from "./TheNav.vue";
 
 export default {
-  data(){
+  data() {
     return {
-      marginBottom: '1rem'
-    }
+      marginBottom: "1rem"
+    };
   },
   components: {
     TheNav
   },
   methods: {
     setMarginBottom(amount) {
-      this.marginBottom = `${amount}px`
+      this.marginBottom = `${amount}px`;
     },
     resetMarginBottom() {
-      this.marginBottom = `1rem`
+      this.marginBottom = `1rem`;
     }
   }
 };
