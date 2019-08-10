@@ -29,7 +29,7 @@
         <router-link
           class="button"
           to="/bridal-party"
-        >Bridal Party</router-link>
+        >Wedding Party</router-link>
       </li>
       <li class="col-12 center">
         <router-link
