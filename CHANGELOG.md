@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.0] - 2019-08-
+## [0.3.0] - 2019-08-06
 
 ### Meta
 
@@ -23,6 +23,15 @@ FIXED by simply adding some bottom margin to the `<header>`!
 ### Added
 
 - router.js
+- ThePage.vue
+- TheBridalParty.vue
+- TheHoneyMoon.vue
+
+### Updated
+
+- TheNav.vue
+- TheHeader.vue
+- main.js
 
 ## [0.2.0] - 2019-08-04
 
