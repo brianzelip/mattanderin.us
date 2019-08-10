@@ -26,12 +26,6 @@
         >Location</a>
       </li>
       <li class="col-12 center">
-        <a
-          class="button"
-          href
-        >Lodging</a>
-      </li>
-      <li class="col-12 center">
         <router-link
           class="button"
           to="/bridal-party"
