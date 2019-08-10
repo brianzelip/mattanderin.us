@@ -11,6 +11,12 @@
         <a
           class="button"
           href
+        >Slide Show</a>
+      </li>
+      <li class="col-12 center">
+        <a
+          class="button"
+          href
         >Schedule</a>
       </li>
       <li class="col-12 center">
@@ -61,11 +67,11 @@ export default {
         nav.classList.add("sticky");
         // tell the parent to add bottom margin
         // ps - 23 is a magic number, in fact, 23, 24, and 25 all work
-        vm.$emit('add-margin-bottom', navOffsetTop - navHeight + 23)
+        vm.$emit("add-margin-bottom", navOffsetTop - navHeight + 23);
       } else {
         nav.classList.remove("sticky");
         // tell the parent to reset bottom margin
-        vm.$emit('reset-margin-bottom')
+        vm.$emit("reset-margin-bottom");
       }
     }
 
