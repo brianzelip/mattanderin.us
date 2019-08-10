@@ -11,12 +11,6 @@
         <a
           class="button"
           href
-        >Slide Show</a>
-      </li>
-      <li class="col-12 center">
-        <a
-          class="button"
-          href
         >Schedule</a>
       </li>
       <li class="col-12 center">
@@ -36,6 +30,12 @@
           class="button"
           to="/honeymoon"
         >Honeymoon Fund</router-link>
+      </li>
+      <li class="col-12 center">
+        <a
+          class="button"
+          href
+        >Slide Show</a>
       </li>
       <li class="col-12 center">
         <a
