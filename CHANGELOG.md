@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Meta
 
-- branch: bridal-party
+- branch: wedding-party
 - description: Let's incorporate the available images and text
 
 ### Updated
