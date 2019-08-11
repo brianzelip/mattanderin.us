@@ -11,7 +11,7 @@
 <script>
 import TheHeader from "./TheHeader.vue";
 import TheHoneyMoon from "./TheHoneyMoon.vue";
-import TheBridalParty from "./TheBridalParty.vue";
+import TheWeddingParty from "./TheWeddingParty.vue";
 import TheLocation from "./TheLocation.vue";
 
 export default {
@@ -19,7 +19,7 @@ export default {
   components: {
     TheHeader,
     TheHoneyMoon,
-    TheBridalParty,
+    TheWeddingParty,
     TheLocation
   }
 };
