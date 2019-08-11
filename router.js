@@ -13,13 +13,19 @@ const routes = [
     path: '/honeymoon',
     name: 'honeymoon',
     component: ThePage,
-    props: { page: 'TheHoneyMoon'}
+    props: { page: 'TheHoneyMoon' }
   },
   {
     path: '/bridal-party',
     name: 'bridal party',
     component: ThePage,
-    props: { page: 'TheBridalParty'}
+    props: { page: 'TheBridalParty' }
+  },
+  {
+    path: '/location',
+    name: 'location',
+    component: ThePage,
+    props: { page: 'TheLocation' }
   }
 ];
 
