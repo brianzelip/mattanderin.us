@@ -6,6 +6,10 @@
 
 - https://www.theknot.com/gs/wedding-websites
 
+## Problems
+
+- need to figure out the new magic number for adding sticky header nav, the new article h1s have readded some jank into the mix
+
 ## Our story
 
 This will be on the landing page, underneath the hero. M and E will provide their text for this part.
