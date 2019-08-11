@@ -74,7 +74,7 @@
           </div>
         </li>
         <li class="pb2">
-          <h2>Abbie Sackmann-Zelip</h2>
+          <h2>Abbie Zelip</h2>
           <div class="flex">
             <p class="h3"></p>
           </div>
