@@ -7,6 +7,7 @@
         v-for="(page, i) in pages"
       >
         <router-link
+          :class="{ active: page.path === currentPath }"
           :to="page.path"
           class="button"
         >{{ page.text }}</router-link>
@@ -17,6 +18,7 @@
 
 <script>
 export default {
+  props: ["currentPath"],
   data() {
     return {
       pages: [
@@ -74,5 +76,12 @@ export default {
 }
 .button:hover {
   background-color: rgba(51, 34, 34, 0.1);
+}
+
+.active,
+.active:hover {
+  background-color: var(--soft-black);
+  color: var(--soft-white);
+  cursor: default;
 }
 </style>
