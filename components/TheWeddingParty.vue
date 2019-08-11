@@ -54,10 +54,10 @@
               <p class="h3 mr2">
                 Charly "Chucky Lee" Bradford and I met in grad school at UL. We were both having to commute from Pineville to Lafayette every morning at the time, so she opened her car door, said "Welcome to Prius!" and our friendship began.
                 <br />
-                <strong class="italic">Fast forward...</strong>
+                <i>Fast forward...</i>
                 <br />We became roommates, living in an apartment behind the Cracker Barrel, right next to a popular vagrant hangout spot littered with empty Bud Light and Redbull cans.
                 <br />
-                <strong class="italic">Fast forward again...</strong>
+                <i>Fast forward again...</i>
                 <br />To Wellness Wednesdays, a time when we tried to do ab workouts, just about died, decided to go for a walk, and ultimately ended up in my parents' backyard smoking cigarettes.
               </p>
               <figure class="m0 flex-grow">
