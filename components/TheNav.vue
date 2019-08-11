@@ -14,15 +14,16 @@
         >Schedule</a>
       </li>
       <li class="col-12 center">
-        <a
+        <router-link
           class="button"
           href
-        >Location</a>
+          to="/location"
+        >Location</router-link>
       </li>
       <li class="col-12 center">
         <router-link
           class="button"
-          to="/bridal-party"
+          to="/wedding-party"
         >Wedding Party</router-link>
       </li>
       <li class="col-12 center">
