@@ -1,6 +1,6 @@
 <template>
   <section class="vh100">
-    <TheHeader></TheHeader>
+    <TheHeader :currentPath="currentPath"></TheHeader>
     <component
       :is="page"
       class="relative"
@@ -29,6 +29,24 @@ export default {
     TheHoneymoonFund,
     TheSlideShow,
     TheRSVP
+  },
+  data() {
+    return {
+      dict: {
+        TheOurStory: "/story",
+        TheSchedule: "/schedule",
+        TheLocation: "/location",
+        TheWeddingParty: "/party",
+        TheHoneymoonFund: "/honeymoon",
+        TheSlideShow: "/slideshow",
+        TheRSVP: "/rsvp"
+      }
+    };
+  },
+  computed: {
+    currentPath() {
+      return this.dict[this.$props.page];
+    }
   }
 };
 </script>
