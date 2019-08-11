@@ -23,7 +23,7 @@
       <li class="col-12 center">
         <router-link
           class="button"
-          to="/wedding-party"
+          to="/party"
         >Wedding Party</router-link>
       </li>
       <li class="col-12 center">
