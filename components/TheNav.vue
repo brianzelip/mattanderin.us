@@ -67,6 +67,7 @@ export default {
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 .button {
