@@ -9,7 +9,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Meta
 
 - branch: bridal-party
-- description: Let's incorporate all the real bridal party images
+- description: Let's incorporate the available images and text
+
+### Updated
+
+- TheWeddingParty.vue
 
 ## [0.4.0] - 2019-08-11
 
