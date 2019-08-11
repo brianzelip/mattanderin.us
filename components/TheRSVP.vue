@@ -10,7 +10,7 @@
         method="POST"
         name="rsvp"
       >
-        <section class="col-6">
+        <section>
           <label
             class="block mb1"
             for="partyOf"
