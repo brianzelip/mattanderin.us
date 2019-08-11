@@ -10,7 +10,7 @@
         method="POST"
         name="rsvp"
       >
-        <section>
+        <section id="partySize">
           <label
             class="block mb1"
             for="partyOf"
@@ -21,13 +21,55 @@
             type="number"
           />
         </section>
+
+        <section
+          class="mt3"
+          id="guestNames"
+        >
+          <ol class="list-reset">
+            <li class="flex">
+              <div class="mr1">
+                <label for>First name</label>
+                <input
+                  class="col-12 field"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label for>Last name</label>
+                <input
+                  class="col-12 field"
+                  type="text"
+                />
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section
+          class="mt3"
+          id="dietaryRestrictions"
+        >
+          <label
+            class="block mb1"
+            for="dietary"
+          >Please list dietary restrictions if any</label>
+          <textarea
+            class="field col-12"
+            id="dietary"
+            name="dietary"
+            rows="3"
+          ></textarea>
+        </section>
+        <button class="mt3 btn btn-outline">Submit</button>
       </form>
     </div>
   </article>
 </template>
 
 <style scoped>
-input {
+input,
+textarea {
   border-color: var(--soft-black);
 }
 
