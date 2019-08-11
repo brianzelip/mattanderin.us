@@ -16,10 +16,10 @@ const routes = [
     props: { page: 'TheHoneyMoon' }
   },
   {
-    path: '/bridal-party',
-    name: 'bridal party',
+    path: '/wedding-party',
+    name: 'wedding party',
     component: ThePage,
-    props: { page: 'TheBridalParty' }
+    props: { page: 'TheWeddingParty' }
   },
   {
     path: '/location',
