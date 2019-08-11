@@ -17,6 +17,7 @@
       <span class="sup">st</span>, 2019 &sdot; Maurice, Louisiana
     </h2>
     <TheNav
+      :currentPath="currentPath"
       v-on:add-margin-bottom="setMarginBottom"
       v-on:reset-margin-bottom="resetMarginBottom"
     ></TheNav>
@@ -32,6 +33,7 @@ export default {
       marginBottom: "1rem"
     };
   },
+  props: ["currentPath"],
   components: {
     TheNav
   },

@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2019-08-11
+
+### Meta
+
+- branch: pages
+- description: Now that we've worked out the nav categories, make a page for each category. This will allow us to easily add an active class to the nav button for each page
+
+### Added
+
+- TheOurStory.vue
+- TheSchedule.vue
+- TheLocation.vue
+- TheWeddingParty.vue
+- TheHoneymoonFund.vue
+- TheSlideShow.vue
+- TheRSVP.vue
+
 ## [0.3.0] - 2019-08-06
 
 ### Meta

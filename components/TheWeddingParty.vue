@@ -1,7 +1,7 @@
  <template>
   <article class="vh100">
     <div class="container">
-      <h1 class="center">Bridesmaids</h1>
+      <h1 class="mt0 pt2 center">Bridesmaids</h1>
       <ul class="list-reset">
         <li>
           <h2>

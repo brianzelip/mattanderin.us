@@ -1,6 +1,6 @@
 <template>
   <section class="vh100">
-    <TheHeader></TheHeader>
+    <TheHeader :currentPath="currentPath"></TheHeader>
     <component
       :is="page"
       class="relative"
@@ -10,17 +10,43 @@
 
 <script>
 import TheHeader from "./TheHeader.vue";
-import TheHoneyMoon from "./TheHoneyMoon.vue";
-import TheWeddingParty from "./TheWeddingParty.vue";
+import TheOurStory from "./TheOurStory.vue";
+import TheSchedule from "./TheSchedule.vue";
 import TheLocation from "./TheLocation.vue";
+import TheWeddingParty from "./TheWeddingParty.vue";
+import TheHoneymoonFund from "./TheHoneymoonFund.vue";
+import TheSlideShow from "./TheSlideShow.vue";
+import TheRSVP from "./TheRSVP.vue";
 
 export default {
   props: ["page"],
   components: {
     TheHeader,
-    TheHoneyMoon,
+    TheOurStory,
+    TheSchedule,
+    TheLocation,
     TheWeddingParty,
-    TheLocation
+    TheHoneymoonFund,
+    TheSlideShow,
+    TheRSVP
+  },
+  data() {
+    return {
+      dict: {
+        TheOurStory: "/story",
+        TheSchedule: "/schedule",
+        TheLocation: "/location",
+        TheWeddingParty: "/party",
+        TheHoneymoonFund: "/honeymoon",
+        TheSlideShow: "/slideshow",
+        TheRSVP: "/rsvp"
+      }
+    };
+  },
+  computed: {
+    currentPath() {
+      return this.dict[this.$props.page];
+    }
   }
 };
 </script>

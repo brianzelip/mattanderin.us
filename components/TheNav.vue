@@ -1,48 +1,16 @@
 <template>
   <nav class="flex justify-center">
     <ul class="list-reset mb0 container mx-auto flex-auto flex justify-around">
-      <li class="col-12 center">
-        <a
-          class="button"
-          href
-        >Our Story</a>
-      </li>
-      <li class="col-12 center">
-        <a
-          class="button"
-          href
-        >Schedule</a>
-      </li>
-      <li class="col-12 center">
+      <li
+        :key="i"
+        class="col-12 center"
+        v-for="(page, i) in pages"
+      >
         <router-link
+          :class="{ active: page.path === currentPath }"
+          :to="page.path"
           class="button"
-          href
-          to="/location"
-        >Location</router-link>
-      </li>
-      <li class="col-12 center">
-        <router-link
-          class="button"
-          to="/wedding-party"
-        >Wedding Party</router-link>
-      </li>
-      <li class="col-12 center">
-        <router-link
-          class="button"
-          to="/honeymoon"
-        >Honeymoon Fund</router-link>
-      </li>
-      <li class="col-12 center">
-        <a
-          class="button"
-          href
-        >Slide Show</a>
-      </li>
-      <li class="col-12 center">
-        <a
-          class="button"
-          href
-        >RSVP</a>
+        >{{ page.text }}</router-link>
       </li>
     </ul>
   </nav>
@@ -50,6 +18,20 @@
 
 <script>
 export default {
+  props: ["currentPath"],
+  data() {
+    return {
+      pages: [
+        { path: "/story", text: "Our Story" },
+        { path: "/schedule", text: "Schedule" },
+        { path: "/location", text: "Location" },
+        { path: "/party", text: "Wedding Party" },
+        { path: "/honeymoon", text: "Honeymoon Fund" },
+        { path: "/slideshow", text: "Slide Show" },
+        { path: "/rsvp", text: "RSVP" }
+      ]
+    };
+  },
   mounted() {
     // [sticky header on scroll via](https://www.w3schools.com/howto/howto_js_sticky_header.asp)
     const nav = document.querySelector("nav");
@@ -94,5 +76,12 @@ export default {
 }
 .button:hover {
   background-color: rgba(51, 34, 34, 0.1);
+}
+
+.active,
+.active:hover {
+  background-color: var(--soft-black);
+  color: var(--soft-white);
+  cursor: default;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <article class="vh100">
     <div class="container">
-      <h1 class="center">Location</h1>
+      <h1 class="mt0 pt2 center">Location</h1>
       <iframe
         frameborder="0"
         src="https://www.google.com/maps/d/embed?mid=1tKvU6oM7yrNEbl4Hk-D7yz4O3Sw&z=11"
