@@ -10,22 +10,46 @@ const routes = [
     component: TheHero
   },
   {
-    path: '/honeymoon',
-    name: 'honeymoon',
+    path: '/story',
+    name: 'story',
     component: ThePage,
-    props: { page: 'TheHoneyMoon' }
+    props: { page: 'TheOurStory' }
   },
   {
-    path: '/wedding-party',
-    name: 'wedding party',
+    path: '/schedule',
+    name: 'schedule',
     component: ThePage,
-    props: { page: 'TheWeddingParty' }
+    props: { page: 'TheSchedule' }
   },
   {
     path: '/location',
     name: 'location',
     component: ThePage,
     props: { page: 'TheLocation' }
+  },
+  {
+    path: '/party',
+    name: 'party',
+    component: ThePage,
+    props: { page: 'TheWeddingParty' }
+  },
+  {
+    path: '/honeymoon',
+    name: 'honeymoon',
+    component: ThePage,
+    props: { page: 'TheHoneymoonFund' }
+  },
+  {
+    path: '/slideshow',
+    name: 'slideshow',
+    component: ThePage,
+    props: { page: 'TheSlideShow' }
+  },
+  {
+    path: '/rsvp',
+    name: 'rsvp',
+    component: ThePage,
+    props: { page: 'TheRSVP' }
   }
 ];
 
