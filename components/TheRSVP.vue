@@ -80,6 +80,7 @@
             id="dietary"
             name="dietary"
             rows="3"
+            v-model="dietary"
           ></textarea>
         </section>
 
@@ -97,6 +98,7 @@
             id="comments"
             name="comments"
             rows="3"
+            v-model="comments"
           ></textarea>
         </section>
         <button
