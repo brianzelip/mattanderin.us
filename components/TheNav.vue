@@ -66,7 +66,7 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--soft-white);
   z-index: 100;
 }
 
