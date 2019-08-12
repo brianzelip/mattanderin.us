@@ -8,7 +8,7 @@
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         method="POST"
-        name="rsvp"
+        name="RSVP"
       >
         <section id="partySize">
           <label
@@ -69,7 +69,7 @@
           <label
             class="block mb1"
             for="dietary"
-          >Please list dietary restrictions if any</label>
+          >Please list any dietary restrictions</label>
           <textarea
             class="field col-12"
             id="dietary"
