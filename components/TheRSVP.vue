@@ -25,6 +25,7 @@
             id="partyOf"
             type="number"
             v-model.number="partyOf"
+            required
           />
         </section>
 
@@ -50,6 +51,7 @@
                   class="col-12 field"
                   type="text"
                   v-on:input="editGuest"
+                  required
                 />
               </div>
               <!-- <div class="mr1">
