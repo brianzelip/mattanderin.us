@@ -14,7 +14,7 @@
           <label
             class="block mb1"
             for="partyOf"
-          >Total number in your party</label>
+          >Number of people in your party</label>
           <input
             class="field"
             id="partyOf"
@@ -78,7 +78,7 @@
           ></textarea>
         </section>
         <button
-          class="mt3 btn btn-outline"
+          class="mt3 btn btn-primary regular"
           v-if="partyOf > 0"
         >Submit</button>
       </form>
@@ -112,5 +112,20 @@ input[type="number"] {
 
 .vertical-align-unset {
   vertical-align: baseline;
+}
+
+.btn-primary {
+  color: var(--soft-white);
+  background-color: var(--soft-black);
+  border-radius: 3px;
+}
+
+.btn-primary:hover {
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
+}
+
+.btn-primary:active {
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.125),
+    inset 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.125);
 }
 </style>
