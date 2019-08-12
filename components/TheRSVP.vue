@@ -26,6 +26,7 @@
         <section
           class="mt3"
           id="guestNames"
+          v-if="partyOf > 0"
         >
           <ol class="list-reset mb0">
             <li
@@ -63,6 +64,7 @@
         <section
           class="mt3"
           id="dietaryRestrictions"
+          v-if="partyOf > 0"
         >
           <label
             class="block mb1"
@@ -75,7 +77,10 @@
             rows="3"
           ></textarea>
         </section>
-        <button class="mt3 btn btn-outline">Submit</button>
+        <button
+          class="mt3 btn btn-outline"
+          v-if="partyOf > 0"
+        >Submit</button>
       </form>
     </div>
   </article>
