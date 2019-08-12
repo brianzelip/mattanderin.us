@@ -12,9 +12,9 @@
         name="RSVP"
       >
         <input
-          name="bot-field"
+          name="form-name"
           type="hidden"
-          value="Ask a question"
+          value="RSVP"
         />
         <section id="partySize">
           <label
