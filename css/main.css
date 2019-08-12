@@ -3,6 +3,8 @@
 :root {
   --soft-black: rgb(51, 34, 34);
   --soft-white: rgb(255, 249, 249);
+  --purple: #5E2CA5;
+  --light-purple: #A463F2;
 }
 
 html,
