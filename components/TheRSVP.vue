@@ -10,6 +10,11 @@
         method="POST"
         name="RSVP"
       >
+        <input
+          name="bot-field"
+          type="hidden"
+          value="Ask a question"
+        />
         <section id="partySize">
           <label
             class="block mb1"
@@ -74,6 +79,23 @@
             class="field col-12"
             id="dietary"
             name="dietary"
+            rows="3"
+          ></textarea>
+        </section>
+
+        <section
+          class="mt3"
+          id="otherComments"
+          v-if="partyOf > 0"
+        >
+          <label
+            class="block mb1"
+            for="comments"
+          >Any other comments?</label>
+          <textarea
+            class="field col-12"
+            id="comments"
+            name="comments"
             rows="3"
           ></textarea>
         </section>
