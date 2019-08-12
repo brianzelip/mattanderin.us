@@ -50,6 +50,18 @@ const routes = [
     name: 'rsvp',
     component: ThePage,
     props: { page: 'TheRSVP' }
+  },
+  {
+    path: '/rsvp/success',
+    name: 'success',
+    component: ThePage,
+    props: { page: 'TheRSVPSuccess' }
+  },
+  {
+    path: '/rsvp/fail',
+    name: 'fail',
+    component: ThePage,
+    props: { page: 'TheRSVPFail' }
   }
 ];
 
