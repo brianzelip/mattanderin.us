@@ -162,7 +162,11 @@ export default {
           ...this.submissionData
         }),
         axiosConfig
-      );
+      )
+      .then(() => {
+        this.$router.push('/rsvp/success')
+      })
+      .catch(() => { this.$router.push('/rsvp/fail')})
     }
   }
 };
