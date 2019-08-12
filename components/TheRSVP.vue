@@ -113,7 +113,10 @@
 export default {
   data() {
     return {
-      partyOf: null
+      partyOf: null,
+      guests: [],
+      dietary: '',
+      comments: ''
     };
   }
 };
