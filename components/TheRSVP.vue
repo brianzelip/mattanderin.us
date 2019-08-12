@@ -154,6 +154,15 @@ export default {
       const axiosConfig = {
         header: { "Content-Type": "application/x-www-form-urlencoded" }
       };
+
+      axios.post(
+        "/",
+        this.encode({
+          "form-name": "RSVP",
+          ...this.submissionData
+        }),
+        axiosConfig
+      );
     }
   }
 };
