@@ -123,6 +123,13 @@ export default {
       } else {
         this.$set(this.guests[this.guests.findIndex(guest => guest.id === e.target.id)], 'name', e.target.value)
       }
+    },
+    encode (data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join("&");
     }
   }
 };
