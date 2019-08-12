@@ -19,6 +19,7 @@
             class="field"
             id="partyOf"
             type="number"
+            v-model.number="partyOf"
           />
         </section>
 
@@ -26,8 +27,12 @@
           class="mt3"
           id="guestNames"
         >
-          <ol class="list-reset">
-            <li class="flex">
+          <ol class="list-reset mb0">
+            <li
+              :key="i"
+              class="flex"
+              v-for="(guest, i) in partyOf"
+            >
               <div class="mr1">
                 <label for>First name</label>
                 <input
@@ -66,6 +71,16 @@
     </div>
   </article>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      partyOf: null
+    };
+  }
+};
+</script>
 
 <style scoped>
 input,
