@@ -40,7 +40,19 @@
               v-for="(guest, i) in partyOf"
             >
               <p class="mb0 mr1 guestNum">{{ i + 1 }}</p>
-              <div class="mr1">
+              <div class="col-12">
+                <label
+                  :for="`guest-${i+1}`"
+                  class="vertical-align-unset"
+                >Full name</label>
+                <input
+                  :id="`guest-${i+1}`"
+                  class="col-12 field"
+                  type="text"
+                  v-on:input="editGuest"
+                />
+              </div>
+              <!-- <div class="mr1">
                 <label
                   :for="`guest-${i+1}-first-name`"
                   class="vertical-align-unset"
@@ -61,7 +73,7 @@
                   class="col-12 field"
                   type="text"
                 />
-              </div>
+              </div> -->
             </li>
           </ol>
         </section>
