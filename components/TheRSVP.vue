@@ -9,6 +9,7 @@
         data-netlify-honeypot="bot-field"
         method="POST"
         name="RSVP"
+        v-on:submit.prevent="handleSubmit"
       >
         <input
           name="form-name"
