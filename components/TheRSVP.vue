@@ -115,10 +115,12 @@ export default {
   },
   methods: {
     editGuest(e) {
-      if (this.guests.findIndex(guest => guest.id === e.target.id ) === -1){
+      const idExists = this.guests.findIndex(guest => guest.id === e.target.id ) > -1;
+
+      if (!idExists){
         this.$set(this.guests, this.guests.length, { id: `${e.target.id}`, name: `${e.target.value}` });
       } else {
-        this.$set(this.guests, this.guests.findIndex(guest => guest.id === e.target.id), { id: `${e.target.id}`, name: `${e.target.value}` })
+        this.$set(this.guests[this.guests.findIndex(guest => guest.id === e.target.id)], 'name', e.target.value)
       }
     }
   }
