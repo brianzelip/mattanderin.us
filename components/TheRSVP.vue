@@ -54,28 +54,6 @@
                   required
                 />
               </div>
-              <!-- <div class="mr1">
-                <label
-                  :for="`guest-${i+1}-first-name`"
-                  class="vertical-align-unset"
-                >First name</label>
-                <input
-                  :id="`guest-${i+1}-first-name`"
-                  class="col-12 field"
-                  type="text"
-                />
-              </div>
-              <div>
-                <label
-                  :for="`guest-${i+1}-last-name`"
-                  class="vertical-align-unset"
-                >Last name</label>
-                <input
-                  :id="`guest-${i+1}-last-name`"
-                  class="col-12 field"
-                  type="text"
-                />
-              </div> -->
             </li>
           </ol>
         </section>
