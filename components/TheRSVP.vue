@@ -132,6 +132,15 @@ export default {
       dietary: '',
       comments: ''
     };
+  },
+  methods: {
+    editGuest(e) {
+      if (this.guests.findIndex(guest => guest.id === e.target.id ) === -1){
+        this.$set(this.guests, this.guests.length, { id: `${e.target.id}`, name: `${e.target.value}` });
+      } else {
+        this.$set(this.guests, this.guests.findIndex(guest => guest.id === e.target.id), { id: `${e.target.id}`, name: `${e.target.value}` })
+      }
+    }
   }
 };
 </script>
