@@ -4,7 +4,6 @@
       <h1 class="mt0 pt2 center">RSVP</h1>
       <p class="h3 center">You can respond for yourself and others in your party.</p>
       <form
-        action="/"
         class="col-5 mx-auto p2 border rounded"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
