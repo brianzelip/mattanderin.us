@@ -179,4 +179,8 @@ input[type="number"] {
   box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.125),
     inset 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.125);
 }
+
+.field:invalid {
+  border-color: var(--soft-black);
+}
 </style>
