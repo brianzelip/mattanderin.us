@@ -30,19 +30,28 @@
           <ol class="list-reset mb0">
             <li
               :key="i"
-              class="flex"
+              class="flex mb2 border p1 rounded"
               v-for="(guest, i) in partyOf"
             >
+              <p class="mb0 mr1 guestNum">{{ i + 1 }}</p>
               <div class="mr1">
-                <label for>First name</label>
+                <label
+                  :for="`guest-${i+1}-first-name`"
+                  class="vertical-align-unset"
+                >First name</label>
                 <input
+                  :id="`guest-${i+1}-first-name`"
                   class="col-12 field"
                   type="text"
                 />
               </div>
               <div>
-                <label for>Last name</label>
+                <label
+                  :for="`guest-${i+1}-last-name`"
+                  class="vertical-align-unset"
+                >Last name</label>
                 <input
+                  :id="`guest-${i+1}-last-name`"
                   class="col-12 field"
                   type="text"
                 />
@@ -90,5 +99,13 @@ textarea {
 
 input[type="number"] {
   width: 6rem;
+}
+
+.guestNum {
+  vertical-align: middle;
+}
+
+.vertical-align-unset {
+  vertical-align: baseline;
 }
 </style>
