@@ -123,7 +123,8 @@ export default {
           acc.push(guest.name);
           return acc;
         }, [])
-        .sort();
+        .sort()
+        .join("+");
 
       return {
         "group size": this.partyOf,
