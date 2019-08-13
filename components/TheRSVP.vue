@@ -125,7 +125,7 @@ export default {
           return acc;
         }, [])
         .sort()
-        .join(", ");
+        .join("\n");
 
       return {
         "group size": this.partyOf,
