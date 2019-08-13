@@ -11,11 +11,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - branch: email
 - description: Update the email response sent after RSVP submission
 
+### Added
+
+- TheRSVPHoneyForm.vue
+
 ### Updated
 
 - zapier zap
 - index.html: removed hidden form for netlify
-- TheRSVP.vue: add hidden form for netify (thereby only writing the form on one html page)
+- TheRSVP.vue: add hidden form for netlify (thereby only writing the form on one html page)
 
 ## [0.8.0] - 2019-08-13
 
