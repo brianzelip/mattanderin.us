@@ -17,6 +17,8 @@ import TheWeddingParty from "./TheWeddingParty.vue";
 import TheHoneymoonFund from "./TheHoneymoonFund.vue";
 import TheSlideShow from "./TheSlideShow.vue";
 import TheRSVP from "./TheRSVP.vue";
+import TheRSVPSuccess from "./TheRSVPSuccess.vue";
+import TheRSVPFail from "./TheRSVPFail.vue";
 
 export default {
   props: ["page"],
@@ -28,7 +30,9 @@ export default {
     TheWeddingParty,
     TheHoneymoonFund,
     TheSlideShow,
-    TheRSVP
+    TheRSVP,
+    TheRSVPSuccess,
+    TheRSVPFail
   },
   data() {
     return {
