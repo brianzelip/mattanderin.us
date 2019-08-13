@@ -124,6 +124,7 @@ import axios from "axios";
 export default {
   data() {
     return {
+      email: "",
       partyOf: null,
       guests: [],
       dietary: "",
@@ -141,6 +142,7 @@ export default {
         .join("\n");
 
       return {
+        "user email": this.email,
         "group size": this.partyOf,
         guests: guestNames,
         "dietary concerns": this.dietary,
