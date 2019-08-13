@@ -50,6 +50,7 @@
                 <input
                   :id="`guest-${i+1}`"
                   class="col-12 field"
+                  placeholder="First Last"
                   required
                   type="text"
                   v-on:input="editGuest"
@@ -85,7 +86,7 @@
           <label
             class="block mb1"
             for="comments"
-          >Any other comments?</label>
+          >Other comments</label>
           <textarea
             class="field col-12"
             id="comments"
