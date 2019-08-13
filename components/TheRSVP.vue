@@ -24,9 +24,9 @@
           <input
             class="field"
             id="partyOf"
+            required
             type="number"
             v-model.number="partyOf"
-            required
           />
         </section>
 
@@ -50,9 +50,9 @@
                 <input
                   :id="`guest-${i+1}`"
                   class="col-12 field"
+                  required
                   type="text"
                   v-on:input="editGuest"
-                  required
                 />
               </div>
             </li>
@@ -105,15 +105,15 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   data() {
     return {
       partyOf: null,
       guests: [],
-      dietary: '',
-      comments: ''
+      dietary: "",
+      comments: ""
     };
   },
   computed: {
@@ -127,20 +127,28 @@ export default {
 
       return {
         "group size": this.partyOf,
-        "guests": guestNames,
+        guests: guestNames,
         "dietary concerns": this.dietary,
         "other comments": this.comments
-      }
+      };
     }
   },
   methods: {
     editGuest(e) {
-      const idExists = this.guests.findIndex(guest => guest.id === e.target.id ) > -1;
+      const idExists =
+        this.guests.findIndex(guest => guest.id === e.target.id) > -1;
 
-      if (!idExists){
-        this.$set(this.guests, this.guests.length, { id: `${e.target.id}`, name: `${e.target.value}` });
+      if (!idExists) {
+        this.$set(this.guests, this.guests.length, {
+          id: `${e.target.id}`,
+          name: `${e.target.value}`
+        });
       } else {
-        this.$set(this.guests[this.guests.findIndex(guest => guest.id === e.target.id)], 'name', e.target.value)
+        this.$set(
+          this.guests[this.guests.findIndex(guest => guest.id === e.target.id)],
+          "name",
+          e.target.value
+        );
       }
     },
     encode(data) {
@@ -155,18 +163,21 @@ export default {
         header: { "Content-Type": "application/x-www-form-urlencoded" }
       };
 
-      axios.post(
-        "/",
-        this.encode({
-          "form-name": "RSVP",
-          ...this.submissionData
-        }),
-        axiosConfig
-      )
-      .then(() => {
-        this.$router.push('/rsvp/success')
-      })
-      .catch(() => { this.$router.push('/rsvp/fail')})
+      axios
+        .post(
+          "/",
+          this.encode({
+            "form-name": "RSVP",
+            ...this.submissionData
+          }),
+          axiosConfig
+        )
+        .then(() => {
+          this.$router.push("/rsvp/success");
+        })
+        .catch(() => {
+          this.$router.push("/rsvp/fail");
+        });
     }
   }
 };
