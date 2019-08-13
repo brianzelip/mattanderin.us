@@ -4,12 +4,22 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.7.0] - 2019-08-
+## [0.7.0] - 2019-08-13
 
 ### Meta
 
 - branch: submit
 - description: Form isn't working yet - need to keep going with [the tutorial](https://www.netlify.com/blog/2018/09/07/how-to-integrate-netlify-forms-in-a-vue-app/) (tl;dr need to refactor around Vue controlling the form and route push on submit)
+
+### Added
+
+- TheRSVPFail.vue
+- TheRSVPSuccess.vue
+
+### Updated
+
+- index.html: adding a hidden form with the inputs was key to getting Netlify forms to read the data. Before this change, netlify recognized a submission, but there was no data. [This !so answer](https://stackoverflow.com/a/49859661/2145103) helped out, (which I found via [this comment](http://disq.us/p/1yae84j) in the netlify forms and vue tutorial).
+- TheRSVP.vue: this is where all the form data logic and POST happens
 
 ## [0.6.0] - 2019-08-12
 
