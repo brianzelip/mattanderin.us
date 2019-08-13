@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.0] - 2019-08-13
+
+### Meta
+
+- branch: email
+- description: Update the email response sent after RSVP submission
+
+### Added
+
+- TheRSVPHoneyForm.vue
+
+### Updated
+
+- zapier zap
+- index.html: removed hidden form for netlify
+- TheRSVP.vue: add hidden form for netlify (thereby only writing the form on one html page)
+
 ## [0.8.0] - 2019-08-13
 
 ### Meta
