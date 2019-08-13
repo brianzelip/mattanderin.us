@@ -16,7 +16,20 @@
           type="hidden"
           value="RSVP"
         />
-        <section id="partySize">
+        <section id="userEmail">
+          <label
+            class="block mb1"
+            for="email"
+          >Your email address</label>
+          <input
+            class="col-12 field"
+            id="email"
+            required
+            type="email"
+            v-model.trim="email"
+          />
+        </section>
+        <section class="mt3" id="partySize">
           <label
             class="block mb1"
             for="partyOf"
