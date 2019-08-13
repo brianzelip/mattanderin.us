@@ -115,11 +115,14 @@
         >Submit</button>
       </form>
     </div>
+    <TheRSVPHoneyForm></TheRSVPHoneyForm>
   </article>
 </template>
 
 <script>
 import axios from "axios";
+
+import TheRSVPHoneyForm from "./TheRSVPHoneyForm.vue";
 
 export default {
   data() {
@@ -130,6 +133,9 @@ export default {
       dietary: "",
       comments: ""
     };
+  },
+  components: {
+    TheRSVPHoneyForm
   },
   computed: {
     submissionData() {
