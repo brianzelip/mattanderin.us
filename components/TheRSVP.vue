@@ -1,8 +1,9 @@
 <template>
-  <article class="vh100">
+  <article>
     <div class="container">
       <h1 class="mt0 pt2 center">RSVP</h1>
       <p class="h3 center">You can respond for yourself and others in your party.</p>
+      <p class="h3 center">We'll email you a copy of your response.</p>
       <form
         class="col-5 mx-auto p2 border rounded"
         data-netlify="true"
