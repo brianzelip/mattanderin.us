@@ -4,13 +4,29 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.0] - 2019-08-14
+
+### Meta
+
+- branch: hero-images
+- description: There are a handful of images that would make good landing page heros. Let's update TheHero.vue so that Matt and Erin can toggle through the set of doable images. (aka, let's build a carousel!)
+
+### Added
+
+- TheHeroImagesControl.vue
+
+### Updated
+
+- TheHero.vue - created my first carousel in writing the control component, and writing the logic to traverse through a list 🎉
+  - I also came across the unfortunate experience of using inline style bindings to set background-image does not work. Not sure if the problem is vue or parcel. When you bind inline styles, the url to the image does not get updated to the new built url; when you set it via normal html attr inline styles (no binding), or via a style block, then the bg image is set.
+
 ## [0.9.1] - 2019-08-13
 
 ### Meta
 
 - branch: dev
 - description: The smaller honey form footprint does not work :(. I say this because the form fields in the netlify forms dashboard are all blank.
-I'm going to reput the honey form into index.html to fix this
+  I'm going to reput the honey form into index.html to fix this
 
 ### Deleted
 
