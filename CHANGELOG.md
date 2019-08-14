@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.1] - 2019-08-14
+
+### Meta
+
+- branch: dev
+- description: Update the header h1 markup so that it is not a link on the home page. This stemmed from the fact that, after you clicked away from the initial hero image on the home page, then clicked the home page link, the hero image did not revert back to the initial hero image. This solution is easier then snaking custom event messages through the component tree.
+
+### Added
+
+- TheHeaderH1.vue - abstracted h1 markup out of TheHeader
+
+### Updated
+
+- TheHeader.vue - registered TheHeaderH1, and use v-if/else to conditionally put a router-link around the h1
+
 ## [0.10.0] - 2019-08-14
 
 ### Meta
