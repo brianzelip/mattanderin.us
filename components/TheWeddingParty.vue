@@ -1,5 +1,5 @@
  <template>
-  <article class="vh100">
+  <article>
     <div class="container">
       <section>
         <h1 class="mt0 pt2 center">Bridesmaids</h1>
