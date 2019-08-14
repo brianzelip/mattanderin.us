@@ -17,7 +17,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Updated
 
-- TheHero.vue
+- TheHero.vue - created my first carousel in writing the control component, and writing the logic to traverse through a list 🎉
+  - I also came across the unfortunate experience of using inline style bindings to set background-image does not work. Not sure if the problem is vue or parcel. When you bind inline styles, the url to the image does not get updated to the new built url; when you set it via normal html attr inline styles (no binding), or via a style block, then the bg image is set.
 
 ## [0.9.1] - 2019-08-13
 
