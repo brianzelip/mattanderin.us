@@ -1,10 +1,10 @@
 <template>
   <aside>
-    <section
+    <button
       class="mr1"
       v-on:click="left"
-    >⬅️</section>
-    <section v-on:click="right">➡️</section>
+    >⬅️</button>
+    <button v-on:click="right">➡️</button>
   </aside>
 </template>
 
@@ -31,7 +31,14 @@ aside {
   align-items: center;
 }
 
-section {
+button {
+  padding: 0;
   font-size: 2rem;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: default;
+  color: inherit;
+  -webkit-appearance: none;
 }
 </style>
