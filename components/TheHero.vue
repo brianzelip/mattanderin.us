@@ -1,25 +1,97 @@
 <template>
   <section
-    class="vh100"
+    class="vh100 splash04"
     id="hero"
+    ref="hero"
   >
     <TheHeader></TheHeader>
+    <TheHeroImageControl
+      v-on:left="left"
+      v-on:right="right"
+    ></TheHeroImageControl>
   </section>
 </template>
 
 <script>
 import TheHeader from "./TheHeader.vue";
+import TheHeroImageControl from "./TheHeroImageControl.vue";
 
 export default {
-  components: { TheHeader }
+  data() {
+    return {
+      images: [
+        "splash01.jpg",
+        "splash02.jpg",
+        "splash03.jpg",
+        "splash04.JPG",
+        "splash05.jpg",
+        "splash06.jpg",
+        "splash07.jpg"
+      ],
+      start: 4
+    };
+  },
+  components: { TheHeader, TheHeroImageControl },
+  methods: {
+    left() {
+      if (this.start === 1) {
+        const prev = 1;
+        const next = 7;
+        this.$set(this, "start", next);
+        this.$refs.hero.classList.remove(`splash0${prev}`);
+        this.$refs.hero.classList.add(`splash0${next}`);
+      } else {
+        const prev = this.start;
+        const next = this.start - 1;
+        this.$set(this, "start", next);
+        this.$refs.hero.classList.remove(`splash0${prev}`);
+        this.$refs.hero.classList.add(`splash0${next}`);
+      }
+    },
+    right() {
+      if (this.start === 7) {
+        const prev = 7;
+        const next = 1;
+        this.$set(this, "start", next);
+        this.$refs.hero.classList.remove(`splash0${prev}`);
+        this.$refs.hero.classList.add(`splash0${next}`);
+      } else {
+        const prev = this.start;
+        const next = this.start + 1;
+        this.$set(this, "start", next);
+        this.$refs.hero.classList.remove(`splash0${prev}`);
+        this.$refs.hero.classList.add(`splash0${next}`);
+      }
+    }
+  }
 };
 </script>
 
 
 <style>
 #hero {
-  /* "ANIMATION • Isabel & Carlos - Save the Date" by António Ferreira is licensed under CC BY-NC 4.0. https://www.behance.net/gallery/26803301/ANIMATION-Isabel-Carlos-Save-the-Date */
-  background-image: url(../img/couple.png);
   background-size: cover;
+}
+
+.splash01 {
+  background-image: url(../img/splash01.jpg);
+}
+.splash02 {
+  background-image: url(../img/splash02.jpg);
+}
+.splash03 {
+  background-image: url(../img/splash03.jpg);
+}
+.splash04 {
+  background-image: url(../img/splash04.jpg);
+}
+.splash05 {
+  background-image: url(../img/splash05.jpg);
+}
+.splash06 {
+  background-image: url(../img/splash06.jpg);
+}
+.splash07 {
+  background-image: url(../img/splash07.jpg);
 }
 </style>
