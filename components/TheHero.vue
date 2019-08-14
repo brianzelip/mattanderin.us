@@ -38,14 +38,12 @@ export default {
         const prev = 1;
         const next = 7;
         this.$set(this, "start", next);
-        this.$refs.hero.classList.remove(`splash0${prev}`);
-        this.$refs.hero.classList.add(`splash0${next}`);
+        this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
       } else {
         const prev = this.start;
         const next = this.start - 1;
         this.$set(this, "start", next);
-        this.$refs.hero.classList.remove(`splash0${prev}`);
-        this.$refs.hero.classList.add(`splash0${next}`);
+        this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
       }
     },
     right() {
