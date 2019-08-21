@@ -1,6 +1,7 @@
 <template>
   <header
-    :style="{marginBottom: marginBottom}"
+    :class="{ 'bg-lighten-3': isHome }"
+    :style="{ marginBottom: marginBottom }"
     class="pt2"
   >
     <TheHeaderH1 v-if="isHome"></TheHeaderH1>
@@ -40,7 +41,7 @@ export default {
   },
   computed: {
     isHome() {
-      return this.$route.name === 'home'
+      return this.$route.name === "home";
     }
   },
   methods: {
