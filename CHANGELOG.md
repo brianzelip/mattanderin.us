@@ -14,6 +14,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 In particular:
 
 - the hero image and how it works with the header
+- will likely need to make the home page header have a background color
 - time to make my first real drop down header nav menu for mobile?
 
 ## [0.10.2] - 2019-08-14
