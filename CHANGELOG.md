@@ -17,6 +17,8 @@ In particular:
 - will likely need to make the home page header have a background color
 - time to make my first real drop down header nav menu for mobile?
 
+TheHero.html's background-position impacts the need for TheHeader's .bg-lighten class.
+
 ## [0.10.2] - 2019-08-14
 
 ### Meta
