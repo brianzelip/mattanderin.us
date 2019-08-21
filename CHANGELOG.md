@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.11.0] - 2019-08-2
+
+### Meta
+
+- branch: responsive
+- description: Need to design the site's responsiveness to smaller devices.
+
+In particular:
+
+- the hero image and how it works with the header
+- time to make my first real drop down header nav menu for mobile?
+
 ## [0.10.2] - 2019-08-14
 
 ### Meta
