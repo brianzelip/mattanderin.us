@@ -19,6 +19,10 @@ In particular:
 
 TheHero.html's background-position impacts the need for TheHeader's .bg-lighten class.
 
+### Updated
+
+- TheNav.vue: Add box-shadow to sticky nav, via the homepage of the awesome [Tania Rascia](https://www.taniarascia.com/)
+
 ## [0.10.2] - 2019-08-14
 
 ### Meta
