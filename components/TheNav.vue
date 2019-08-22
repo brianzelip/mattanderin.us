@@ -67,7 +67,8 @@ export default {
   top: 0;
   width: 100%;
   background-color: var(--soft-white);
-  z-index: 100;
+  z-index: 10;
+  box-shadow: 1px 2px 18px rgba(0,0,0,.1);
 }
 
 .button {
