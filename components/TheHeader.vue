@@ -1,6 +1,5 @@
 <template>
   <header
-    :class="{ 'bg-lighten-3': isHome }"
     :style="{ marginBottom: marginBottom }"
     class="pt2"
   >
