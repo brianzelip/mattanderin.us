@@ -17,11 +17,15 @@ In particular:
 - will likely need to make the home page header have a background color
 - time to make my first real drop down header nav menu for mobile?
 
-TheHero.html's background-position impacts the need for TheHeader's .bg-lighten class.
+~~TheHero.html's background-position impacts the need for TheHeader's .bg-lighten class.~~
+
+Decided to remove the .bg-lighten class in favor of making the buttons on hover have light text on dark background. This allows for the photo to take precedence and not have pesky unnatural color.
 
 ### Updated
 
-- TheNav.vue: Add box-shadow to sticky nav, via the homepage of the awesome [Tania Rascia](https://www.taniarascia.com/)
+- TheNav.vue:
+  - Add box-shadow to sticky nav, via the homepage of the awesome [Tania Rascia](https://www.taniarascia.com/)
+  - Update `button:hover`'s background color and color
 
 ## [0.10.2] - 2019-08-14
 
