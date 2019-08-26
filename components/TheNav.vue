@@ -68,7 +68,7 @@ export default {
   width: 100%;
   background-color: var(--soft-white);
   z-index: 10;
-  box-shadow: 1px 2px 18px rgba(0,0,0,.1);
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
 }
 
 .button {
@@ -77,7 +77,8 @@ export default {
   text-decoration: none;
 }
 .button:hover {
-  background-color: rgba(51, 34, 34, 0.1);
+  background-color: rgba(51, 34, 34, 0.4);
+  color: var(--soft-white);
 }
 
 .active,
