@@ -11,7 +11,7 @@
     >
       <TheHeaderH1></TheHeaderH1>
     </router-link>
-    <h2 class="mt0 h3 regular center lh1">
+    <h2 class="mt0 px2 regular center lh1">
       Winter Solstice &sdot; December 21
       <span class="sup">st</span>, 2019 &sdot; Maurice, Louisiana
     </h2>
@@ -56,6 +56,22 @@ export default {
 
 
 <style>
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1rem;
+}
+
+@media (min-width: 40em) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
 .sup {
   font-size: 0.83em;
   vertical-align: super;
