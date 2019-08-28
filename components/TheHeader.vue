@@ -15,8 +15,10 @@
       Winter Solstice &sdot; December 21
       <span class="sup">st</span>, 2019 &sdot; Maurice, Louisiana
     </h2>
+    <TheNavMobile class="md-hide"></TheNavMobile>
     <TheNav
       :currentPath="currentPath"
+      class="md-show"
       v-on:add-margin-bottom="setMarginBottom"
       v-on:reset-margin-bottom="resetMarginBottom"
     ></TheNav>
@@ -25,6 +27,7 @@
 
 <script>
 import TheHeaderH1 from "./TheHeaderH1.vue";
+import TheNavMobile from "./TheNavMobile.vue";
 import TheNav from "./TheNav.vue";
 
 export default {
@@ -36,6 +39,7 @@ export default {
   props: ["currentPath"],
   components: {
     TheHeaderH1,
+    TheNavMobile,
     TheNav
   },
   computed: {
