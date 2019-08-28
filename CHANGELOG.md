@@ -21,6 +21,15 @@ In particular:
 
 Decided to remove the .bg-lighten class in favor of making the buttons on hover have light text on dark background. This allows for the photo to take precedence and not have pesky unnatural color.
 
+### Added
+
+- TheNavMobile.vue: Trying different design ideas to make something. Instead, I've been liking some design examples from Squarespace, namely:
+  - https://emily-vansant-mf3z.squarespace.com/
+  - https://graceandtasa.squarespace.com/#home
+  - http://www.fivesixseventeen.com/
+  - https://aubrey-demo.squarespace.com/?nochrome=false
+  - And getting some mobile flyout nav insight from https://www.w3schools.com/howto/howto_js_sidenav.asp#
+
 ### Updated
 
 - TheNav.vue:
