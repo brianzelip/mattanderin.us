@@ -1,6 +1,6 @@
 <template>
   <nav class="flex justify-center">
-    <ul class="list-reset mb0 container mx-auto flex-auto flex justify-around">
+    <ul class="list-reset mb0 container flex-auto flex justify-around">
       <li
         :key="i"
         class="col-12 center"
