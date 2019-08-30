@@ -89,6 +89,7 @@ Deciding to play around with the main header and nav layout after looking throug
 - TheHeader2.vue: Horizontal header layout, with larger container, and nav items aligned in the middle horizontally with h1/h2
 - TheHeader3.vue: Header layout from the top left down in vertical fashion
 - TheNavHeader3.vue: Vertical nav layout in the top left corner
+- Table of contents herein, via huntertran.auto-markdown-toc VS Code extension
 
 ### 1.1.3. Updated
 
