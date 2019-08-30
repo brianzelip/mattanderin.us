@@ -4,7 +4,7 @@
     id="hero"
     ref="hero"
   >
-    <TheHeader></TheHeader>
+    <TheHeader3></TheHeader3>
     <TheHeroImageControl
       v-on:left="left"
       v-on:right="right"
@@ -14,6 +14,8 @@
 
 <script>
 import TheHeader from "./TheHeader.vue";
+import TheHeader2 from "./TheHeader2.vue";
+import TheHeader3 from "./TheHeader3.vue";
 import TheHeroImageControl from "./TheHeroImageControl.vue";
 
 export default {
@@ -31,7 +33,7 @@ export default {
       start: 4
     };
   },
-  components: { TheHeader, TheHeroImageControl },
+  components: { TheHeader, TheHeader2, TheHeader3, TheHeroImageControl },
   methods: {
     left() {
       if (this.start === 1) {

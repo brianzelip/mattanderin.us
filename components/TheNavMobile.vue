@@ -1,5 +1,5 @@
 <template>
-  <nav class="px2 flex justify-center relative">
+  <nav class="px2 flex-grow flex justify-center relative">
     <button class="mt2 button">
       <!-- bars.svg -->
       <!-- <svg viewBox="0 0 448 512">
