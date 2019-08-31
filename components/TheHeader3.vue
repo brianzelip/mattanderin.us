@@ -9,7 +9,10 @@
         <span>&amp;</span> Matt
       </h1>
       <h2 class="mt0 soft-white regular lh1">
-        <span title="December 21, 2019">Winter Solstice 2019</span> &sdot; Maurice, Louisiana
+        <span
+          class="help"
+          title="December 21, 2019"
+        >Winter Solstice 2019</span> &sdot; Maurice, Louisiana
       </h2>
     </div>
     <TheNavMobile class="md-hide"></TheNavMobile>
@@ -81,9 +84,7 @@ h2 {
   margin-left: -0.3rem;
 }
 
-.container {
-  max-width: 64rem;
-  margin-left: auto;
-  margin-right: auto;
+.help {
+  cursor: help;
 }
 </style>
