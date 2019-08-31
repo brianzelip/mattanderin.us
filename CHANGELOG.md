@@ -24,7 +24,12 @@ Decided to remove the .bg-lighten class in favor of making the buttons on hover 
 Deciding to play around with the main header and nav layout after looking through 3rd party wedding site templates, etc.
 
 - thinking about a left top header and vertical left side navigation, which implies a vertical split of the overall desktop viewport into left and right panels, where the non-hero page content goes on the right side.
-  - Changed the h2 inner text to limit its ability to stretch over into the right panel's page content
+  - Refactored the header content into a single column div
+    - changed the h1 font size and family to the body's Baskerville, but put it in italics
+    - make two sets of h2 to stack on top of eachother
+    - add an hr between headings and nav
+    - display .button's as block to sharply define the single column on hover
+  - I think this is a nice nav approach, looks nice with the large italic h1, with a nice simple design that has a bold line for break up and a branding based in popular book styles!
 
 ### 1.1.2. Added
 
