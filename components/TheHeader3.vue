@@ -3,15 +3,12 @@
     :style="{ marginBottom: marginBottom }"
     class="p3"
   >
-    <div class="flex-grow mr2">
-      <h1 class="m0 soft-white regular Italianno lh1">
+    <div>
+      <h1 class="m0 soft-white regular lh1">
         Erin
-        <span class="mx2">&amp;</span> Matt
+        <span>&amp;</span> Matt
       </h1>
-      <h2 class="mt0 soft-white regular lh1">
-        Winter Solstice &sdot; December 21
-        <span class="sup">st</span>, 2019 &sdot; Maurice, Louisiana
-      </h2>
+      <h2 class="mt0 soft-white regular lh1">Winter Solstice 2019 &sdot; Maurice, Louisiana</h2>
     </div>
     <TheNavMobile class="md-hide"></TheNavMobile>
     <TheNavHeader3
