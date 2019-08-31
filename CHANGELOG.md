@@ -23,6 +23,8 @@ Decided to remove the .bg-lighten class in favor of making the buttons on hover 
 
 Deciding to play around with the main header and nav layout after looking through 3rd party wedding site templates, etc.
 
+- thinking about a left top header and vertical left side navigation, which implies a vertical split of the overall desktop viewport into left and right panels, where the non-hero page content goes on the right side.
+
 ### 1.1.2. Added
 
 - TheNavMobile.vue: Trying different design ideas to make something. Instead, I've been liking some design examples from Squarespace, namely:
