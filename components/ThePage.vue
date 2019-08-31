@@ -2,7 +2,7 @@
   <section class="vh100">
     <TheHeader></TheHeader>
     <component
-      :is="page"
+      :is="component"
       class="relative"
     ></component>
   </section>
@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-      dict: {
+      routeToComponentMap: {
         story: "TheOurStory",
         schedule: "TheSchedule",
         location: "TheLocation",
@@ -47,8 +47,8 @@ export default {
     };
   },
   computed: {
-    page() {
-      return this.dict[this.$route.name];
+    component() {
+      return this.routeToComponentMap[this.$route.name];
     }
   }
 };
