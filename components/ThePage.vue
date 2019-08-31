@@ -21,7 +21,6 @@ import TheRSVPSuccess from "./TheRSVPSuccess.vue";
 import TheRSVPFail from "./TheRSVPFail.vue";
 
 export default {
-  props: ["page"],
   components: {
     TheHeader,
     TheOurStory,
@@ -37,15 +36,20 @@ export default {
   data() {
     return {
       dict: {
-        TheOurStory: "/story",
-        TheSchedule: "/schedule",
-        TheLocation: "/location",
-        TheWeddingParty: "/party",
-        TheHoneymoonFund: "/honeymoon",
-        TheSlideShow: "/slideshow",
-        TheRSVP: "/rsvp"
+        story: "TheOurStory",
+        schedule: "TheSchedule",
+        location: "TheLocation",
+        party: "TheWeddingParty",
+        honeymoon: "TheHoneymoonFund",
+        slideshow: "TheSlideShow",
+        rsvp: "TheRSVP"
       }
     };
+  },
+  computed: {
+    page() {
+      return this.dict[this.$route.name];
+    }
   }
 };
 </script>
