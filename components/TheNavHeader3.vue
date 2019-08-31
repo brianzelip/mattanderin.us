@@ -3,7 +3,6 @@
     <ul class="list-reset mb0">
       <li
         :key="i"
-        class=""
         v-for="(page, i) in pages"
       >
         <router-link
@@ -73,7 +72,9 @@ export default {
 
 .button {
   display: inline-block;
-  padding: .5rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--soft-white);
   text-decoration: none;
 }
 .button:hover {
