@@ -13,55 +13,55 @@ const routes = [
     path: '/story',
     name: 'story',
     component: ThePage,
-    props: { page: 'TheOurStory' }
+    props: { component: 'TheOurStory' }
   },
   {
     path: '/schedule',
     name: 'schedule',
     component: ThePage,
-    props: { page: 'TheSchedule' }
+    props: { component: 'TheSchedule' }
   },
   {
     path: '/location',
     name: 'location',
     component: ThePage,
-    props: { page: 'TheLocation' }
+    props: { component: 'TheLocation' }
   },
   {
     path: '/party',
     name: 'party',
     component: ThePage,
-    props: { page: 'TheWeddingParty' }
+    props: { component: 'TheWeddingParty' }
   },
   {
     path: '/honeymoon',
     name: 'honeymoon',
     component: ThePage,
-    props: { page: 'TheHoneymoonFund' }
+    props: { component: 'TheHoneymoonFund' }
   },
   {
     path: '/slideshow',
     name: 'slideshow',
     component: ThePage,
-    props: { page: 'TheSlideShow' }
+    props: { component: 'TheSlideShow' }
   },
   {
     path: '/rsvp',
     name: 'rsvp',
     component: ThePage,
-    props: { page: 'TheRSVP' }
+    props: { component: 'TheRSVP' }
   },
   {
     path: '/rsvp/success',
     name: 'success',
     component: ThePage,
-    props: { page: 'TheRSVPSuccess' }
+    props: { component: 'TheRSVPSuccess' }
   },
   {
     path: '/rsvp/fail',
     name: 'fail',
     component: ThePage,
-    props: { page: 'TheRSVPFail' }
+    props: { component: 'TheRSVPFail' }
   }
 ];
 
