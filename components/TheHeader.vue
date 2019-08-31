@@ -17,7 +17,6 @@
     </h2>
     <TheNavMobile class="md-hide"></TheNavMobile>
     <TheNav
-      :currentPath="currentPath"
       class="md-show"
       v-on:add-margin-bottom="setMarginBottom"
       v-on:reset-margin-bottom="resetMarginBottom"
@@ -36,7 +35,6 @@ export default {
       marginBottom: "1rem"
     };
   },
-  props: ["currentPath"],
   components: {
     TheHeaderH1,
     TheNavMobile,
