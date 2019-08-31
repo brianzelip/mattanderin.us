@@ -8,7 +8,9 @@
         Erin
         <span>&amp;</span> Matt
       </h1>
-      <h2 class="mt0 soft-white regular lh1">Winter Solstice 2019 &sdot; Maurice, Louisiana</h2>
+      <h2 class="mt0 soft-white regular lh1">
+        <span title="December 21, 2019">Winter Solstice 2019</span> &sdot; Maurice, Louisiana
+      </h2>
     </div>
     <TheNavMobile class="md-hide"></TheNavMobile>
     <TheNavHeader3
