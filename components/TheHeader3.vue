@@ -1,23 +1,21 @@
 <template>
   <header
     :style="{ marginBottom: marginBottom }"
-    class="p3"
+    class="p3 inline-block"
   >
-    <div class="inline-block">
-      <h1 class="m0 soft-white regular lh1 italic">
-        Erin
-        <span>&amp;</span> Matt
-      </h1>
-      <h2 class="mt0 soft-white regular lh1">Winter Solstice &sdot; December 21, 2019</h2>
-      <h2 class="mt0 soft-white regular lh1">Maurice, Louisiana</h2>
-      <hr />
-      <TheNavHeader3
-        :currentPath="currentPath"
-        class="col-12 md-show"
-        v-on:add-margin-bottom="setMarginBottom"
-        v-on:reset-margin-bottom="resetMarginBottom"
-      ></TheNavHeader3>
-    </div>
+    <h1 class="m0 soft-white regular lh1 italic">
+      Erin
+      <span>&amp;</span> Matt
+    </h1>
+    <h2 class="mt0 soft-white regular lh1">Winter Solstice &sdot; December 21, 2019</h2>
+    <h2 class="mt0 soft-white regular lh1">Maurice, Louisiana</h2>
+    <hr />
+    <TheNavHeader3
+      :currentPath="currentPath"
+      class="col-12 md-show"
+      v-on:add-margin-bottom="setMarginBottom"
+      v-on:reset-margin-bottom="resetMarginBottom"
+    ></TheNavHeader3>
     <TheNavMobile class="md-hide"></TheNavMobile>
   </header>
 </template>
