@@ -28,7 +28,8 @@ export default {
         "splash04.JPG",
         "splash05.jpg",
         "splash06.jpg",
-        "splash07.jpg"
+        "splash07.jpg",
+        "splash08.jpg"
       ],
       start: 4
     };
@@ -38,7 +39,7 @@ export default {
     left() {
       if (this.start === 1) {
         const prev = 1;
-        const next = 7;
+        const next = 8;
         this.$set(this, "start", next);
         this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
       } else {
@@ -49,8 +50,8 @@ export default {
       }
     },
     right() {
-      if (this.start === 7) {
-        const prev = 7;
+      if (this.start === 8) {
+        const prev = 8;
         const next = 1;
         this.$set(this, "start", next);
         this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
@@ -93,5 +94,8 @@ export default {
 }
 .splash07 {
   background-image: url(../img/splash07.jpg);
+}
+.splash08 {
+  background-image: url(../img/splash08.jpg);
 }
 </style>
