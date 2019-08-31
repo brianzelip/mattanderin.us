@@ -21,6 +21,7 @@ import TheRSVPSuccess from "./TheRSVPSuccess.vue";
 import TheRSVPFail from "./TheRSVPFail.vue";
 
 export default {
+  props: ["component"],
   components: {
     TheHeader,
     TheOurStory,
@@ -32,24 +33,6 @@ export default {
     TheRSVP,
     TheRSVPSuccess,
     TheRSVPFail
-  },
-  data() {
-    return {
-      routeToComponentMap: {
-        story: "TheOurStory",
-        schedule: "TheSchedule",
-        location: "TheLocation",
-        party: "TheWeddingParty",
-        honeymoon: "TheHoneymoonFund",
-        slideshow: "TheSlideShow",
-        rsvp: "TheRSVP"
-      }
-    };
-  },
-  computed: {
-    component() {
-      return this.routeToComponentMap[this.$route.name];
-    }
   }
 };
 </script>
