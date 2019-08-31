@@ -18,7 +18,6 @@
 
 <script>
 export default {
-  props: ["currentPath"],
   data() {
     return {
       pages: [
@@ -31,6 +30,11 @@ export default {
         { path: "/rsvp", text: "RSVP" }
       ]
     };
+  },
+  computed: {
+    currentPath() {
+      return this.$route.path;
+    }
   },
   mounted() {
     // [sticky header on scroll via](https://www.w3schools.com/howto/howto_js_sticky_header.asp)
