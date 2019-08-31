@@ -75,7 +75,7 @@ export default {
 }
 
 .button {
-  display: inline-block;
+  display: block;
   padding: 0.5rem;
   font-size: 1.25rem;
   color: var(--soft-white);
