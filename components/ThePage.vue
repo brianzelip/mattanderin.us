@@ -1,6 +1,6 @@
 <template>
   <section class="vh100">
-    <TheHeader :currentPath="currentPath"></TheHeader>
+    <TheHeader></TheHeader>
     <component
       :is="page"
       class="relative"
@@ -46,11 +46,6 @@ export default {
         TheRSVP: "/rsvp"
       }
     };
-  },
-  computed: {
-    currentPath() {
-      return this.dict[this.$props.page];
-    }
   }
 };
 </script>
