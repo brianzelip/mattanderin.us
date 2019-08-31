@@ -3,25 +3,22 @@
     :style="{ marginBottom: marginBottom }"
     class="p3"
   >
-    <div>
-      <h1 class="m0 soft-white regular lh1">
+    <div class="inline-block">
+      <h1 class="m0 soft-white regular lh1 italic">
         Erin
         <span>&amp;</span> Matt
       </h1>
-      <h2 class="mt0 soft-white regular lh1">
-        <span
-          class="help"
-          title="December 21, 2019"
-        >Winter Solstice 2019</span> &sdot; Maurice, Louisiana
-      </h2>
+      <h2 class="mt0 soft-white regular lh1">Winter Solstice &sdot; December 21, 2019</h2>
+      <h2 class="mt0 soft-white regular lh1">Maurice, Louisiana</h2>
+      <hr />
+      <TheNavHeader3
+        :currentPath="currentPath"
+        class="col-12 md-show"
+        v-on:add-margin-bottom="setMarginBottom"
+        v-on:reset-margin-bottom="resetMarginBottom"
+      ></TheNavHeader3>
     </div>
     <TheNavMobile class="md-hide"></TheNavMobile>
-    <TheNavHeader3
-      :currentPath="currentPath"
-      class="col-12 md-show"
-      v-on:add-margin-bottom="setMarginBottom"
-      v-on:reset-margin-bottom="resetMarginBottom"
-    ></TheNavHeader3>
   </header>
 </template>
 
@@ -71,7 +68,7 @@ h2 {
 
 @media (min-width: 40em) {
   h1 {
-    font-size: 4.5rem;
+    font-size: 4.75rem;
   }
   h2 {
     font-size: 1.5rem;
@@ -86,5 +83,11 @@ h2 {
 
 .help {
   cursor: help;
+}
+
+hr {
+  background-color: var(--soft-white);
+  height: 4px;
+  border: none;
 }
 </style>
