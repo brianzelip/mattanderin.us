@@ -2,6 +2,7 @@ import VueRouter from 'vue-router';
 
 import TheHero from './components/TheHero.vue';
 import ThePage from './components/ThePage.vue';
+import ThePage3 from './components/ThePage3.vue';
 
 const routes = [
   {
@@ -12,55 +13,55 @@ const routes = [
   {
     path: '/story',
     name: 'story',
-    component: ThePage,
-    props: { component: 'TheOurStory' }
+    component: ThePage3,
+    props: { component: 'TheOurStory3' }
   },
   {
     path: '/schedule',
     name: 'schedule',
-    component: ThePage,
-    props: { component: 'TheSchedule' }
+    component: ThePage3,
+    props: { component: 'TheSchedule3' }
   },
   {
     path: '/location',
     name: 'location',
-    component: ThePage,
-    props: { component: 'TheLocation' }
+    component: ThePage3,
+    props: { component: 'TheLocation3' }
   },
   {
     path: '/party',
     name: 'party',
-    component: ThePage,
-    props: { component: 'TheWeddingParty' }
+    component: ThePage3,
+    props: { component: 'TheWeddingParty3' }
   },
   {
     path: '/honeymoon',
     name: 'honeymoon',
-    component: ThePage,
-    props: { component: 'TheHoneymoonFund' }
+    component: ThePage3,
+    props: { component: 'TheHoneymoonFund3' }
   },
   {
     path: '/slideshow',
     name: 'slideshow',
-    component: ThePage,
-    props: { component: 'TheSlideShow' }
+    component: ThePage3,
+    props: { component: 'TheSlideShow3' }
   },
   {
     path: '/rsvp',
     name: 'rsvp',
-    component: ThePage,
-    props: { component: 'TheRSVP' }
+    component: ThePage3,
+    props: { component: 'TheRSVP3' }
   },
   {
     path: '/rsvp/success',
     name: 'success',
-    component: ThePage,
+    component: ThePage3,
     props: { component: 'TheRSVPSuccess' }
   },
   {
     path: '/rsvp/fail',
     name: 'fail',
-    component: ThePage,
+    component: ThePage3,
     props: { component: 'TheRSVPFail' }
   }
 ];
