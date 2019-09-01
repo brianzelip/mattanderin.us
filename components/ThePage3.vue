@@ -1,12 +1,9 @@
 <template>
   <section class="vh100 flex">
-    <TheHeader3
-      class="flex-grow"
-      color="black"
-    ></TheHeader3>
+    <TheHeader3 color="black"></TheHeader3>
     <component
       :is="component"
-      class="relative col-12 p3"
+      class="relative p3"
     ></component>
   </section>
 </template>
