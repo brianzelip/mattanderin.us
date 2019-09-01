@@ -1,6 +1,9 @@
 <template>
   <section class="vh100 flex">
-    <TheHeader3 color="black"></TheHeader3>
+    <TheHeader3
+      class="no-shrink"
+      color="black"
+    ></TheHeader3>
     <component
       :is="component"
       class="relative p3"
@@ -52,3 +55,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.no-shrink {
+  flex-shrink: 0;
+}
+</style>
