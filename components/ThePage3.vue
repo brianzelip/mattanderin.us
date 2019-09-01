@@ -6,7 +6,7 @@
     ></TheHeader3>
     <component
       :is="component"
-      class="relative p3"
+      class="relative col-12 p3"
     ></component>
   </section>
 </template>
