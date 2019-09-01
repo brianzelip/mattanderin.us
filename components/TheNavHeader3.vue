@@ -34,30 +34,6 @@ export default {
     currentPath() {
       return this.$route.path;
     }
-  },
-  mounted() {
-    // [sticky header on scroll via](https://www.w3schools.com/howto/howto_js_sticky_header.asp)
-    const nav = document.querySelector("nav");
-    const navHeight = nav.offsetHeight;
-    const navOffsetTop = nav.offsetTop;
-    const vm = this;
-
-    function stickyNav() {
-      if (window.pageYOffset > navOffsetTop) {
-        nav.classList.add("sticky");
-        // tell the parent to add bottom margin
-        // ps - 23 is a magic number, in fact, 23, 24, and 25 all work
-        vm.$emit("add-margin-bottom", navOffsetTop - navHeight + 23);
-      } else {
-        nav.classList.remove("sticky");
-        // tell the parent to reset bottom margin
-        vm.$emit("reset-margin-bottom");
-      }
-    }
-
-    window.onscroll = function() {
-      stickyNav();
-    };
   }
 };
 </script>
