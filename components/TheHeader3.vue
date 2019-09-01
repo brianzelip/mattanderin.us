@@ -3,13 +3,17 @@
     :style="{ marginBottom: marginBottom }"
     class="p3 inline-block"
   >
-    <h1
-      :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
-      class="m0 regular lh1 italic"
+    <TheHeader3H1
+      :color="color"
+      v-if="isHome"
+    ></TheHeader3H1>
+    <router-link
+      class="hover-text-decoration-none"
+      to="/"
+      v-else
     >
-      Erin
-      <span>&amp;</span> Matt
-    </h1>
+      <TheHeader3H1 :color="color"></TheHeader3H1>
+    </router-link>
     <h2
       :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
       class="mt0 regular lh1"
@@ -31,6 +35,7 @@
 
 <script>
 import TheHeaderH1 from "./TheHeaderH1.vue";
+import TheHeader3H1 from "./TheHeader3H1.vue";
 import TheNavMobile from "./TheNavMobile.vue";
 import TheNav from "./TheNav.vue";
 import TheNavHeader3 from "./TheNavHeader3.vue";
@@ -44,6 +49,7 @@ export default {
   },
   components: {
     TheHeaderH1,
+    TheHeader3H1,
     TheNavMobile,
     TheNav,
     TheNavHeader3
