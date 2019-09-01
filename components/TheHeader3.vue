@@ -1,7 +1,7 @@
 <template>
   <header
     :style="{ marginBottom: marginBottom }"
-    class="p3 inline-block"
+    class="p3"
   >
     <TheHeader3H1
       :color="color"
