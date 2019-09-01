@@ -4,7 +4,10 @@
     id="hero"
     ref="hero"
   >
-    <TheHeader3 color="white"></TheHeader3>
+    <TheHeader3
+      class="inline-block"
+      color="white"
+    ></TheHeader3>
     <TheHeroImageControl
       v-on:left="left"
       v-on:right="right"
