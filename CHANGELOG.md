@@ -31,6 +31,7 @@ Deciding to play around with the main header and nav layout after looking throug
     - display .button's as block to sharply define the single column on hover
   - I think this is a nice nav approach, looks nice with the large italic h1, with a nice simple design that has a bold line for break up and a branding based in popular book styles!
   - Have to figure out how to handle all header text color on each hero context
+  - Made the easiest (ie: least code, least fighting against the browser) flex header & page layout, with sticky header, and an inline-block - like effect between header and page via commit #1577a613b
 
 ### 1.1.2. Added
 
