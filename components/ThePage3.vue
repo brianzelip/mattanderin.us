@@ -1,7 +1,7 @@
 <template>
   <section class="vh100 flex">
     <TheHeader3
-      class="no-shrink"
+      class="no-shrink-sticky-top-align-self"
       color="black"
     ></TheHeader3>
     <component
@@ -57,7 +57,12 @@ export default {
 </script>
 
 <style scoped>
-.no-shrink {
+/* this !SO answer helped w/ the align-self insight!
+  https://stackoverflow.com/a/44446672/2145103 */
+.no-shrink-sticky-top-align-self {
   flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
 }
 </style>
