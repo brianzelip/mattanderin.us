@@ -1,9 +1,12 @@
 <template>
   <section class="vh100 flex">
-    <TheHeader3 color="black"></TheHeader3>
+    <TheHeader3
+      class="flex-grow"
+      color="black"
+    ></TheHeader3>
     <component
       :is="component"
-      class="relative"
+      class="relative col-12 p3"
     ></component>
   </section>
 </template>
@@ -18,6 +21,13 @@ import TheWeddingParty from "./TheWeddingParty.vue";
 import TheHoneymoonFund from "./TheHoneymoonFund.vue";
 import TheSlideShow from "./TheSlideShow.vue";
 import TheRSVP from "./TheRSVP.vue";
+import TheOurStory3 from "./TheOurStory3.vue";
+import TheSchedule3 from "./TheSchedule3.vue";
+import TheLocation3 from "./TheLocation3.vue";
+import TheWeddingParty3 from "./TheWeddingParty3.vue";
+import TheHoneymoonFund3 from "./TheHoneymoonFund3.vue";
+import TheSlideShow3 from "./TheSlideShow3.vue";
+import TheRSVP3 from "./TheRSVP3.vue";
 import TheRSVPSuccess from "./TheRSVPSuccess.vue";
 import TheRSVPFail from "./TheRSVPFail.vue";
 
@@ -34,7 +44,14 @@ export default {
     TheSlideShow,
     TheRSVP,
     TheRSVPSuccess,
-    TheRSVPFail
+    TheRSVPFail,
+    TheOurStory3,
+    TheSchedule3,
+    TheLocation3,
+    TheWeddingParty3,
+    TheHoneymoonFund3,
+    TheSlideShow3,
+    TheRSVP3
   }
 };
 </script>
