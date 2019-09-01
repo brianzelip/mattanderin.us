@@ -29,7 +29,8 @@ export default {
         "splash05.jpg",
         "splash06.jpg",
         "splash07.jpg",
-        "splash08.jpg"
+        "splash08.jpg",
+        "splash09.jpg"
       ],
       start: 4
     };
@@ -39,7 +40,7 @@ export default {
     left() {
       if (this.start === 1) {
         const prev = 1;
-        const next = 8;
+        const next = 9;
         this.$set(this, "start", next);
         this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
       } else {
@@ -50,8 +51,8 @@ export default {
       }
     },
     right() {
-      if (this.start === 8) {
-        const prev = 8;
+      if (this.start === 9) {
+        const prev = 9;
         const next = 1;
         this.$set(this, "start", next);
         this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
@@ -70,7 +71,7 @@ export default {
 <style>
 #hero {
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
 }
 
@@ -85,6 +86,7 @@ export default {
 }
 .splash04 {
   background-image: url(../img/splash04.jpg);
+  background-position: top left;
 }
 .splash05 {
   background-image: url(../img/splash05.jpg);
@@ -97,5 +99,14 @@ export default {
 }
 .splash08 {
   background-image: url(../img/splash08.jpg);
+}
+.splash09 {
+  background-image: url(../img/splash09.jpg);
+}
+.splash10 {
+  background-image: url(../img/splash10.jpg);
+}
+.splash11 {
+  background-image: url(../img/splash11.jpg);
 }
 </style>
