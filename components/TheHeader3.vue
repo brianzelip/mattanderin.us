@@ -22,7 +22,7 @@
       :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
       class="mt0 regular lh1"
     >Maurice, Louisiana</h2>
-    <hr />
+    <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" />
     <TheNavHeader3
       :color="color"
       class="col-12 md-show"
@@ -99,7 +99,6 @@ h2 {
 }
 
 hr {
-  background-color: var(--soft-white);
   height: 4px;
   border: none;
 }
