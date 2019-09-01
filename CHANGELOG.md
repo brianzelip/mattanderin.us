@@ -30,6 +30,7 @@ Deciding to play around with the main header and nav layout after looking throug
     - add an hr between headings and nav
     - display .button's as block to sharply define the single column on hover
   - I think this is a nice nav approach, looks nice with the large italic h1, with a nice simple design that has a bold line for break up and a branding based in popular book styles!
+  - Have to figure out how to handle all header text color on each hero context
 
 ### 1.1.2. Added
 
