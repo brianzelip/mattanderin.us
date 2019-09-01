@@ -119,11 +119,3 @@
     </section>
   </main>
 </template>
-
-<style scoped>
-li::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-</style>
