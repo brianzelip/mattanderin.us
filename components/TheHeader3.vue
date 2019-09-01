@@ -3,15 +3,24 @@
     :style="{ marginBottom: marginBottom }"
     class="p3 inline-block"
   >
-    <h1 class="m0 soft-white regular lh1 italic">
+    <h1
+      :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
+      class="m0 regular lh1 italic"
+    >
       Erin
       <span>&amp;</span> Matt
     </h1>
-    <h2 class="mt0 soft-white regular lh1">Winter Solstice &sdot; December 21, 2019</h2>
-    <h2 class="mt0 soft-white regular lh1">Maurice, Louisiana</h2>
+    <h2
+      :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
+      class="mt0 regular lh1"
+    >Winter Solstice &sdot; December 21, 2019</h2>
+    <h2
+      :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
+      class="mt0 regular lh1"
+    >Maurice, Louisiana</h2>
     <hr />
     <TheNavHeader3
-      :currentPath="currentPath"
+      :color="color"
       class="col-12 md-show"
       v-on:add-margin-bottom="setMarginBottom"
       v-on:reset-margin-bottom="resetMarginBottom"
@@ -27,12 +36,12 @@ import TheNav from "./TheNav.vue";
 import TheNavHeader3 from "./TheNavHeader3.vue";
 
 export default {
+  props: ["black", "white", "color"],
   data() {
     return {
       marginBottom: "1rem"
     };
   },
-  props: ["currentPath"],
   components: {
     TheHeaderH1,
     TheNavMobile,
