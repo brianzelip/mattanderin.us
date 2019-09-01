@@ -4,7 +4,7 @@
     id="hero"
     ref="hero"
   >
-    <TheHeader3></TheHeader3>
+    <TheHeader3 color="white"></TheHeader3>
     <TheHeroImageControl
       v-on:left="left"
       v-on:right="right"
