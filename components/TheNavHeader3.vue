@@ -6,7 +6,7 @@
         v-for="(page, i) in pages"
       >
         <router-link
-          :class="{ active: page.path === currentPath }"
+          :class="{'soft-black': color === 'black', 'soft-white': color === 'white', active: page.path === currentPath}"
           :to="page.path"
           class="button"
         >{{ page.text }}</router-link>
@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  props: ["color"],
   data() {
     return {
       pages: [
@@ -54,7 +55,6 @@ export default {
   display: block;
   padding: 0.5rem;
   font-size: 1.25rem;
-  color: var(--soft-white);
   text-decoration: none;
 }
 .button:hover {
