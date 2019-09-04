@@ -1,7 +1,7 @@
 <template>
-  <section class="vh100 flex">
+  <section>
     <TheHeader3
-      class="no-shrink-sticky-top-align-self"
+      class="header"
       color="black"
     ></TheHeader3>
     <component
@@ -59,10 +59,17 @@ export default {
 <style scoped>
 /* this !SO answer helped w/ the align-self insight!
   https://stackoverflow.com/a/44446672/2145103 */
-.no-shrink-sticky-top-align-self {
-  flex-shrink: 0;
+
+section {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.header {
+  /* flex-shrink: 0;
   position: sticky;
   top: 0;
-  align-self: flex-start;
+  align-self: flex-start; */
+  /* overflow-y: scroll; */
 }
 </style>
