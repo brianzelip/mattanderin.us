@@ -1,35 +1,52 @@
 <template>
-  <header
-    :style="{ marginBottom: marginBottom }"
-    class="p3"
-  >
-    <TheHeader3H1
-      :color="color"
-      v-if="isHome"
-    ></TheHeader3H1>
-    <router-link
-      class="hover-text-decoration-none"
-      to="/"
-      v-else
+  <header>
+    <div class="hwrapper">
+      <TheHeader3H1
+        :color="color"
+        v-if="isHome"
+      ></TheHeader3H1>
+      <router-link
+        class="hover-text-decoration-none"
+        to="/"
+        v-else
+      >
+        <TheHeader3H1 :color="color"></TheHeader3H1>
+      </router-link>
+      <h2
+        :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
+      >Winter Solstice 2019</h2>
+      <h2
+        :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
+        class="mt1"
+      >Maurice, LA</h2>
+      <!-- <h2
+        :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
+      >Winter Solstice &sdot; December 21, 2019</h2>
+      <h2
+        :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
+      >Maurice, Louisiana</h2>-->
+      <!-- <h2
+        :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
+      >December 21, 2019</h2>-->
+    </div>
+    <button
+      :class="{'soft-black': color === 'black', 'soft-white': color === 'white', buttonBlack: color === 'black', buttonWhite: color === 'white' }"
     >
-      <TheHeader3H1 :color="color"></TheHeader3H1>
-    </router-link>
-    <h2
-      :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
-      class="mt0 regular lh1"
-    >Winter Solstice &sdot; December 21, 2019</h2>
-    <h2
-      :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
-      class="mt0 regular lh1"
-    >Maurice, Louisiana</h2>
-    <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" />
-    <TheNavHeader3
+      Menu
+      <svg viewBox="0 0 448 512">
+        <path
+          d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"
+        />
+      </svg>
+    </button>
+    <!-- <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" /> -->
+    <!-- <TheNavHeader3
       :color="color"
       class="col-12 md-show"
       v-on:add-margin-bottom="setMarginBottom"
       v-on:reset-margin-bottom="resetMarginBottom"
     ></TheNavHeader3>
-    <TheNavMobile class="md-hide"></TheNavMobile>
+    <TheNavMobile class="md-hide"></TheNavMobile>-->
   </header>
 </template>
 
@@ -72,11 +89,72 @@ export default {
 
 
 <style scoped>
+header {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.hwrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 0 0 0;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid currentColor;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-variant: small-caps;
+  text-decoration: none;
+  cursor: default;
+  height: auto;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+
+button:hover {
+  /* color: currentColor; */
+  /* background-color: transparent; */
+}
+
+.buttonBlack:hover {
+  color: var(--soft-white);
+  border-color: var(--soft-white);
+  background-color: var(--soft-black);
+}
+.buttonWhite:hover {
+  color: var(--soft-black);
+  border-color: var(--soft-white);
+  background-color: var(--soft-white);
+}
+
+svg {
+  margin-left: 0.25rem;
+  width: 1rem;
+  fill: currentColor;
+}
 h1 {
-  font-size: 3rem;
+  text-align: left;
+  font-size: 2.5rem;
+  flex-shrink: 0;
 }
 h2 {
+  margin: 0;
   font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+  text-align: left;
+}
+
+.h2wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 40em) {
