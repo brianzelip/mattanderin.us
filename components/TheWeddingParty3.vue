@@ -119,3 +119,9 @@
     </section>
   </main>
 </template>
+
+<style scoped>
+h2 {
+  font-weight: 400;
+}
+</style>
