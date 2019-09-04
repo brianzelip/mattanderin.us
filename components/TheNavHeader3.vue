@@ -60,6 +60,7 @@ export default {
 .button:hover {
   background-color: rgba(51, 34, 34, 0.4);
   color: var(--soft-white);
+  transition: all 0.3s ease 0s;
 }
 
 .active,
