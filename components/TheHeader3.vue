@@ -90,9 +90,10 @@ export default {
 
 <style scoped>
 header {
+  position: relative;
   padding: 0.5rem;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   /* align-items: center; */
 }
 .hwrapper {
@@ -101,11 +102,15 @@ header {
 }
 
 button {
-  align-self: flex-start;
-  display: flex;
-  align-items: center;
-  margin: 0.25rem 0 0 0;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  margin: 0.25rem 0 0 0; /* top margin for better look */
   padding: 0.5rem 0.5rem;
+  height: auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
   border: 1px solid currentColor;
   font-family: inherit;
   font-size: 0.875rem;
@@ -113,14 +118,8 @@ button {
   font-variant: small-caps;
   text-decoration: none;
   cursor: default;
-  height: auto;
-  -webkit-appearance: none;
   background-color: transparent;
-}
-
-button:hover {
-  /* color: currentColor; */
-  /* background-color: transparent; */
+  -webkit-appearance: none;
 }
 
 .buttonBlack:hover {
@@ -170,10 +169,6 @@ h2 {
   font-size: 0.83em;
   vertical-align: super;
   margin-left: -0.3rem;
-}
-
-.help {
-  cursor: help;
 }
 
 hr {
