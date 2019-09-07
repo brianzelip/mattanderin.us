@@ -156,14 +156,14 @@ h2 {
   flex-direction: column;
 }
 
-@media (min-width: 40em) {
+/* @media (min-width: 40em) {
   h1 {
     font-size: 4.75rem;
   }
   h2 {
     font-size: 1.5rem;
   }
-}
+} */
 
 .sup {
   font-size: 0.83em;
