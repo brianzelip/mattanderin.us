@@ -88,6 +88,11 @@ export default {
     resetMarginBottom() {
       this.marginBottom = `1rem`;
     }
+  },
+  watch: {
+    $route() {
+      this.$set(this, 'showNavMobile', false);
+    }
   }
 };
 </script>
