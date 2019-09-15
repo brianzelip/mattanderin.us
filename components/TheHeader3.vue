@@ -40,7 +40,7 @@
         />
       </svg>
     </button>
-    <TheNavMobile3 :color="color"></TheNavMobile3>
+    <TheNavMobile3 v-on:close="showNavMobile = !showNavMobile" :class="{show: showNavMobile}" :color="color"></TheNavMobile3>
     <!-- <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" /> -->
     <!-- <TheNavHeader3
       :color="color"
