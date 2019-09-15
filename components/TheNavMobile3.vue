@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav ref="nav">
     <div class="flex justify-end">
       <button
         @click="close"
@@ -47,6 +47,11 @@ export default {
   methods: {
     close() {
       this.$emit('close');
+    }
+  },
+  watch: {
+    $route() {
+      this.$refs.nav.classList.remove('show');
     }
   }
 };
