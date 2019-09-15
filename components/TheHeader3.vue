@@ -31,6 +31,7 @@
     </div>
     <button
       :class="{'soft-black': color === 'black', 'soft-white': color === 'white', buttonBlack: color === 'black', buttonWhite: color === 'white' }"
+      @click="showNavMobile = !showNavMobile"
     >
       Menu
       <svg viewBox="0 0 448 512">
