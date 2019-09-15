@@ -39,6 +39,7 @@
         />
       </svg>
     </button>
+    <TheNavMobile3 :color="color"></TheNavMobile3>
     <!-- <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" /> -->
     <!-- <TheNavHeader3
       :color="color"
@@ -54,6 +55,7 @@
 import TheHeaderH1 from "./TheHeaderH1.vue";
 import TheHeader3H1 from "./TheHeader3H1.vue";
 import TheNavMobile from "./TheNavMobile.vue";
+import TheNavMobile3 from "./TheNavMobile3.vue";
 import TheNav from "./TheNav.vue";
 import TheNavHeader3 from "./TheNavHeader3.vue";
 
@@ -61,13 +63,15 @@ export default {
   props: ["black", "white", "color"],
   data() {
     return {
-      marginBottom: "1rem"
+      marginBottom: "1rem",
+      showNavMobile: false
     };
   },
   components: {
     TheHeaderH1,
     TheHeader3H1,
     TheNavMobile,
+    TheNavMobile3,
     TheNav,
     TheNavHeader3
   },
