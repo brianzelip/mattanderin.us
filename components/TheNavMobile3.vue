@@ -28,6 +28,7 @@ export default {
   data() {
     return {
       pages: [
+        { path: "/", text: "Home" },
         { path: "/story", text: "Our Story" },
         { path: "/schedule", text: "Schedule" },
         { path: "/location", text: "Location" },
