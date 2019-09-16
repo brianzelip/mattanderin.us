@@ -1,5 +1,7 @@
 <template>
   <section>
+    <!-- TheHero HEADER HAD class="inline-block" for desktop -->
+    <!-- TheHero HEADER NEEDS color="white"  -->
     <TheHeader3
       class="header"
       color="black"
