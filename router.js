@@ -5,10 +5,16 @@ import ThePage from './components/ThePage.vue';
 import ThePage3 from './components/ThePage3.vue';
 
 const routes = [
+  // {
+  //   path: '/',
+  //   name: 'home',
+  //   component: TheHero
+  // },
   {
     path: '/',
     name: 'home',
-    component: TheHero
+    component: ThePage3,
+    props: { component: 'TheHero3' }
   },
   {
     path: '/story',
