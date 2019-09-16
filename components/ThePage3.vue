@@ -14,6 +14,7 @@
 <script>
 import TheHeader from "./TheHeader.vue";
 import TheHeader3 from "./TheHeader3.vue";
+import TheHero3 from "./TheHero3.vue";
 import TheOurStory from "./TheOurStory.vue";
 import TheSchedule from "./TheSchedule.vue";
 import TheLocation from "./TheLocation.vue";
@@ -36,6 +37,7 @@ export default {
   components: {
     TheHeader,
     TheHeader3,
+    TheHero3,
     TheOurStory,
     TheSchedule,
     TheLocation,
