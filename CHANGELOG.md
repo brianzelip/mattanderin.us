@@ -34,7 +34,12 @@ Deciding to play around with the main header and nav layout after looking throug
   - Made the easiest (ie: least code, least fighting against the browser) flex header & page layout, with sticky header, and an inline-block (on Hero) - like effect between header and page via commit #1577a613b
   - Am going with a menu button approach to mobile, as well as abbreviating headings innerHTML on mobile too. Have to figure out the menu page overlay when menu button is clicked.
   - Added the menu overlay, which slides out from the right side. Used https://firefly-iii.org/ as a reference, which is similar to the w3schools' "Sidenav overlay", but uses margin and negative margin instead of width to show and hide the overlay.
-    - There's a problem with the menu closing when on the home page and another page is selected. Since the hero and the pages are currently different router views, the menu closing from the hero page when a page is clicked is not a smooth sliding close, but an abrupt disappearing close. Making the hero a page could work - just have to figure out how to make the background image wrapper come after the <header>, whereas on the current hero, the <header> is a child of the background-image wrapper.
+    - There's a problem with the menu closing when on the home page and another page is selected. Since the hero and the pages are currently different router views, the menu closing from the hero page when a page is clicked is not a smooth sliding close, but an abrupt disappearing close. Making the hero a page could work - just have to figure out how to make the background image wrapper come after the <header>, whereas on the current hero, the <header> is a child of the background-image wrapper. [problem fixed as of commit b5752808]
+  - Now that the mobile header is created for the smallest viewport, I need to make the next larger views:
+    - bigger phone
+    - tablet
+    - then desktop
+    - then larger desktop? (I think Matt has some wide monitors)
 
 ### 1.1.2. Added
 
