@@ -62,12 +62,13 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100% - 1rem);
+  /* width: calc(100% - 1rem); */
+  width: calc(75% - 1rem);
   z-index: 10;
   background-color: var(--soft-black);
   padding: .5rem;
-  /* margin-right: calc(-50% - 1rem); */
-  margin-right: calc(-100% - 1rem);
+  margin-right: calc(-75% - 1rem);
+  /* margin-right: calc(-100% - 1rem); */
   transition: all 0.3s ease 0s;
 }
 
@@ -77,6 +78,7 @@ nav.show{
 }
 
 button {
+  margin: 0.25rem 0 0 0; /* top margin for better look */
   padding: 0.25rem 0.5rem;
   height: auto;
   display: flex;
@@ -120,8 +122,8 @@ svg {
 
 .active,
 .active:hover {
-  background-color: var(--soft-black);
-  color: var(--soft-white);
+  background-color: var(--soft-white);
+  color: var(--soft-black);
   cursor: default;
 }
 
