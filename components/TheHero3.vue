@@ -1,9 +1,10 @@
 <template>
-  <section
-    class="vh100 splash04"
-    id="hero"
-    ref="hero"
-  >
+  <section>
+    <main
+      class="splash04"
+      id="hero"
+      ref="hero"
+    ></main>
     <TheHeroImageControl
       v-on:left="left"
       v-on:right="right"
@@ -69,9 +70,15 @@ export default {
 
 <style>
 #hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .splash01 {
