@@ -41,7 +41,6 @@
       }"
       @click="showNavMobile = !showNavMobile"
     >
-      Menu
       <svg viewBox="0 0 448 512">
         <path
           d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"
@@ -128,36 +127,43 @@ button {
   top: 0.5rem;
   right: 0.5rem;
   margin: 0.25rem 0 0 0; /* top margin for better look */
-  padding: 0.5rem 0.5rem;
-  height: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
   display: flex;
   align-self: flex-start;
   align-items: center;
   border: none;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 400;
-  /* font-variant: small-caps; */
   text-decoration: none;
   cursor: default;
-  background-color: transparent;
   -webkit-appearance: none;
 }
 
-.buttonBlack:hover {
-  color: var(--soft-white);
+.buttonBlack {
   background-color: var(--soft-black);
+  color: var(--soft-white);
+}
+.buttonWhite {
+  background-color: var(--soft-white);
+  color: var(--soft-black);
+}
+.buttonBlack:hover {
+  background-color: var(--soft-white);
+  color: var(--soft-black);
 }
 .buttonWhite:hover {
-  color: var(--soft-black);
-  background-color: var(--soft-white);
+  background-color: var(--soft-black);
+  color: var(--soft-white);
 }
 
 svg {
-  margin-left: 0.5rem;
-  width: 1.25rem;
+  width: 1.5rem;
   fill: currentColor;
 }
+
 h1 {
   text-align: left;
   font-size: 2.5rem;
