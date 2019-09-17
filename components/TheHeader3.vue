@@ -1,24 +1,27 @@
 <template>
   <header>
     <div class="hwrapper">
-      <TheHeader3H1
-        :color="color"
-        v-if="isHome"
-      ></TheHeader3H1>
-      <router-link
-        class="hover-text-decoration-none"
-        to="/"
-        v-else
-      >
+      <TheHeader3H1 :color="color" v-if="isHome"></TheHeader3H1>
+      <router-link class="hover-text-decoration-none" to="/" v-else>
         <TheHeader3H1 :color="color"></TheHeader3H1>
       </router-link>
       <h2
-        :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
-      >Winter Solstice 2019</h2>
+        :class="{
+          'soft-black': color === 'black',
+          'soft-white': color === 'white'
+        }"
+      >
+        Winter Solstice 2019
+      </h2>
       <h2
-        :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
+        :class="{
+          'soft-black': color === 'black',
+          'soft-white': color === 'white'
+        }"
         class="mt1"
-      >Maurice, LA</h2>
+      >
+        Maurice, LA
+      </h2>
       <!-- <h2
         :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
       >Winter Solstice &sdot; December 21, 2019</h2>
@@ -30,7 +33,12 @@
       >December 21, 2019</h2>-->
     </div>
     <button
-      :class="{'soft-black': color === 'black', 'soft-white': color === 'white', buttonBlack: color === 'black', buttonWhite: color === 'white' }"
+      :class="{
+        'soft-black': color === 'black',
+        'soft-white': color === 'white',
+        buttonBlack: color === 'black',
+        buttonWhite: color === 'white'
+      }"
       @click="showNavMobile = !showNavMobile"
     >
       Menu
@@ -40,7 +48,11 @@
         />
       </svg>
     </button>
-    <TheNavMobile3 v-on:close="showNavMobile = !showNavMobile" :class="{show: showNavMobile}" :color="color"></TheNavMobile3>
+    <TheNavMobile3
+      v-on:close="showNavMobile = !showNavMobile"
+      :class="{ show: showNavMobile }"
+      :color="color"
+    ></TheNavMobile3>
     <!-- <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" /> -->
     <!-- <TheNavHeader3
       :color="color"
@@ -91,7 +103,7 @@ export default {
   },
   watch: {
     $route() {
-      this.$set(this, 'showNavMobile', false);
+      this.$set(this, "showNavMobile", false);
     }
   }
 };
@@ -121,11 +133,11 @@ button {
   display: flex;
   align-self: flex-start;
   align-items: center;
-  border: 1px solid currentColor;
+  border: none;
   font-family: inherit;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
-  font-variant: small-caps;
+  /* font-variant: small-caps; */
   text-decoration: none;
   cursor: default;
   background-color: transparent;
@@ -134,18 +146,16 @@ button {
 
 .buttonBlack:hover {
   color: var(--soft-white);
-  border-color: var(--soft-white);
   background-color: var(--soft-black);
 }
 .buttonWhite:hover {
   color: var(--soft-black);
-  border-color: var(--soft-white);
   background-color: var(--soft-white);
 }
 
 svg {
-  margin-left: 0.25rem;
-  width: 1rem;
+  margin-left: 0.5rem;
+  width: 1.25rem;
   fill: currentColor;
 }
 h1 {
