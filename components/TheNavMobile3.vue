@@ -1,22 +1,22 @@
 <template>
   <nav ref="nav">
     <div class="flex justify-end">
-      <button
-        @click="close"
-      >
-        <svg viewBox="0 0 320 512"><path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"/></svg>
+      <button @click="close">
+        <svg viewBox="0 0 320 512">
+          <path
+            d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"
+          />
+        </svg>
       </button>
     </div>
     <ul class="list-reset mb0">
-      <li
-        :key="i"
-        v-for="(page, i) in pages"
-      >
+      <li :key="i" v-for="(page, i) in pages">
         <router-link
-          :class="{active: page.path === currentPath}"
+          :class="{ active: page.path === currentPath }"
           :to="page.path"
           class="button"
-        >{{ page.text }}</router-link>
+          >{{ page.text }}</router-link
+        >
       </li>
     </ul>
   </nav>
@@ -46,12 +46,12 @@ export default {
   },
   methods: {
     close() {
-      this.$emit('close');
+      this.$emit("close");
     }
   },
   watch: {
     $route() {
-      this.$refs.nav.classList.remove('show');
+      this.$refs.nav.classList.remove("show");
     }
   }
 };
@@ -66,13 +66,13 @@ nav {
   width: calc(75% - 1rem);
   z-index: 10;
   background-color: var(--soft-black);
-  padding: .5rem;
+  padding: 0.5rem;
   margin-right: calc(-75% - 1rem);
   /* margin-right: calc(-100% - 1rem); */
   transition: all 0.3s ease 0s;
 }
 
-nav.show{
+nav.show {
   margin-right: 0;
   transition: all 0.3s ease 0s;
 }
