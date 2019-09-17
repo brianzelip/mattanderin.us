@@ -9,8 +9,8 @@
         </svg>
       </button>
     </div>
-    <ul class="list-reset mb0">
-      <li :key="i" v-for="(page, i) in pages">
+    <ul class="list-reset mb0 flex flex-wrap">
+      <li :key="i" v-for="(page, i) in pages" class="col-6">
         <router-link
           :class="{ active: page.path === currentPath }"
           :to="page.path"
