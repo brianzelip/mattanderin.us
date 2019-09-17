@@ -64,6 +64,7 @@ nav {
   right: 0;
   /* width: calc(100% - 1rem); */
   width: calc(75% - 1rem);
+  height: 100vh;
   z-index: 10;
   background-color: var(--soft-black);
   padding: 0.5rem;
