@@ -1,5 +1,5 @@
 <template>
-  <header :class="{ borderBottom: !isHome }">
+  <header :class="{ boxShadow: !isHome }">
     <div class="hwrapper">
       <TheHeader3H1
         :color="color"
@@ -111,13 +111,26 @@ export default {
 header {
   position: relative;
   padding: 1rem;
-  /* display: flex;
-  justify-content: space-between; */
-  /* align-items: center; */
+  box-shadow: 0 1px var(--soft-black);
 }
-.borderBottom {
-  border-bottom: 1px solid var(--soft-black);
+
+@media (min-width: 960px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
 }
+
+.boxShadow {
+  box-shadow: 0 1px var(--soft-black);
+}
+@media (min-width: 960px) {
+  .boxShadow {
+    box-shadow: none;
+  }
+}
+
 .hwrapper {
   display: flex;
   flex-direction: column;
