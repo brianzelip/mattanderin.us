@@ -160,12 +160,22 @@ h1 {
   font-size: 2.5rem;
   flex-shrink: 0;
 }
+
 p {
   margin: 0;
   font-size: 1rem;
   line-height: 1;
   font-weight: 400;
   text-align: left;
+}
+
+@media (min-width: 780px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
 }
 .date::after {
   content: "Winter Solstice 2019";
