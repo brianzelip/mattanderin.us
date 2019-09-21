@@ -8,7 +8,7 @@
     ></TheHeader3>
     <component
       :is="component"
-      class="col-12 p1"
+      class="col-12 p2"
     ></component>
   </section>
 </template>
