@@ -12,19 +12,22 @@
       >
         <TheHeader3H1 :color="color"></TheHeader3H1>
       </router-link>
-      <h2
+      <h2 class="hide">Winter Solstice, December 21, 2019</h2>
+      <h2 class="hide">Maurice, Louisiana</h2>
+      <p
         :class="{
           'soft-black': color === 'black',
           'soft-white': color === 'white'
         }"
-      >Winter Solstice 2019</h2>
-      <h2
+        class="date"
+      ></p>
+      <p
         :class="{
           'soft-black': color === 'black',
           'soft-white': color === 'white'
         }"
-        class="mt1"
-      >Maurice, LA</h2>
+        class="mt1 place"
+      ></p>
       <!-- <h2
         :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
       >Winter Solstice &sdot; December 21, 2019</h2>
@@ -154,12 +157,27 @@ h1 {
   font-size: 2.5rem;
   flex-shrink: 0;
 }
-h2 {
+p {
   margin: 0;
   font-size: 1rem;
   line-height: 1;
   font-weight: 400;
   text-align: left;
+}
+.date::after {
+  content: "Winter Solstice 2019";
+}
+.place::after {
+  content: "Maurice, LA";
+}
+
+@media (min-width: 480px) {
+  .date::after {
+    content: "Winter Solstice, December 21, 2019";
+  }
+  .place::after {
+    content: "Maurice, Lousiana";
+  }
 }
 
 .h2wrapper {
