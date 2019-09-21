@@ -42,6 +42,7 @@ Deciding to play around with the main header and nav layout after looking throug
     - tablet
     - then desktop
     - then larger desktop? (I think Matt has some wide monitors)
+  - Commit at which the nav mobile header is right for smallest viewport: #5b13b8c4
 
 ### 1.1.2. Added
 
