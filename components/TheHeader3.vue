@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :class="{ borderBottom: !isHome }">
     <div class="hwrapper">
       <TheHeader3H1
         :color="color"
@@ -114,6 +114,9 @@ header {
   /* display: flex;
   justify-content: space-between; */
   /* align-items: center; */
+}
+.borderBottom {
+  border-bottom: 1px solid var(--soft-black);
 }
 .hwrapper {
   display: flex;
