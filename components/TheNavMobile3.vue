@@ -74,6 +74,7 @@ nav {
   margin-right: calc(-75% - 1rem);
   /* margin-right: calc(-100% - 1rem); */
   transition: all 0.3s ease 0s;
+  box-shadow: 0 0 12px 2px rgba(51, 34, 34, 0.7);
 }
 
 nav.show {
