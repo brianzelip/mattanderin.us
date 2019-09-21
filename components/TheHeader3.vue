@@ -171,10 +171,10 @@ p {
   content: "Maurice, LA";
 }
 
-@media (min-width: 480px) {
+@media (min-width: 30em) {
   .date::after {
-    content: "Winter Solstice, December 21, 2019";
-  }
+    content: "Winter Solstice \22C5  December 21, 2019";
+  } /* U+22C5 is unicode for &sdot; */
   .place::after {
     content: "Maurice, Lousiana";
   }
