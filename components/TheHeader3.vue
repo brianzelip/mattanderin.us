@@ -1,8 +1,15 @@
 <template>
   <header>
     <div class="hwrapper">
-      <TheHeader3H1 :color="color" v-if="isHome"></TheHeader3H1>
-      <router-link class="hover-text-decoration-none" to="/" v-else>
+      <TheHeader3H1
+        :color="color"
+        v-if="isHome"
+      ></TheHeader3H1>
+      <router-link
+        class="hover-text-decoration-none"
+        to="/"
+        v-else
+      >
         <TheHeader3H1 :color="color"></TheHeader3H1>
       </router-link>
       <h2
@@ -10,18 +17,14 @@
           'soft-black': color === 'black',
           'soft-white': color === 'white'
         }"
-      >
-        Winter Solstice 2019
-      </h2>
+      >Winter Solstice 2019</h2>
       <h2
         :class="{
           'soft-black': color === 'black',
           'soft-white': color === 'white'
         }"
         class="mt1"
-      >
-        Maurice, LA
-      </h2>
+      >Maurice, LA</h2>
       <!-- <h2
         :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
       >Winter Solstice &sdot; December 21, 2019</h2>
@@ -32,15 +35,7 @@
         :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
       >December 21, 2019</h2>-->
     </div>
-    <button
-      :class="{
-        'soft-black': color === 'black',
-        'soft-white': color === 'white',
-        buttonBlack: color === 'black',
-        buttonWhite: color === 'white'
-      }"
-      @click="showNavMobile = !showNavMobile"
-    >
+    <button @click="showNavMobile = !showNavMobile">
       <svg viewBox="0 0 448 512">
         <path
           d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"
@@ -48,9 +43,9 @@
       </svg>
     </button>
     <TheNavMobile3
-      v-on:close="showNavMobile = !showNavMobile"
       :class="{ show: showNavMobile }"
       :color="color"
+      v-on:close="showNavMobile = !showNavMobile"
     ></TheNavMobile3>
     <!-- <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" /> -->
     <!-- <TheNavHeader3
@@ -139,24 +134,14 @@ button {
   border: none;
   text-decoration: none;
   cursor: default;
+  background-color: var(--soft-black);
+  color: var(--soft-white);
   -webkit-appearance: none;
 }
 
-.buttonBlack {
-  background-color: var(--soft-black);
-  color: var(--soft-white);
-}
-.buttonWhite {
+button:hover {
   background-color: var(--soft-white);
   color: var(--soft-black);
-}
-.buttonBlack:hover {
-  background-color: var(--soft-white);
-  color: var(--soft-black);
-}
-.buttonWhite:hover {
-  background-color: var(--soft-black);
-  color: var(--soft-white);
 }
 
 svg {
