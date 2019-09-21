@@ -10,13 +10,16 @@
       </button>
     </div>
     <ul class="list-reset mb0 flex flex-wrap">
-      <li :key="i" v-for="(page, i) in pages" class="col-6">
+      <li
+        :key="i"
+        class="col-6"
+        v-for="(page, i) in pages"
+      >
         <router-link
           :class="{ active: page.path === currentPath }"
           :to="page.path"
           class="button"
-          >{{ page.text }}</router-link
-        >
+        >{{ page.text }}</router-link>
       </li>
     </ul>
   </nav>
@@ -67,7 +70,7 @@ nav {
   height: 100vh;
   z-index: 10;
   background-color: var(--soft-black);
-  padding: 0.5rem;
+  padding: 1rem;
   margin-right: calc(-75% - 1rem);
   /* margin-right: calc(-100% - 1rem); */
   transition: all 0.3s ease 0s;
@@ -80,7 +83,7 @@ nav.show {
 
 button {
   margin: 0.25rem 0 0 0; /* top margin for better look */
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 1rem;
   height: auto;
   display: flex;
   align-self: flex-start;
