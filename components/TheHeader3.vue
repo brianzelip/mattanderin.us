@@ -114,15 +114,6 @@ export default {
 header {
   position: relative;
   padding: 1rem;
-  box-shadow: 0 1px var(--soft-black);
-}
-
-@media (min-width: 960px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-  }
 }
 
 .boxShadow {
