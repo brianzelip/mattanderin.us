@@ -70,7 +70,7 @@ nav {
   height: 100vh;
   z-index: 10;
   background-color: var(--soft-black);
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   margin-right: calc(-75% - 1rem);
   /* margin-right: calc(-100% - 1rem); */
   transition: all 0.3s ease 0s;
