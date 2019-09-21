@@ -38,7 +38,10 @@
         :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
       >December 21, 2019</h2>-->
     </div>
-    <button @click="showNavMobile = !showNavMobile">
+    <button
+      @click="showNavMobile = !showNavMobile"
+      class="mobileNav"
+    >
       <svg viewBox="0 0 448 512">
         <path
           d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"
@@ -229,5 +232,11 @@ p {
 hr {
   height: 4px;
   border: none;
+}
+
+@media (min-width: 960px) {
+  .mobileNav {
+    display: none;
+  }
 }
 </style>
