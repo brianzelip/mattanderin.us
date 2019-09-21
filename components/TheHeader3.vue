@@ -107,7 +107,7 @@ export default {
 <style scoped>
 header {
   position: relative;
-  padding: 0.5rem;
+  padding: 1rem;
   /* display: flex;
   justify-content: space-between; */
   /* align-items: center; */
@@ -119,8 +119,8 @@ header {
 
 button {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 1rem;
+  right: 1rem;
   margin: 0.25rem 0 0 0; /* top margin for better look */
   padding: 0;
   display: flex;
