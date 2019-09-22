@@ -179,7 +179,8 @@ svg {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-bottom: -0.5rem;
   flex-shrink: 0;
 }
 @media screen and (min-width: 780px) {
@@ -194,7 +195,8 @@ h1 {
 }
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 4.75rem;
+    font-size: 5.75rem;
+    margin-bottom: -1rem;
   }
 }
 
