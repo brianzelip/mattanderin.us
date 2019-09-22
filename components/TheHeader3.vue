@@ -209,14 +209,14 @@ p:nth-of-type(1) {
   }
 }
 @media screen and (min-width: 960px) {
-  p:nth-of-type(1) {
-    margin-bottom: 0.5em;
-  }
   p:nth-of-type(2) {
     margin-bottom: 0.75em;
   }
 }
 @media screen and (min-width: 1024px) {
+  p:nth-of-type(1) {
+    margin-bottom: 0.5em;
+  }
   p {
     font-size: 1.5rem;
   }
