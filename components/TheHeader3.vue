@@ -45,13 +45,12 @@
       v-on:close="showNavMobile = !showNavMobile"
     ></TheNavMobile3>
     <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" />
-    <!-- <TheNavHeader3
+    <TheNavHeader3
       :color="color"
       class="col-12 md-show"
       v-on:add-margin-bottom="setMarginBottom"
       v-on:reset-margin-bottom="resetMarginBottom"
     ></TheNavHeader3>
-    <TheNavMobile class="md-hide"></TheNavMobile>-->
   </header>
 </template>
 
@@ -207,8 +206,7 @@ p {
 .place::after {
   content: "Maurice, LA";
 }
-
-@media (min-width: 30em) {
+@media (min-width: 480px) {
   .date::after {
     content: "Winter Solstice \22C5  December 21, 2019";
   } /* U+22C5 is unicode for &sdot; */
@@ -217,30 +215,16 @@ p {
   }
 }
 
-.h2wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-/* @media (min-width: 40em) {
-  h1 {
-    font-size: 4.75rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-} */
-
 .sup {
   font-size: 0.83em;
   vertical-align: super;
   margin-left: -0.3rem;
 }
+
 hr {
   display: none;
   border: none;
 }
-
 @media (min-width: 960px) {
   hr {
     display: block;
