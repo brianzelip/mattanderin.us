@@ -106,12 +106,12 @@ header {
   display: block;
   padding: 1rem;
 }
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
   header {
     display: inline-block;
   }
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   header {
     padding: 2rem;
   }
@@ -120,7 +120,7 @@ header {
 .boxShadow {
   box-shadow: 0 1px var(--soft-black);
 }
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
   .boxShadow {
     box-shadow: none;
   }
@@ -130,7 +130,7 @@ header {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
   .hwrapper {
     display: block;
   }
@@ -172,12 +172,12 @@ h1 {
   font-size: 2.5rem;
   flex-shrink: 0;
 }
-@media (min-width: 780px) {
+@media screen and (min-width: 780px) {
   h1 {
     font-size: 3rem;
   }
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   h1 {
     font-size: 4.75rem;
   }
@@ -190,12 +190,12 @@ p {
   line-height: 1;
   font-weight: 400;
 }
-@media (min-width: 780px) {
+@media screen and (min-width: 780px) {
   p {
     font-size: 1.25rem;
   }
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   p {
     font-size: 1.5rem;
   }
@@ -206,7 +206,7 @@ p {
 .place {
   margin-bottom: 0;
 }
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
   .place {
     margin-bottom: 0.5em;
   }
@@ -214,7 +214,7 @@ p {
 .place::after {
   content: "Maurice, LA";
 }
-@media (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .date::after {
     content: "Winter Solstice \22C5  December 21, 2019";
   } /* U+22C5 is unicode for &sdot; */
@@ -233,14 +233,14 @@ hr {
   display: none;
   border: none;
 }
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
   hr {
     display: block;
     height: 4px;
   }
 }
 
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
   .mobileNav {
     display: none;
   }
@@ -250,7 +250,7 @@ hr {
   display: none;
 }
 
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
   .desktopNav {
     display: block;
   }

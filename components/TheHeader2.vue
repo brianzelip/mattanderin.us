@@ -5,7 +5,7 @@
   >
     <div class="flex-grow mr2">
       <h1 class="m0 regular Italianno lh1">
-      Erin
+        Erin
         <span class="mx2">&amp;</span> Matt
       </h1>
       <h2 class="mt0 regular lh1">
@@ -65,7 +65,7 @@ h2 {
   font-size: 1rem;
 }
 
-@media (min-width: 40em) {
+@media screen and (min-width: 40em) {
   h1 {
     font-size: 4rem;
   }
@@ -80,9 +80,9 @@ h2 {
   margin-left: -0.3rem;
 }
 
-.container{
-  max-width:64rem;
-  margin-left:auto;
-  margin-right:auto;
+.container {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
