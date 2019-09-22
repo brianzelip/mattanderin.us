@@ -47,7 +47,7 @@
     <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" />
     <TheNavHeader3
       :color="color"
-      class="col-12 md-show"
+      class="desktopNav"
       v-on:add-margin-bottom="setMarginBottom"
       v-on:reset-margin-bottom="resetMarginBottom"
     ></TheNavHeader3>
@@ -235,6 +235,16 @@ hr {
 @media (min-width: 960px) {
   .mobileNav {
     display: none;
+  }
+}
+
+.desktopNav {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .desktopNav {
+    display: block;
   }
 }
 </style>
