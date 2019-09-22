@@ -2,7 +2,7 @@
   <main>
     <section>
       <h1 class="mt0 regular center">Bridesmaids</h1>
-      <ul class="list-reset">
+      <ul class="list-reset mb0">
         <li class="pb2">
           <h2>
             Cassie Holden
@@ -73,7 +73,7 @@
             <p class="h3"></p>
           </div>
         </li>
-        <li class="pb2">
+        <li class>
           <h2>Abbie Sackmann-Zelip</h2>
           <div class="flex">
             <p class="h3"></p>
@@ -84,7 +84,7 @@
     <hr />
     <section>
       <h1 class="mt0 pt2 center">The Dudes</h1>
-      <ul class="list-reset">
+      <ul class="list-reset mb0">
         <li class="pb2">
           <h2>Dude One: Mark "Bud" Sackmann</h2>
           <div class="flex">
@@ -109,7 +109,7 @@
             <p class="h3"></p>
           </div>
         </li>
-        <li class="pb2">
+        <li class>
           <h2>Dude Five: Skip "I heard everything you said about me, kids" Shannon</h2>
           <div class="flex">
             <p class="h3"></p>
