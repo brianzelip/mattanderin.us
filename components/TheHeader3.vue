@@ -182,6 +182,11 @@ h1 {
     font-size: 3rem;
   }
 }
+@media screen and (min-width: 960px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: 4.75rem;
@@ -190,14 +195,25 @@ h1 {
 
 p {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0;
   font-size: 1rem;
   line-height: 1;
   font-weight: 400;
 }
+p:nth-of-type(1) {
+  margin-bottom: 0.25rem;
+}
 @media screen and (min-width: 780px) {
   p {
     font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  p:nth-of-type(1) {
+    margin-bottom: 0.5em;
+  }
+  p:nth-of-type(2) {
+    margin-bottom: 0.75em;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -207,14 +223,6 @@ p {
 }
 .date::after {
   content: "Winter Solstice 2019";
-}
-.place {
-  margin-bottom: 0;
-}
-@media screen and (min-width: 960px) {
-  .place {
-    margin-bottom: 0.5em;
-  }
 }
 .place::after {
   content: "Maurice, LA";
