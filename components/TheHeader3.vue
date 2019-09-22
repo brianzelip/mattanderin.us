@@ -203,6 +203,14 @@ p {
 .date::after {
   content: "Winter Solstice 2019";
 }
+.place {
+  margin-bottom: 0;
+}
+@media (min-width: 960px) {
+  .place {
+    margin-bottom: 0.5em;
+  }
+}
 .place::after {
   content: "Maurice, LA";
 }
