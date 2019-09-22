@@ -43,6 +43,13 @@ Deciding to play around with the main header and nav layout after looking throug
     - then desktop
     - then larger desktop? (I think Matt has some wide monitors)
   - Commit at which the nav mobile header is right for smallest viewport: #5b13b8c4
+  - Created the following breakpoints
+    - (min-width: 480px)
+    - (min-width: 780px)
+    - (min-width: 960px)
+    - (min-width: 1024px)
+    - (min-width: 960px) and (min-height: 550px)
+  - Commit #facc00fbc contains what I think is the finalization of the responsive branch work 🎉
 
 ### 1.1.2. Added
 
