@@ -185,7 +185,8 @@ h1 {
 }
 @media screen and (min-width: 780px) {
   h1 {
-    font-size: 3rem;
+    font-size: 3.75rem;
+    margin-bottom: -0.75rem;
   }
 }
 @media screen and (min-width: 960px) {
