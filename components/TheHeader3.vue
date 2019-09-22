@@ -53,7 +53,7 @@
       :color="color"
       v-on:close="showNavMobile = !showNavMobile"
     ></TheNavMobile3>
-    <!-- <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" /> -->
+    <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" />
     <!-- <TheNavHeader3
       :color="color"
       class="col-12 md-show"
@@ -219,10 +219,16 @@ p {
   vertical-align: super;
   margin-left: -0.3rem;
 }
-
 hr {
-  height: 4px;
+  display: none;
   border: none;
+}
+
+@media (min-width: 960px) {
+  hr {
+    display: block;
+    height: 4px;
+  }
 }
 
 @media (min-width: 960px) {
