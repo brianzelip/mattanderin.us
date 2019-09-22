@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <main>
     <div class="container">
       <h1 class="mt0 regular center">Location</h1>
       <iframe
@@ -7,7 +7,7 @@
         src="https://www.google.com/maps/d/embed?mid=1tKvU6oM7yrNEbl4Hk-D7yz4O3Sw&z=11"
       ></iframe>
     </div>
-  </article>
+  </main>
 </template>
 
 <style scoped>

@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <main>
     <div class="container">
       <h1 class="mt0 regular center">Honeymoon Fund</h1>
       <p
@@ -9,5 +9,5 @@
         class="h3"
       >Right now, we are thinking of taking a cruise or flying to somewhere in the Caribbean where we can lay out on the beach for a while. Still searching for the best deal. It's in the works."</p>
     </div>
-  </article>
+  </main>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <main>
     <div class="container">
       <h1 class="mt0 regular center">RSVP</h1>
       <p class="h3 center">You can respond for yourself and others in your party.</p>
@@ -119,7 +119,7 @@
         >Submit</button>
       </form>
     </div>
-  </article>
+  </main>
 </template>
 
 <script>
