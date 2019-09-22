@@ -6,7 +6,7 @@
     ></TheHeader3>
     <component
       :is="component"
-      class="col-12 p2"
+      class="component"
     ></component>
   </section>
 </template>
@@ -82,6 +82,21 @@ export default {
     position: sticky;
     top: 0;
     align-self: flex-start;
+  }
+}
+
+.component {
+  width: 100%;
+  padding: 1rem;
+}
+@media screen and (min-width: 960px) {
+  .component {
+    padding: 1.5rem 1.5rem 1.5rem 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .component {
+    padding: 2rem 2rem 2rem 0;
   }
 }
 </style>
