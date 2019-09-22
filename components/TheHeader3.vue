@@ -28,15 +28,6 @@
         }"
         class="place"
       ></p>
-      <!-- <h2
-        :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
-      >Winter Solstice &sdot; December 21, 2019</h2>
-      <h2
-        :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
-      >Maurice, Louisiana</h2>-->
-      <!-- <h2
-        :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
-      >December 21, 2019</h2>-->
     </div>
     <button
       @click="showNavMobile = !showNavMobile"
