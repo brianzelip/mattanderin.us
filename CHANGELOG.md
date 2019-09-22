@@ -50,6 +50,7 @@ Deciding to play around with the main header and nav layout after looking throug
     - (min-width: 1024px)
     - (min-width: 960px) and (min-height: 550px)
   - Commit #facc00fbc contains what I think is the finalization of the responsive branch work 🎉
+  - M & E like the Italianno font for the site <h1> better than the italicized Baskerville. The h1 font-size and margin-bottom needed tweaking with the different font at each breakpoint. See commit #862e8a729 for finalized design for review by M & E.
 
 ### 1.1.2. Added
 
