@@ -45,12 +45,12 @@
       v-on:close="showNavMobile = !showNavMobile"
     ></TheNavMobile3>
     <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" />
-    <TheNavHeader3
+    <TheNav3
       :color="color"
       class="desktopNav"
       v-on:add-margin-bottom="setMarginBottom"
       v-on:reset-margin-bottom="resetMarginBottom"
-    ></TheNavHeader3>
+    ></TheNav3>
   </header>
 </template>
 
@@ -60,7 +60,7 @@ import TheHeader3H1 from "./TheHeader3H1.vue";
 import TheNavMobile from "./TheNavMobile.vue";
 import TheNavMobile3 from "./TheNavMobile3.vue";
 import TheNav from "./TheNav.vue";
-import TheNavHeader3 from "./TheNavHeader3.vue";
+import TheNav3 from "./TheNav3.vue";
 
 export default {
   props: ["black", "white", "color"],
@@ -76,7 +76,7 @@ export default {
     TheNavMobile,
     TheNavMobile3,
     TheNav,
-    TheNavHeader3
+    TheNav3
   },
   computed: {
     isHome() {
