@@ -1,10 +1,8 @@
 <template>
   <section>
-    <!-- TheHero HEADER HAD class="inline-block" for desktop -->
-    <!-- TheHero HEADER NEEDS color="white"  -->
     <TheHeader3
+      :color="isHome ? 'white' : 'black'"
       class="header"
-      color="black"
     ></TheHeader3>
     <component
       :is="component"
@@ -56,6 +54,11 @@ export default {
     TheHoneymoonFund3,
     TheSlideShow3,
     TheRSVP3
+  },
+  computed: {
+    isHome() {
+      return this.$route.name === "home";
+    }
   }
 };
 </script>
