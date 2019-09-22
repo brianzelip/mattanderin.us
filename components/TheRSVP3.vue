@@ -1,124 +1,122 @@
 <template>
   <main>
-    <div class="container">
-      <h1 class="mt0 regular center">RSVP</h1>
-      <p class="h3 center">You can respond for yourself and others in your party.</p>
-      <p class="h3 center">We'll email you a copy of your response.</p>
-      <form
-        class="col-5 mx-auto p2 border rounded"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        method="POST"
-        name="RSVP"
-        v-on:submit.prevent="handleSubmit"
-      >
+    <h1 class="mt0 regular center">RSVP</h1>
+    <p class="h3 center">You can respond for yourself and others in your party.</p>
+    <p class="h3 center">We'll email you a copy of your response.</p>
+    <form
+      class="mx-auto p2 border rounded"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      method="POST"
+      name="RSVP"
+      v-on:submit.prevent="handleSubmit"
+    >
+      <input
+        name="form-name"
+        type="hidden"
+        value="RSVP"
+      />
+      <section id="userEmail">
+        <label
+          class="block mb1"
+          for="email"
+        >Your email address</label>
         <input
-          name="form-name"
-          type="hidden"
-          value="RSVP"
+          class="col-12 field"
+          id="email"
+          required
+          type="email"
+          v-model.trim="email"
         />
-        <section id="userEmail">
-          <label
-            class="block mb1"
-            for="email"
-          >Your email address</label>
-          <input
-            class="col-12 field"
-            id="email"
-            required
-            type="email"
-            v-model.trim="email"
-          />
-        </section>
-        <section
-          class="mt3"
-          id="partySize"
-        >
-          <label
-            class="block mb1"
-            for="partyOf"
-          >Number of people in your party</label>
-          <input
-            class="field"
-            id="partyOf"
-            required
-            type="number"
-            v-model.number="partyOf"
-          />
-        </section>
+      </section>
+      <section
+        class="mt3"
+        id="partySize"
+      >
+        <label
+          class="block mb1"
+          for="partyOf"
+        >Number of people in your party</label>
+        <input
+          class="field"
+          id="partyOf"
+          required
+          type="number"
+          v-model.number="partyOf"
+        />
+      </section>
 
-        <section
-          class="mt3"
-          id="guestNames"
-          v-if="partyOf > 0"
-        >
-          <ol class="list-reset mb0">
-            <li
-              :key="i"
-              class="flex mb2 border p1 rounded"
-              v-for="(guest, i) in partyOf"
-            >
-              <p class="mb0 mr1 guestNum">{{ i + 1 }}</p>
-              <div class="col-12">
-                <label
-                  :for="`guest-${i+1}`"
-                  class="vertical-align-unset"
-                >Full name</label>
-                <input
-                  :id="`guest-${i+1}`"
-                  class="col-12 field"
-                  placeholder="First Last"
-                  required
-                  type="text"
-                  v-on:input="editGuest"
-                />
-              </div>
-            </li>
-          </ol>
-        </section>
+      <section
+        class="mt3"
+        id="guestNames"
+        v-if="partyOf > 0"
+      >
+        <ol class="list-reset mb0">
+          <li
+            :key="i"
+            class="flex mb2 border p1 rounded"
+            v-for="(guest, i) in partyOf"
+          >
+            <p class="mb0 mr1 guestNum">{{ i + 1 }}</p>
+            <div class="col-12">
+              <label
+                :for="`guest-${i+1}`"
+                class="vertical-align-unset"
+              >Full name</label>
+              <input
+                :id="`guest-${i+1}`"
+                class="col-12 field"
+                placeholder="First Last"
+                required
+                type="text"
+                v-on:input="editGuest"
+              />
+            </div>
+          </li>
+        </ol>
+      </section>
 
-        <section
-          class="mt3"
-          id="dietaryRestrictions"
-          v-if="partyOf > 0"
-        >
-          <label
-            class="block mb1"
-            for="dietary"
-          >Please list any dietary restrictions</label>
-          <textarea
-            class="field col-12"
-            id="dietary"
-            name="dietary"
-            rows="3"
-            v-model="dietary"
-          ></textarea>
-        </section>
+      <section
+        class="mt3"
+        id="dietaryRestrictions"
+        v-if="partyOf > 0"
+      >
+        <label
+          class="block mb1"
+          for="dietary"
+        >Please list any dietary restrictions</label>
+        <textarea
+          class="field col-12"
+          id="dietary"
+          name="dietary"
+          rows="3"
+          v-model="dietary"
+        ></textarea>
+      </section>
 
-        <section
-          class="mt3"
-          id="otherComments"
-          v-if="partyOf > 0"
-        >
-          <label
-            class="block mb1"
-            for="comments"
-          >Other comments</label>
-          <textarea
-            class="field col-12"
-            id="comments"
-            name="comments"
-            rows="3"
-            v-model="comments"
-          ></textarea>
-        </section>
-        <button
-          class="mt3 btn btn-primary regular"
-          type="submit"
-          v-if="partyOf > 0"
-        >Submit</button>
-      </form>
-    </div>
+      <section
+        class="mt3"
+        id="otherComments"
+        v-if="partyOf > 0"
+      >
+        <label
+          class="block mb1"
+          for="comments"
+        >Other comments</label>
+        <textarea
+          class="field col-12"
+          id="comments"
+          name="comments"
+          rows="3"
+          v-model="comments"
+        ></textarea>
+      </section>
+      <button
+        class="mt3 btn btn-primary regular"
+        type="submit"
+        v-if="partyOf > 0"
+      >Submit</button>
+    </form>
   </main>
 </template>
 
