@@ -113,6 +113,7 @@ export default {
 <style scoped>
 header {
   position: relative;
+  display: block;
   padding: 1rem;
 }
 
@@ -120,6 +121,9 @@ header {
   box-shadow: 0 1px var(--soft-black);
 }
 @media (min-width: 960px) {
+  header {
+    display: inline-block;
+  }
   .boxShadow {
     box-shadow: none;
   }
