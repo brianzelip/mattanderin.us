@@ -106,6 +106,11 @@ header {
   display: block;
   padding: 1rem;
 }
+@media screen and (min-width: 780px) {
+  header {
+    padding: 1.5rem;
+  }
+}
 @media screen and (min-width: 960px) {
   header {
     display: inline-block;
