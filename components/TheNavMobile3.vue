@@ -72,11 +72,18 @@ nav {
   z-index: 10;
   background-color: var(--soft-black);
   transition: all 0.3s ease 0s;
-  box-shadow: 0 0 12px 2px rgba(51, 34, 34, 0.7);
+}
+@media screen and (min-width: 780px) {
+  nav {
+    width: calc(75% - 1.5rem);
+    padding: 1.5rem;
+    margin-right: calc(-75% - 1.5rem);
+  }
 }
 
 nav.show {
   margin-right: 0;
+  box-shadow: 0 0 12px 2px rgba(51, 34, 34, 0.7);
   transition: all 0.3s ease 0s;
 }
 
