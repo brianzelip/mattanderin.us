@@ -169,13 +169,21 @@ h1 {
 }
 
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
   font-size: 1rem;
   line-height: 1;
   font-weight: 400;
-  text-align: left;
 }
 
+@media (min-width: 780px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
 @media (min-width: 780px) {
   h1 {
     font-size: 3rem;
