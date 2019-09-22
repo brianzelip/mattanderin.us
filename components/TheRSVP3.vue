@@ -205,6 +205,15 @@ export default {
 </script>
 
 <style scoped>
+form {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  form {
+    width: 75%;
+  }
+}
+
 input,
 textarea {
   border-color: var(--soft-black);
