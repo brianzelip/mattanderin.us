@@ -26,7 +26,7 @@
           'soft-black': color === 'black',
           'soft-white': color === 'white'
         }"
-        class="mt1 place"
+        class="place"
       ></p>
       <!-- <h2
         :class="{'soft-black': color === 'black', 'soft-white': color === 'white'}"
@@ -116,14 +116,21 @@ header {
   display: block;
   padding: 1rem;
 }
+@media (min-width: 960px) {
+  header {
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 2rem;
+  }
+}
 
 .boxShadow {
   box-shadow: 0 1px var(--soft-black);
 }
 @media (min-width: 960px) {
-  header {
-    display: inline-block;
-  }
   .boxShadow {
     box-shadow: none;
   }
@@ -132,6 +139,11 @@ header {
 .hwrapper {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 960px) {
+  .hwrapper {
+    display: block;
+  }
 }
 
 button {
@@ -167,9 +179,18 @@ svg {
 }
 
 h1 {
-  text-align: left;
   font-size: 2.5rem;
   flex-shrink: 0;
+}
+@media (min-width: 780px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4.75rem;
+  }
 }
 
 p {
@@ -179,21 +200,14 @@ p {
   line-height: 1;
   font-weight: 400;
 }
-
 @media (min-width: 780px) {
-  h1 {
-    font-size: 3rem;
-  }
   p {
     font-size: 1.25rem;
   }
 }
-@media (min-width: 780px) {
-  h1 {
-    font-size: 3rem;
-  }
+@media (min-width: 1024px) {
   p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 .date::after {
@@ -208,7 +222,7 @@ p {
     content: "Winter Solstice \22C5  December 21, 2019";
   } /* U+22C5 is unicode for &sdot; */
   .place::after {
-    content: "Maurice, Lousiana";
+    content: "Maurice, Louisiana";
   }
 }
 
