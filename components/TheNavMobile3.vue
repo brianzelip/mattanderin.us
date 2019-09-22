@@ -65,14 +65,12 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  /* width: calc(100% - 1rem); */
   width: calc(75% - 1rem);
   height: 100vh;
+  margin-right: calc(-75% - 1rem);
+  padding: 1rem 0.5rem;
   z-index: 10;
   background-color: var(--soft-black);
-  padding: 1rem 0.5rem;
-  margin-right: calc(-75% - 1rem);
-  /* margin-right: calc(-100% - 1rem); */
   transition: all 0.3s ease 0s;
   box-shadow: 0 0 12px 2px rgba(51, 34, 34, 0.7);
 }
@@ -94,7 +92,6 @@ button {
   font-size: 1rem;
   font-weight: 400;
   color: var(--soft-white);
-  /* font-variant: small-caps; */
   text-decoration: none;
   cursor: default;
   background-color: transparent;
@@ -107,7 +104,6 @@ button:hover {
 }
 
 svg {
-  /* margin-left: 0.25rem; */
   width: 1rem;
   fill: currentColor;
 }
