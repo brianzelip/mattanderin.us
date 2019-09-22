@@ -67,16 +67,21 @@ export default {
 /* this !SO answer helped w/ the align-self insight!
   https://stackoverflow.com/a/44446672/2145103 */
 
-section {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
+@media screen and (min-width: 960px) {
+  section {
+    display: flex;
+  }
 }
-.header {
-  /* flex-shrink: 0;
-  position: sticky;
-  top: 0;
-  align-self: flex-start; */
-  /* overflow-y: scroll; */
+@media screen and (min-width: 960px) {
+  .header {
+    flex-shrink: 0;
+  }
+}
+@media screen and (min-width: 960px) and (min-height: 550px) {
+  .header {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+  }
 }
 </style>
