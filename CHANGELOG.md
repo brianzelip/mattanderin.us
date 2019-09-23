@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.1. [0.11.0] - 2019-08-2
+## 1.1. [0.11.0] - 2019-09-23
 
 ### 1.1.1. Meta
 
@@ -24,6 +24,7 @@ Decided to remove the .bg-lighten class in favor of making the buttons on hover 
 Deciding to play around with the main header and nav layout after looking through 3rd party wedding site templates, etc.
 
 - thinking about a left top header and vertical left side navigation, which implies a vertical split of the overall desktop viewport into left and right panels, where the non-hero page content goes on the right side.
+
   - Refactored the header content into a single column div
     - changed the h1 font size and family to the body's Baskerville, but put it in italics
     - make two sets of h2 to stack on top of eachother
@@ -44,13 +45,14 @@ Deciding to play around with the main header and nav layout after looking throug
     - then larger desktop? (I think Matt has some wide monitors)
   - Commit at which the nav mobile header is right for smallest viewport: #5b13b8c4
   - Created the following breakpoints
-    - (min-width: 480px)
-    - (min-width: 780px)
-    - (min-width: 960px)
-    - (min-width: 1024px)
-    - (min-width: 960px) and (min-height: 550px)
+    - screen and (min-width: 480px)
+    - screen and (min-width: 780px)
+    - screen and (min-width: 960px)
+    - screen and (min-width: 1024px)
+    - screen and (min-width: 960px) and (min-height: 550px)
   - Commit #facc00fbc contains what I think is the finalization of the responsive branch work 🎉
   - M & E like the Italianno font for the site <h1> better than the italicized Baskerville. The h1 font-size and margin-bottom needed tweaking with the different font at each breakpoint. See commit #862e8a729 for finalized design for review by M & E.
+  - reverted the mobile nav toggle button to always have .bg-soft-black and .soft-white. The commit prior to this w/ the inverse colors on home page was #7778c1583.
 
 ### 1.1.2. Added
 
@@ -70,6 +72,11 @@ Deciding to play around with the main header and nav layout after looking throug
 - TheNav.vue:
   - Add box-shadow to sticky nav, via the homepage of the awesome [Tania Rascia](https://www.taniarascia.com/)
   - Update `button:hover`'s background color and color
+- ALL FILES!
+
+### Deleted
+
+- All files associated w/ the prior design iteration
 
 ## 1.2. [0.10.2] - 2019-08-14
 
@@ -275,10 +282,11 @@ FIXED by simply adding some bottom margin to the `<header>`!
 <!-- TOC -->
 
 - [Changelog](#changelog)
-  - [[0.11.0] - 2019-08-2](#0110---2019-08-2)
+  - [[0.11.0] - 2019-09-23](#0110---2019-09-23)
     - [Meta](#meta)
     - [Added](#added)
     - [Updated](#updated)
+    - [Deleted](#deleted)
   - [[0.10.2] - 2019-08-14](#0102---2019-08-14)
     - [Meta](#meta)
     - [Updated](#updated)
