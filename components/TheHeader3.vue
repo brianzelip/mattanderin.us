@@ -232,16 +232,13 @@ p:nth-of-type(1) {
 .date::after {
   content: "Winter Solstice 2019";
 }
-.place::after {
-  content: "Maurice, LA";
-}
 @media screen and (min-width: 480px) {
   .date::after {
     content: "Winter Solstice \22C5  December 21, 2019";
   } /* U+22C5 is unicode for &sdot; */
-  .place::after {
-    content: "Maurice, Louisiana";
-  }
+}
+.place::after {
+  content: "Maurice, Louisiana";
 }
 
 .sup {
