@@ -230,7 +230,7 @@ p:nth-of-type(1) {
   }
 }
 .date::after {
-  content: "Winter Solstice 2019";
+  content: "December 21, 2019";
 }
 @media screen and (min-width: 480px) {
   .date::after {
