@@ -30,7 +30,6 @@
       ></p>
     </div>
     <button
-      :class="{ 'bg-soft-black': color === 'black', 'soft-white': color === 'black', 'bg-soft-white': color === 'white', 'soft-black': color === 'white' }"
       @click="showNavMobile = !showNavMobile"
       class="mobileNav"
     >
@@ -159,18 +158,9 @@ button {
   border: none;
   text-decoration: none;
   cursor: default;
-  /* background-color: var(--soft-black);
-  color: var(--soft-white); */
-  -webkit-appearance: none;
-}
-
-button.bg-soft-black:hover {
-  background-color: var(--soft-white);
-  color: var(--soft-black);
-}
-button.bg-soft-white:hover {
   background-color: var(--soft-black);
   color: var(--soft-white);
+  -webkit-appearance: none;
 }
 
 svg {
