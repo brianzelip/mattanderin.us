@@ -55,11 +55,8 @@
 </template>
 
 <script>
-import TheHeaderH1 from "./TheHeaderH1.vue";
 import TheHeader3H1 from "./TheHeader3H1.vue";
-import TheNavMobile from "./TheNavMobile.vue";
 import TheNavMobile3 from "./TheNavMobile3.vue";
-import TheNav from "./TheNav.vue";
 import TheNav3 from "./TheNav3.vue";
 
 export default {
@@ -71,11 +68,8 @@ export default {
     };
   },
   components: {
-    TheHeaderH1,
     TheHeader3H1,
-    TheNavMobile,
     TheNavMobile3,
-    TheNav,
     TheNav3
   },
   computed: {

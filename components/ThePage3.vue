@@ -12,16 +12,8 @@
 </template>
 
 <script>
-import TheHeader from "./TheHeader.vue";
 import TheHeader3 from "./TheHeader3.vue";
 import TheHero3 from "./TheHero3.vue";
-import TheOurStory from "./TheOurStory.vue";
-import TheSchedule from "./TheSchedule.vue";
-import TheLocation from "./TheLocation.vue";
-import TheWeddingParty from "./TheWeddingParty.vue";
-import TheHoneymoonFund from "./TheHoneymoonFund.vue";
-import TheSlideShow from "./TheSlideShow.vue";
-import TheRSVP from "./TheRSVP.vue";
 import TheOurStory3 from "./TheOurStory3.vue";
 import TheSchedule3 from "./TheSchedule3.vue";
 import TheLocation3 from "./TheLocation3.vue";
@@ -35,16 +27,8 @@ import TheRSVPFail from "./TheRSVPFail.vue";
 export default {
   props: ["component"],
   components: {
-    TheHeader,
     TheHeader3,
     TheHero3,
-    TheOurStory,
-    TheSchedule,
-    TheLocation,
-    TheWeddingParty,
-    TheHoneymoonFund,
-    TheSlideShow,
-    TheRSVP,
     TheRSVPSuccess,
     TheRSVPFail,
     TheOurStory3,
