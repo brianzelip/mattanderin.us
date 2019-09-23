@@ -1,0 +1,19 @@
+/* Erin and Matt's wedding website */
+/* https://mattanderin.us */
+
+/* TEAM */
+  Designer/developer: Brian Zelip
+  Site: https://zelip.me
+  From: Baltimore, Maryland, USA
+                
+/* THANKS */
+  FontAwesome5: https://fontawesome.com/
+  MDN: https://developer.mozilla.org/en-US/
+  W3Schools: https://www.w3schools.com/
+  Stack Overflow: https://stackoverflow.com/
+
+/* SITE */
+  Last update: [in current iteration]
+  Language: en-US
+  Doctype: html5
+  Development tools: VS Code, npm, Vue.js, Parcel bundler
