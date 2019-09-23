@@ -1,13 +1,12 @@
 <template>
   <nav class="flex justify-center">
-    <ul class="list-reset mb0 container mx-auto flex-auto flex justify-around">
+    <ul class="list-reset mb0">
       <li
         :key="i"
-        class="col-12 center"
         v-for="(page, i) in pages"
       >
         <router-link
-          :class="{ active: page.path === currentPath }"
+          :class="{'soft-black': color === 'black', 'soft-white': color === 'white', active: page.path === currentPath}"
           :to="page.path"
           class="button"
         >{{ page.text }}</router-link>
@@ -18,7 +17,7 @@
 
 <script>
 export default {
-  props: ["currentPath"],
+  props: ["color"],
   data() {
     return {
       pages: [
@@ -32,29 +31,10 @@ export default {
       ]
     };
   },
-  mounted() {
-    // [sticky header on scroll via](https://www.w3schools.com/howto/howto_js_sticky_header.asp)
-    const nav = document.querySelector("nav");
-    const navHeight = nav.offsetHeight;
-    const navOffsetTop = nav.offsetTop;
-    const vm = this;
-
-    function stickyNav() {
-      if (window.pageYOffset > navOffsetTop) {
-        nav.classList.add("sticky");
-        // tell the parent to add bottom margin
-        // ps - 23 is a magic number, in fact, 23, 24, and 25 all work
-        vm.$emit("add-margin-bottom", navOffsetTop - navHeight + 23);
-      } else {
-        nav.classList.remove("sticky");
-        // tell the parent to reset bottom margin
-        vm.$emit("reset-margin-bottom");
-      }
+  computed: {
+    currentPath() {
+      return this.$route.path;
     }
-
-    window.onscroll = function() {
-      stickyNav();
-    };
   }
 };
 </script>
@@ -67,16 +47,19 @@ export default {
   top: 0;
   width: 100%;
   background-color: var(--soft-white);
-  z-index: 100;
+  z-index: 10;
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
 }
 
 .button {
   display: block;
-  padding: 1rem 0;
+  padding: 0.5rem;
+  font-size: 1.25rem;
   text-decoration: none;
 }
 .button:hover {
-  background-color: rgba(51, 34, 34, 0.1);
+  background-color: rgba(51, 34, 34, 0.4);
+  color: var(--soft-white);
 }
 
 .active,
