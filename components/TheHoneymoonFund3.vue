@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="container">
-      <h1 class="mt0 regular center">Honeymoon Fund</h1>
+      <h1 class="mt0 regular center pageTitle">Honeymoon Fund</h1>
       <p
         class="h3"
       >If you know us at all, you know that we've been living in sin for quite some time. That means we don't really need much more than we've already acquired, so we are doing a Honeymoon Fund in lieu of gifts! If you want to contribute to it here, we would certainly appreciate it.</p>

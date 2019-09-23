@@ -1,7 +1,7 @@
  <template>
   <main>
     <section>
-      <h1 class="mt0 regular center">Bridesmaids</h1>
+      <h1 class="mt0 regular center pageTitle">Bridesmaids</h1>
       <ul class="list-reset mb0">
         <li class="pb2">
           <h2>

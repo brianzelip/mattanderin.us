@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1 class="mt0 regular center">RSVP</h1>
+    <h1 class="mt0 regular center pageTitle">RSVP</h1>
     <p class="h3 center">You can respond for yourself and others in your party.</p>
     <p class="h3 center">We'll email you a copy of your response.</p>
     <form
