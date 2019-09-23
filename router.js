@@ -1,7 +1,5 @@
 import VueRouter from 'vue-router';
 
-import TheHero from './components/TheHero.vue';
-import ThePage from './components/ThePage.vue';
 import ThePage3 from './components/ThePage3.vue';
 
 const routes = [
