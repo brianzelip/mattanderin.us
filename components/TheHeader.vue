@@ -102,7 +102,8 @@ header {
 }
 @media screen and (min-width: 960px) {
   header {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 1024px) {
