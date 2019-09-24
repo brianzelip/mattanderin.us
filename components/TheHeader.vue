@@ -234,6 +234,7 @@ hr {
 @media screen and (min-width: 960px) {
   hr {
     display: block;
+    width: 100%;
     height: 4px;
   }
 }
