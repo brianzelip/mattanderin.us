@@ -1,15 +1,8 @@
 <template>
   <header>
     <div class="hwrapper">
-      <TheHeaderH1
-        :color="color"
-        v-if="isHome"
-      ></TheHeaderH1>
-      <router-link
-        class="hover-text-decoration-none"
-        to="/"
-        v-else
-      >
+      <TheHeaderH1 :color="color" v-if="isHome"></TheHeaderH1>
+      <router-link class="hover-text-decoration-none" to="/" v-else>
         <TheHeaderH1 :color="color"></TheHeaderH1>
       </router-link>
       <h2 class="hide">Winter Solstice, December 21, 2019</h2>
@@ -29,10 +22,7 @@
         class="place"
       ></p>
     </div>
-    <button
-      @click="showNavMobile = !showNavMobile"
-      class="mobileNav"
-    >
+    <button @click="showNavMobile = !showNavMobile" class="mobileNav">
       <svg viewBox="0 0 448 512">
         <path
           d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"
@@ -44,7 +34,12 @@
       :color="color"
       v-on:close="showNavMobile = !showNavMobile"
     ></TheNavMobile>
-    <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" />
+    <hr
+      :class="{
+        'bg-soft-black': color === 'black',
+        'bg-soft-white': color === 'white'
+      }"
+    />
     <TheNav
       :color="color"
       class="desktopNav"
