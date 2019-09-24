@@ -1,5 +1,5 @@
 <template>
-  <header :class="{ boxShadow: !isHome }">
+  <header>
     <div class="hwrapper">
       <TheHeaderH1
         :color="color"
