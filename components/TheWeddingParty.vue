@@ -5,8 +5,7 @@
       <ul class="list-reset mb0">
         <li class="pb2">
           <h2>
-            Cassie Holden
-            <span class="italic">(Maid of Honor)</span>
+            Cassie Holden, Maid of Honor
           </h2>
           <div class="story">
             <p
