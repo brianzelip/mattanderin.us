@@ -1,9 +1,9 @@
 <template>
   <section>
-    <TheHeader3
+    <TheHeader
       :color="isHome ? 'white' : 'black'"
       class="header"
-    ></TheHeader3>
+    ></TheHeader>
     <component
       :is="component"
       class="component"
@@ -12,32 +12,32 @@
 </template>
 
 <script>
-import TheHeader3 from "./TheHeader3.vue";
-import TheHero3 from "./TheHero3.vue";
-import TheOurStory3 from "./TheOurStory3.vue";
-import TheSchedule3 from "./TheSchedule3.vue";
-import TheLocation3 from "./TheLocation3.vue";
-import TheWeddingParty3 from "./TheWeddingParty3.vue";
-import TheHoneymoonFund3 from "./TheHoneymoonFund3.vue";
-import TheSlideShow3 from "./TheSlideShow3.vue";
-import TheRSVP3 from "./TheRSVP3.vue";
+import TheHeader from "./TheHeader.vue";
+import TheHero from "./TheHero.vue";
+import TheOurStory from "./TheOurStory.vue";
+import TheSchedule from "./TheSchedule.vue";
+import TheLocation from "./TheLocation.vue";
+import TheWeddingParty from "./TheWeddingParty.vue";
+import TheHoneymoonFund from "./TheHoneymoonFund.vue";
+import TheSlideShow from "./TheSlideShow.vue";
+import TheRSVP from "./TheRSVP.vue";
 import TheRSVPSuccess from "./TheRSVPSuccess.vue";
 import TheRSVPFail from "./TheRSVPFail.vue";
 
 export default {
   props: ["component"],
   components: {
-    TheHeader3,
-    TheHero3,
+    TheHeader,
+    TheHero,
     TheRSVPSuccess,
     TheRSVPFail,
-    TheOurStory3,
-    TheSchedule3,
-    TheLocation3,
-    TheWeddingParty3,
-    TheHoneymoonFund3,
-    TheSlideShow3,
-    TheRSVP3
+    TheOurStory,
+    TheSchedule,
+    TheLocation,
+    TheWeddingParty,
+    TheHoneymoonFund,
+    TheSlideShow,
+    TheRSVP
   },
   computed: {
     isHome() {

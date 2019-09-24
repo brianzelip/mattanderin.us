@@ -1,16 +1,16 @@
 <template>
   <header :class="{ boxShadow: !isHome }">
     <div class="hwrapper">
-      <TheHeader3H1
+      <TheHeaderH1
         :color="color"
         v-if="isHome"
-      ></TheHeader3H1>
+      ></TheHeaderH1>
       <router-link
         class="hover-text-decoration-none"
         to="/"
         v-else
       >
-        <TheHeader3H1 :color="color"></TheHeader3H1>
+        <TheHeaderH1 :color="color"></TheHeaderH1>
       </router-link>
       <h2 class="hide">Winter Solstice, December 21, 2019</h2>
       <h2 class="hide">Maurice, Louisiana</h2>
@@ -39,25 +39,25 @@
         />
       </svg>
     </button>
-    <TheNavMobile3
+    <TheNavMobile
       :class="{ show: showNavMobile }"
       :color="color"
       v-on:close="showNavMobile = !showNavMobile"
-    ></TheNavMobile3>
+    ></TheNavMobile>
     <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" />
-    <TheNav3
+    <TheNav
       :color="color"
       class="desktopNav"
       v-on:add-margin-bottom="setMarginBottom"
       v-on:reset-margin-bottom="resetMarginBottom"
-    ></TheNav3>
+    ></TheNav>
   </header>
 </template>
 
 <script>
-import TheHeader3H1 from "./TheHeader3H1.vue";
-import TheNavMobile3 from "./TheNavMobile3.vue";
-import TheNav3 from "./TheNav3.vue";
+import TheHeaderH1 from "./TheHeaderH1.vue";
+import TheNavMobile from "./TheNavMobile.vue";
+import TheNav from "./TheNav.vue";
 
 export default {
   props: ["black", "white", "color"],
@@ -68,9 +68,9 @@ export default {
     };
   },
   components: {
-    TheHeader3H1,
-    TheNavMobile3,
-    TheNav3
+    TheHeaderH1,
+    TheNavMobile,
+    TheNav
   },
   computed: {
     isHome() {

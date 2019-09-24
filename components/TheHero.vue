@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import TheHeader3 from "./TheHeader3.vue";
+import TheHeader from "./TheHeader.vue";
 import TheHeroImageControl from "./TheHeroImageControl.vue";
 
 export default {
@@ -33,7 +33,7 @@ export default {
       start: 4
     };
   },
-  components: { TheHeader3, TheHeroImageControl },
+  components: { TheHeader, TheHeroImageControl },
   methods: {
     left() {
       if (this.start === 1) {
