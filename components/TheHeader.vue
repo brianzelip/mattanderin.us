@@ -188,24 +188,26 @@ p {
   line-height: 1;
   font-weight: 400;
 }
-p:nth-of-type(1) {
+.date {
   margin-bottom: 0.25rem;
 }
 @media screen and (min-width: 780px) {
-  p {
+  .date,
+  .place {
     font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 960px) {
-  p:nth-of-type(2) {
-    margin-bottom: 0.75em;
+  .place {
+    margin-bottom: 0.5em;
   }
 }
 @media screen and (min-width: 1024px) {
-  p:nth-of-type(1) {
+  .date {
     margin-bottom: 0.5em;
   }
-  p {
+  .date,
+  .place {
     font-size: 1.5rem;
   }
 }
