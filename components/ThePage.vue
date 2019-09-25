@@ -5,8 +5,8 @@
       class="header"
     ></TheHeader>
     <component
+      :class="{ component: !isHome }"
       :is="component"
-      class="component"
     ></component>
   </section>
 </template>
@@ -71,10 +71,12 @@ export default {
 
 .component {
   width: 100%;
+  margin-top: 2rem;
   padding: 1rem;
 }
 @media screen and (min-width: 960px) {
   .component {
+    margin-top: 0;
     padding: 1.5rem 1.5rem 1.5rem 0;
   }
 }
