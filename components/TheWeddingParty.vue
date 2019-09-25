@@ -4,9 +4,7 @@
       <h1 class="mt0 regular center pageTitle">Bridesmaids</h1>
       <ul class="list-reset mb0">
         <li class="pb2">
-          <h2>
-            Cassie Holden, Maid of Honor
-          </h2>
+          <h2>Cassie Holden, Maid of Honor</h2>
           <div class="story">
             <p
               class="h3 mr2"
@@ -131,5 +129,15 @@ h2 {
 
 .story p {
   order: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  .story {
+    flex-direction: row;
+  }
+
+  .story p {
+    order: 0;
+  }
 }
 </style>
