@@ -86,3 +86,30 @@ export default {
   }
 }
 </style>
+
+<style>
+h2 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+@media screen and (min-width: 960px) {
+  .pageTitle {
+    font-size: 1.875rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+}
+</style>
