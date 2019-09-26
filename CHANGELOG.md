@@ -4,12 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.1. [0.12.0] - 201
+## 1.1. [0.12.0] - 2019-09-26
 
 ### 1.1.1. Meta
 
 - branch: party-layout
 - description: Make a better wedding party layout for the images and text flow
+
+### Added
+
+- humans.txt
+
+### Updated
+
+- img/: Cropped out distracting content from a couple photos
+- ThePage.vue: Control responsive font size from this parent component for all pages, not just wedding party
+- TheWeddingParty: Control page-specific display and image flow, refactor font-sizing styles out to parent
+- TheRSVP: Update prose, refactor out h2 font size to parent
+- index.html: Add link to humans.txt
 
 ## 1.2. [0.11.0] - 2019-09-23
 
@@ -289,8 +301,10 @@ FIXED by simply adding some bottom margin to the `<header>`!
 <!-- TOC -->
 
 - [Changelog](#changelog)
-  - [[0.12.0] - 201](#0120---201)
+  - [[0.12.0] - 2019-09-26](#0120---2019-09-26)
     - [Meta](#meta)
+    - [Added](#added)
+    - [Updated](#updated)
   - [[0.11.0] - 2019-09-23](#0110---2019-09-23)
     - [Meta](#meta)
     - [Added](#added)
