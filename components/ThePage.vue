@@ -89,7 +89,8 @@ h2 {
   font-size: 1.25rem;
   font-weight: 400;
 }
-p {
+p,
+label {
   font-size: 1rem;
 }
 
@@ -110,7 +111,8 @@ p {
   h2 {
     font-size: 1.5rem;
   }
-  p {
+  p,
+  label {
     font-size: 1.25rem;
   }
 }
