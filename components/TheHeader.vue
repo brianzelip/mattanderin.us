@@ -1,16 +1,9 @@
 <template>
-  <header :class="{ boxShadow: !isHome }">
+  <header>
     <div class="hwrapper">
-      <TheHeader3H1
-        :color="color"
-        v-if="isHome"
-      ></TheHeader3H1>
-      <router-link
-        class="hover-text-decoration-none"
-        to="/"
-        v-else
-      >
-        <TheHeader3H1 :color="color"></TheHeader3H1>
+      <TheHeaderH1 :color="color" v-if="isHome"></TheHeaderH1>
+      <router-link class="hover-text-decoration-none" to="/" v-else>
+        <TheHeaderH1 :color="color"></TheHeaderH1>
       </router-link>
       <h2 class="hide">Winter Solstice, December 21, 2019</h2>
       <h2 class="hide">Maurice, Louisiana</h2>
@@ -29,35 +22,37 @@
         class="place"
       ></p>
     </div>
-    <button
-      @click="showNavMobile = !showNavMobile"
-      class="mobileNav"
-    >
+    <button @click="showNavMobile = !showNavMobile" class="mobileNav">
       <svg viewBox="0 0 448 512">
         <path
           d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"
         />
       </svg>
     </button>
-    <TheNavMobile3
+    <TheNavMobile
       :class="{ show: showNavMobile }"
       :color="color"
       v-on:close="showNavMobile = !showNavMobile"
-    ></TheNavMobile3>
-    <hr :class="{'bg-soft-black': color === 'black', 'bg-soft-white': color === 'white'}" />
-    <TheNav3
+    ></TheNavMobile>
+    <hr
+      :class="{
+        'bg-soft-black': color === 'black',
+        'bg-soft-white': color === 'white'
+      }"
+    />
+    <TheNav
       :color="color"
       class="desktopNav"
       v-on:add-margin-bottom="setMarginBottom"
       v-on:reset-margin-bottom="resetMarginBottom"
-    ></TheNav3>
+    ></TheNav>
   </header>
 </template>
 
 <script>
-import TheHeader3H1 from "./TheHeader3H1.vue";
-import TheNavMobile3 from "./TheNavMobile3.vue";
-import TheNav3 from "./TheNav3.vue";
+import TheHeaderH1 from "./TheHeaderH1.vue";
+import TheNavMobile from "./TheNavMobile.vue";
+import TheNav from "./TheNav.vue";
 
 export default {
   props: ["black", "white", "color"],
@@ -68,9 +63,9 @@ export default {
     };
   },
   components: {
-    TheHeader3H1,
-    TheNavMobile3,
-    TheNav3
+    TheHeaderH1,
+    TheNavMobile,
+    TheNav
   },
   computed: {
     isHome() {
@@ -107,7 +102,8 @@ header {
 }
 @media screen and (min-width: 960px) {
   header {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -192,24 +188,26 @@ p {
   line-height: 1;
   font-weight: 400;
 }
-p:nth-of-type(1) {
+.date {
   margin-bottom: 0.25rem;
 }
 @media screen and (min-width: 780px) {
-  p {
+  .date,
+  .place {
     font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 960px) {
-  p:nth-of-type(2) {
-    margin-bottom: 0.75em;
+  .place {
+    margin-bottom: 0.5em;
   }
 }
 @media screen and (min-width: 1024px) {
-  p:nth-of-type(1) {
+  .date {
     margin-bottom: 0.5em;
   }
-  p {
+  .date,
+  .place {
     font-size: 1.5rem;
   }
 }
@@ -238,6 +236,7 @@ hr {
 @media screen and (min-width: 960px) {
   hr {
     display: block;
+    width: 100%;
     height: 4px;
   }
 }
