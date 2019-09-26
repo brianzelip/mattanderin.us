@@ -85,12 +85,12 @@ export default {
 .pageTitle {
   font-size: 1.75rem;
 }
-h2 {
+.component h2 {
   font-size: 1.25rem;
-  font-weight: 400;
 }
-p,
-label {
+.component p,
+.component label,
+.component button {
   font-size: 1rem;
 }
 
@@ -108,11 +108,12 @@ label {
   .pageTitle {
     font-size: 2.25rem;
   }
-  h2 {
+  .component h2 {
     font-size: 1.5rem;
   }
-  p,
-  label {
+  .component p,
+  .component label,
+  .component button {
     font-size: 1.25rem;
   }
 }
@@ -120,7 +121,7 @@ label {
   .pageTitle {
     font-size: 2.5rem;
   }
-  h2 {
+  .component h2 {
     font-size: 1.75rem;
   }
 }
