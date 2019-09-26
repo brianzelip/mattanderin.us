@@ -160,22 +160,3 @@ a {
 .hover-text-decoration-none:hover {
   text-decoration: none;
 }
-
-.pageTitle {
-  font-size: 1.5rem;
-}
-@media screen and (min-width: 480px) {
-  .pageTitle {
-    font-size: 1.75rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .pageTitle {
-    font-size: 1.875rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .pageTitle {
-    font-size: 2rem;
-  }
-}
