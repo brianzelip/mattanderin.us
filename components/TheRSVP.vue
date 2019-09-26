@@ -1,8 +1,12 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">RSVP</h1>
-    <p class="h3 center">You can respond for yourself and others in your party.</p>
-    <p class="h3 center">We'll email you a copy of your response.</p>
+    <p class="center">We can't wait to celebrate with you!</p>
+    <p class="center">
+      Please respond by <span class="red">November XXX</span> for yourself and
+      others in your party.
+    </p>
+    <p class="center">We'll email you a copy of your response.</p>
     <form
       class="mx-auto p2 border rounded"
       data-netlify="true"
