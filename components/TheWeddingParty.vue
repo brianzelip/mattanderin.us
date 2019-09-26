@@ -163,10 +163,6 @@
 </template>
 
 <style scoped>
-h2 {
-  font-weight: 400;
-}
-
 .story {
   display: flex;
   flex-direction: column;

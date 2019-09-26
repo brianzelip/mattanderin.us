@@ -1,13 +1,7 @@
 <template>
   <section>
-    <TheHeader
-      :color="isHome ? 'white' : 'black'"
-      class="header"
-    ></TheHeader>
-    <component
-      :class="{ component: !isHome }"
-      :is="component"
-    ></component>
+    <TheHeader :color="isHome ? 'white' : 'black'" class="header"></TheHeader>
+    <component :class="{ component: !isHome }" :is="component"></component>
   </section>
 </template>
 
@@ -93,6 +87,7 @@ export default {
 }
 h2 {
   font-size: 1.25rem;
+  font-weight: 400;
 }
 p {
   font-size: 1rem;
