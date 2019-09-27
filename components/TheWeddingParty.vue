@@ -42,7 +42,7 @@
         <li class="pb2">
           <h2>Keshia Whitfield Norris</h2>
           <div class="story">
-            <p class>
+            <p class="mr2">
               Keshia and I became fast friends in the 7th grade when we sat in
               the clarinet section together, which seemed to be the case from
               then until our senior year of high school. We had lots of
@@ -54,6 +54,9 @@
               the time talking about the good times and being there for each
               other in the bad, even when we graduated from high school.
             </p>
+            <figure class="m0 square">
+              <img src="../img/Keshia.jpg" />
+            </figure>
           </div>
         </li>
         <li class="pb2">
@@ -100,7 +103,10 @@
               ultimately ended up in my parents' backyard smoking cigarettes.
             </p>
             <figure class="m0 flex-grow">
-              <img src="../img/Charly.jpg" width="300" />
+              <img
+                src="../img/Charly.jpg"
+                width="300"
+              />
             </figure>
           </div>
         </li>
@@ -150,9 +156,7 @@
           </div>
         </li>
         <li class>
-          <h2>
-            Dude Five: Skip "I heard everything you said about me, kids" Shannon
-          </h2>
+          <h2>Dude Five: Skip "I heard everything you said about me, kids" Shannon</h2>
           <div class="story">
             <p class></p>
           </div>
@@ -183,6 +187,10 @@
 
   .story figure.landscape {
     width: 50%;
+    flex-shrink: 0;
+  }
+  .story figure.square {
+    width: 40%;
     flex-shrink: 0;
   }
   .story figure.portrait {
