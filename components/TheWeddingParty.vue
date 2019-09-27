@@ -131,39 +131,39 @@
         </li>
       </ul>
     </section>
-    <hr />
-    <section>
-      <h1 class="mt0 pt2 center">The Dudes</h1>
+    <hr class="mt3" />
+    <section class="mt3">
+      <h1 class="mt0 regular center pageTitle">The Dudes</h1>
       <ul class="list-reset mb0">
         <li class="pb2">
-          <h2>Dude One: Mark "Bud" Sackmann</h2>
-          <div class="story">
-            <p></p>
-          </div>
+          <h2>Mark "Bud" Sackmann</h2>
+          <figure class="m0">
+            <img src="../img/Bud.gif" />
+          </figure>
         </li>
         <li class="pb2">
-          <h2>Dude Two: Chris "Wildcat" Sackmann</h2>
-          <div class="story">
-            <p></p>
-          </div>
+          <h2>Chris "Wildcat" Sackmann</h2>
+          <figure class="m0">
+            <img src="../img/Chris.gif" />
+          </figure>
         </li>
         <li class="pb2">
-          <h2>Dude Three: Brian "Brody Bro" Sackmann-Zelip</h2>
-          <div class="story">
-            <p></p>
-          </div>
+          <h2>Brian "Brody Bro" Sackmann-Zelip</h2>
+          <figure class="m0">
+            <img src="../img/Brian.gif" />
+          </figure>
         </li>
         <li class="pb2">
-          <h2>Dude Four: Gabe DeBord</h2>
-          <div class="story">
-            <p></p>
-          </div>
+          <h2>Gabe DeBord</h2>
+          <figure class="m0">
+            <img src="../img/Gabe.gif" />
+          </figure>
         </li>
         <li class>
-          <h2>Dude Five: Skip "I heard everything you said about me, kids" Shannon</h2>
-          <div class="story">
-            <p></p>
-          </div>
+          <h2>Skip "I heard everything you said about me, kids" Shannon</h2>
+          <figure class="m0">
+            <img src="../img/Skip.gif" />
+          </figure>
         </li>
       </ul>
     </section>
