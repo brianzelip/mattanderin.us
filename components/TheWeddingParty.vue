@@ -77,14 +77,15 @@
               where she pretty much had me beat in chair placements every time.
               What we all wanted was to beat Leslie Smith. Damnit, Leslie Smith!
               Always first chair and shit...
+              <br />Getting distracted here. Long story short: Inkka is the best, and
+              this is the first time since her wedding over ten years ago that the
+              three of us will all be together at the same time. I could cry. I
+              will cry. Okay, now I'm crying.
             </p>
+            <figure class="m0 square">
+              <img src="../img/Inkka.jpg" />
+            </figure>
           </div>
-          <p>
-            Getting distracted here. Long story short: Inkka is the best, and
-            this is the first time since her wedding over ten years ago that the
-            three of us will all be together at the same time. I could cry. I
-            will cry. Okay, now I'm crying.
-          </p>
         </li>
         <li class="pb2">
           <h2>Charly Bradford</h2>
@@ -105,11 +106,8 @@
               workouts, just about died, decided to go for a walk, and
               ultimately ended up in my parents' backyard smoking cigarettes.
             </p>
-            <figure class="m0 flex-grow">
-              <img
-                src="../img/Charly.jpg"
-                width="300"
-              />
+            <figure class="m0 square">
+              <img src="../img/Charly.jpg" />
             </figure>
           </div>
         </li>
