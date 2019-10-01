@@ -8,6 +8,11 @@
 import images from "../img/slideshow/*.jpg";
 
 export default {
+  computed: {
+    imagesEntries() {
+      return Object.entries(images);
+    }
+  },
   created() {
     console.log("images:::::::", Object.entries(images));
   }
