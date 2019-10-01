@@ -12,6 +12,13 @@
 import images from "../img/slideshow/*.jpg";
 
 export default {
+  data() {
+    return {
+      prev: 0,
+      current: 1,
+      next: 2
+    };
+  },
   computed: {
     imagesEntries() {
       return Object.entries(images);
