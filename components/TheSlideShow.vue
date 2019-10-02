@@ -7,8 +7,8 @@
         :src="activeImage.path"
         :title="activeImage.name"
       />
-      <button class="prev">&lsaquo;</button>
-      <button class="next">&rsaquo;</button>
+      <button @click="goBack" class="prev">&lsaquo;</button>
+      <button @click="goForward" class="next">&rsaquo;</button>
       <figcaption>{{ activeImage.name }}</figcaption>
     </figure>
   </main>
@@ -45,6 +45,20 @@ export default {
         name: Object.entries(images)[this.active][0],
         path: Object.entries(images)[this.active][1]
       };
+    }
+  },
+  methods: {
+    goBack() {
+      this.$set(this, "active", this.prevIndex);
+    },
+    goForward() {
+      this.$set(this, "active", this.nextIndex);
+    }
+  },
+  watch: {
+    active() {
+      this.$set(this, "prev", this.prevIndex);
+      this.$set(this, "next", this.nextIndex);
     }
   },
   created() {
