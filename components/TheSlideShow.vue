@@ -82,7 +82,9 @@ button {
   align-self: center;
   color: rgba(51, 34, 34, 0.5);
   border: none;
-  background-color: transparent;
+  background-color: var(--soft-white);
+  height: 4rem;
+  width: 4rem;
 }
 button:hover {
   color: var(--soft-black);
