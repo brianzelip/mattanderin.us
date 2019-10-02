@@ -65,6 +65,8 @@ main {
 figure {
   flex-grow: 1;
   position: relative;
+  display: flex;
+  justify-content: center;
   margin: 0;
 }
 
