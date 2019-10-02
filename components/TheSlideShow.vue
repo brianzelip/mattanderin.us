@@ -64,6 +64,12 @@ main {
 
 figure {
   flex-grow: 1;
+  position: relative;
   margin: 0;
+}
+
+img {
+  position: absolute;
+  max-height: 100%;
 }
 </style>
