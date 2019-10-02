@@ -1,18 +1,14 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">Slide Show</h1>
-    <ul class="list-reset mb0" id="carousel">
-      <li>
-        <figure>
-          <img
-            :alt="activeImage.name"
-            :src="activeImage.path"
-            :title="activeImage.name"
-          />
-          <figcaption>{{ activeImage.name }}</figcaption>
-        </figure>
-      </li>
-    </ul>
+    <figure>
+      <img
+        :alt="activeImage.name"
+        :src="activeImage.path"
+        :title="activeImage.name"
+      />
+      <figcaption>{{ activeImage.name }}</figcaption>
+    </figure>
   </main>
 </template>
 
