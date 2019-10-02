@@ -56,6 +56,12 @@ export default {
 </script>
 
 <style scoped>
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 figure {
   margin: 0 0 2rem 0;
 }
