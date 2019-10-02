@@ -13,9 +13,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### 1.1.2. Added
 
+- masonry-layout as dependency
+- TheSlideShowGallery.vue: Used masonry to try a gallery layout, need to implement [imagesLoaded](https://imagesloaded.desandro.com/) as per the [masonry docs](https://masonry.desandro.com/layout.html#imagesloaded)
+
 ### 1.1.3. Updated
 
-- TheSlideShow.vue
+- TheSlideShow.vue:
 
 ## 1.2. [0.12.1] - 2019-09-27
 
