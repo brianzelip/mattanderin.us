@@ -7,6 +7,8 @@
         :src="activeImage.path"
         :title="activeImage.name"
       />
+      <button class="prev">&lsaquo;</button>
+      <button class="next">&rsaquo;</button>
       <figcaption>{{ activeImage.name }}</figcaption>
     </figure>
   </main>
@@ -73,5 +75,24 @@ figure {
 img {
   position: absolute;
   max-height: 100%;
+}
+
+button {
+  position: absolute;
+  align-self: center;
+  color: rgba(51, 34, 34, 0.5);
+  border: none;
+  background-color: transparent;
+}
+button:hover {
+  color: var(--soft-black);
+}
+.prev {
+  left: 0;
+  font-size: 4rem;
+}
+.next {
+  right: 0;
+  font-size: 4rem;
 }
 </style>
