@@ -1,21 +1,15 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">Slide Show</h1>
-    <ul
-      class="list-reset mb0"
-      id="carousel"
-    >
-      <li
-        :key="index"
-        v-for="(image, index) in imagesEntries"
-      >
+    <ul class="list-reset mb0" id="carousel">
+      <li>
         <figure>
           <img
-            :alt="image[0]"
-            :src="image[1]"
-            :title="image[0]"
+            :alt="activeImage.name"
+            :src="activeImage.path"
+            :title="activeImage.name"
           />
-          <figcaption>{{ image[0] }}</figcaption>
+          <figcaption>{{ activeImage.name }}</figcaption>
         </figure>
       </li>
     </ul>
@@ -30,18 +24,37 @@ import images from "../img/slideshow/*.jpg";
 export default {
   data() {
     return {
-      prev: 0,
-      current: 1,
-      next: 2
+      prev: null,
+      active: 0,
+      next: null
     };
   },
   computed: {
+    numImages() {
+      return Object.entries(images).length;
+    },
+    prevIndex() {
+      return this.active === 0 ? this.numImages - 1 : this.active - 1;
+    },
+    nextIndex() {
+      return this.active === this.numImages - 1 ? 0 : this.active + 1;
+    },
     imagesEntries() {
       return Object.entries(images);
+    },
+    activeImage() {
+      return {
+        name: Object.entries(images)[this.active][0],
+        path: Object.entries(images)[this.active][1]
+      };
     }
   },
   created() {
     console.log("images:::::::", Object.entries(images));
+  },
+  mounted() {
+    this.$set(this, "prev", this.prevIndex);
+    this.$set(this, "next", this.nextIndex);
   }
 };
 </script>
