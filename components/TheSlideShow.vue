@@ -63,6 +63,7 @@ main {
 }
 
 figure {
-  margin: 0 0 2rem 0;
+  flex-grow: 1;
+  margin: 0;
 }
 </style>
