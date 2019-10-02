@@ -1,17 +1,22 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">Slide Show</h1>
-    <figure
-      :key="index"
-      v-for="(image, index) in imagesEntries"
-    >
-      <img
-        :alt="image[0]"
-        :src="image[1]"
-        :title="image[0]"
-      />
-      <figcaption>{{ image[0] }}</figcaption>
-    </figure>
+    <ul class="list-reset">
+      <li
+        :key="index"
+        class="mb3 col-3"
+        v-for="(image, index) in imagesEntries"
+      >
+        <figure class="m0">
+          <img
+            :alt="image[0]"
+            :src="image[1]"
+            :title="image[0]"
+          />
+          <figcaption>{{ image[0] }}</figcaption>
+        </figure>
+      </li>
+    </ul>
   </main>
 </template>
 
@@ -40,7 +45,9 @@ export default {
 </script>
 
 <style scoped>
-figure {
-  margin: 0 0 2rem 0;
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 </style>
