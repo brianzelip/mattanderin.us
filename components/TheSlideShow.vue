@@ -1,17 +1,24 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">Slide Show</h1>
-    <figure
-      :key="index"
-      v-for="(image, index) in imagesEntries"
+    <ul
+      class="list-reset mb0"
+      id="carousel"
     >
-      <img
-        :alt="image[0]"
-        :src="image[1]"
-        :title="image[0]"
-      />
-      <figcaption>{{ image[0] }}</figcaption>
-    </figure>
+      <li
+        :key="index"
+        v-for="(image, index) in imagesEntries"
+      >
+        <figure>
+          <img
+            :alt="image[0]"
+            :src="image[1]"
+            :title="image[0]"
+          />
+          <figcaption>{{ image[0] }}</figcaption>
+        </figure>
+      </li>
+    </ul>
   </main>
 </template>
 
