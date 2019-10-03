@@ -13,7 +13,7 @@ import TheSchedule from "./TheSchedule.vue";
 import TheLocation from "./TheLocation.vue";
 import TheWeddingParty from "./TheWeddingParty.vue";
 import TheHoneymoonFund from "./TheHoneymoonFund.vue";
-import TheSlideShow from "./TheSlideShow.vue";
+import TheSlideShowOfLove from "./TheSlideShowOfLove.vue";
 import TheRSVP from "./TheRSVP.vue";
 import TheRSVPSuccess from "./TheRSVPSuccess.vue";
 import TheRSVPFail from "./TheRSVPFail.vue";
@@ -30,7 +30,7 @@ export default {
     TheLocation,
     TheWeddingParty,
     TheHoneymoonFund,
-    TheSlideShow,
+    TheSlideShowOfLove,
     TheRSVP
   },
   computed: {

@@ -26,7 +26,7 @@ export default {
         { path: "/location", text: "Location" },
         { path: "/party", text: "Wedding Party" },
         { path: "/honeymoon", text: "Honeymoon Fund" },
-        { path: "/slideshow", text: "Slide Show" },
+        { path: "/slideshow", text: "Slide Show of Love" },
         { path: "/rsvp", text: "RSVP" }
       ]
     };

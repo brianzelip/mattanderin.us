@@ -1,22 +1,11 @@
 <template>
   <main>
-    <h1 class="mt0 regular center pageTitle">Slide Show</h1>
-    <ul
-      class="list-reset"
-      data-slide-container
-    >
+    <h1 class="mt0 regular center pageTitle">Slide Show of Love</h1>
+    <ul class="list-reset" data-slide-container>
       <li data-grid-sizer></li>
-      <li
-        :key="index"
-        data-grid-item
-        v-for="(image, index) in imagesEntries"
-      >
+      <li :key="index" data-grid-item v-for="(image, index) in imagesEntries">
         <figure class="m0">
-          <img
-            :alt="image[0]"
-            :src="image[1]"
-            :title="image[0]"
-          />
+          <img :alt="image[0]" :src="image[1]" :title="image[0]" />
           <figcaption>{{ image[0] }}</figcaption>
         </figure>
       </li>
