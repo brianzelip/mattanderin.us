@@ -18,7 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### 1.1.3. Updated
 
-- TheSlideShow.vue:
+- TheSlideShow.vue: Renamed TheSlideShowOfLove.vue; implemented my own carousel from scratch!
 
 ## 1.2. [0.12.1] - 2019-09-27
 
