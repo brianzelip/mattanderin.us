@@ -1,15 +1,6 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">Slide Show of Love</h1>
-    <iframe
-      allow="encrypted-media"
-      allowtransparency="true"
-      class="playlist"
-      frameborder="0"
-      height="75"
-      src="https://open.spotify.com/embed/user/bzelip/playlist/7E2LL6NnuLS11Dg7BpizFv"
-      width="300"
-    ></iframe>
     <figure>
       <img
         :alt="activeImage.name"
@@ -153,12 +144,5 @@ svg {
 }
 svg:hover .fa-chevron {
   fill: rgb(51, 34, 34);
-}
-
-.playlist {
-  position: absolute;
-  right: 0;
-  transform: rotate(90deg) translate(calc(80px + 2rem), calc(-112.5px + 2rem)); /* ty = (width - height)/2 */
-  z-index: 100;
 }
 </style>
