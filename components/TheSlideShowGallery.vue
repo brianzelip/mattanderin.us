@@ -6,7 +6,6 @@
       <li :key="index" data-grid-item v-for="(image, index) in imagesEntries">
         <figure class="m0">
           <img :alt="image[0]" :src="image[1]" :title="image[0]" />
-          <figcaption>{{ image[0] }}</figcaption>
         </figure>
       </li>
     </ul>
