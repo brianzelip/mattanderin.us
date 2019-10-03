@@ -4,12 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.1. [0.13.0] - 2019-10-
+## 1.1. [0.13.0] - 2019-10-03
 
 ### 1.1.1. Meta
 
 - branch: slideshow
-- description: Implement the slideshow page using my quick and dirty hero carousel
+- description: Implement mvp custom slideshow based on my quick and dirty hero carousel. M's feedback asked about "making it full screen". So what I'm planning to do is ship this branch, then start another where the idea is to combine TheSlideShowGallery.vue and a modal component that opens at whichever image the user clicked on from the gallery, and that allows the user to scroll through the rest of the gallery images, all presented in high def full screen.
 
 ### 1.1.2. Added
 
@@ -18,7 +18,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### 1.1.3. Updated
 
-- TheSlideShow.vue: Renamed TheSlideShowOfLove.vue; implemented my own carousel from scratch!
+- TheSlideShow.vue: Renamed TheSlideShowOfLove.vue; implemented my own carousel from scratch! Screenshot:
+
+![mvp slideshow of love](./img/slideshow-mvp.gif)
 
 ## 1.2. [0.12.1] - 2019-09-27
 
@@ -334,7 +336,7 @@ FIXED by simply adding some bottom margin to the `<header>`!
 <!-- TOC -->
 
 - [Changelog](#changelog)
-  - [[0.13.0] - 2019-10-](#0130---2019-10-)
+  - [[0.13.0] - 2019-10-03](#0130---2019-10-03)
     - [Meta](#meta)
     - [Added](#added)
     - [Updated](#updated)
