@@ -55,7 +55,11 @@ export default {
 /* fluid 4 columns */
 [data-grid-sizer],
 [data-grid-item] {
-  width: 25%;
+  width: 33.333%;
+}
+[data-grid-item] {
+  padding-right: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 /* 2 columns wide */
 [data-grid-item].big {
