@@ -156,17 +156,9 @@ svg:hover .fa-chevron {
 }
 
 .playlist {
-  --width: 300px;
-  --height: 75px;
   position: absolute;
   right: 0;
-  /* transform: translate(
-      calc(((var(--width) - var(--height)) / 2) - 1rem),
-      calc(-43.5px + 1rem)
-    )
-    rotate(90deg); */
-  /* t = (width - height)/2 */
-  transform: rotate(90deg) translate(calc(80px + 2rem), calc(-112.5px + 2rem));
+  transform: rotate(90deg) translate(calc(80px + 2rem), calc(-112.5px + 2rem)); /* ty = (width - height)/2 */
   z-index: 100;
 }
 </style>
