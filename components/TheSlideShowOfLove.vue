@@ -71,9 +71,9 @@ export default {
     }
   },
   created() {
-    document.addEventListener("keyup", this.escListener);
-    document.addEventListener("keyup", this.leftListener);
-    document.addEventListener("keyup", this.rightListener);
+    document.addEventListener("keydown", this.escListener);
+    document.addEventListener("keydown", this.leftListener);
+    document.addEventListener("keydown", this.rightListener);
   },
   mounted() {
     const grid = document.querySelector("[data-slide-container]");
