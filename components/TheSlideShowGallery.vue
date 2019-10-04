@@ -94,11 +94,12 @@ export default {
   .hover-shadow:hover {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
       0 6px 20px 0 rgba(0, 0, 0, 0.15);
-    /* transform: scale3d(1.006, 1.006, 1); */
+    transform: scale3d(1.001, 1.001, 1.001);
     transition: 200ms ease-in-out;
   }
 }
 .hover-heart:hover {
   cursor: url("../img/heart.png"), default;
+  transition: 200ms ease-in-out;
 }
 </style>
