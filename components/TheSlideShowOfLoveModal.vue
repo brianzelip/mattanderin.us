@@ -101,6 +101,7 @@ section {
   left: 0;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
