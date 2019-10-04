@@ -8,6 +8,7 @@
       <li data-grid-sizer></li>
       <li
         :key="index"
+        class="hover-nudge-up"
         data-grid-item
         v-for="(image, index) in imagesEntries"
       >
@@ -75,5 +76,12 @@ export default {
 /* 2 columns wide */
 [data-grid-item].big {
   width: 50%;
+}
+.hover-nudge-up {
+  transition: 200ms ease-in-out;
+}
+.hover-nudge-up:hover {
+  transform: translateY(-0.25rem);
+  transition: 200ms ease-in-out;
 }
 </style>
