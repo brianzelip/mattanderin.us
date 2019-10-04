@@ -11,11 +11,12 @@
             :alt="image[0]"
             :src="image[1]"
             :title="image[0]"
+            @click="showModal = !showModal"
           />
         </figure>
       </li>
     </ul>
-    <TheSlideShowOfLoveModal></TheSlideShowOfLoveModal>
+    <TheSlideShowOfLoveModal v-if="showModal"></TheSlideShowOfLoveModal>
   </main>
 </template>
 
@@ -37,7 +38,8 @@ export default {
     return {
       prev: 0,
       current: 1,
-      next: 2
+      next: 2,
+      showModal: false
     };
   },
   computed: {
