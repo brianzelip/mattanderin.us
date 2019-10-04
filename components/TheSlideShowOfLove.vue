@@ -47,8 +47,15 @@ export default {
       return Object.entries(images);
     }
   },
+  methods: {
+    escListener: function(e) {
+      if (e.keyCode === 27 && this.showModal) {
+        this.showModal = false;
+      }
+    }
+  },
   created() {
-    console.log("images:::::::", Object.entries(images));
+    document.addEventListener("keyup", this.escListener);
   },
   mounted() {
     const grid = document.querySelector("[data-slide-container]");
@@ -60,6 +67,9 @@ export default {
         percentPosition: true
       });
     });
+  },
+  destroyed() {
+    document.removeEventListener("keyup", this.escListener);
   }
 };
 </script>
