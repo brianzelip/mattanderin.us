@@ -26,6 +26,7 @@
 
 <script>
 import Masonry from "masonry-layout";
+import imagesLoaded from "imagesloaded";
 
 import images from "../img/slideshow/*.jpg";
 // Parcel returns an object of filename:path pairs
@@ -49,10 +50,12 @@ export default {
   },
   mounted() {
     const grid = document.querySelector("[data-slide-container]");
-    const msnry = new Masonry(grid, {
-      columnWidth: "[data-grid-sizer]",
-      itemSelector: "[data-grid-item]",
-      percentPosition: true
+    imagesLoaded(grid, () => {
+      const msnry = new Masonry(grid, {
+        columnWidth: "[data-grid-sizer]",
+        itemSelector: "[data-grid-item]",
+        percentPosition: true
+      });
     });
   }
 };
