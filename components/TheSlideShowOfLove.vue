@@ -15,6 +15,7 @@
         </figure>
       </li>
     </ul>
+    <TheSlideShowOfLoveModal></TheSlideShowOfLoveModal>
   </main>
 </template>
 
@@ -26,7 +27,12 @@ import images from "../img/slideshow/*.jpg";
 // Parcel returns an object of filename:path pairs
 // see https://github.com/parcel-bundler/parcel/issues/1668#issuecomment-402620813
 
+import TheSlideShowOfLoveModal from "./TheSlideShowOfLoveModal";
+
 export default {
+  components: {
+    TheSlideShowOfLoveModal
+  },
   data() {
     return {
       prev: 0,
