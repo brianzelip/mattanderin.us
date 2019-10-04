@@ -48,7 +48,7 @@ const routes = [
     path: '/slideshow',
     name: 'slideshow',
     component: ThePage,
-    props: { component: 'TheSlideShowGallery' }
+    props: { component: 'TheSlideShowOfLove' }
   },
   {
     path: '/rsvp',
