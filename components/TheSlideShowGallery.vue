@@ -62,12 +62,6 @@ export default {
 </script>
 
 <style scoped>
-/* ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
-/* fluid 4 columns */
 [data-grid-sizer],
 [data-grid-item] {
   width: 33.333%;
@@ -76,10 +70,7 @@ export default {
   padding-right: 0.5rem;
   padding-bottom: 0.25rem;
 }
-/* 2 columns wide */
-[data-grid-item].big {
-  width: 50%;
-}
+
 .hover-nudge-up {
   transition: 200ms ease-in-out;
 }
