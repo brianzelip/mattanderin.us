@@ -60,7 +60,7 @@ import images from "../img/slideshow/*.jpg";
 // see https://github.com/parcel-bundler/parcel/issues/1668#issuecomment-402620813
 
 export default {
-  props: ["keyboardNav"],
+  props: ["keyboardNav", "imagesEntries"],
   data() {
     return {
       prev: null,
