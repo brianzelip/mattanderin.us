@@ -14,7 +14,7 @@ import TheLocation from "./TheLocation.vue";
 import TheWeddingParty from "./TheWeddingParty.vue";
 import TheHoneymoonFund from "./TheHoneymoonFund.vue";
 import TheSlideShowOfLoveModal from "./TheSlideShowOfLoveModal.vue";
-import TheSlideShowGallery from "./TheSlideShowGallery.vue";
+import TheSlideShowOfLove from "./TheSlideShowOfLove.vue";
 import TheRSVP from "./TheRSVP.vue";
 import TheRSVPSuccess from "./TheRSVPSuccess.vue";
 import TheRSVPFail from "./TheRSVPFail.vue";
@@ -32,7 +32,7 @@ export default {
     TheWeddingParty,
     TheHoneymoonFund,
     TheSlideShowOfLoveModal,
-    TheSlideShowGallery,
+    TheSlideShowOfLove,
     TheRSVP
   },
   computed: {
