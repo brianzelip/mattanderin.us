@@ -9,11 +9,11 @@
       <button @click="goBack" class="prev">
         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
           <path
-            class="fa-background"
+            class="control-background"
             d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm72.5 349.6a23.9 23.9 0 0 1 0 33.9l-17 17a23.9 23.9 0 0 1-33.9 0L142.1 273a24 24 0 0 1 0-34l135.5-135.5a23.9 23.9 0 0 1 33.9 0l17 17a23.9 23.9 0 0 1 0 33.9L226.9 256z"
           />
           <path
-            class="fa-chevron"
+            class="control-chevron"
             d="M142.1 239l135.5-135.5a23.9 23.9 0 0 1 33.9 0l17 17a23.9 23.9 0 0 1 0 33.9L226.9 256l101.6 101.6a23.9 23.9 0 0 1 0 33.9l-17 17a23.9 23.9 0 0 1-33.9 0L142.1 273a24 24 0 0 1 0-34z"
           />
         </svg>
@@ -21,11 +21,11 @@
       <button @click="goForward" class="next">
         <svg viewBox="0 0 512 512">
           <path
-            class="fa-background"
+            class="control-background"
             d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm113.9 265L234.4 408.5a23.9 23.9 0 0 1-33.9 0l-17-17a23.9 23.9 0 0 1 0-33.9L285.1 256 183.5 154.4a23.9 23.9 0 0 1 0-33.9l17-17a23.9 23.9 0 0 1 33.9 0L369.9 239a24 24 0 0 1 0 34z"
           />
           <path
-            class="fa-chevron"
+            class="control-chevron"
             d="M369.9 273L234.4 408.5a23.9 23.9 0 0 1-33.9 0l-17-17a23.9 23.9 0 0 1 0-33.9L285.1 256 183.5 154.4a23.9 23.9 0 0 1 0-33.9l17-17a23.9 23.9 0 0 1 33.9 0L369.9 239a24 24 0 0 1 0 34z"
           />
         </svg>
@@ -81,6 +81,9 @@ export default {
     },
     goForward() {
       this.$set(this, "active", this.nextIndex);
+    },
+    close() {
+      this.$emit("close");
     }
   },
   watch: {
@@ -145,16 +148,15 @@ button:hover {
 .next {
   right: 0;
 }
-svg {
-  font-size: 2rem;
-}
-.fa-background {
+.control-background,
+.control-close {
   fill: rgba(255, 255, 255, 0.75);
 }
-.fa-chevron {
+.control-chevron {
   fill: rgba(51, 34, 34, 0.5);
 }
-svg:hover .fa-background {
+svg:hover .control-background,
+.control-close:hover {
   fill: rgb(255, 255, 255);
 }
 .control-close {
