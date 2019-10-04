@@ -28,7 +28,7 @@ then in your css you would have
   width: calc($column_width - $item_width_diff);
 }
 ```
-  - used some card hover and translate3d() styles from [this codepen](https://codepen.io/jasonheecs/pen/GNNwpZ) for `.hover-shadow`
+  - used some card hover and scale3d() styles from [this codepen](https://codepen.io/jasonheecs/pen/GNNwpZ) for `.hover-shadow`
 
 - TheSlideShowOfLove.vue: 
 
