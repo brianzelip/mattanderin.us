@@ -11,6 +11,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - branch: slideshow-improved
 - description: Replace the base slideshow page with a masonry grid of all of the slideshow images, like TheSlideShowGallery.vue. Each image should be a card of sorts, that slightly animates on hover, and opens up a full screen modal of the image if clicked. When in the modal, the navigation buttons allow the user to scroll through the list of photos, like TheSlideShowOfLove.vue as handed off from v0.13.0.
 
+### Updated
+
+- TheSlideShowGallery.vue: Got responsive masonry layout working, using the `gutter` option. HUGE THANKS to [this !SO answer](https://stackoverflow.com/a/51290967/2145103) for providing the algorithm needed to make masonry's responsive element sizing with gutter work! Here's the secret sauce:
+
+```
+//pseudocode
+
+$number_of_cols = 3; //for example
+$column_width = 100 / $number_of_cols; //a float value, e.g. 33.33333333 in this example
+$item_width_diff = $gutter * ($number_of_cols - 1) / $number_of_cols; //in this example: 10*2/3 = 6.6666666
+
+then in your css you would have
+
+.grid-item {
+  width: calc($column_width - $item_width_diff);
+}
+```
+
 ## 1.2. [0.13.0] - 2019-10-03
 
 ### 1.2.1. Meta
@@ -345,6 +363,7 @@ FIXED by simply adding some bottom margin to the `<header>`!
 - [Changelog](#changelog)
   - [[v0.14.0] 2019-10-0](#v0140-2019-10-0)
     - [Meta](#meta)
+    - [Updated](#updated)
   - [[0.13.0] - 2019-10-03](#0130---2019-10-03)
     - [Meta](#meta)
     - [Added](#added)
