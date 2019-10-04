@@ -1,6 +1,5 @@
 <template>
-  <main>
-    <h1 class="mt0 regular center pageTitle">Slide Show of Love</h1>
+  <section>
     <figure>
       <img
         :alt="activeImage.name"
@@ -33,7 +32,7 @@
       </button>
       <figcaption>{{ activeImage.name }}</figcaption>
     </figure>
-  </main>
+  </section>
 </template>
 
 <script>
@@ -94,8 +93,12 @@ export default {
 </script>
 
 <style scoped>
-main {
-  height: 100vh;
+section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
 }
