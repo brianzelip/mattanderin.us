@@ -48,6 +48,7 @@ import images from "../img/slideshow/*.jpg";
 // see https://github.com/parcel-bundler/parcel/issues/1668#issuecomment-402620813
 
 export default {
+  props: ["keyboardNav"],
   data() {
     return {
       prev: null,
@@ -90,6 +91,13 @@ export default {
     active() {
       this.$set(this, "prev", this.prevIndex);
       this.$set(this, "next", this.nextIndex);
+    },
+    keyboardNav() {
+      this.keyboardNav.direction === "back"
+        ? this.goBack()
+        : this.keyboardNav.direction === "forward"
+        ? this.goForward()
+        : null;
     }
   },
   mounted() {
