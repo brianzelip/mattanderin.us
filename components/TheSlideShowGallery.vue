@@ -1,20 +1,13 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">Slide Show of Love</h1>
-    <ul
-      class="list-reset"
-      data-slide-container
-    >
+    <ul class="list-reset" data-slide-container>
       <li data-grid-sizer></li>
       <li data-gutter-sizer></li>
-      <li
-        :key="index"
-        class="hover-shadow hover-heart"
-        data-grid-item
-        v-for="(image, index) in imagesEntries"
-      >
+      <li :key="index" data-grid-item v-for="(image, index) in imagesEntries">
         <figure class="m0">
           <img
+            class="hover-shadow hover-heart"
             :alt="image[0]"
             :src="image[1]"
             :title="image[0]"
@@ -99,7 +92,9 @@ export default {
     transition: 200ms ease-in-out;
   }
   .hover-shadow:hover {
-    transform: translateY(-0.25rem);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    /* transform: scale3d(1.006, 1.006, 1); */
     transition: 200ms ease-in-out;
   }
 }
