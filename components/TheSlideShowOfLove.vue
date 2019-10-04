@@ -16,7 +16,10 @@
         </figure>
       </li>
     </ul>
-    <TheSlideShowOfLoveModal v-if="showModal"></TheSlideShowOfLoveModal>
+    <TheSlideShowOfLoveModal
+      v-if="showModal"
+      v-on:close="closeModal"
+    ></TheSlideShowOfLoveModal>
   </main>
 </template>
 
@@ -48,10 +51,13 @@ export default {
     }
   },
   methods: {
-    escListener: function(e) {
+    escListener(e) {
       if (e.keyCode === 27 && this.showModal) {
-        this.showModal = false;
+        this.closeModal();
       }
+    },
+    closeModal() {
+      this.showModal = false;
     }
   },
   created() {
