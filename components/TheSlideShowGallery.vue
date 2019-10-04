@@ -9,7 +9,7 @@
       <li data-gutter-sizer></li>
       <li
         :key="index"
-        class="hover-nudge-up"
+        class="hover-shadow hover-heart"
         data-grid-item
         v-for="(image, index) in imagesEntries"
       >
@@ -95,12 +95,15 @@ export default {
 }
 
 @media screen and (min-width: 780px) {
-  .hover-nudge-up {
+  .hover-shadow {
     transition: 200ms ease-in-out;
   }
-  .hover-nudge-up:hover {
+  .hover-shadow:hover {
     transform: translateY(-0.25rem);
     transition: 200ms ease-in-out;
   }
+}
+.hover-heart:hover {
+  cursor: url("../img/heart.png"), default;
 }
 </style>
