@@ -56,12 +56,24 @@ export default {
         this.closeModal();
       }
     },
+    leftListener(e) {
+      if (e.keyCode === 37 && this.showModal) {
+        this.closeModal();
+      }
+    },
+    rightListener(e) {
+      if (e.keyCode === 39 && this.showModal) {
+        this.closeModal();
+      }
+    },
     closeModal() {
       this.showModal = false;
     }
   },
   created() {
     document.addEventListener("keyup", this.escListener);
+    document.addEventListener("keyup", this.leftListener);
+    document.addEventListener("keyup", this.rightListener);
   },
   mounted() {
     const grid = document.querySelector("[data-slide-container]");
@@ -76,6 +88,8 @@ export default {
   },
   destroyed() {
     document.removeEventListener("keyup", this.escListener);
+    document.removeEventListener("keyup", this.leftListener);
+    document.removeEventListener("keyup", this.rightListener);
   }
 };
 </script>
