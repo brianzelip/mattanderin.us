@@ -142,12 +142,12 @@ svg {
   font-size: 2rem;
 }
 .fa-background {
-  fill: rgb(255, 249, 249);
+  fill: rgba(255, 255, 255, 0.75);
 }
 .fa-chevron {
   fill: rgba(51, 34, 34, 0.5);
 }
-svg:hover .fa-chevron {
-  fill: rgb(51, 34, 34);
+svg:hover .fa-background {
+  fill: rgb(255, 255, 255);
 }
 </style>
