@@ -19,6 +19,7 @@
     <TheSlideShowOfLoveModal
       v-if="showModal"
       v-on:close="closeModal"
+      :keyboard-nav="keyboardNav"
     ></TheSlideShowOfLoveModal>
   </main>
 </template>
@@ -42,7 +43,9 @@ export default {
       prev: 0,
       current: 1,
       next: 2,
-      showModal: false
+      showModal: false,
+      back: null,
+      keyboardNav: {}
     };
   },
   computed: {
@@ -58,12 +61,18 @@ export default {
     },
     leftListener(e) {
       if (e.keyCode === 37 && this.showModal) {
-        this.closeModal();
+        this.$set(this, "keyboardNav", {
+          direction: "back",
+          timestamp: new Date()
+        });
       }
     },
     rightListener(e) {
       if (e.keyCode === 39 && this.showModal) {
-        this.closeModal();
+        this.$set(this, "keyboardNav", {
+          direction: "forward",
+          timestamp: new Date()
+        });
       }
     },
     closeModal() {
