@@ -32,8 +32,13 @@ then in your css you would have
   - renamed file TheSlideShowOfLove.vue
   - show modal when an images is clicked
   - Listen for the escape key while the modal is showing to close the modal, using a method and `created()` and `destroyed()`, , via https://vuejsdevelopers.com/2017/05/01/vue-js-cant-help-head-body/. (I bought this dude a coffee as a result of this post ☕ 🎉)
+  - Listen for left/right arrow keydown presses from user, then send this data to modal child via prop (ie: I just build a carousel that can be advanced via mouse clicks AND keyboard key presses!)
 
 - TheSlideShowOfLove.vue: Renamed TheSlideShowOfLoveModal.vue
+  - Make modal full screen fixed position
+  - implement close button
+  - listen for vanilla js defined keydown events from parent for advancing the carousel back and forward
+  - TODO: get index of current slideshow image from prop, and start the carousel from that image
 
 ## 1.2. [0.13.0] - 2019-10-03
 
