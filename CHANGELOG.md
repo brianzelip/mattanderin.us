@@ -14,6 +14,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Updated
 
 - TheSlideShowGallery.vue: Got responsive masonry layout working, using the `gutter` option. HUGE THANKS to [this !SO answer](https://stackoverflow.com/a/51290967/2145103) for providing the algorithm needed to make masonry's responsive element sizing with gutter work! Here's the secret sauce:
+- TheSlideShowOfLove.vue: 
 
 ```
 //pseudocode
