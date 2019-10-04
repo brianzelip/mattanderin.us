@@ -92,9 +92,6 @@ export default {
       this.$set(this, "next", this.nextIndex);
     }
   },
-  created() {
-    console.log("images:::::::", Object.entries(images));
-  },
   mounted() {
     this.$set(this, "prev", this.prevIndex);
     this.$set(this, "next", this.nextIndex);
