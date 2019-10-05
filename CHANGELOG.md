@@ -47,7 +47,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
   - refactors around image data and index to start showing via props
   - Always be showing the heart cursor
 
-JUST BUILT MY FIRST REAL CAROUSEL!
+JUST BUILT MY FIRST REAL CAROUSEL! Here's what it looks like:
+
+![slideshow of love](./img/slideshow-of-love.gif)
 
 ## 1.2. [0.13.0] - 2019-10-03
 
