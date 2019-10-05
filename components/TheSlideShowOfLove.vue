@@ -1,6 +1,14 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">Slide Show of Love</h1>
+    <iframe
+      allow="encrypted-media"
+      allowtransparency="true"
+      frameborder="0"
+      height="75"
+      src="https://open.spotify.com/embed/user/bzelip/playlist/7E2LL6NnuLS11Dg7BpizFv"
+      style="width: 100%"
+    ></iframe>
     <ul
       class="list-reset"
       data-slide-container
