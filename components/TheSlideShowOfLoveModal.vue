@@ -60,7 +60,7 @@ export default {
   data() {
     return {
       prev: null,
-      active: 0,
+      active: this.startIndex || 0,
       next: null
     };
   },
@@ -93,6 +93,9 @@ export default {
     }
   },
   watch: {
+    startIndex(newIndex) {
+      this.$set(this, "active", newIndex);
+    },
     active() {
       this.$set(this, "prev", this.prevIndex);
       this.$set(this, "next", this.nextIndex);
@@ -108,7 +111,6 @@ export default {
   mounted() {
     this.$set(this, "prev", this.prevIndex);
     this.$set(this, "next", this.nextIndex);
-    console.log("via Modal, imagesEntries::::", this.imagesEntries);
   }
 };
 </script>
