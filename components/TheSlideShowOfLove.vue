@@ -17,7 +17,7 @@
             :alt="image[0]"
             :src="image[1]"
             :title="image[0]"
-            @click="showModal = !showModal"
+            @click="openModalAt(index)"
             class="hover-shadow hover-heart"
           />
         </figure>
@@ -60,6 +60,10 @@ export default {
     }
   },
   methods: {
+    openModalAt(i) {
+      this.$set(this, "startIndex", i);
+      this.$set(this, "showModal", true);
+    },
     escListener(e) {
       if (e.keyCode === 27 && this.showModal) {
         this.closeModal();
