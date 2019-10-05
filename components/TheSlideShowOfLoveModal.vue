@@ -56,7 +56,7 @@
 
 <script>
 export default {
-  props: ["keyboardNav", "imagesEntries"],
+  props: ["keyboardNav", "imagesEntries", "startIndex"],
   data() {
     return {
       prev: null,
