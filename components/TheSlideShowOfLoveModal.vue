@@ -55,10 +55,6 @@
 </template>
 
 <script>
-import images from "../img/slideshow/*.jpg";
-// Parcel returns an object of filename:path pairs
-// see https://github.com/parcel-bundler/parcel/issues/1668#issuecomment-402620813
-
 export default {
   props: ["keyboardNav", "imagesEntries"],
   data() {
@@ -70,7 +66,7 @@ export default {
   },
   computed: {
     numImages() {
-      return Object.entries(images).length;
+      return this.imagesEntries.length;
     },
     prevIndex() {
       return this.active === 0 ? this.numImages - 1 : this.active - 1;
@@ -78,13 +74,10 @@ export default {
     nextIndex() {
       return this.active === this.numImages - 1 ? 0 : this.active + 1;
     },
-    imagesEntries() {
-      return Object.entries(images);
-    },
     activeImage() {
       return {
-        name: Object.entries(images)[this.active][0],
-        path: Object.entries(images)[this.active][1]
+        name: this.imagesEntries[this.active][0],
+        path: this.imagesEntries[this.active][1]
       };
     }
   },
@@ -115,6 +108,7 @@ export default {
   mounted() {
     this.$set(this, "prev", this.prevIndex);
     this.$set(this, "next", this.nextIndex);
+    console.log("via Modal, imagesEntries::::", this.imagesEntries);
   }
 };
 </script>
