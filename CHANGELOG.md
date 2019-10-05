@@ -11,6 +11,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - branch: audio
 - description: Embed a responsive spotify playlist
 
+### Updated
+
+- TheSlideShowOfLove.vue: Add spotify embed iframe
+
 ## 1.1. [v0.14.0] 2019-10-05
 
 ### 1.1.1. Meta
@@ -392,6 +396,7 @@ FIXED by simply adding some bottom margin to the `<header>`!
 - [Changelog](#changelog)
   - [[v0.15.0] 2019-10-05](#v0150-2019-10-05)
     - [Meta](#meta)
+    - [Updated](#updated)
   - [[v0.14.0] 2019-10-05](#v0140-2019-10-05)
     - [Meta](#meta)
     - [Updated](#updated)
