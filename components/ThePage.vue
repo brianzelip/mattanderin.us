@@ -13,6 +13,7 @@ import TheSchedule from "./TheSchedule.vue";
 import TheLocation from "./TheLocation.vue";
 import TheWeddingParty from "./TheWeddingParty.vue";
 import TheHoneymoonFund from "./TheHoneymoonFund.vue";
+import TheSlideShowOfLoveModal from "./TheSlideShowOfLoveModal.vue";
 import TheSlideShowOfLove from "./TheSlideShowOfLove.vue";
 import TheRSVP from "./TheRSVP.vue";
 import TheRSVPSuccess from "./TheRSVPSuccess.vue";
@@ -30,6 +31,7 @@ export default {
     TheLocation,
     TheWeddingParty,
     TheHoneymoonFund,
+    TheSlideShowOfLoveModal,
     TheSlideShowOfLove,
     TheRSVP
   },
