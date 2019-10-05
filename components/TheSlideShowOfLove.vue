@@ -26,6 +26,7 @@
     <TheSlideShowOfLoveModal
       :imagesEntries="imagesEntries"
       :keyboard-nav="keyboardNav"
+      :startIndex="startIndex"
       v-if="showModal"
       v-on:close="closeModal"
     ></TheSlideShowOfLoveModal>
@@ -53,7 +54,8 @@ export default {
       next: 2,
       showModal: false,
       back: null,
-      keyboardNav: {}
+      keyboardNav: {},
+      startIndex: null
     };
   },
   computed: {
