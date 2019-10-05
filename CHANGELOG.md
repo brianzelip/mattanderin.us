@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.1. [v0.14.0] 2019-10-0
+## 1.1. [v0.14.0] 2019-10-05
 
 ### 1.1.1. Meta
 
@@ -13,32 +13,41 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Updated
 
-- TheSlideShowGallery.vue: Got responsive masonry layout working, using the `gutter` option. HUGE THANKS to [this !SO answer](https://stackoverflow.com/a/51290967/2145103) for providing the algorithm needed to make masonry's responsive element sizing with gutter work! Here's the secret sauce:
+- TheSlideShowGallery.vue:
 
-```
-//pseudocode
+  - Got responsive masonry layout working, using the `gutter` option. HUGE THANKS to [this !SO answer](https://stackoverflow.com/a/51290967/2145103) for providing the algorithm needed to make masonry's responsive element sizing with gutter work! Here's the secret sauce:
 
-$number_of_cols = 3; //for example
-$column_width = 100 / $number_of_cols; //a float value, e.g. 33.33333333 in this example
-$item_width_diff = $gutter * ($number_of_cols - 1) / $number_of_cols; //in this example: 10*2/3 = 6.6666666
+  ```
+  //pseudocode
 
-then in your css you would have
+  $number_of_cols = 3; //for example
+  $column_width = 100 / $number_of_cols; //a float value, e.g. 33.33333333 in this example
+  $item_width_diff = $gutter * ($number_of_cols - 1) / $number_of_cols; //in this example: 10*2/3 = 6.6666666
 
-.grid-item {
-  width: calc($column_width - $item_width_diff);
-}
-```
+  then in your css you would have
+
+  .grid-item {
+    width: calc($column_width - $item_width_diff);
+  }
+  ```
+
   - used some card hover and scale3d() styles from [this codepen](https://codepen.io/jasonheecs/pen/GNNwpZ) for `.hover-shadow`
   - renamed file TheSlideShowOfLove.vue
   - show modal when an images is clicked
   - Listen for the escape key while the modal is showing to close the modal, using a method and `created()` and `destroyed()`, , via https://vuejsdevelopers.com/2017/05/01/vue-js-cant-help-head-body/. (I bought this dude a coffee as a result of this post ☕ 🎉)
-  - Listen for left/right arrow keydown presses from user, then send this data to modal child via prop (ie: I just build a carousel that can be advanced via mouse clicks AND keyboard key presses!)
+  - Listen for left/right arrow keydown presses from user, then send this data to modal child via prop (ie: I just build a carousel that can be advanced via mouse and keyboard!)
+  - Always be showing the heart cursor
+  - send image data, including the index to start at, to the modal
 
-- TheSlideShowOfLove.vue: Renamed TheSlideShowOfLoveModal.vue
+* TheSlideShowOfLove.vue:
+  - Renamed TheSlideShowOfLoveModal.vue
   - Make modal full screen fixed position
   - implement close button
   - listen for vanilla js defined keydown events from parent for advancing the carousel back and forward
-  - TODO: get index of current slideshow image from prop, and start the carousel from that image
+  - refactors around image data and index to start showing via props
+  - Always be showing the heart cursor
+
+JUST BUILT MY FIRST REAL CAROUSEL!
 
 ## 1.2. [0.13.0] - 2019-10-03
 
@@ -372,7 +381,7 @@ FIXED by simply adding some bottom margin to the `<header>`!
 <!-- TOC -->
 
 - [Changelog](#changelog)
-  - [[v0.14.0] 2019-10-0](#v0140-2019-10-0)
+  - [[v0.14.0] 2019-10-05](#v0140-2019-10-05)
     - [Meta](#meta)
     - [Updated](#updated)
   - [[0.13.0] - 2019-10-03](#0130---2019-10-03)
