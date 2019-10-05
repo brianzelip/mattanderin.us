@@ -18,7 +18,7 @@
             :src="image[1]"
             :title="image[0]"
             @click="openModalAt(index)"
-            class="hover-shadow hover-heart"
+            class="hover-shadow"
           />
         </figure>
       </li>
@@ -155,7 +155,8 @@ export default {
     transition: 200ms ease-in-out;
   }
 }
-.hover-heart:hover {
+
+main {
   cursor: url("../img/heart.png"), default;
   transition: 200ms ease-in-out;
 }
