@@ -49,11 +49,7 @@ export default {
   },
   data() {
     return {
-      prev: 0,
-      current: 1,
-      next: 2,
       showModal: false,
-      back: null,
       keyboardNav: {},
       startIndex: null
     };
