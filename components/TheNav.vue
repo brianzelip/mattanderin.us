@@ -40,17 +40,6 @@ export default {
 </script>
 
 <style scoped>
-/* sticky header on scroll via
-   https://www.w3schools.com/howto/howto_js_sticky_header.asp */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: var(--soft-white);
-  z-index: 10;
-  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
-}
-
 .button {
   display: block;
   padding: 0.5rem;
