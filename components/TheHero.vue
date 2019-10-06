@@ -1,20 +1,13 @@
 <template>
-  <section>
-    <main
-      class="splash04"
-      id="hero"
-      ref="hero"
-    ></main>
-    <TheHeroImageControl
-      v-on:left="left"
-      v-on:right="right"
-    ></TheHeroImageControl>
-  </section>
+  <main
+    class="splash04"
+    id="hero"
+    ref="hero"
+  ></main>
 </template>
 
 <script>
 import TheHeader from "./TheHeader.vue";
-import TheHeroImageControl from "./TheHeroImageControl.vue";
 
 export default {
   data() {
@@ -33,38 +26,9 @@ export default {
       start: 4
     };
   },
-  components: { TheHeader, TheHeroImageControl },
-  methods: {
-    left() {
-      if (this.start === 1) {
-        const prev = 1;
-        const next = 9;
-        this.$set(this, "start", next);
-        this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
-      } else {
-        const prev = this.start;
-        const next = this.start - 1;
-        this.$set(this, "start", next);
-        this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
-      }
-    },
-    right() {
-      if (this.start === 9) {
-        const prev = 9;
-        const next = 1;
-        this.$set(this, "start", next);
-        this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
-      } else {
-        const prev = this.start;
-        const next = this.start + 1;
-        this.$set(this, "start", next);
-        this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
-      }
-    }
-  }
+  components: { TheHeader }
 };
 </script>
-
 
 <style>
 #hero {
