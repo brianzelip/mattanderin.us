@@ -7,8 +7,6 @@
 </template>
 
 <script>
-import TheHeader from "./TheHeader.vue";
-
 export default {
   data() {
     return {
@@ -25,8 +23,7 @@ export default {
       ],
       start: 4
     };
-  },
-  components: { TheHeader }
+  }
 };
 </script>
 
