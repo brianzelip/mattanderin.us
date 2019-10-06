@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.16.0] 2019-10-0
+
+### Meta
+
+- branch: hero
+- description: Ship at least one responsive hero image for the landing page
+
+### Updated
+
+- TheHero.vue
+
 ## [v0.15.0] 2019-10-05
 
 ### Meta
@@ -394,6 +405,9 @@ FIXED by simply adding some bottom margin to the `<header>`!
 <!-- TOC -->
 
 - [Changelog](#changelog)
+  - [[v0.16.0] 2019-10-0](#v0160-2019-10-0)
+    - [Meta](#meta)
+    - [Updated](#updated)
   - [[v0.15.0] 2019-10-05](#v0150-2019-10-05)
     - [Meta](#meta)
     - [Updated](#updated)
