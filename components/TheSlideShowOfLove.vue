@@ -4,10 +4,9 @@
     <iframe
       allow="encrypted-media"
       allowtransparency="true"
+      class="playlist"
       frameborder="0"
-      height="75"
-      src="https://open.spotify.com/embed/user/bzelip/playlist/7E2LL6NnuLS11Dg7BpizFv"
-      style="width: 100%"
+      src="https://open.spotify.com/embed/user/bzelip/playlist/7qcGYe3cdJ2vb3225mJbNz"
     ></iframe>
     <ul
       class="list-reset"
@@ -167,5 +166,22 @@ export default {
 main {
   cursor: url("../img/heart.png"), default;
   transition: 200ms ease-in-out;
+}
+
+.playlist {
+  height: 75px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 780px) {
+  .playlist {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .playlist {
+    height: 230px;
+    margin-bottom: 0;
+  }
 }
 </style>
