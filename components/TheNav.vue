@@ -51,7 +51,13 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
-  overflow-y: scroll;
+  overflow-y: hidden;
+}
+
+@media screen and (max-height: 570px) {
+  ul:hover {
+    overflow-y: scroll;
+  }
 }
 
 .button {
