@@ -14,6 +14,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Updated
 
 - TheHero.vue
+- TheNav.vue
+  - Make vertically scrollable at the wide and short viewport when the viewport is shorter than the header + nav content, use of `overflow-y: scroll` on the absolutely positioned ul from [this !so answer](https://stackoverflow.com/a/34172113/2145103)
+- TheHeader & TheNav: Make <header> as tall as desktop viewport height, and then make TheNav scrollable when TheNav has overflow-y because the desktop viewport height is shorter than allows for TheNav's content.
 
 ## [v0.15.0] 2019-10-05
 
