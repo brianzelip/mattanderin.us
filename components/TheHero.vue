@@ -12,7 +12,8 @@ export default {
       heroColorMap: {
         hero1: "white",
         hero2: "black",
-        hero3: "black"
+        hero3: "black",
+        hero4: "white"
       },
       images: [
         "splash01.jpg",
@@ -39,7 +40,7 @@ export default {
       max = Math.floor(max);
       return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
     } //via https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Getting_a_random_integer_between_two_values_inclusive
-    const _class = `hero${rando(1, 3)}`;
+    const _class = `hero${rando(1, 4)}`;
     this.$set(this, "randomClass", _class);
     this.$emit("update-hero-color", this.heroColorMap[_class]);
   }
@@ -58,7 +59,8 @@ main {
 
 .hero1,
 .hero2,
-.hero3 {
+.hero3,
+.hero4 {
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -87,16 +89,28 @@ main {
 .hero3 {
   background-image: url(../img/splash07-flipped.jpg);
 }
-
 @media screen and (orientation: portrait) {
   .hero3 {
     background-position: bottom right 28%;
   }
 }
-
 @media screen and (orientation: landscape) {
   .hero3 {
     background-position: right 63%;
+  }
+}
+
+.hero4 {
+  background-image: url(../img/splash02-flipped.jpg);
+}
+@media screen and (orientation: portrait) {
+  .hero4 {
+    background-position: 72% top;
+  }
+}
+@media screen and (orientation: landscape) {
+  .hero4 {
+    background-position: right 75%;
   }
 }
 
