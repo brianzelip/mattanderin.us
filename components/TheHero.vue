@@ -9,6 +9,10 @@ export default {
   data() {
     return {
       randomClass: "",
+      heroColorMap: {
+        hero1: "white",
+        hero2: "black"
+      },
       images: [
         "splash01.jpg",
         "splash02.jpg",
