@@ -1,7 +1,14 @@
 <template>
   <section>
-    <TheHeader :color="isHome ? 'white' : 'black'" class="header"></TheHeader>
-    <component :class="{ component: !isHome }" :is="component"></component>
+    <TheHeader
+      :color="isHome ? heroColor : 'black'"
+      class="header"
+    ></TheHeader>
+    <component
+      :class="{ component: !isHome }"
+      :is="component"
+      v-on:update-hero-color="updateHeroColor"
+    ></component>
   </section>
 </template>
 
@@ -35,9 +42,19 @@ export default {
     TheSlideShowOfLove,
     TheRSVP
   },
+  data() {
+    return {
+      heroColor: ""
+    };
+  },
   computed: {
     isHome() {
       return this.$route.name === "home";
+    }
+  },
+  methods: {
+    updateHeroColor(color) {
+      this.$set(this, "heroColor", color);
     }
   }
 };
