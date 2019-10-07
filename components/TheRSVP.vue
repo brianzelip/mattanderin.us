@@ -1,12 +1,16 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">RSVP</h1>
-    <p class="center">We can't wait to celebrate with you!</p>
-    <p class="center">
+    <p class="rsvpCopy">We can't wait to celebrate with you!</p>
+    <p class="rsvpCopy">
       Please respond by November 11 for yourself and
       others in your party.
     </p>
-    <p class="center">We'll email you a copy of your response.</p>
+    <p class="rsvpCopy">We'll email you a copy of your response.</p>
+    <div class="sincerely">
+      <span class="heart">❤️</span>
+      <p class="center Italianno signature">Erin &amp; Matt</p>
+    </div>
     <form
       class="mx-auto p2 border rounded"
       data-netlify="true"
@@ -207,6 +211,47 @@ export default {
 </script>
 
 <style scoped>
+.rsvpCopy {
+  text-align: center;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 780px) {
+  .rsvpCopy {
+    font-size: 1.5rem;
+  }
+}
+
+.sincerely {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+.heart {
+  margin-bottom: 0.5rem;
+  font-size: 1.875rem;
+}
+.signature {
+  margin: 0;
+  font-size: 2.75rem;
+}
+@media screen and (min-width: 780px) {
+  .heart {
+    font-size: 2rem;
+  }
+  .signature {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .heart {
+    font-size: 2.25rem;
+  }
+  .signature {
+    font-size: 3.5rem;
+  }
+}
+
 form {
   width: 100%;
 }
