@@ -1,21 +1,10 @@
 <template>
-  <section>
-    <main
-      class="splash04"
-      id="hero"
-      ref="hero"
-    ></main>
-    <TheHeroImageControl
-      v-on:left="left"
-      v-on:right="right"
-    ></TheHeroImageControl>
-  </section>
+  <main ref="hero">
+    <div class="hero"></div>
+  </main>
 </template>
 
 <script>
-import TheHeader from "./TheHeader.vue";
-import TheHeroImageControl from "./TheHeroImageControl.vue";
-
 export default {
   data() {
     return {
@@ -32,51 +21,36 @@ export default {
       ],
       start: 4
     };
-  },
-  components: { TheHeader, TheHeroImageControl },
-  methods: {
-    left() {
-      if (this.start === 1) {
-        const prev = 1;
-        const next = 9;
-        this.$set(this, "start", next);
-        this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
-      } else {
-        const prev = this.start;
-        const next = this.start - 1;
-        this.$set(this, "start", next);
-        this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
-      }
-    },
-    right() {
-      if (this.start === 9) {
-        const prev = 9;
-        const next = 1;
-        this.$set(this, "start", next);
-        this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
-      } else {
-        const prev = this.start;
-        const next = this.start + 1;
-        this.$set(this, "start", next);
-        this.$refs.hero.classList.replace(`splash0${prev}`, `splash0${next}`);
-      }
-    }
   }
 };
 </script>
 
-
-<style>
-#hero {
+<style scoped>
+main {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
   z-index: -1;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/splash04.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (orientation: portrait) {
+  .hero {
+    background-position: right 50% bottom;
+  }
+}
+@media screen and (orientation: landscape) {
+  .hero {
+    background-position: right 50%;
+  }
 }
 
 .splash01 {

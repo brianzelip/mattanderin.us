@@ -4,12 +4,56 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.16.0] 2019-10-07
+
+### Meta
+
+- branch: hero
+- description: Ship at least one responsive hero image for the landing page
+
+### Screenshots
+
+![responsive hero](./img/screenshots/hero.gif)
+
+### Updated
+
+- TheHero.vue: Use 3-value syntax for `background-position` and orientation media features to achieve the desired responsivity of the home page background image. This branch can be 🚢 🎉
+- TheNav.vue
+  - Make vertically scrollable at the wide and short viewport when the viewport is shorter than the header + nav content, use of `overflow-y: scroll` on the absolutely positioned ul from [this !so answer](https://stackoverflow.com/a/34172113/2145103)
+- TheHeader & TheNav: Make <header> as tall as desktop viewport height, and then make TheNav scrollable when TheNav has overflow-y because the desktop viewport height is shorter than allows for TheNav's content.
+  - The above work was undergone so that TheNav is accessible when there is not enough content in ThePage to force a vertical scroll. ie: This work addresses the other wonky case where there is a short and wide screen, like this CSS in ThePage.vue:
+  ```css
+  @media screen and (min-width: 960px) {
+    .header {
+      flex-shrink: 0;
+    }
+  }
+  @media screen and (min-width: 960px) and (min-height: 550px) {
+    .header {
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+    }
+  }
+  ```
+  - Now on TheHero, and TheHoneyMoonFund, the nav is still accessible on short and wide.
+
 ## [v0.15.0] 2019-10-05
 
 ### Meta
 
 - branch: audio
 - description: Embed a responsive spotify playlist
+
+### TODO
+
+- Follow up with M&E
+  - better pic of Jessica Hadwin Marchand
+  - schedule
+  - rsvp finalization
+    - date to rsvp by?
+    - do you want people to reject going through the site?
+  - our story finalization
 
 ### Updated
 
@@ -394,8 +438,13 @@ FIXED by simply adding some bottom margin to the `<header>`!
 <!-- TOC -->
 
 - [Changelog](#changelog)
+  - [[v0.16.0] 2019-10-07](#v0160-2019-10-07)
+    - [Meta](#meta)
+    - [Screenshots](#screenshots)
+    - [Updated](#updated)
   - [[v0.15.0] 2019-10-05](#v0150-2019-10-05)
     - [Meta](#meta)
+    - [TODO](#todo)
     - [Updated](#updated)
   - [[v0.14.0] 2019-10-05](#v0140-2019-10-05)
     - [Meta](#meta)
