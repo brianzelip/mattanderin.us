@@ -1,6 +1,6 @@
 <template>
   <main ref="hero">
-    <div class="hero"></div>
+    <div class="hero1"></div>
   </main>
 </template>
 
@@ -35,7 +35,7 @@ main {
   z-index: -1;
 }
 
-.hero {
+.hero1 {
   width: 100%;
   height: 100vh;
   background-image: url(../img/splash04.jpg);
@@ -43,12 +43,12 @@ main {
   background-repeat: no-repeat;
 }
 @media screen and (orientation: portrait) {
-  .hero {
+  .hero1 {
     background-position: right 50% bottom;
   }
 }
 @media screen and (orientation: landscape) {
-  .hero {
+  .hero1 {
     background-position: right 50%;
   }
 }
