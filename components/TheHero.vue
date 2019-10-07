@@ -38,7 +38,7 @@ main {
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/splash09.jpg);
+  background-image: url(../img/splash04.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
