@@ -40,6 +40,20 @@ export default {
 </script>
 
 <style scoped>
+nav {
+  flex-grow: 1;
+  position: relative;
+}
+
+ul {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+}
+
 .button {
   display: block;
   padding: 0.5rem;
