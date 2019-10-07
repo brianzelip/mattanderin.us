@@ -1,6 +1,6 @@
 <template>
   <main ref="hero">
-    <div class="hero1"></div>
+    <div class="hero2"></div>
   </main>
 </template>
 
@@ -51,6 +51,14 @@ main {
   .hero1 {
     background-position: right 50%;
   }
+}
+
+.hero2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/splash06.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .splash01 {
