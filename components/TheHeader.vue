@@ -40,12 +40,7 @@
         'bg-soft-white': color === 'white'
       }"
     />
-    <TheNav
-      :color="color"
-      class="desktopNav"
-      v-on:add-margin-bottom="setMarginBottom"
-      v-on:reset-margin-bottom="resetMarginBottom"
-    ></TheNav>
+    <TheNav :color="color" class="desktopNav"></TheNav>
   </header>
 </template>
 
@@ -70,14 +65,6 @@ export default {
   computed: {
     isHome() {
       return this.$route.name === "home";
-    }
-  },
-  methods: {
-    setMarginBottom(amount) {
-      this.marginBottom = `${amount}px`;
-    },
-    resetMarginBottom() {
-      this.marginBottom = `1rem`;
     }
   },
   watch: {
