@@ -38,8 +38,9 @@ export default {
       max = Math.floor(max);
       return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
     } //via https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Getting_a_random_integer_between_two_values_inclusive
-
-    this.$set(this, "randomClass", `hero${rando(1, 2)}`);
+    const _class = `hero${rando(1, 2)}`;
+    this.$set(this, "randomClass", _class);
+    this.$emit("update-hero-color", this.heroColorMap[_class]);
   }
 };
 </script>
