@@ -1,9 +1,7 @@
 <template>
-  <main
-    class="splash04"
-    id="hero"
-    ref="hero"
-  ></main>
+  <main ref="hero">
+    <div class="hero"></div>
+  </main>
 </template>
 
 <script>
@@ -27,17 +25,32 @@ export default {
 };
 </script>
 
-<style>
-#hero {
+<style scoped>
+main {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
   z-index: -1;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/splash09.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (orientation: portrait) {
+  .hero {
+    background-position: right 50% bottom;
+  }
+}
+@media screen and (orientation: landscape) {
+  .hero {
+    background-position: right 50%;
+  }
 }
 
 .splash01 {
