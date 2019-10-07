@@ -2,10 +2,7 @@
   <main>
     <section>
       <h1 class="mt0 regular center pageTitle">Bridesmaids</h1>
-      <ul
-        class="list-reset mb0"
-        id="bridesmaids"
-      >
+      <ul class="list-reset mb0" id="bridesmaids">
         <li class="pb2">
           <h2>Cassie Holden, Maid of Honor</h2>
           <div class="story">
@@ -77,10 +74,10 @@
               where she pretty much had me beat in chair placements every time.
               What we all wanted was to beat Leslie Smith. Damnit, Leslie Smith!
               Always first chair and shit...
-              <br />Getting distracted here. Long story short: Inkka is the best, and
-              this is the first time since her wedding over ten years ago that the
-              three of us will all be together at the same time. I could cry. I
-              will cry. Okay, now I'm crying.
+              <br />Getting distracted here. Long story short: Inkka is the
+              best, and this is the first time since her wedding over ten years
+              ago that the three of us will all be together at the same time. I
+              could cry. I will cry. Okay, now I'm crying.
             </p>
             <figure class="m0 square">
               <img src="../img/Inkka.jpg" />
@@ -114,7 +111,17 @@
         <li class="pb2">
           <h2>Jess Hagar</h2>
           <div class="story">
-            <p>Jess and I met in grad school and got to know each other a lot better when we joined forces in a Dungeons and Dragons campaign. Those games quickly led to lots of Celine Dion and Mariah Carey songs being belted out on the back porch and lots of awkward dancing to "Miss New Booty" and "That Butt Thang." Don’t worry. Both of those songs are on the wedding playlist, and both of them will have lengthy dedications to Jess that will both embarrass and delight her. Love this girl and her husband Skip "I heard everything you said" Shannon (also in the wedding). Good people.</p>
+            <p>
+              Jess and I met in grad school and got to know each other a lot
+              better when we joined forces in a Dungeons and Dragons campaign.
+              Those games quickly led to lots of Celine Dion and Mariah Carey
+              songs being belted out on the back porch and lots of awkward
+              dancing to "Miss New Booty" and "That Butt Thang." Don’t worry.
+              Both of those songs are on the wedding playlist, and both of them
+              will have lengthy dedications to Jess that will both embarrass and
+              delight her. Love this girl and her husband Skip "I heard
+              everything you said" Shannon (also in the wedding). Good people.
+            </p>
             <figure class="m0 portrait">
               <img src="../img/Jess.jpg" />
             </figure>
@@ -123,7 +130,15 @@
         <li class>
           <h2>Abbie Sackmann-Zelip</h2>
           <div class="story">
-            <p>Abbie, my soon-to-be sister-in-law, is a talented and fun person who I’ve so enjoyed getting to know since Matt and I got together seven years ago. Since then, she and her husband Brian have gone on lots of adventures with us - camping in the 9th ward during Mardi Gras, chasing chickens in Eunice, and hanging out in Baltimore where they now live. We’re both super excited that they’re spending a week with us in Louisiana!</p>
+            <p>
+              Abbie, my soon-to-be sister-in-law, is a talented and fun person
+              who I’ve so enjoyed getting to know since Matt and I got together
+              seven years ago. Since then, she and her husband Brian have gone
+              on lots of adventures with us - camping in the 9th ward during
+              Mardi Gras, chasing chickens in Eunice, and hanging out in
+              Baltimore where they now live. We’re both super excited that
+              they’re spending a week with us in Louisiana!
+            </p>
             <figure class="m0 landscape">
               <img src="../img/Abbie.jpg" />
             </figure>
@@ -131,7 +146,7 @@
         </li>
       </ul>
     </section>
-    <hr class="mt3" />
+    <hr />
     <section class="mt3">
       <h1 class="mt0 regular center pageTitle">The Dudes</h1>
       <ul class="list-reset mb0">
@@ -206,5 +221,12 @@
     width: 30%;
     flex-shrink: 0;
   }
+}
+
+hr {
+  height: 4px;
+  margin-top: 2rem;
+  border: none;
+  background-color: var(--soft-black);
 }
 </style>
