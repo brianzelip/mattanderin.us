@@ -17,6 +17,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - TheNav.vue
   - Make vertically scrollable at the wide and short viewport when the viewport is shorter than the header + nav content, use of `overflow-y: scroll` on the absolutely positioned ul from [this !so answer](https://stackoverflow.com/a/34172113/2145103)
 - TheHeader & TheNav: Make <header> as tall as desktop viewport height, and then make TheNav scrollable when TheNav has overflow-y because the desktop viewport height is shorter than allows for TheNav's content.
+  - The above work was undergone so that TheNav is accessible when there is not enough content in ThePage to force a vertical scroll. ie: This work addresses the other wonky case where there is a short and wide screen, like this CSS in ThePage.vue:
+  ```css
+  @media screen and (min-width: 960px) {
+    .header {
+      flex-shrink: 0;
+    }
+  }
+  @media screen and (min-width: 960px) and (min-height: 550px) {
+    .header {
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+    }
+  }
+  ```
+  - Now on TheHero, and TheHoneyMoonFund, the nav is still accessible on short and wide.
 
 ## [v0.15.0] 2019-10-05
 
