@@ -59,6 +59,7 @@ main {
   background-image: url(../img/splash06.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: left 47% center;
 }
 
 .splash01 {
