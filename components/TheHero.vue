@@ -16,19 +16,7 @@ export default {
         hero4: "white",
         hero5: "black",
         hero6: "black"
-      },
-      images: [
-        "splash01.jpg",
-        "splash02.jpg",
-        "splash03.jpg",
-        "splash04.JPG",
-        "splash05.jpg",
-        "splash06.jpg",
-        "splash07.jpg",
-        "splash08.jpg",
-        "splash09.jpg"
-      ],
-      start: 4
+      }
     };
   },
   methods: {
@@ -149,40 +137,5 @@ main {
   .hero6 {
     background-position: 65% bottom;
   }
-}
-
-.splash01 {
-  background-image: url(../img/splash01.jpg);
-}
-.splash02 {
-  background-image: url(../img/splash02.jpg);
-}
-.splash03 {
-  background-image: url(../img/splash03.jpg);
-}
-.splash04 {
-  background-image: url(../img/splash04.jpg);
-  background-position: top left;
-}
-.splash05 {
-  background-image: url(../img/splash05.jpg);
-}
-.splash06 {
-  background-image: url(../img/splash06.jpg);
-}
-.splash07 {
-  background-image: url(../img/splash07.jpg);
-}
-.splash08 {
-  background-image: url(../img/splash08.jpg);
-}
-.splash09 {
-  background-image: url(../img/splash09.jpg);
-}
-.splash10 {
-  background-image: url(../img/splash10.jpg);
-}
-.splash11 {
-  background-image: url(../img/splash11.jpg);
 }
 </style>
