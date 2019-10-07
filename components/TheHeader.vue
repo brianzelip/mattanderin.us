@@ -104,6 +104,7 @@ header {
   header {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
   }
 }
 @media screen and (min-width: 1024px) {
