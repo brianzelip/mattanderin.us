@@ -76,10 +76,10 @@ main {
 .hero2 {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/splash06.jpg);
+  background-image: url(../img/splash06-flipped.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left 47% center;
+  background-position: right 42% center;
 }
 
 .splash01 {
