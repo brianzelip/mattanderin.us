@@ -11,6 +11,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - branch: hero
 - description: Ship at least one responsive hero image for the landing page
 
+### Screenshots
+
+![responsive hero](./img/screenshots/hero.gif)
+
 ### Updated
 
 - TheHero.vue: Use 3-value syntax for `background-position` and orientation media features to achieve the desired responsivity of the home page background image. This branch can be 🚢 🎉
@@ -436,6 +440,7 @@ FIXED by simply adding some bottom margin to the `<header>`!
 - [Changelog](#changelog)
   - [[v0.16.0] 2019-10-0](#v0160-2019-10-0)
     - [Meta](#meta)
+    - [Screenshots](#screenshots)
     - [Updated](#updated)
   - [[v0.15.0] 2019-10-05](#v0150-2019-10-05)
     - [Meta](#meta)
