@@ -45,16 +45,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - branch: audio
 - description: Embed a responsive spotify playlist
 
-### TODO
-
-- Follow up with M&E
-  - better pic of Jessica Hadwin Marchand
-  - schedule
-  - rsvp finalization
-    - date to rsvp by?
-    - do you want people to reject going through the site?
-  - our story finalization
-
 ### Updated
 
 - TheSlideShowOfLove.vue: Add spotify embed iframe
