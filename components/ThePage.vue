@@ -122,6 +122,11 @@ export default {
   .pageTitle {
     font-size: 2rem;
   }
+  .component p,
+  .component label,
+  .component button {
+    font-size: 1.125rem;
+  }
 }
 @media screen and (min-width: 960px) {
   .pageTitle {
