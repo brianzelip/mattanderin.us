@@ -1,6 +1,6 @@
 <template>
   <main ref="hero">
-    <div class="hero2"></div>
+    <div :class="randomClass"></div>
   </main>
 </template>
 
@@ -8,6 +8,7 @@
 export default {
   data() {
     return {
+      randomClass: "",
       images: [
         "splash01.jpg",
         "splash02.jpg",
@@ -21,6 +22,20 @@ export default {
       ],
       start: 4
     };
+  },
+  methods: {
+    setHeroColor(color) {
+      this.$emit("update-hero-color", color);
+    }
+  },
+  mounted() {
+    function rando(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
+    } //via https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Getting_a_random_integer_between_two_values_inclusive
+
+    this.$set(this, "randomClass", `hero${rando(1, 2)}`);
   }
 };
 </script>
