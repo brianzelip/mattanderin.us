@@ -236,6 +236,16 @@
   }
 }
 
+img {
+  box-sizing: border-box;
+  border: 2px solid var(--soft-black);
+}
+@media screen and (min-width: 960px) {
+  img {
+    border-width: 4px;
+  }
+}
+
 hr {
   height: 4px;
   margin-top: 2rem;
