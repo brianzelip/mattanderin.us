@@ -1,13 +1,12 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">RSVP</h1>
-    <p class="rsvpCopy">We can't wait to celebrate with you!</p>
+    <p class="rsvpCopy">We can&rsquo;t wait to celebrate with you!</p>
     <p class="rsvpCopy">
       Please respond by November 11
-      <span class="sup">th</span> for yourself and
-      others in your party.
+      <span class="sup">th</span> for yourself and others in your party.
     </p>
-    <p class="rsvpCopy">We'll email you a copy of your response.</p>
+    <p class="rsvpCopy">We&rsquo;ll email you a copy of your response.</p>
     <div class="sincerely">
       <span class="heart">❤️</span>
       <p class="center Italianno signature">Erin &amp; Matt</p>
@@ -20,16 +19,9 @@
       name="RSVP"
       v-on:submit.prevent="handleSubmit"
     >
-      <input
-        name="form-name"
-        type="hidden"
-        value="RSVP"
-      />
+      <input name="form-name" type="hidden" value="RSVP" />
       <section id="userEmail">
-        <label
-          class="block mb1"
-          for="email"
-        >Your email address</label>
+        <label class="block mb1" for="email">Your email address</label>
         <input
           class="col-12 field"
           id="email"
@@ -38,14 +30,10 @@
           v-model.trim="email"
         />
       </section>
-      <section
-        class="mt3"
-        id="partySize"
-      >
-        <label
-          class="block mb1"
-          for="partyOf"
-        >Number of people in your party</label>
+      <section class="mt3" id="partySize">
+        <label class="block mb1" for="partyOf"
+          >Number of people in your party</label
+        >
         <input
           class="field"
           id="partyOf"
@@ -55,11 +43,7 @@
         />
       </section>
 
-      <section
-        class="mt3"
-        id="guestNames"
-        v-if="partyOf > 0"
-      >
+      <section class="mt3" id="guestNames" v-if="partyOf > 0">
         <ol class="list-reset mb0">
           <li
             :key="i"
@@ -68,12 +52,11 @@
           >
             <p class="mb0 mr1 guestNum">{{ i + 1 }}</p>
             <div class="col-12">
-              <label
-                :for="`guest-${i+1}`"
-                class="vertical-align-unset"
-              >Full name</label>
+              <label :for="`guest-${i + 1}`" class="vertical-align-unset"
+                >Full name</label
+              >
               <input
-                :id="`guest-${i+1}`"
+                :id="`guest-${i + 1}`"
                 class="col-12 field"
                 placeholder="First Last"
                 required
@@ -85,15 +68,10 @@
         </ol>
       </section>
 
-      <section
-        class="mt3"
-        id="dietaryRestrictions"
-        v-if="partyOf > 0"
-      >
-        <label
-          class="block mb1"
-          for="dietary"
-        >Please list any dietary restrictions</label>
+      <section class="mt3" id="dietaryRestrictions" v-if="partyOf > 0">
+        <label class="block mb1" for="dietary"
+          >Please list any dietary restrictions</label
+        >
         <textarea
           class="field col-12"
           id="dietary"
@@ -103,15 +81,8 @@
         ></textarea>
       </section>
 
-      <section
-        class="mt3"
-        id="otherComments"
-        v-if="partyOf > 0"
-      >
-        <label
-          class="block mb1"
-          for="comments"
-        >Other comments</label>
+      <section class="mt3" id="otherComments" v-if="partyOf > 0">
+        <label class="block mb1" for="comments">Other comments</label>
         <textarea
           class="field col-12"
           id="comments"
@@ -124,7 +95,9 @@
         class="mt3 btn btn-primary regular"
         type="submit"
         v-if="partyOf > 0"
-      >Submit</button>
+      >
+        Submit
+      </button>
     </form>
   </main>
 </template>
