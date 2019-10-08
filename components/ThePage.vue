@@ -109,7 +109,8 @@ export default {
 }
 .component p,
 .component label,
-.component button {
+.component button,
+.component figcaption {
   font-size: 1rem;
 }
 
@@ -124,7 +125,8 @@ export default {
   }
   .component p,
   .component label,
-  .component button {
+  .component button,
+  .component figcaption {
     font-size: 1.125rem;
   }
 }
@@ -137,7 +139,8 @@ export default {
   }
   .component p,
   .component label,
-  .component button {
+  .component button,
+  .component figcaption {
     font-size: 1.25rem;
   }
 }

@@ -1,12 +1,18 @@
 <template>
   <header>
     <div class="hwrapper">
-      <TheHeaderH1 :color="color" v-if="isHome"></TheHeaderH1>
-      <router-link class="hover-text-decoration-none" to="/" v-else>
+      <TheHeaderH1
+        :color="color"
+        v-if="isHome"
+      ></TheHeaderH1>
+      <router-link
+        class="hover-text-decoration-none"
+        to="/"
+        v-else
+      >
         <TheHeaderH1 :color="color"></TheHeaderH1>
       </router-link>
       <h2 class="hide">Winter Solstice, December 21, 2019</h2>
-      <h2 class="hide">Maurice, Louisiana</h2>
       <p
         :class="{
           'soft-black': color === 'black',
@@ -14,15 +20,18 @@
         }"
         class="date"
       ></p>
-      <p
+      <h2
         :class="{
           'soft-black': color === 'black',
           'soft-white': color === 'white'
         }"
-        class="place"
-      ></p>
+        class="place baskerville regular"
+      >Maurice, Louisiana</h2>
     </div>
-    <button @click="showNavMobile = !showNavMobile" class="mobileNav">
+    <button
+      @click="showNavMobile = !showNavMobile"
+      class="mobileNav"
+    >
       <svg viewBox="0 0 448 512">
         <path
           d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"
@@ -40,7 +49,10 @@
         'bg-soft-white': color === 'white'
       }"
     />
-    <TheNav :color="color" class="desktopNav"></TheNav>
+    <TheNav
+      :color="color"
+      class="desktopNav"
+    ></TheNav>
   </header>
 </template>
 
@@ -169,7 +181,8 @@ h1 {
   }
 }
 
-p {
+p,
+.place {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1rem;
@@ -200,15 +213,12 @@ p {
   }
 }
 .date::after {
-  content: "December 21, 2019";
+  content: "Winter Solstice \22C5  Dec 21, 2019";
 }
 @media screen and (min-width: 480px) {
   .date::after {
     content: "Winter Solstice \22C5  December 21, 2019";
   } /* U+22C5 is unicode for &sdot; */
-}
-.place::after {
-  content: "Maurice, Louisiana";
 }
 
 .sup {
