@@ -11,11 +11,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - branch: cleanup2
 - description: clean up some more
 
-### 1.1.2. Updated
+### 1.1.2. Added
+
+- parcel-plugin-static-files-copy: Installed dev-dependency
+
+### 1.1.3. Updated
 
 - index.html:
   - Remove unused google fonts
   - add link rel="author" to my homepage
+- humans.txt: Move to static directory to be copied as-is to parcel's dist dir by parcel-plugin-static-files-copy
 
 ## 1.2. [v0.17.2] 2019-10-07
 
@@ -489,6 +494,7 @@ FIXED by simply adding some bottom margin to the `<header>`!
 - [Changelog](#changelog)
   - [[v0.17.3] 2019-10-08](#v0173-2019-10-08)
     - [Meta](#meta)
+    - [Added](#added)
     - [Updated](#updated)
   - [[v0.17.2] 2019-10-07](#v0172-2019-10-07)
     - [Meta](#meta)
