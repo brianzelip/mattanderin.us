@@ -83,12 +83,13 @@
 
 <style scoped>
 p:nth-of-type(1)::first-letter {
-  font-size: 3rem;
+  font-size: 3.75rem;
   line-height: 0.6;
+  font-family: Italianno;
 }
 @media screen and (min-width: 960px) {
   p:nth-of-type(1)::first-letter {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 
