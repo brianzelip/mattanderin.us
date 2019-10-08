@@ -82,6 +82,16 @@
 </template>
 
 <style scoped>
+p:nth-of-type(1)::first-letter {
+  font-size: 3rem;
+  line-height: 0.6;
+}
+@media screen and (min-width: 960px) {
+  p:nth-of-type(1)::first-letter {
+    font-size: 3.5rem;
+  }
+}
+
 figure {
   display: block;
   max-width: 100%;
