@@ -3,7 +3,8 @@
     <h1 class="mt0 regular center pageTitle">RSVP</h1>
     <p class="rsvpCopy">We can't wait to celebrate with you!</p>
     <p class="rsvpCopy">
-      Please respond by November 11 for yourself and
+      Please respond by November 11
+      <span class="sup">th</span> for yourself and
       others in your party.
     </p>
     <p class="rsvpCopy">We'll email you a copy of your response.</p>
@@ -221,6 +222,12 @@ export default {
   }
 }
 
+.sup {
+  font-size: 0.83em;
+  vertical-align: super;
+  margin-left: -0.45rem;
+}
+
 .sincerely {
   display: flex;
   justify-content: center;
@@ -228,7 +235,8 @@ export default {
   margin-bottom: 0;
 }
 .heart {
-  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
   font-size: 1.875rem;
 }
 .signature {
