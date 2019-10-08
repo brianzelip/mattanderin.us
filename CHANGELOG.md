@@ -21,6 +21,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
   - Remove unused google fonts
   - add link rel="author" to my homepage
 - humans.txt: Move to static directory to be copied as-is to parcel's dist dir by parcel-plugin-static-files-copy
+- TheHeader.vue: Instead of toggling 'winter solstice' after the smallest breakpoint, abbreviate December instead to always be showing winter solstice
+- TheOurStory.vue: Add content
 
 ## 1.2. [v0.17.2] 2019-10-07
 
