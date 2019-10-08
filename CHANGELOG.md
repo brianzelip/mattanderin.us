@@ -22,7 +22,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
   - add link rel="author" to my homepage
 - humans.txt: Move to static directory to be copied as-is to parcel's dist dir by parcel-plugin-static-files-copy
 - TheHeader.vue: Instead of toggling 'winter solstice' after the smallest breakpoint, abbreviate December instead to always be showing winter solstice
-- TheOurStory.vue: Add content
+- TheOurStory.vue:
+  - Add text content
+  - Find and add two related photos, embedded in a responsive figure with figcaption, and outline
+  - Style the initial letter of the first paragraph
+- TheOurStory, TheWeddingParty, TheHoneyMoonFund, TheRSVP: Swap out plain text double and single quotes with html entities for better looking typography
 
 ## 1.2. [v0.17.2] 2019-10-07
 
