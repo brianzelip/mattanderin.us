@@ -12,13 +12,14 @@
       >
         <TheHeaderH1 :color="color"></TheHeaderH1>
       </router-link>
-      <h2
+      <h2 class="hide">Winter Solstice, December 21, 2019</h2>
+      <p
         :class="{
           'soft-black': color === 'black',
           'soft-white': color === 'white'
         }"
-        class="date baskerville regular"
-      >Winter Solstice &sdot; December 21, 2019</h2>
+        class="date"
+      ></p>
       <h2
         :class="{
           'soft-black': color === 'black',
@@ -181,7 +182,6 @@ h1 {
 }
 
 p,
-.date,
 .place {
   margin-top: 0;
   margin-bottom: 0;
@@ -211,6 +211,14 @@ p,
   .place {
     font-size: 1.5rem;
   }
+}
+.date::after {
+  content: "Winter Solstice \22C5  Dec 21, 2019";
+}
+@media screen and (min-width: 480px) {
+  .date::after {
+    content: "Winter Solstice \22C5  December 21, 2019";
+  } /* U+22C5 is unicode for &sdot; */
 }
 
 .sup {
