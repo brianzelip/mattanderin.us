@@ -1,6 +1,6 @@
 {
   "name": "mattanderin.us",
-  "version": "0.17.4",
+  "version": "0.17.5",
   "description": "Website for Erin and Matt's wedding 🎉",
   "main": "src/index.html",
   "scripts": {
