@@ -4,7 +4,10 @@
     <p>It all started in a Griffin Hall computer room when Erin said, &ldquo;Nice mustache&rdquo; and Matt replied, &ldquo;You&rsquo;re in my seat.&rdquo; It was truly love at first insult. He had an old timey, western style mustache that turned up at the edges, kind of like he was an extra from Tombstone. Erin had to admit, though that, despite the alluring moustache,Matt was impolite at best. Lucky for him, he was quite cute, and Erin didn&rsquo;t forget that part.</p>
 
     <figure class="griffin-hall">
-      <img src="../img/griffin-hall.jpg" />
+      <img
+        alt="Griffin Hall, University of Louisiana at Lafayette"
+        src="../img/griffin-hall.jpg"
+      />
       <figcaption>Griffin Hall, University of Louisiana</figcaption>
     </figure>
 
@@ -14,12 +17,23 @@
 
     <p>As the party died down, Erin and Matt were left sitting poolside, clothed. They got to know each other&mdash;how Matt was from Toledo and had worked in Alaska, and had lived in New Orleans years ago. He&rsquo;d moved to Lafayette because he missed Louisiana so much. Erin was dressed as Linda Rondstadt and he told her she looked great. Matt was back in his Townes Van Zandt outfit after his naked stint.</p>
 
+    <figure class="linda">
+      <img
+        alt="Charly and Erin in Amy Winehouse and Linda Rondstadt holloween costumes"
+        src="../img/linda-rondstadt.png"
+      />
+      <figcaption>Erin as Linda Rondstadt (right)</figcaption>
+    </figure>
+
     <p>They were chatting with their remaining party friends when Erin left, awkwardly speeding away as Matt yelled goodbye from the parking lot. He made her nervous in a good way.</p>
 
     <p>A couple of weeks later at the English department&rsquo;s Thursday Night Reading Series, in Fall of 2012 at the Saint Street Inn, Erin and Matt were thrown together again, and this time they weren&rsquo;t too awkward to suggest hanging out after the reading.</p>
 
     <figure class="cafe-cottage">
-      <img src="../img/cafe-cottage.jpg" />
+      <img
+        alt="The bar at Cafe Cottage"
+        src="../img/cafe-cottage.jpg"
+      />
       <figcaption>Cafe Cottage</figcaption>
     </figure>
 
@@ -76,11 +90,19 @@ figcaption {
   }
 }
 
+@media screen and (min-width: 400px) {
+  figure.linda {
+    max-width: 250px;
+    float: left;
+    margin: 0.5rem 1.25rem 0.5rem 0;
+  }
+}
+
 @media screen and (min-width: 480px) {
   figure.cafe-cottage {
     max-width: 350px;
-    float: left;
-    margin: 0.5rem 1rem 0 0;
+    float: right;
+    margin: 0.5rem 0 0 1.25rem;
   }
 }
 </style>
