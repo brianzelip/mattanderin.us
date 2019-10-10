@@ -24,6 +24,21 @@
         type="hidden"
         value="RSVP"
       />
+
+      <section id="responderName">
+        <label
+          class="block mb1"
+          for="responder"
+        >Your name</label>
+        <input
+          class="col-12 field"
+          id="responder"
+          required
+          type="text"
+          v-model="responder"
+        />
+      </section>
+
       <section id="userEmail">
         <label
           class="block mb1"
@@ -37,6 +52,7 @@
           v-model.trim="email"
         />
       </section>
+
       <section
         class="mt3"
         id="partySize"
