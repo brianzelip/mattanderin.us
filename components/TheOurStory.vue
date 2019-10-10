@@ -71,6 +71,11 @@ figure {
   border: 2px solid var(--soft-black);
   clear: both;
 }
+@media screen and (min-width: 960px) {
+  figure {
+    border-width: 4px;
+  }
+}
 
 figure img {
   width: 100%;
@@ -80,14 +85,6 @@ figure img {
 figcaption {
   margin-top: 0.5rem;
   text-align: center;
-}
-
-@media screen and (min-width: 525px) {
-  figure.mustache {
-    max-width: 300px;
-    float: left;
-    margin: 0.25rem 1.25rem 0.75rem 0;
-  }
 }
 
 @media screen and (min-width: 525px) {
@@ -101,25 +98,28 @@ figcaption {
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 960px) {
-  figure {
-    border-width: 4px;
+
+@media screen and (min-width: 525px) {
+  figure.mustache {
+    max-width: 300px;
+    float: left;
+    margin: 0.25rem 1.25rem 0.75rem 0;
   }
 }
 
 @media screen and (min-width: 400px) {
   figure.linda {
     max-width: 250px;
-    float: left;
-    margin: 0.5rem 1.25rem 0.5rem 0;
+    float: right;
+    margin: 0.5rem 0 0.5rem 1.25rem;
   }
 }
 
 @media screen and (min-width: 480px) {
   figure.wild-salmon {
     max-width: 375px;
-    float: right;
-    margin: 0.5rem 0 0 1.25rem;
+    float: left;
+    margin: 0.5rem 1.25rem 0 0;
   }
 }
 </style>
