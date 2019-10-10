@@ -113,48 +113,19 @@ export default {
       youth: 0,
       children: 0,
       partyOf: null,
-      guests: [],
-      dietary: "",
       comments: ""
     };
   },
   computed: {
     submissionData() {
-      const guestNames = this.guests
-        .reduce((acc, guest) => {
-          acc.push(guest.name);
-          return acc;
-        }, [])
-        .sort()
-        .join("\n");
-
       return {
         "user email": this.email,
         "group size": this.partyOf,
-        guests: guestNames,
-        "dietary concerns": this.dietary,
         "other comments": this.comments
       };
     }
   },
   methods: {
-    editGuest(e) {
-      const idExists =
-        this.guests.findIndex(guest => guest.id === e.target.id) > -1;
-
-      if (!idExists) {
-        this.$set(this.guests, this.guests.length, {
-          id: `${e.target.id}`,
-          name: `${e.target.value}`
-        });
-      } else {
-        this.$set(
-          this.guests[this.guests.findIndex(guest => guest.id === e.target.id)],
-          "name",
-          e.target.value
-        );
-      }
-    },
     encode(data) {
       return Object.keys(data)
         .map(
@@ -252,10 +223,6 @@ textarea {
 
 input[type="number"] {
   width: 6rem;
-}
-
-.guestNum {
-  vertical-align: middle;
 }
 
 .vertical-align-unset {
