@@ -134,7 +134,12 @@ import axios from "axios";
 export default {
   data() {
     return {
+      responder: "",
+      attending: null,
       email: "",
+      adults: 0,
+      youth: 0,
+      children: 0,
       partyOf: null,
       guests: [],
       dietary: "",
