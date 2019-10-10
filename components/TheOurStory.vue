@@ -13,6 +13,14 @@
 
     <p>Fast forward a few months: Erin is driving Matt and a van-full of friends when Matt&mdash;in a fit of passion&mdash;artfully grazes her leg, sending shivers to her very core...is one person&rsquo;s memory, and it is partially true. Anyway, that night they became friends. Shy leg-grabbing friends who, in typical drunken grad school fashion were too awkward to talk normally for any length of time without the cover of a silly costume or inadvisable amounts of alcohol.</p>
 
+    <figure class="mustache">
+      <img
+        alt="Matt's nice mustache"
+        src="../img/mustache.jpg"
+      />
+      <figcaption>Nice mustache!</figcaption>
+    </figure>
+
     <p>Fast forward to Kristen Bradley&rsquo;s party. A pool party. A costume party. A nude party for some people. Like Matt. When the cops arrived, Matt somehow managed to put both his legs into one leg of his boxers, as if he were wearing a mini skirt of sorts and, as a very unimpressed security guard rolled her eyes, he stumbled toward Kristen&rsquo;s apartment with the rest of the inebriants.</p>
 
     <p>As the party died down, Erin and Matt were left sitting poolside, clothed. They got to know each other&mdash;how Matt was from Toledo and had worked in Alaska, and had lived in New Orleans years ago. He&rsquo;d moved to Lafayette because he missed Louisiana so much. Erin was dressed as Linda Rondstadt and he told her she looked great. Matt was back in his Townes Van Zandt outfit after his naked stint.</p>
@@ -61,6 +69,7 @@ figure {
   margin: 0.5rem 0;
   padding: 0.5rem;
   border: 2px solid var(--soft-black);
+  clear: both;
 }
 
 figure img {
@@ -71,6 +80,14 @@ figure img {
 figcaption {
   margin-top: 0.5rem;
   text-align: center;
+}
+
+@media screen and (min-width: 525px) {
+  figure.mustache {
+    max-width: 300px;
+    float: left;
+    margin: 0.25rem 1.25rem 1rem 0;
+  }
 }
 
 @media screen and (min-width: 525px) {
