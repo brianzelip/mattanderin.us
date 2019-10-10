@@ -37,12 +37,12 @@
 
     <p>A couple of weeks later at the English department&rsquo;s Thursday Night Reading Series, in Fall of 2012 at the Saint Street Inn, Erin and Matt were thrown together again, and this time they weren&rsquo;t too awkward to suggest hanging out after the reading.</p>
 
-    <figure class="cafe-cottage">
+    <figure class="wild-salmon">
       <img
-        alt="The bar at Cafe Cottage"
-        src="../img/cafe-cottage.jpg"
+        alt="The Wild Salmon"
+        src="../img/wild-salmon.jpg"
       />
-      <figcaption>Cafe Cottage</figcaption>
+      <figcaption>The Wild Salmon</figcaption>
     </figure>
 
     <p>They went to the Wild Salmon (RIP). There was a loud band playing for a $10 cover, and they weren&rsquo;t very good. Suavely, Matt suggested they not go in there so he could be alone with Erin. They found themselves at Cafe Cottage&mdash;a den of iniquity filled with hipsters writing their first novel or creepers getting handsy at the bar, no in-between. They had drinks and quesadillas while they talked about music and life. The two of them lived close to each other in Freetown near the university. Like a two-minute walk close together. They ended up at Matt&rsquo;s place where they had their first kiss, in his one-bedroom duplex apartment. It came to be a place that they found themselves sitting on the porch, hidden behind a huge banana tree, heckling young undergrads who liked to kick over Matt&rsquo;s trash cans. It was the place where they got to know each other. Had their first everything. It was a tiny place where cats and the occasional possum would wander in, but it was pretty romantic to them.</p>
@@ -86,7 +86,7 @@ figcaption {
   figure.mustache {
     max-width: 300px;
     float: left;
-    margin: 0.25rem 1.25rem 1rem 0;
+    margin: 0.25rem 1.25rem 0.75rem 0;
   }
 }
 
@@ -116,8 +116,8 @@ figcaption {
 }
 
 @media screen and (min-width: 480px) {
-  figure.cafe-cottage {
-    max-width: 350px;
+  figure.wild-salmon {
+    max-width: 375px;
     float: right;
     margin: 0.5rem 0 0 1.25rem;
   }
