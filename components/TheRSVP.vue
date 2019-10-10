@@ -58,6 +58,33 @@
 
       <section
         class="mt3"
+        id="attendance"
+      >
+        <p class="block mb1">Will you be attending?</p>
+        <label
+          class="block mb1"
+          for="yay"
+        >Yes</label>
+        <input
+          id="yay"
+          type="radio"
+          v-model="attending"
+          value="true"
+        />
+        <label
+          class="block mb1"
+          for="nay"
+        >No</label>
+        <input
+          id="nay"
+          type="radio"
+          v-model="attending"
+          value="false"
+        />
+      </section>
+
+      <section
+        class="mt3"
         id="partySize"
       >
         <label
