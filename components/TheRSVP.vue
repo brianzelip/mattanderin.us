@@ -39,7 +39,10 @@
         />
       </section>
 
-      <section id="userEmail">
+      <section
+        class="mt3"
+        id="userEmail"
+      >
         <label
           class="block mb1"
           for="email"
@@ -72,54 +75,6 @@
 
       <section
         class="mt3"
-        id="guestNames"
-        v-if="partyOf > 0"
-      >
-        <ol class="list-reset mb0">
-          <li
-            :key="i"
-            class="flex mb2 border p1 rounded"
-            v-for="(guest, i) in partyOf"
-          >
-            <p class="mb0 mr1 guestNum">{{ i + 1 }}</p>
-            <div class="col-12">
-              <label
-                :for="`guest-${i + 1}`"
-                class="vertical-align-unset"
-              >Full name</label>
-              <input
-                :id="`guest-${i + 1}`"
-                class="col-12 field"
-                placeholder="First Last"
-                required
-                type="text"
-                v-on:input="editGuest"
-              />
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section
-        class="mt3"
-        id="dietaryRestrictions"
-        v-if="partyOf > 0"
-      >
-        <label
-          class="block mb1"
-          for="dietary"
-        >Please list any dietary restrictions</label>
-        <textarea
-          class="field col-12"
-          id="dietary"
-          name="dietary"
-          rows="3"
-          v-model="dietary"
-        ></textarea>
-      </section>
-
-      <section
-        class="mt3"
         id="otherComments"
         v-if="partyOf > 0"
       >
@@ -135,6 +90,7 @@
           v-model="comments"
         ></textarea>
       </section>
+
       <button
         class="mt3 btn btn-primary regular"
         type="submit"
