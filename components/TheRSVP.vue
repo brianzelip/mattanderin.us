@@ -64,21 +64,21 @@
         <div class="mb2">
           <label for="yay">Yes</label>
           <input
+            :value="true"
             id="yay"
             name="attending"
             type="radio"
             v-model="attending"
-            value="true"
           />
         </div>
         <div>
           <label for="nay">No</label>
           <input
+            :value="false"
             id="nay"
             name="attending"
             type="radio"
             v-model="attending"
-            value="false"
           />
         </div>
       </section>
@@ -103,7 +103,7 @@
       <section
         class="mt3"
         id="otherComments"
-        v-if="partyOf > 0"
+        v-if="attending"
       >
         <label
           class="block mb1"
@@ -119,9 +119,9 @@
       </section>
 
       <button
+        :disabled="!attending"
         class="mt3 btn btn-primary regular"
         type="submit"
-        v-if="partyOf > 0"
       >Submit</button>
     </form>
   </main>
