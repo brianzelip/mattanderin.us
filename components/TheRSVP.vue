@@ -29,7 +29,7 @@
         <label
           class="block mb1"
           for="respondent"
-        >Your name</label>
+        >Your full name</label>
         <input
           class="col-12 field"
           id="respondent"
