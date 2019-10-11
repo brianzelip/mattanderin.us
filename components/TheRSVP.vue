@@ -3,7 +3,7 @@
     <h1 class="mt0 regular center pageTitle">RSVP</h1>
     <p class="rsvpCopy">We can&rsquo;t wait to celebrate with you!</p>
     <p class="rsvpCopy">
-      Please respond by November 11
+      Kindly respond by November 11
       <span class="sup">th</span> for yourself and others in your party.
     </p>
     <p class="rsvpCopy">We&rsquo;ll email you a copy of your response.</p>
@@ -19,9 +19,34 @@
       name="RSVP"
       v-on:submit.prevent="handleSubmit"
     >
-      <input name="form-name" type="hidden" value="RSVP" />
-      <section id="userEmail">
-        <label class="block mb1" for="email">Your email address</label>
+      <input
+        name="form-name"
+        type="hidden"
+        value="RSVP"
+      />
+
+      <section id="respondentName">
+        <label
+          class="block mb1"
+          for="respondent"
+        >Your name</label>
+        <input
+          class="col-12 field"
+          id="respondent"
+          required
+          type="text"
+          v-model="respondent"
+        />
+      </section>
+
+      <section
+        class="mt3"
+        id="userEmail"
+      >
+        <label
+          class="block mb1"
+          for="email"
+        >Your email address</label>
         <input
           class="col-12 field"
           id="email"
@@ -30,59 +55,94 @@
           v-model.trim="email"
         />
       </section>
-      <section class="mt3" id="partySize">
-        <label class="block mb1" for="partyOf"
-          >Number of people in your party</label
-        >
+
+      <section
+        class="mt3"
+        id="attendance"
+      >
+        <p class="block mb1">Will you be attending?</p>
+        <div class="mb2">
+          <label for="yay">Yes</label>
+          <input
+            :value="true"
+            id="yay"
+            name="attending"
+            type="radio"
+            v-model="attending"
+          />
+        </div>
+        <div>
+          <label for="nay">No</label>
+          <input
+            :value="false"
+            id="nay"
+            name="attending"
+            type="radio"
+            v-model="attending"
+          />
+        </div>
+      </section>
+
+      <section
+        class="mt3"
+        id="adults"
+        v-if="attending"
+      >
+        <label
+          class="block mb1"
+          for="num-adults"
+        >Total number of adults age 21+ in your party</label>
         <input
           class="field"
-          id="partyOf"
-          required
+          id="num-adults"
           type="number"
-          v-model.number="partyOf"
+          v-model.number="adults"
         />
       </section>
 
-      <section class="mt3" id="guestNames" v-if="partyOf > 0">
-        <ol class="list-reset mb0">
-          <li
-            :key="i"
-            class="flex mb2 border p1 rounded"
-            v-for="(guest, i) in partyOf"
-          >
-            <p class="mb0 mr1 guestNum">{{ i + 1 }}</p>
-            <div class="col-12">
-              <label :for="`guest-${i + 1}`" class="vertical-align-unset"
-                >Full name</label
-              >
-              <input
-                :id="`guest-${i + 1}`"
-                class="col-12 field"
-                placeholder="First Last"
-                required
-                type="text"
-                v-on:input="editGuest"
-              />
-            </div>
-          </li>
-        </ol>
+      <section
+        class="mt3"
+        id="youth"
+        v-if="attending"
+      >
+        <label
+          class="block mb1"
+          for="num-youth"
+        >Total number of youth age 8 to 20 in your party</label>
+        <input
+          class="field"
+          id="num-youth"
+          type="number"
+          v-model.number="youth"
+        />
       </section>
 
-      <section class="mt3" id="dietaryRestrictions" v-if="partyOf > 0">
-        <label class="block mb1" for="dietary"
-          >Please list any dietary restrictions</label
-        >
-        <textarea
-          class="field col-12"
-          id="dietary"
-          name="dietary"
-          rows="3"
-          v-model="dietary"
-        ></textarea>
+      <section
+        class="mt3"
+        id="children"
+        v-if="attending"
+      >
+        <label
+          class="block mb1"
+          for="num-children"
+        >Total number of children younger than 8 in your party</label>
+        <input
+          class="field"
+          id="num-children"
+          type="number"
+          v-model.number="children"
+        />
       </section>
 
-      <section class="mt3" id="otherComments" v-if="partyOf > 0">
-        <label class="block mb1" for="comments">Other comments</label>
+      <section
+        class="mt3"
+        id="otherComments"
+        v-if="attending"
+      >
+        <label
+          class="block mb1"
+          for="comments"
+        >Other comments</label>
         <textarea
           class="field col-12"
           id="comments"
@@ -91,13 +151,12 @@
           v-model="comments"
         ></textarea>
       </section>
+
       <button
+        :disabled="attending == null"
         class="mt3 btn btn-primary regular"
         type="submit"
-        v-if="partyOf > 0"
-      >
-        Submit
-      </button>
+      >Submit</button>
     </form>
   </main>
 </template>
@@ -108,50 +167,29 @@ import axios from "axios";
 export default {
   data() {
     return {
+      respondent: "",
+      attending: null,
       email: "",
-      partyOf: null,
-      guests: [],
-      dietary: "",
+      adults: 0,
+      youth: 0,
+      children: 0,
       comments: ""
     };
   },
   computed: {
     submissionData() {
-      const guestNames = this.guests
-        .reduce((acc, guest) => {
-          acc.push(guest.name);
-          return acc;
-        }, [])
-        .sort()
-        .join("\n");
-
       return {
-        "user email": this.email,
-        "group size": this.partyOf,
-        guests: guestNames,
-        "dietary concerns": this.dietary,
+        respondent: this.respondent,
+        email: this.email,
+        attending: this.attending == true ? "Yes" : "No",
+        "total adults": this.adults != null ? this.adults : 0,
+        "total youth": this.youth != null ? this.youth : 0,
+        "total children": this.children != null ? this.children : 0,
         "other comments": this.comments
       };
     }
   },
   methods: {
-    editGuest(e) {
-      const idExists =
-        this.guests.findIndex(guest => guest.id === e.target.id) > -1;
-
-      if (!idExists) {
-        this.$set(this.guests, this.guests.length, {
-          id: `${e.target.id}`,
-          name: `${e.target.value}`
-        });
-      } else {
-        this.$set(
-          this.guests[this.guests.findIndex(guest => guest.id === e.target.id)],
-          "name",
-          e.target.value
-        );
-      }
-    },
     encode(data) {
       return Object.keys(data)
         .map(
@@ -251,10 +289,6 @@ input[type="number"] {
   width: 6rem;
 }
 
-.guestNum {
-  vertical-align: middle;
-}
-
 .vertical-align-unset {
   vertical-align: baseline;
 }
@@ -263,6 +297,10 @@ input[type="number"] {
   color: var(--soft-white);
   background-color: var(--soft-black);
   border-radius: 3px;
+}
+
+.btn-primary:disabled {
+  cursor: not-allowed;
 }
 
 .btn-primary:hover {
