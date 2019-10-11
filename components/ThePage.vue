@@ -4,11 +4,13 @@
       :color="isHome ? heroColor : 'black'"
       class="header"
     ></TheHeader>
-    <component
-      :class="{ component: !isHome }"
-      :is="component"
-      v-on:update-hero-color="updateHeroColor"
-    ></component>
+    <keep-alive>
+      <component
+        :class="{ component: !isHome }"
+        :is="component"
+        v-on:update-hero-color="updateHeroColor"
+      ></component>
+    </keep-alive>
   </section>
 </template>
 
