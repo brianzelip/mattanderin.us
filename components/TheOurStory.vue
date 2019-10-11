@@ -30,7 +30,7 @@
         alt="Charly and Erin in Amy Winehouse and Linda Rondstadt holloween costumes"
         src="../img/linda-rondstadt.png"
       />
-      <figcaption>Charly as Amy Winehouse and Erin as Linda Rondstadt</figcaption>
+      <figcaption>Charly as Amy Winehouse, Erin as Linda Rondstadt</figcaption>
     </figure>
 
     <p>They were chatting with their remaining party friends when Erin left, awkwardly speeding away as Matt yelled goodbye from the parking lot. He made her nervous in a good way.</p>
