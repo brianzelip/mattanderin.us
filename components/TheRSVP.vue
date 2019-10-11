@@ -182,9 +182,9 @@ export default {
         respondent: this.respondent,
         email: this.email,
         attending: this.attending == true ? "Yes" : "No",
-        "total adults": this.adults,
-        "total youth": this.youth,
-        "total children": this.children,
+        "total adults": this.adults != null ? this.adults : 0,
+        "total youth": this.youth != null ? this.youth : 0,
+        "total children": this.children != null ? this.children : 0,
         "other comments": this.comments
       };
     }
