@@ -25,17 +25,17 @@
         value="RSVP"
       />
 
-      <section id="responderName">
+      <section id="respondentName">
         <label
           class="block mb1"
-          for="responder"
+          for="respondent"
         >Your name</label>
         <input
           class="col-12 field"
-          id="responder"
+          id="respondent"
           required
           type="text"
-          v-model="responder"
+          v-model="respondent"
         />
       </section>
 
@@ -85,18 +85,52 @@
 
       <section
         class="mt3"
-        id="partySize"
+        id="adults"
+        v-if="attending"
       >
         <label
           class="block mb1"
-          for="partyOf"
-        >Number of people in your party</label>
+          for="num-adults"
+        >Total number of adults age 21+ in your party</label>
         <input
           class="field"
-          id="partyOf"
-          required
+          id="num-adults"
           type="number"
-          v-model.number="partyOf"
+          v-model.number="adults"
+        />
+      </section>
+
+      <section
+        class="mt3"
+        id="youth"
+        v-if="attending"
+      >
+        <label
+          class="block mb1"
+          for="num-youth"
+        >Total number of youth age 8 to 20 in your party</label>
+        <input
+          class="field"
+          id="num-youth"
+          type="number"
+          v-model.number="youth"
+        />
+      </section>
+
+      <section
+        class="mt3"
+        id="children"
+        v-if="attending"
+      >
+        <label
+          class="block mb1"
+          for="num-children"
+        >Total number of children younger than 8 in your party</label>
+        <input
+          class="field"
+          id="num-children"
+          type="number"
+          v-model.number="children"
         />
       </section>
 
@@ -133,21 +167,24 @@ import axios from "axios";
 export default {
   data() {
     return {
-      responder: "",
+      respondent: "",
       attending: null,
       email: "",
       adults: 0,
       youth: 0,
       children: 0,
-      partyOf: null,
       comments: ""
     };
   },
   computed: {
     submissionData() {
       return {
-        "user email": this.email,
-        "group size": this.partyOf,
+        respondent: this.respondent,
+        email: this.email,
+        attending: this.attending == true ? "Yes" : "No",
+        "total adults": this.adults,
+        "total youth": this.youth,
+        "total children": this.children,
         "other comments": this.comments
       };
     }
