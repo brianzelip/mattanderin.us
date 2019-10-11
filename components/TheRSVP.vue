@@ -119,7 +119,7 @@
       </section>
 
       <button
-        :disabled="!attending"
+        :disabled="attending == null"
         class="mt3 btn btn-primary regular"
         type="submit"
       >Submit</button>
@@ -260,6 +260,10 @@ input[type="number"] {
   color: var(--soft-white);
   background-color: var(--soft-black);
   border-radius: 3px;
+}
+
+.btn-primary:disabled {
+  cursor: not-allowed;
 }
 
 .btn-primary:hover {
