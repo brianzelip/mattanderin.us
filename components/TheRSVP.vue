@@ -61,26 +61,26 @@
         id="attendance"
       >
         <p class="block mb1">Will you be attending?</p>
-        <label
-          class="block mb1"
-          for="yay"
-        >Yes</label>
-        <input
-          id="yay"
-          type="radio"
-          v-model="attending"
-          value="true"
-        />
-        <label
-          class="block mb1"
-          for="nay"
-        >No</label>
-        <input
-          id="nay"
-          type="radio"
-          v-model="attending"
-          value="false"
-        />
+        <div class="mb2">
+          <label for="yay">Yes</label>
+          <input
+            id="yay"
+            name="attending"
+            type="radio"
+            v-model="attending"
+            value="true"
+          />
+        </div>
+        <div>
+          <label for="nay">No</label>
+          <input
+            id="nay"
+            name="attending"
+            type="radio"
+            v-model="attending"
+            value="false"
+          />
+        </div>
       </section>
 
       <section
