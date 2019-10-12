@@ -11,9 +11,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - branch: donate
 - description: Implement paypal button
 
-### 1.1.2. Updated
+### 1.1.2. Added
 
-- TheHoneyMoonFund.vue
+- TheHoneyMoonFundDonateBtn.vue:
+  - embed E's donate via paypal code
+  - customize paypal donate now button by:
+    - adding a `<label>` wrapper positioned relative
+    - removing the `<input type="image">`'s `src` attribute, and position absoluting the alt text with transparent color so that it takes up the same space as the label
+    - Use data uri-based images inside the label for paypal logos via [their docs](https://developer.paypal.com/docs/checkout/?mark=customize%20button#try-the-buttons)
+
+### 1.1.3. Updated
+
+- TheHoneyMoonFund.vue:
+  - tweak markup
+  - import donate button component
+- ThePage: abstract page link styles here since now we have two pages w/ links
+- TheWeddingParty: remove unnecessary link styles
 
 ## 1.2. [v0.17.6] 2019-10-11
 
@@ -553,6 +566,7 @@ FIXED by simply adding some bottom margin to the `<header>`!
 - [Changelog](#changelog)
   - [[v0.18.0] 2019-10-11](#v0180-2019-10-11)
     - [Meta](#meta)
+    - [Added](#added)
     - [Updated](#updated)
   - [[v0.17.6] 2019-10-11](#v0176-2019-10-11)
     - [Meta](#meta)
