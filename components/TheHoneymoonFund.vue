@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import TheHoneyMoonFundDonateBtn from "./TheHoneyMoonFundDonateBtn.vue";
+import TheHoneymoonFundDonateBtn from "./TheHoneymoonFundDonateBtn.vue";
 
 export default {
   components: {
