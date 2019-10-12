@@ -183,11 +183,4 @@ hr {
   border: none;
   background-color: var(--soft-black);
 }
-
-a {
-  text-decoration: underline;
-}
-a:hover {
-  color: red;
-}
 </style>
