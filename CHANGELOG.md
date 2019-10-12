@@ -14,6 +14,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### 1.1.2. Updated
 
 - TheSchedule.vue: Add data and markup
+- TheHoneymoonFund.vue: Fix component name DOH!
 
 ## 1.2. [v0.18.0] 2019-10-12
 
