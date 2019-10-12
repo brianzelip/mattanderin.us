@@ -115,6 +115,12 @@ export default {
 .component figcaption {
   font-size: 1rem;
 }
+.component a {
+  text-decoration: underline;
+}
+.component a:hover {
+  color: red;
+}
 
 @media screen and (min-width: 480px) {
   .pageTitle {
