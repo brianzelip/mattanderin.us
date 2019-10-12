@@ -11,7 +11,7 @@
 
     <p class="mb3">Click the PayPal button below if you'd like to contribute online.</p>
 
-    <TheHoneyMoonFundDonateBtn></TheHoneyMoonFundDonateBtn>
+    <TheHoneymoonFundDonateBtn></TheHoneymoonFundDonateBtn>
   </main>
 </template>
 
@@ -20,7 +20,7 @@ import TheHoneymoonFundDonateBtn from "./TheHoneymoonFundDonateBtn.vue";
 
 export default {
   components: {
-    TheHoneyMoonFundDonateBtn
+    TheHoneymoonFundDonateBtn
   }
 };
 </script>
