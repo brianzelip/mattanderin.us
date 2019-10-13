@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### 1.1.1. Meta
 
 - branch: dev
-- description: ceremony for shipping MVP 🚢 🎉
+- description: ceremony for shipping v1.0.0 MVP 🚢 🎉
 
 ### 1.1.2. Updated
 
