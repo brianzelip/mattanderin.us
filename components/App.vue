@@ -1,16 +1,5 @@
 <template>
-  <div>
-    <TheHero></TheHero>
-    <section class="vh100"></section>
+  <div id="app">
+    <router-view></router-view>
   </div>
 </template>
-
-<script>
-import TheHero from "./TheHero.vue";
-
-export default {
-  components: {
-    TheHero
-  }
-};
-</script>

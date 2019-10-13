@@ -3,6 +3,56 @@
 :root {
   --soft-black: rgb(51, 34, 34);
   --soft-white: rgb(255, 249, 249);
+  --purple: #5e2ca5;
+  --light-purple: #a463f2;
+}
+
+/*
+ 
+  BOX SIZING (via Tachyons.io)
+
+*/
+
+html,
+body,
+div,
+article,
+section,
+main,
+footer,
+header,
+form,
+fieldset,
+legend,
+pre,
+code,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+textarea,
+table,
+td,
+th,
+tr,
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+.border-box {
+  box-sizing: border-box;
 }
 
 html,
@@ -105,4 +155,8 @@ a {
 }
 .bg-soft-white {
   background-color: var(--soft-white);
+}
+
+.hover-text-decoration-none:hover {
+  text-decoration: none;
 }

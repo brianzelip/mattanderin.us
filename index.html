@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/main.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Euphoria+Script|Great+Vibes|Italianno|Kaushan+Script|Mr+Bedfort|Niconne|Parisienne|Satisfy|Tangerine:400,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Italianno"
       rel="stylesheet"
     />
     <title>
@@ -14,10 +14,28 @@
     </title>
     <meta name="description" content="Erin and Matt's wedding website." />
     <meta name="author" content="Brian Zelip" />
+    <link rel="author" href="https://zelip.me" />
+    <link rel="author" href="https://mattanderin.us/humans.txt" />
   </head>
 
   <body>
     <div id="app"></div>
+    <form
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      method="POST"
+      name="RSVP"
+      hidden
+    >
+      <input name="form-name" type="hidden" value="RSVP" />
+      <input type="text" name="respondent" />
+      <input type="email" name="email" />
+      <input type="text" name="attending" />
+      <input type="number" name="total adults" />
+      <input type="number" name="total youth" />
+      <input type="number" name="total children" />
+      <textarea name="other comments"></textarea>
+    </form>
     <script src="./main.js"></script>
   </body>
 </html>
