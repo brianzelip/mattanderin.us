@@ -1,8 +1,9 @@
 <template>
   <main class="container">
     <h1 class="mt0 regular center pageTitle">Location</h1>
+
     <section id="ceremony">
-      <h2 class="center">Wedding</h2>
+      <h2 class="mt0 center">Wedding</h2>
       <div class="card--big hover-shadow">
         <p class="mb0 center">Woodlawn Chapel</p>
         <address>8001 Woodlawn Road, Maurice, Louisiana 70555</address>
@@ -19,8 +20,32 @@
         </address>
       </div>
     </section>
+
+    <hr />
+
+    <section id="afterparty">
+      <h2 class="mt0 center">After Party</h2>
+      <div class="card--big hover-shadow">
+        <p class="mb0 center">Brian &amp; Annette&rsquo;s place</p>
+        <address>128 State Street, Lafayette, Louisiana 70506</address>
+        <figure>
+          <img
+            alt="The after party"
+            src="../img/location/afterparty.png"
+          />
+        </figure>
+        <address>
+          <a
+            href="https://www.google.com/maps/place/128+State+St,+Lafayette,+LA+70506/@30.2193673,-92.0362277,17z/data=!4m13!1m7!3m6!1s0x86249c65ebba3067:0xd1bb357208ce6c4c!2s128+State+St,+Lafayette,+LA+70506!3b1!8m2!3d30.219418!4d-92.0361017!3m4!1s0x86249c65ebba3067:0xd1bb357208ce6c4c!8m2!3d30.219418!4d-92.0361017?hl=en"
+          >Map</a>
+        </address>
+      </div>
+    </section>
+
+    <hr />
+
     <section id="accommodations">
-      <h2 class="center">Accommodations</h2>
+      <h2 class="mt0 center">Accommodations</h2>
       <ol class="list-reset m0">
         <li
           :key="i"
@@ -38,7 +63,35 @@
         </li>
       </ol>
     </section>
-    <TheLocationMap></TheLocationMap>
+
+    <hr />
+
+    <section id="food">
+      <h2 class="mt0 center">Food &amp; Drinks</h2>
+      <ol class="list-reset m0">
+        <li
+          :key="i"
+          class="card"
+          v-for="(place, i) in accommodations"
+        >
+          <p class="center">{{ place.name }}</p>
+          <figure>
+            <img
+              :alt="place.name"
+              :src="profilePic(place.pic.filename)"
+            />
+            <figcaption>{{ place.blurb }}</figcaption>
+          </figure>
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <section id="map">
+      <h2 class="mt0 center">The Whole Pot of Gumbo</h2>
+      <TheLocationMap class="hover-shadow"></TheLocationMap>
+    </section>
   </main>
 </template>
 
@@ -176,5 +229,13 @@ figure + address {
   font-size: 1.125rem;
   text-align: center;
   font-style: normal;
+}
+
+hr {
+  height: 4px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  background-color: var(--soft-black);
 }
 </style>
