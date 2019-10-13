@@ -75,7 +75,7 @@
         <li
           :key="i"
           class="card hover-shadow"
-          v-for="(place, i) in accommodations"
+          v-for="(place, i) in food"
         >
           <p class="center">{{ place.name }}</p>
           <figure>
@@ -106,10 +106,81 @@ import TheLocationMap from "./TheLocationMap.vue";
 export default {
   data() {
     return {
+      food: [
+        {
+          name: "Shade Tree Cafe",
+          url: "",
+          blurb:
+            "The greatest dining experience of our lives. That’s why Chef Lonnie is catering the wedding.",
+          pic: {
+            filename: "hilton.jpg",
+            source: ""
+          }
+        },
+        {
+          name: "Olde Thyme",
+          url: "",
+          blurb:
+            "Best po boys Erin’s ever had. Anywhere. Sorry, New Orleans. Get the fried shrimp po boy with fries and wash it down with an Abita Amber.",
+          pic: {
+            filename: "hilton.jpg",
+            source: ""
+          }
+        },
+        {
+          name: "Saint Street Inn",
+          url: "",
+          blurb:
+            "(As mentioned in Our Story). One of our favorite places in Lafayette- everything is so fresh. Their seared scallops are amazing.",
+          pic: {
+            filename: "hilton.jpg",
+            source: ""
+          }
+        },
+        {
+          name: "Chez Jacqueline’s",
+          url: "",
+          blurb:
+            "This place in Breaux Bridge is very special to Erin. Jacqueline serves Parisian French cooking, though she does have Cajun food on the menu. Great mimosas, delicious rabbit bathed in a rich gravy, and a slice of doberge cake - a must try. Plus, Breaux Bridge is a cute town with lots of antique stores, cafes, bars, etc. Call before you go to Jacqueline’s. She basically opens and closes when she feels like it. P.S.: She’s quite a good storyteller.",
+          pic: {
+            filename: "hilton.jpg",
+            source: ""
+          }
+        },
+        {
+          name: "Oishi Sushi",
+          url: "",
+          blurb:
+            "We’re not going to lie- the service here is some of the worst you’ll ever get anywhere, but the sushi is SO good that we don’t care. Just relax and accept that you’ll be there a while.",
+          pic: {
+            filename: "hilton.jpg",
+            source: ""
+          }
+        },
+        {
+          name: "Smoothie King",
+          url: "",
+          blurb:
+            "If you are hungover post-wedding, get a Light and Fluffy from Smoothie King. They don’t make it anymore, but they’ll whip up something similar. We know... it’s a chain….doesn’t matter. I miss it living here in Toledo.",
+          pic: {
+            filename: "hilton.jpg",
+            source: ""
+          }
+        },
+        {
+          name: "Taco Sisters",
+          url: "",
+          blurb:
+            "Smoked shrimp tacos with ginger sauce, sour cream, cheese, and their fresh organic greens with chopped apples! Yum.",
+          pic: {
+            filename: "hilton.jpg",
+            source: ""
+          }
+        }
+      ],
       accommodations: [
         {
           name: "Hilton Garden Inn",
-          address: "Congress and Cajundome",
           url:
             "https://hiltongardeninn3.hilton.com/en/hotels/louisiana/hilton-garden-inn-lafayette-cajundome-LFTCDGI/index.html",
           pic: {
@@ -122,7 +193,6 @@ export default {
         },
         {
           name: "Blue Moon Guest House",
-          address: "215 East Convent Street, Lafayette, LA",
           url: "https://bluemoonpresents.com/web/book-a-room/",
           pic: {
             filename: "blue-moon.jpg",
@@ -134,7 +204,6 @@ export default {
         },
         {
           name: "Airbnb",
-          address: "",
           url: "https://www.airbnb.com/s/Lafayette--LA/all",
           pic: {
             filename: "airbnb.png",
