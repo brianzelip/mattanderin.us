@@ -60,6 +60,9 @@
             />
             <figcaption>{{ place.blurb }}</figcaption>
           </figure>
+          <address>
+            <a :href="place.url">Website</a>
+          </address>
         </li>
       </ol>
     </section>
@@ -130,16 +133,15 @@ export default {
             "A hostel that we’ve always wanted to stay in but never had a good excuse to. Lots of good live music here, too."
         },
         {
-          name: "Air BnB",
-          address: "215 East Convent Street, Lafayette, LA",
-          url: "https://bluemoonpresents.com/web/book-a-room/",
+          name: "Airbnb",
+          address: "",
+          url: "https://www.airbnb.com/s/Lafayette--LA/all",
           pic: {
-            filename: "blue-moon.jpg",
-            source:
-              "https://thumbnails.trvl-media.com/nj7zpwYlVMPO2Ndr5w86cJvYsHA=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/21000000/20330000/20320800/20320728/4c22351b_z.jpg"
+            filename: "airbnb.png",
+            source: ""
           },
           blurb:
-            "Check out our old neighborhood, the Saint Streets (south west Lafayette)"
+            "Check out places to stay in our old neighborhood, the Saint Streets (south west Lafayette)."
         }
       ]
     };
@@ -192,10 +194,10 @@ ol {
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1200px) {
   .card {
     width: 33.33%;
-    padding: 0.5rem;
+    padding: 1rem;
   }
   .card--big {
     width: 50%;
@@ -219,6 +221,7 @@ p + address {
 }
 
 figure + address {
+  margin-top: 1rem;
   font-size: 1.125rem;
   text-align: center;
   font-style: normal;
