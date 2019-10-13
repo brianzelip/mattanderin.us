@@ -4,7 +4,7 @@
 
     <section id="ceremony">
       <h2 class="mt0 center">Wedding</h2>
-      <div class="card--big hover-shadow">
+      <div class="card card--big hover-shadow">
         <p class="mb0 center">Woodlawn Chapel</p>
         <address>8001 Woodlawn Road, Maurice, Louisiana 70555</address>
         <figure>
@@ -25,7 +25,7 @@
 
     <section id="afterparty">
       <h2 class="mt0 center">After Party</h2>
-      <div class="card--big hover-shadow">
+      <div class="card card--big hover-shadow">
         <p class="mb0 center">Brian &amp; Annette&rsquo;s place</p>
         <address>128 State Street, Lafayette, Louisiana 70506</address>
         <figure>
@@ -49,7 +49,7 @@
       <ol class="list-reset m0">
         <li
           :key="i"
-          class="card"
+          class="card hover-shadow"
           v-for="(place, i) in accommodations"
         >
           <p class="center">{{ place.name }}</p>
@@ -71,7 +71,7 @@
       <ol class="list-reset m0">
         <li
           :key="i"
-          class="card"
+          class="card hover-shadow"
           v-for="(place, i) in accommodations"
         >
           <p class="center">{{ place.name }}</p>
@@ -89,7 +89,7 @@
     <hr />
 
     <section id="map">
-      <h2 class="mt0 center">The Whole Pot of Gumbo</h2>
+      <h2 class="mt0 mb3 center">The Whole Pot of Gumbo</h2>
       <TheLocationMap class="hover-shadow"></TheLocationMap>
     </section>
   </main>
@@ -182,14 +182,7 @@ ol {
   width: 100%;
   padding: 1rem;
 }
-.hover-shadow {
-  transition: 200ms ease-in-out;
-}
-.hover-shadow:hover {
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-  transform: scale3d(1.001, 1.001, 1.001);
-  transition: 200ms ease-in-out;
-}
+
 @media screen and (min-width: 780px) {
   .card {
     width: 50%;
@@ -237,5 +230,14 @@ hr {
   margin-bottom: 2rem;
   border: none;
   background-color: var(--soft-black);
+}
+
+.hover-shadow {
+  transition: 200ms ease-in-out;
+}
+.hover-shadow:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  transform: scale3d(1.001, 1.001, 1.001);
+  transition: 200ms ease-in-out;
 }
 </style>
