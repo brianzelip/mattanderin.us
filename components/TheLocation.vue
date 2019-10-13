@@ -153,20 +153,6 @@ export default {
       const ext = filename.split(".")[1];
       return imagesSet[name][ext];
     }
-  },
-  mounted() {
-    console.log("imagesSet::::", imagesSet);
-    // outputs:
-    /**
-     * {
-        "blue-moon": {
-          "jpg": "/blue-moon.7d3f581b.jpg"
-        },
-        "hilton": {
-          "jpg": "/hilton.c1d95dc0.jpg"
-        }
-      }
- */
   }
 };
 </script>
