@@ -1,6 +1,24 @@
 <template>
   <main class="container">
     <h1 class="mt0 regular center pageTitle">Location</h1>
+    <section id="ceremony">
+      <h2 class="center">Wedding</h2>
+      <div class="card--big hover-shadow">
+        <p class="mb0 center">Woodlawn Chapel</p>
+        <address>8001 Woodlawn Road, Maurice, Louisiana 70555</address>
+        <figure>
+          <img
+            alt="Woodlawn Chapel, Maurice, Lousisiana"
+            src="../img/location/woodlawn-chapel.jpg"
+          />
+        </figure>
+        <address>
+          <a href="https://www.woodlawnchapella.com/">Website</a>
+          <span>|</span>
+          <a href="https://www.google.com/maps?cid=822815283659515363">Map</a>
+        </address>
+      </div>
+    </section>
     <section id="accommodations">
       <h2 class="center">Accommodations</h2>
       <ol class="list-reset m0">
@@ -110,11 +128,22 @@ ol {
   box-sizing: border-box;
   width: 100%;
   padding: 1rem;
-  background-color: rgba(51, 34, 34, 0.05);
+}
+.hover-shadow {
+  transition: 200ms ease-in-out;
+}
+.hover-shadow:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  transform: scale3d(1.001, 1.001, 1.001);
+  transition: 200ms ease-in-out;
 }
 @media screen and (min-width: 780px) {
   .card {
     width: 50%;
+  }
+  .card--big {
+    width: 75%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 960px) {
@@ -122,9 +151,30 @@ ol {
     width: 33.33%;
     padding: 0.5rem;
   }
+  .card--big {
+    width: 50%;
+    padding: 1rem;
+  }
 }
 
 .card p {
   font-size: 1.5rem;
+}
+
+figure {
+  margin: 0;
+}
+
+p + address {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  text-align: center;
+  font-style: normal;
+}
+
+figure + address {
+  font-size: 1.125rem;
+  text-align: center;
+  font-style: normal;
 }
 </style>
