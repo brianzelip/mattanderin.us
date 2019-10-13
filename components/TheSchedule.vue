@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="container">
     <h1 class="mt0 regular center pageTitle">Schedule</h1>
     <dl>
       <div>
