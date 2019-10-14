@@ -69,6 +69,9 @@
             <img :alt="place.name" :src="profilePic(place.pic.filename)" />
             <figcaption>{{ place.blurb }}</figcaption>
           </figure>
+          <address>
+            <a :href="place.url">Website</a>
+          </address>
         </li>
       </ol>
     </section>
