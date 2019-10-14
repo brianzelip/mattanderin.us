@@ -231,6 +231,7 @@ ol {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   max-width: 100%;
 }
 
