@@ -261,6 +261,14 @@ export default {
 </script>
 
 <style scoped>
+section:nth-of-type(1) {
+  padding-top: .875rem;
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
 ol {
   box-sizing: border-box;
   display: flex;
