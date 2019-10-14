@@ -3,7 +3,7 @@
     <h1 class="mt0 regular center pageTitle">Location</h1>
 
     <section id="wedding">
-      <h2 class="mt0 center">Wedding and Reception</h2>
+      <h2 class="mt0 center">Wedding &amp; Reception</h2>
       <div class="card card--big">
         <p class="mb0 center">Woodlawn Chapel</p>
         <address>8001 Woodlawn Road, Maurice, Louisiana 70555</address>
@@ -262,7 +262,7 @@ export default {
 
 <style scoped>
 section:nth-of-type(1) {
-  padding-top: .875rem;
+  padding-top: 0.875rem;
 }
 h2 {
   margin-top: 0;
