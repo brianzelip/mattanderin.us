@@ -2,8 +2,8 @@
   <main class="container">
     <h1 class="mt0 regular center pageTitle">Location</h1>
 
-    <section id="ceremony">
-      <h2 class="mt0 center">Wedding</h2>
+    <section id="wedding">
+      <h2 class="mt0 center">Wedding and Reception</h2>
       <div class="card card--big">
         <p class="mb0 center">Woodlawn Chapel</p>
         <address>8001 Woodlawn Road, Maurice, Louisiana 70555</address>
@@ -53,6 +53,8 @@
           </figure>
           <address>
             <a :href="place.url">Website</a>
+            <span v-if="place.url != '' && place.map != ''">|</span>
+            <a :href="place.map" v-if="place.map != ''">Map</a>
           </address>
         </li>
       </ol>
@@ -60,17 +62,19 @@
 
     <hr />
 
-    <section id="food">
-      <h2 class="mt0 center">Food &amp; Drinks</h2>
+    <section id="recommendations">
+      <h2 class="mt0 center">Recommendations</h2>
       <ol class="list-reset m0">
-        <li :key="i" class="card" v-for="(place, i) in food">
+        <li :key="i" class="card" v-for="(place, i) in recommendations">
           <p class="center">{{ place.name }}</p>
           <figure>
             <img :alt="place.name" :src="profilePic(place.pic.filename)" />
             <figcaption>{{ place.blurb }}</figcaption>
           </figure>
           <address>
-            <a :href="place.url">Website</a>
+            <a :href="place.url" v-if="place.url != ''">Website</a>
+            <span v-if="place.url != '' && place.map != ''">|</span>
+            <a :href="place.map" v-if="place.map != ''">Map</a>
           </address>
         </li>
       </ol>
@@ -93,10 +97,12 @@ import TheLocationMap from "./TheLocationMap.vue";
 export default {
   data() {
     return {
-      food: [
+      recommendations: [
         {
           name: "Shade Tree Cafe",
           url: "",
+          map:
+            "https://www.google.com/maps/place/Shade+Tree+Cafe/@30.1472835,-91.9605542,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x4aa9e81cc256f6de!8m2!3d30.1472835!4d-91.9583655",
           blurb:
             "The greatest dining experience of our lives. That’s why Chef Lonnie is catering the wedding.",
           pic: {
@@ -105,8 +111,10 @@ export default {
           }
         },
         {
-          name: "Olde Thyme",
-          url: "",
+          name: "Olde Thyme Grocery",
+          url: "http://www.oldetymegrocery.com/",
+          map:
+            "https://www.google.com/maps/place/Olde+Tyme+Grocery/@30.2157038,-92.0253116,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x3e19fb09c5cab663!8m2!3d30.2157038!4d-92.0231229",
           blurb:
             "Best po boys Erin’s ever had. Anywhere. Sorry, New Orleans. Get the fried shrimp po boy with fries and wash it down with an Abita Amber.",
           pic: {
@@ -116,9 +124,11 @@ export default {
         },
         {
           name: "Saint Street Inn",
-          url: "",
+          url: "https://saintstreetinn.com/",
+          map:
+            "https://www.google.com/maps?q=The+Saint+Street+Inn&ftid=0x86249c8b74359ea7:0x90427d38e73ab41c",
           blurb:
-            "(As mentioned in Our Story). One of our favorite places in Lafayette- everything is so fresh. Their seared scallops are amazing.",
+            "(As mentioned in Our Story). One of our favorite places in Lafayette—everything is so fresh. Their seared scallops are amazing.",
           pic: {
             filename: "saint-street-inn.jpg",
             source: "E&M"
@@ -127,6 +137,8 @@ export default {
         {
           name: "Chez Jacqueline’s",
           url: "",
+          map:
+            "https://www.google.com/maps/place/Chez+Jacqueline/@30.2738531,-91.9011263,17z/data=!3m1!4b1!4m5!3m4!1s0x8624868f95bf60db:0x87536f60f017b66d!8m2!3d30.2738531!4d-91.8989376",
           blurb:
             "This place in Breaux Bridge is very special to Erin. Jacqueline serves Parisian French cooking, though she does have Cajun food on the menu. Great mimosas, delicious rabbit bathed in a rich gravy, and a slice of doberge cake - a must try. Plus, Breaux Bridge is a cute town with lots of antique stores, cafes, bars, etc. Call before you go to Jacqueline’s. She basically opens and closes when she feels like it. P.S.: She’s quite a good storyteller.",
           pic: {
@@ -136,7 +148,9 @@ export default {
         },
         {
           name: "Oishi Sushi",
-          url: "",
+          url: "http://www.oishi-sushi.com/",
+          map:
+            "https://www.google.com/maps/place/Oishi+Sushi/@30.1804188,-92.026695,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x27d1157d97ae73fb!8m2!3d30.1804188!4d-92.0245063",
           blurb:
             "We’re not going to lie- the service here is some of the worst you’ll ever get anywhere, but the sushi is SO good that we don’t care. Just relax and accept that you’ll be there a while.",
           pic: {
@@ -148,6 +162,7 @@ export default {
         {
           name: "Smoothie King",
           url: "",
+          map: "",
           blurb:
             "If you are hungover post-wedding, get a Light and Fluffy from Smoothie King. They don’t make it anymore, but they’ll whip up something similar. We know... it’s a chain….doesn’t matter. I miss it living here in Toledo.",
           pic: {
@@ -158,11 +173,37 @@ export default {
         {
           name: "Taco Sisters",
           url: "",
+          map:
+            "https://www.google.com/maps/place/Taco+Sisters/@30.2232337,-92.0171324,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xd18c6c63804be39f!8m2!3d30.2232337!4d-92.0149437",
           blurb:
             "Smoked shrimp tacos with ginger sauce, sour cream, cheese, and their fresh organic greens with chopped apples! Yum.",
           pic: {
             filename: "taco-sisters.jpg",
             source: "E&M"
+          }
+        },
+        {
+          name: "New Orleans",
+          url: "",
+          map:
+            "https://www.google.com/maps/place/New+Orleans,+LA/@30.0326996,-90.1627533,10z/data=!3m1!4b1!4m5!3m4!1s0x8620a454b2118265:0xdb065be85e22d3b4!8m2!3d29.9510658!4d-90.0715323?hl=en",
+          blurb:
+            "About a two hour drive from Lafayette, if you haven’t been we can’t recommend it enough. One of our favorite places on Earth; Matt got his undergrad from Tulane University and misses that city eternally. Must do’s: ride the St. Charles streetcar, wander aimlessly around the French Quarter, eat fried chicken at Willie Mae’s Scotch House, listen to jazz in the Marigny, see a concert at Tipitina’s, go to the sculpture gardens at City Park, eat greasy breakfast at the Camellia Grill, and picnic on the banks of the Mississippi. Please feel free to ask Matt or Erin for more suggestions. So much to do and it’s hard to go wrong. Get funky!",
+          pic: {
+            filename: "nola.jpg",
+            source:
+              "https://thumbor.forbes.com/thumbor/711x474/https://specials-images.forbesimg.com/dam/imageserve/1143723457/960x0.jpg?fit=scale"
+          }
+        },
+        {
+          name: "Saint Francisville",
+          url: "",
+          map: "https://www.google.com/maps/place/St+Francisville,+LA+70775/@30.7878663,-91.3953551,14z/data=!3m1!4b1!4m5!3m4!1s0x8624349d4752be27:0x8453e255c0a189cc!8m2!3d30.7880721!4d-91.3768479",
+          blurb:
+            "If you are staying in the area for a while and don’t mind the drive (about an hour and a half), Saint Francisville is a beautiful place to visit with lots of history. Historic gardens, plantation homes, elaborate cemeteries, cute shops, and quaint restaurants—it’s worth the drive.",
+          pic: {
+            filename: "francisville.jpg",
+            source: "https://cbsnews2.cbsistatic.com/hub/i/r/2005/12/21/4aec2139-a642-11e2-a3f0-029118418759/resize/620x465/ad91bb12427e64e4c358ca4f829fa57a/image1156299.jpg"
           }
         }
       ],
@@ -171,6 +212,8 @@ export default {
           name: "Hilton Garden Inn",
           url:
             "https://hiltongardeninn3.hilton.com/en/hotels/louisiana/hilton-garden-inn-lafayette-cajundome-LFTCDGI/index.html",
+          map:
+            "https://www.google.com/maps/place/Hilton+Garden+Inn+Lafayette%2FCajundome/@30.2200084,-92.043297,17z/data=!3m1!4b1!4m8!3m7!1s0x86249c6ebd95aa19:0xe631653082b26537!5m2!4m1!1i2!8m2!3d30.2200084!4d-92.0411083",
           pic: {
             filename: "hilton.jpg",
             source:
@@ -182,6 +225,8 @@ export default {
         {
           name: "Blue Moon Guest House",
           url: "https://bluemoonpresents.com/web/book-a-room/",
+          map:
+            "https://www.google.com/maps/place/Blue+Moon+Saloon+And+Guest+House/@30.220422,-92.0184877,17z/data=!3m1!4b1!4m8!3m7!1s0x0:0xa0c5d634fd1bb51d!5m2!4m1!1i2!8m2!3d30.220422!4d-92.016299",
           pic: {
             filename: "blue-moon.jpg",
             source:
@@ -193,6 +238,7 @@ export default {
         {
           name: "Airbnb",
           url: "https://www.airbnb.com/s/Lafayette--LA/all",
+          map: "",
           pic: {
             filename: "airbnb.png",
             source: "airbnb.com"
