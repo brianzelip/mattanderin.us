@@ -54,7 +54,7 @@
   overflow: hidden;
   cursor: pointer;
   border-radius: 4px;
-  background: #ffc439;
+  background-color: #ffc439;
   color: #111;
 }
 @media screen and (min-width: 480px) {
@@ -80,7 +80,7 @@
   top: 0;
   bottom: 0;
   left: 0;
-  color: transparent;
-  z-index: -1;/* Edge hack to hide "transparent" alt text */
+  color: #ffc439; /* Edge hack to hide "transparent" alt text on hover */
+  z-index: -1; /* Edge hack to hide "transparent" alt text */
 }
 </style>
