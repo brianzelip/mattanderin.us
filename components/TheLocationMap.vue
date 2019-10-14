@@ -9,6 +9,6 @@
 iframe {
   width: 100%;
   height: 75vh;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 </style>
