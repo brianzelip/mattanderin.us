@@ -238,41 +238,68 @@ ol {
   box-sizing: border-box;
   width: 100%;
   padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 3px;
 }
 
 @media screen and (min-width: 780px) {
   .card {
-    width: 50%;
+    width: calc(50% - 1rem);
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
   }
   .card--big {
     width: 75%;
     margin: 0 auto;
   }
 }
+
+@media screen and (min-width: 960px) {
+  .card {
+    border: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .card {
-    width: 33.33%;
+    width: calc(33.33% - 1rem);
     padding: 1rem;
   }
   .card--big {
-    width: 50%;
+    width: 66.66%;
     padding: 1rem;
   }
 }
 
 .card p {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 780px) {
+  .card p {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .card p {
+    font-size: 1.5rem;
+  }
 }
 
 figure {
   margin: 0;
 }
 
-p + address {
+.card p + address {
   margin-bottom: 0.5rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-align: center;
   font-style: normal;
+}
+@media screen and (min-width: 960px) {
+  .card p + address {
+    font-size: 1.125rem;
+  }
 }
 
 figure + address {
@@ -282,20 +309,36 @@ figure + address {
   font-style: normal;
 }
 
+figcaption {
+  line-height: 1.25;
+}
+
 hr {
-  height: 4px;
+  height: 2px;
   margin-top: 2rem;
+  margin-right: -1rem;
   margin-bottom: 2rem;
+  margin-left: -1rem;
   border: none;
   background-color: var(--soft-black);
 }
-
-.hover-shadow {
-  transition: 200ms ease-in-out;
+@media screen and (min-width: 960px) {
+  hr {
+    height: 4px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
-.hover-shadow:hover {
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-  transform: scale3d(1.001, 1.001, 1.001);
-  transition: 200ms ease-in-out;
+
+@media screen and (min-width: 960px) {
+  .hover-shadow {
+    transition: 200ms ease-in-out;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    transform: scale3d(1.001, 1.001, 1.001);
+    transition: 200ms ease-in-out;
+  }
 }
 </style>
