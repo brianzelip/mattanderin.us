@@ -105,7 +105,7 @@
           </figure>
         </li>
         <li class="pb2">
-          <h2>Gabe DeBord</h2>
+          <h2>Gabe &ldquo;I Want to Believe&rdquo; DeBord</h2>
           <figure class="m0">
             <img src="../img/Gabe.gif" />
           </figure>

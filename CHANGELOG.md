@@ -4,37 +4,78 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 1.1. [v1.0.0] 2019-10-12
+## 1.1. [v1.0.2] 2019-10-14
 
 ### 1.1.1. Meta
 
 - branch: dev
-- description: ceremony for shipping v1.0.0 MVP 🚢 🎉
+- description: Adjust the honey moon fund page content
 
 ### 1.1.2. Updated
 
-- package\*: Update version number
+- TheHoneymoonFund.vue: Adjust markup content
+- TheRSVP: Remove some markup content
+- TheRSVPSuccess: Adjust markup content
 
-## 1.2. [v0.18.1] 2019-10-12
+### 1.1.3. Deleted
+
+- TheHeroImageControl.vue
+
+## 1.2. [v1.0.1] 2019-10-14
 
 ### 1.2.1. Meta
+
+- branch: location
+- description: Add location content to page
+
+### 1.2.2. Updated
+
+- TheLocation.vue:
+  - Add content from google drive
+  - get related images from the web
+  - add content as data props
+  - import an array of images objects in order to render the Parcel-manipulated image filenames in the build process, see [this GitHub issues comment](https://github.com/parcel-bundler/parcel/issues/1668#issuecomment-402627440)
+  - Abstracted map iframe into its own component
+- TheSlideShowOfLove: Update spotify iframe with M's playlist src
+- TheWeddingParty: Add Gabe's nickname
+- humans.txt: Add stack info
+
+### 1.2.3. Added
+
+- img/location/**.**
+- TheLocationMap.vue
+
+## 1.3. [v1.0.0] 2019-10-12
+
+### 1.3.1. Meta
+
+- branch: dev
+- description: ceremony for shipping v1.0.0 MVP 🚢 🎉
+
+### 1.3.2. Updated
+
+- package\*: Update version number
+
+## 1.4. [v0.18.1] 2019-10-12
+
+### 1.4.1. Meta
 
 - branch: schedule
 - description: Add schedule data and markup
 
-### 1.2.2. Updated
+### 1.4.2. Updated
 
 - TheSchedule.vue: Add data and markup
 - TheHoneymoonFund.vue: Fix component name DOH!
 
-## 1.3. [v0.18.0] 2019-10-12
+## 1.5. [v0.18.0] 2019-10-12
 
-### 1.3.1. Meta
+### 1.5.1. Meta
 
 - branch: donate
 - description: Implement paypal button
 
-### 1.3.2. Added
+### 1.5.2. Added
 
 - TheHoneyMoonFundDonateBtn.vue:
   - embed E's donate via paypal code
@@ -43,7 +84,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
     - removing the `<input type="image">`'s `src` attribute, and position absoluting the alt text with transparent color so that it takes up the same space as the label
     - Use data uri-based images inside the label for paypal logos via [their docs](https://developer.paypal.com/docs/checkout/?mark=customize%20button#try-the-buttons)
 
-### 1.3.3. Updated
+### 1.5.3. Updated
 
 - TheHoneyMoonFund.vue:
   - tweak markup
@@ -51,28 +92,28 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - ThePage: abstract page link styles here since now we have two pages w/ links
 - TheWeddingParty: remove unnecessary link styles
 
-## 1.4. [v0.17.6] 2019-10-11
+## 1.6. [v0.17.6] 2019-10-11
 
-### 1.4.1. Meta
+### 1.6.1. Meta
 
 - branch: content-updates
 - description: Update contents based on vid chat w/ M & E
 
-### 1.4.2. Updated
+### 1.6.2. Updated
 
 - TheRSVP: Finalize the form in sync with the physical invites
 - TheOurStory: Add mustache pic and swap out cafe cottage for wild salmon
 - ThePage: Add a `<keep-alive>` wrapper to the dynamic component to keep RSVP form data alive if the user navigates to a different page after inputting some data
 - TheWeddingParty: Minor tweaks
 
-## 1.5. [v0.17.5] 2019-10-09
+## 1.7. [v0.17.5] 2019-10-09
 
-### 1.5.1. Meta
+### 1.7.1. Meta
 
 - branch: edits
 - description: Implement some edits made to content
 
-### 1.5.2. Updated
+### 1.7.2. Updated
 
 - TheOurStory:
   - add responsive photo
@@ -80,31 +121,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
   - edit content
 - TheHoneyMoonFund: edit content
 
-## 1.6. [v0.17.4] 2019-10-08
+## 1.8. [v0.17.4] 2019-10-08
 
-### 1.6.1. Meta
+### 1.8.1. Meta
 
 - branch: dev
 - description: Adjust images on TheWeddingParty.vue
 
-### 1.6.2. Updated
+### 1.8.2. Updated
 
 - TheWeddingParty.vue:
   - Add borders to all images
   - Set box-sizing on img (fix the bug where images jetted out to the right beyond the wrapping &lt;section&gt; line)
 
-## 1.7. [v0.17.3] 2019-10-08
+## 1.9. [v0.17.3] 2019-10-08
 
-### 1.7.1. Meta
+### 1.9.1. Meta
 
 - branch: cleanup2
 - description: clean up some more
 
-### 1.7.2. Added
+### 1.9.2. Added
 
 - parcel-plugin-static-files-copy: Installed dev-dependency
 
-### 1.7.3. Updated
+### 1.9.3. Updated
 
 - index.html:
   - Remove unused google fonts
@@ -117,64 +158,64 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
   - Style the initial letter of the first paragraph
 - TheOurStory, TheWeddingParty, TheHoneyMoonFund, TheRSVP: Swap out plain text double and single quotes with html entities for better looking typography
 
-## 1.8. [v0.17.2] 2019-10-07
+## 1.10. [v0.17.2] 2019-10-07
 
-### 1.8.1. Meta
+### 1.10.1. Meta
 
 - branch: cleanup
 - description: clean up some odds and ends
 
-### 1.8.2. Updated
+### 1.10.2. Updated
 
 - ThePage.vue: Bump up base text sizes (p, label, button) responsively
 - TheRSVP.vue: Update copy text, bump up text size, add signature
 - TheHoneyMoonFund.vue: Make body copy consistent with other pages
 - img/slideshow/: Rotate images, at the Exif level via GIMP-2.1.0 when prompted when opening each of the 5 images, for proper rendering
 
-## 1.9. [v0.17.1] 2019-10-07
+## 1.11. [v0.17.1] 2019-10-07
 
-### 1.9.1. Meta
+### 1.11.1. Meta
 
 - branch: ms-scrollbar
 - description: The MS Windows environment automatically puts a scroll bar on TheNav.vue because of the `overflow-y: scroll` rule. Let's hide that shit via a :hover psuedo class, as suggested by [this !so answer](https://stackoverflow.com/a/24911864/2145103).
 
-### 1.9.2. Updated
+### 1.11.2. Updated
 
 - TheNav.vue: set `overflow-y: scroll` only when hovering over the <ul> and when max-height is 570px
 
-## 1.10. [v0.17.0] 2019-10-07
+## 1.12. [v0.17.0] 2019-10-07
 
-### 1.10.1. Meta
+### 1.12.1. Meta
 
 - branch: heros
 - description: Make multiple responsive heros, load a random one on page load
 
-### 1.10.2. Screenshots
+### 1.12.2. Screenshots
 
 Here's what the work of this feature branch looks like:
 
 ![we could be heros](./img/screenshots/heros.gif)
 
-### 1.10.3. Updated
+### 1.12.3. Updated
 
 - TheHero.vue: make 6 responsive heros via css classes; load a random one on page load
 
-### 1.10.4. Added
+### 1.12.4. Added
 
 - img/\*-flipped.jpg: Flip some images for responsive layout
 
-## 1.11. [v0.16.0] 2019-10-07
+## 1.13. [v0.16.0] 2019-10-07
 
-### 1.11.1. Meta
+### 1.13.1. Meta
 
 - branch: hero
 - description: Ship at least one responsive hero image for the landing page
 
-### 1.11.2. Screenshots
+### 1.13.2. Screenshots
 
 ![responsive hero](./img/screenshots/hero.gif)
 
-### 1.11.3. Updated
+### 1.13.3. Updated
 
 - TheHero.vue: Use 3-value syntax for `background-position` and orientation media features to achieve the desired responsivity of the home page background image. This branch can be 🚢 🎉
 - TheNav.vue
@@ -197,25 +238,25 @@ Here's what the work of this feature branch looks like:
   ```
   - Now on TheHero, and TheHoneyMoonFund, the nav is still accessible on short and wide.
 
-## 1.12. [v0.15.0] 2019-10-05
+## 1.14. [v0.15.0] 2019-10-05
 
-### 1.12.1. Meta
+### 1.14.1. Meta
 
 - branch: audio
 - description: Embed a responsive spotify playlist
 
-### 1.12.2. Updated
+### 1.14.2. Updated
 
 - TheSlideShowOfLove.vue: Add spotify embed iframe
 
-## 1.13. [v0.14.0] 2019-10-05
+## 1.15. [v0.14.0] 2019-10-05
 
-### 1.13.1. Meta
+### 1.15.1. Meta
 
 - branch: slideshow-improved
 - description: Replace the base slideshow page with a masonry grid of all of the slideshow images, like TheSlideShowGallery.vue. Each image should be a card of sorts, that slightly animates on hover, and opens up a full screen modal of the image if clicked. When in the modal, the navigation buttons allow the user to scroll through the list of photos, like TheSlideShowOfLove.vue as handed off from v0.13.0.
 
-### 1.13.2. Updated
+### 1.15.2. Updated
 
 - TheSlideShowGallery.vue:
 
@@ -255,53 +296,53 @@ JUST BUILT MY FIRST REAL CAROUSEL! Here's what it looks like:
 
 ![slideshow of love](./img/slideshow-of-love.gif)
 
-## 1.14. [0.13.0] - 2019-10-03
+## 1.16. [0.13.0] - 2019-10-03
 
-### 1.14.1. Meta
+### 1.16.1. Meta
 
 - branch: slideshow
 - description: Implement mvp custom slideshow based on my quick and dirty hero carousel. M's feedback asked about "making it full screen". So what I'm planning to do is ship this branch, then start another where the idea is to combine TheSlideShowGallery.vue and a modal component that opens at whichever image the user clicked on from the gallery, and that allows the user to scroll through the rest of the gallery images, all presented in high def full screen.
 
-### 1.14.2. Added
+### 1.16.2. Added
 
 - masonry-layout as dependency
 - TheSlideShowGallery.vue: Used masonry to try a gallery layout, need to implement [imagesLoaded](https://imagesloaded.desandro.com/) as per the [masonry docs](https://masonry.desandro.com/layout.html#imagesloaded)
 
-### 1.14.3. Updated
+### 1.16.3. Updated
 
 - TheSlideShow.vue: Renamed TheSlideShowOfLove.vue; implemented my own carousel from scratch! Screenshot:
 
 ![mvp slideshow of love](./img/slideshow-mvp.gif)
 
-## 1.15. [0.12.1] - 2019-09-27
+## 1.17. [0.12.1] - 2019-09-27
 
-### 1.15.1. Meta
+### 1.17.1. Meta
 
 - branch: dev
 - description: Add more wedding party content from shared data
   - [photos](https://drive.google.com/drive/folders/1E747-zTgCDxZkHcus5s0jg0JG8JExmeD)
   - [text](https://docs.google.com/document/d/16_Llvm-oVSAyYiXIfDTX-_v11xQz9lYcSwpYAGcMS8k)
 
-### 1.15.2. Added
+### 1.17.2. Added
 
 - img/: Bridesmaids and groomsmen photos, plus the two hero images cropped by Matt
 
-### 1.15.3. Updated
+### 1.17.3. Updated
 
 - TheWeddingParty.vue: Add new content markup and css selectors
 
-## 1.16. [0.12.0] - 2019-09-26
+## 1.18. [0.12.0] - 2019-09-26
 
-### 1.16.1. Meta
+### 1.18.1. Meta
 
 - branch: party-layout
 - description: Make a better wedding party layout for the images and text flow
 
-### 1.16.2. Added
+### 1.18.2. Added
 
 - humans.txt
 
-### 1.16.3. Updated
+### 1.18.3. Updated
 
 - img/: Cropped out distracting content from a couple photos
 - ThePage.vue: Control responsive font size from this parent component for all pages, not just wedding party
@@ -309,9 +350,9 @@ JUST BUILT MY FIRST REAL CAROUSEL! Here's what it looks like:
 - TheRSVP: Update prose, refactor out h2 font size to parent
 - index.html: Add link to humans.txt
 
-## 1.17. [0.11.0] - 2019-09-23
+## 1.19. [0.11.0] - 2019-09-23
 
-### 1.17.1. Meta
+### 1.19.1. Meta
 
 - branch: responsive
 - description: Need to design the site's responsiveness to smaller devices.
@@ -359,7 +400,7 @@ Deciding to play around with the main header and nav layout after looking throug
   - M & E like the Italianno font for the site <h1> better than the italicized Baskerville. The h1 font-size and margin-bottom needed tweaking with the different font at each breakpoint. See commit #862e8a729 for finalized design for review by M & E.
   - reverted the mobile nav toggle button to always have .bg-soft-black and .soft-white. The commit prior to this w/ the inverse colors on home page was #7778c1583.
 
-### 1.17.2. Added
+### 1.19.2. Added
 
 - TheNavMobile.vue: Trying different design ideas to make something. Instead, I've been liking some design examples from Squarespace, namely:
   - https://emily-vansant-mf3z.squarespace.com/
@@ -372,161 +413,161 @@ Deciding to play around with the main header and nav layout after looking throug
 - TheNavHeader3.vue: Vertical nav layout in the top left corner
 - Table of contents herein, via huntertran.auto-markdown-toc VS Code extension
 
-### 1.17.3. Updated
+### 1.19.3. Updated
 
 - TheNav.vue:
   - Add box-shadow to sticky nav, via the homepage of the awesome [Tania Rascia](https://www.taniarascia.com/)
   - Update `button:hover`'s background color and color
 - ALL FILES!
 
-### 1.17.4. Deleted
+### 1.19.4. Deleted
 
 - All files associated w/ the prior design iteration
 
-## 1.18. [0.10.2] - 2019-08-14
+## 1.20. [0.10.2] - 2019-08-14
 
-### 1.18.1. Meta
+### 1.20.1. Meta
 
 - branch: dev
 - description: Update page heights, let rsvp user know they will receive an email after submission
 
-### 1.18.2. Updated
+### 1.20.2. Updated
 
 - all page components
 
-## 1.19. [0.10.1] - 2019-08-14
+## 1.21. [0.10.1] - 2019-08-14
 
-### 1.19.1. Meta
+### 1.21.1. Meta
 
 - branch: dev
 - description: Update the header h1 markup so that it is not a link on the home page. This stemmed from the fact that, after you clicked away from the initial hero image on the home page, then clicked the home page link, the hero image did not revert back to the initial hero image. This solution is easier then snaking custom event messages through the component tree.
 
-### 1.19.2. Added
+### 1.21.2. Added
 
 - TheHeaderH1.vue - abstracted h1 markup out of TheHeader
 
-### 1.19.3. Updated
+### 1.21.3. Updated
 
 - TheHeader.vue - registered TheHeaderH1, and use v-if/else to conditionally put a router-link around the h1
 
-## 1.20. [0.10.0] - 2019-08-14
+## 1.22. [0.10.0] - 2019-08-14
 
-### 1.20.1. Meta
+### 1.22.1. Meta
 
 - branch: hero-images
 - description: There are a handful of images that would make good landing page heros. Let's update TheHero.vue so that Matt and Erin can toggle through the set of doable images. (aka, let's build a carousel!)
 
-### 1.20.2. Added
+### 1.22.2. Added
 
 - TheHeroImagesControl.vue
 
-### 1.20.3. Updated
+### 1.22.3. Updated
 
 - TheHero.vue - created my first carousel in writing the control component, and writing the logic to traverse through a list 🎉
   - I also came across the unfortunate experience of using inline style bindings to set background-image does not work. Not sure if the problem is vue or parcel. When you bind inline styles, the url to the image does not get updated to the new built url; when you set it via normal html attr inline styles (no binding), or via a style block, then the bg image is set.
 
-## 1.21. [0.9.1] - 2019-08-13
+## 1.23. [0.9.1] - 2019-08-13
 
-### 1.21.1. Meta
+### 1.23.1. Meta
 
 - branch: dev
 - description: The smaller honey form footprint does not work :(. I say this because the form fields in the netlify forms dashboard are all blank.
   I'm going to reput the honey form into index.html to fix this
 
-### 1.21.2. Deleted
+### 1.23.2. Deleted
 
 - TheRSVPHoneyForm.vue
 
-### 1.21.3. Updated
+### 1.23.3. Updated
 
 - index.html
 - TheRSVP.vue
 
-## 1.22. [0.9.0] - 2019-08-13
+## 1.24. [0.9.0] - 2019-08-13
 
-### 1.22.1. Meta
+### 1.24.1. Meta
 
 - branch: email
 - description: Update the email response sent after RSVP submission
 
-### 1.22.2. Added
+### 1.24.2. Added
 
 - TheRSVPHoneyForm.vue
 
-### 1.22.3. Updated
+### 1.24.3. Updated
 
 - zapier zap
 - index.html: removed hidden form for netlify
 - TheRSVP.vue: add hidden form for netlify (thereby only writing the form on one html page)
 
-## 1.23. [0.8.0] - 2019-08-13
+## 1.25. [0.8.0] - 2019-08-13
 
-### 1.23.1. Meta
+### 1.25.1. Meta
 
 - branch: dev
 - description: Add user email to RSVP form flow
 
-### 1.23.2. Updated
+### 1.25.2. Updated
 
 - TheRSVP.vue - add email section markup and logic
 - index.html - add email input
 
-## 1.24. [0.7.0] - 2019-08-13
+## 1.26. [0.7.0] - 2019-08-13
 
-### 1.24.1. Meta
+### 1.26.1. Meta
 
 - branch: submit
 - description: Form isn't working yet - need to keep going with [the tutorial](https://www.netlify.com/blog/2018/09/07/how-to-integrate-netlify-forms-in-a-vue-app/) (tl;dr need to refactor around Vue controlling the form and route push on submit)
 
-### 1.24.2. Added
+### 1.26.2. Added
 
 - TheRSVPFail.vue
 - TheRSVPSuccess.vue
 
-### 1.24.3. Updated
+### 1.26.3. Updated
 
 - index.html: adding a hidden form with the inputs was key to getting Netlify forms to read the data. Before this change, netlify recognized a submission, but there was no data. [This !so answer](https://stackoverflow.com/a/49859661/2145103) helped out, (which I found via [this comment](http://disq.us/p/1yae84j) in the netlify forms and vue tutorial).
 - TheRSVP.vue: this is where all the form data logic and POST happens
 
-## 1.25. [0.6.0] - 2019-08-12
+## 1.27. [0.6.0] - 2019-08-12
 
-### 1.25.1. Meta
+### 1.27.1. Meta
 
 - branch: rsvp
 - description: Get the RSVP form up and running
 - have to pre-render in order for Netlify forms to work, see https://www.netlify.com/blog/2018/09/07/how-to-integrate-netlify-forms-in-a-vue-app/
 
-### 1.25.2. Added
+### 1.27.2. Added
 
 - parcel-plugin-prerender
 - .prerenderrc
 
-### 1.25.3. Updated
+### 1.27.3. Updated
 
 - package\*
 - TheRSVP.vue: Add form
 - TheNav.vue: Update the sticky nav background color, from transparent to soft-white; now there's no visual conflict between the sticky nav and the scrolling text beneath it.
 - TheWeddingParty.vue: use better semantic element for the italicized "fast forward", from `<strong class="italic">`, to `<em>`, to the better `<i>`; see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em#%3Ci%3E_vs._%3Cem%3E
 
-## 1.26. [0.5.0] - 2019-08-11
+## 1.28. [0.5.0] - 2019-08-11
 
-### 1.26.1. Meta
+### 1.28.1. Meta
 
 - branch: wedding-party
 - description: Let's incorporate the available images and text
 
-### 1.26.2. Updated
+### 1.28.2. Updated
 
 - TheWeddingParty.vue
 
-## 1.27. [0.4.0] - 2019-08-11
+## 1.29. [0.4.0] - 2019-08-11
 
-### 1.27.1. Meta
+### 1.29.1. Meta
 
 - branch: pages
 - description: Now that we've worked out the nav categories, make a page for each category. This will allow us to easily add an active class to the nav button for each page
 
-### 1.27.2. Added
+### 1.29.2. Added
 
 - TheOurStory.vue
 - TheSchedule.vue
@@ -536,9 +577,9 @@ Deciding to play around with the main header and nav layout after looking throug
 - TheSlideShow.vue
 - TheRSVP.vue
 
-## 1.28. [0.3.0] - 2019-08-06
+## 1.30. [0.3.0] - 2019-08-06
 
-### 1.28.1. Meta
+### 1.30.1. Meta
 
 Erin's going the various pages route (instead of the one-long-page route); this means making a sticky header that is imported only once, and works no matter what other components are, or are not, rendered.
 
@@ -552,41 +593,49 @@ So, the element is there, get's fixed, then disappears so there's a scroll, but 
 
 FIXED by simply adding some bottom margin to the `<header>`!
 
-### 1.28.2. Added
+### 1.30.2. Added
 
 - router.js
 - ThePage.vue
 - TheBridalParty.vue
 - TheHoneyMoon.vue
 
-### 1.28.3. Updated
+### 1.30.3. Updated
 
 - TheNav.vue
 - TheHeader.vue
 - main.js
 
-## 1.29. [0.2.0] - 2019-08-04
+## 1.31. [0.2.0] - 2019-08-04
 
-### 1.29.1. Meta
+### 1.31.1. Meta
 
 - branch: dev
 - reason:
   - dev branch will stick arond, to show Erin and Matt the progress and discuss future moves
   - this will get merged with master, to allow for the Vue build to happen on the staging branch to allow it to render the vue app; so when dev work is done, the Splash.vue component will get swapped out for the App.vue component in main.js
 
-### 1.29.2. Added
+### 1.31.2. Added
 
 - Vue architecture, and early design draft
 
-## 1.30. [0.1.1] - 2019-05-27
+## 1.32. [0.1.1] - 2019-05-27
 
-### 1.30.1. Added
+### 1.32.1. Added
 
 - CHANGELOG.md
 
 <!-- TOC -->
 
 - [Changelog](#changelog)
+  - [[v1.0.2] 2019-10-14](#v102-2019-10-14)
+    - [Meta](#meta)
+    - [Updated](#updated)
+    - [Deleted](#deleted)
+  - [[v1.0.1] 2019-10-14](#v101-2019-10-14)
+    - [Meta](#meta)
+    - [Updated](#updated)
+    - [Added](#added)
   - [[v1.0.0] 2019-10-12](#v100-2019-10-12)
     - [Meta](#meta)
     - [Updated](#updated)

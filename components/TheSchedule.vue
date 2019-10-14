@@ -25,7 +25,7 @@
           Head to
           <a
             href="https://www.google.com/maps/place/128+State+St,+Lafayette,+LA+70506/@30.2193115,-92.0376383,17.4z/data=!4m5!3m4!1s0x86249c65ebba3067:0xd1bb357208ce6c4c!8m2!3d30.219418!4d-92.0361017?hl=en"
-          >Brian &amp; Annette’s place</a> for the afterparty!
+          >Brian &amp; Annette’s place</a> for the after party!
         </dd>
       </div>
     </dl>

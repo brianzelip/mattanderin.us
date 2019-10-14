@@ -1,9 +1,8 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">RSVP</h1>
-    <p class="rsvpCopy">We can&rsquo;t wait to celebrate with you!</p>
     <p class="rsvpCopy">
-      Kindly respond by November 11
+      Kindly respond by Monday, November 11
       <span class="sup">th</span> for yourself and others in your party.
     </p>
     <p class="rsvpCopy">We&rsquo;ll email you a copy of your response.</p>
