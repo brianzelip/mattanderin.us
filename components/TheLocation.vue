@@ -4,7 +4,7 @@
 
     <section id="ceremony">
       <h2 class="mt0 center">Wedding</h2>
-      <div class="card card--big hover-shadow">
+      <div class="card card--big">
         <p class="mb0 center">Woodlawn Chapel</p>
         <address>8001 Woodlawn Road, Maurice, Louisiana 70555</address>
         <figure>
@@ -25,7 +25,7 @@
 
     <section id="afterparty">
       <h2 class="mt0 center">After Party</h2>
-      <div class="card card--big hover-shadow">
+      <div class="card card--big">
         <p class="mb0 center">Brian &amp; Annette&rsquo;s place</p>
         <address>128 State Street, Lafayette, Louisiana 70506</address>
         <figure>
@@ -93,7 +93,7 @@
 
     <section id="map">
       <h2 class="mt0 mb3 center">The Whole Pot of Gumbo</h2>
-      <TheLocationMap class="hover-shadow"></TheLocationMap>
+      <TheLocationMap></TheLocationMap>
     </section>
   </main>
 </template>
@@ -238,31 +238,23 @@ ol {
 .card {
   box-sizing: border-box;
   width: 100%;
+  margin-bottom: 1rem;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0.03);
-}
-.card:hover {
-  background-color: var(--soft-white);
+  background-color: rgba(54, 31, 31, 0.09);
 }
 
 @media screen and (min-width: 780px) {
   .card {
     width: calc(50% - 1rem);
     margin-right: 0.5rem;
-    margin-bottom: 1rem;
     margin-left: 0.5rem;
   }
   .card--big {
     width: 75%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .card {
-    border: none;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -314,8 +306,9 @@ figure + address {
   font-style: normal;
 }
 
-figcaption {
+.card figcaption {
   line-height: 1.25;
+  font-size: 1rem;
 }
 
 hr {
@@ -332,18 +325,6 @@ hr {
     height: 4px;
     margin-right: 0;
     margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .hover-shadow {
-    transition: 200ms ease-in-out;
-  }
-  .hover-shadow:hover {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.15);
-    transform: scale3d(1.001, 1.001, 1.001);
-    transition: 200ms ease-in-out;
   }
 }
 </style>
