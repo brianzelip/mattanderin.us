@@ -114,7 +114,7 @@ export default {
             "The greatest dining experience of our lives. That’s why Chef Lonnie is catering the wedding.",
           pic: {
             filename: "shade-tree.jpg",
-            source: ""
+            source: "E&M"
           }
         },
         {
@@ -124,7 +124,7 @@ export default {
             "Best po boys Erin’s ever had. Anywhere. Sorry, New Orleans. Get the fried shrimp po boy with fries and wash it down with an Abita Amber.",
           pic: {
             filename: "olde-thyme.jpg",
-            source: ""
+            source: "E&M"
           }
         },
         {
@@ -134,7 +134,7 @@ export default {
             "(As mentioned in Our Story). One of our favorite places in Lafayette- everything is so fresh. Their seared scallops are amazing.",
           pic: {
             filename: "saint-street-inn.jpg",
-            source: ""
+            source: "E&M"
           }
         },
         {
@@ -144,7 +144,7 @@ export default {
             "This place in Breaux Bridge is very special to Erin. Jacqueline serves Parisian French cooking, though she does have Cajun food on the menu. Great mimosas, delicious rabbit bathed in a rich gravy, and a slice of doberge cake - a must try. Plus, Breaux Bridge is a cute town with lots of antique stores, cafes, bars, etc. Call before you go to Jacqueline’s. She basically opens and closes when she feels like it. P.S.: She’s quite a good storyteller.",
           pic: {
             filename: "jacqueline.jpg",
-            source: ""
+            source: "E&M"
           }
         },
         {
@@ -153,8 +153,8 @@ export default {
           blurb:
             "We’re not going to lie- the service here is some of the worst you’ll ever get anywhere, but the sushi is SO good that we don’t care. Just relax and accept that you’ll be there a while.",
           pic: {
-            filename: "hilton.jpg",
-            source: ""
+            filename: "oishi.PNG",
+            source: "http://oishi-sushi.com/code/Brother%20Oishi-Front-Back2008.pdf"
           }
         },
         {
@@ -164,7 +164,7 @@ export default {
             "If you are hungover post-wedding, get a Light and Fluffy from Smoothie King. They don’t make it anymore, but they’ll whip up something similar. We know... it’s a chain….doesn’t matter. I miss it living here in Toledo.",
           pic: {
             filename: "smoothie-king.jpg",
-            source: ""
+            source: "E&M"
           }
         },
         {
@@ -174,7 +174,7 @@ export default {
             "Smoked shrimp tacos with ginger sauce, sour cream, cheese, and their fresh organic greens with chopped apples! Yum.",
           pic: {
             filename: "taco-sisters.jpg",
-            source: ""
+            source: "E&M"
           }
         }
       ],
@@ -207,10 +207,10 @@ export default {
           url: "https://www.airbnb.com/s/Lafayette--LA/all",
           pic: {
             filename: "airbnb.png",
-            source: ""
+            source: "airbnb.com"
           },
           blurb:
-            "Check out places to stay in our old neighborhood, the Saint Streets (south west Lafayette)."
+            "Look for places to stay in our old neighborhood, the Saint Streets (south west Lafayette)."
         }
       ]
     };
