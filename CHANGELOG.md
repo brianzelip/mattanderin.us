@@ -11,7 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - branch: location
 - description: Add location content to page
 
-### Updated
+### 1.1.2. Updated
 
 - TheLocation.vue:
   - Add content from google drive
@@ -19,8 +19,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
   - add content as data props
   - import an array of images objects in order to render the Parcel-manipulated image filenames in the build process, see [this GitHub issues comment](https://github.com/parcel-bundler/parcel/issues/1668#issuecomment-402627440)
   - Abstracted map iframe into its own component
+- TheSlideShowOfLove: Update spotify iframe with M's playlist src
+- TheWeddingParty: Add Gabe's nickname
+- humans.txt: Add stack info
 
-### Added
+### 1.1.3. Added
 
 - img/location/**.**
 - TheLocationMap.vue
