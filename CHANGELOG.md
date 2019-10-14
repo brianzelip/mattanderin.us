@@ -11,6 +11,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - branch: location
 - description: Add location content to page
 
+### Updated
+
+- TheLocation.vue:
+  - Add content from google drive
+  - get related images from the web
+  - add content as data props
+  - import an array of images objects in order to render the Parcel-manipulated image filenames in the build process, see [this GitHub issues comment](https://github.com/parcel-bundler/parcel/issues/1668#issuecomment-402627440)
+  - Abstracted map iframe into its own component
+
+### Added
+
+- img/location/**.**
+- TheLocationMap.vue
+
 ## 1.2. [v1.0.0] 2019-10-12
 
 ### 1.2.1. Meta
@@ -596,6 +610,8 @@ FIXED by simply adding some bottom margin to the `<header>`!
 - [Changelog](#changelog)
   - [[v1.0.1] 2019-10-13](#v101-2019-10-13)
     - [Meta](#meta)
+    - [Updated](#updated)
+    - [Added](#added)
   - [[v1.0.0] 2019-10-12](#v100-2019-10-12)
     - [Meta](#meta)
     - [Updated](#updated)
