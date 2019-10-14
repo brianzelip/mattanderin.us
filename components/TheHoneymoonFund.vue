@@ -11,8 +11,8 @@
     </p>
 
     <p>
-      We are going to <a href="https://en.wikipedia.org/wiki/Belize">Belize</a>
-      ✈️ 🌴 🎉
+      We are going to
+      <a href="https://en.wikipedia.org/wiki/Belize">Belize</a> 🎉
     </p>
 
     <p class="mb3">
