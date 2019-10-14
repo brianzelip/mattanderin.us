@@ -113,7 +113,7 @@ export default {
           blurb:
             "The greatest dining experience of our lives. That’s why Chef Lonnie is catering the wedding.",
           pic: {
-            filename: "hilton.jpg",
+            filename: "shade-tree.jpg",
             source: ""
           }
         },
@@ -123,7 +123,7 @@ export default {
           blurb:
             "Best po boys Erin’s ever had. Anywhere. Sorry, New Orleans. Get the fried shrimp po boy with fries and wash it down with an Abita Amber.",
           pic: {
-            filename: "hilton.jpg",
+            filename: "olde-thyme.jpg",
             source: ""
           }
         },
@@ -133,7 +133,7 @@ export default {
           blurb:
             "(As mentioned in Our Story). One of our favorite places in Lafayette- everything is so fresh. Their seared scallops are amazing.",
           pic: {
-            filename: "hilton.jpg",
+            filename: "saint-street-inn.jpg",
             source: ""
           }
         },
@@ -143,7 +143,7 @@ export default {
           blurb:
             "This place in Breaux Bridge is very special to Erin. Jacqueline serves Parisian French cooking, though she does have Cajun food on the menu. Great mimosas, delicious rabbit bathed in a rich gravy, and a slice of doberge cake - a must try. Plus, Breaux Bridge is a cute town with lots of antique stores, cafes, bars, etc. Call before you go to Jacqueline’s. She basically opens and closes when she feels like it. P.S.: She’s quite a good storyteller.",
           pic: {
-            filename: "hilton.jpg",
+            filename: "jacqueline.jpg",
             source: ""
           }
         },
@@ -163,7 +163,7 @@ export default {
           blurb:
             "If you are hungover post-wedding, get a Light and Fluffy from Smoothie King. They don’t make it anymore, but they’ll whip up something similar. We know... it’s a chain….doesn’t matter. I miss it living here in Toledo.",
           pic: {
-            filename: "hilton.jpg",
+            filename: "smoothie-king.jpg",
             source: ""
           }
         },
@@ -173,7 +173,7 @@ export default {
           blurb:
             "Smoked shrimp tacos with ginger sauce, sour cream, cheese, and their fresh organic greens with chopped apples! Yum.",
           pic: {
-            filename: "hilton.jpg",
+            filename: "taco-sisters.jpg",
             source: ""
           }
         }
@@ -240,6 +240,10 @@ ol {
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.card:hover {
+  background-color: var(--soft-white);
 }
 
 @media screen and (min-width: 780px) {
