@@ -83,7 +83,7 @@
     <hr />
 
     <section id="map">
-      <h2 class="mt0 mb3 center">The Whole Pot of Gumbo</h2>
+      <h2 class="mt0 mb3 center">Erin &amp; Matt&rsquo;s Favorite Places</h2>
       <TheLocationMap></TheLocationMap>
     </section>
   </main>
