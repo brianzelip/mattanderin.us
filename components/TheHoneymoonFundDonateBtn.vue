@@ -81,5 +81,6 @@
   bottom: 0;
   left: 0;
   color: transparent;
+  z-index: -1;/* Edge hack to hide "transparent" alt text */
 }
 </style>
