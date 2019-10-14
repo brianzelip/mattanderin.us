@@ -29,15 +29,13 @@
         <p class="mb0 center">Brian &amp; Annette&rsquo;s place</p>
         <address>128 State Street, Lafayette, Louisiana 70506</address>
         <figure>
-          <img
-            alt="The after party"
-            src="../img/location/afterparty.png"
-          />
+          <img alt="The after party" src="../img/location/afterparty.png" />
         </figure>
         <address>
           <a
             href="https://www.google.com/maps/place/128+State+St,+Lafayette,+LA+70506/@30.2193673,-92.0362277,17z/data=!4m13!1m7!3m6!1s0x86249c65ebba3067:0xd1bb357208ce6c4c!2s128+State+St,+Lafayette,+LA+70506!3b1!8m2!3d30.219418!4d-92.0361017!3m4!1s0x86249c65ebba3067:0xd1bb357208ce6c4c!8m2!3d30.219418!4d-92.0361017?hl=en"
-          >Map</a>
+            >Map</a
+          >
         </address>
       </div>
     </section>
@@ -47,17 +45,10 @@
     <section id="accommodations">
       <h2 class="mt0 center">Accommodations</h2>
       <ol class="list-reset m0">
-        <li
-          :key="i"
-          class="card hover-shadow"
-          v-for="(place, i) in accommodations"
-        >
+        <li :key="i" class="card" v-for="(place, i) in accommodations">
           <p class="center">{{ place.name }}</p>
           <figure>
-            <img
-              :alt="place.name"
-              :src="profilePic(place.pic.filename)"
-            />
+            <img :alt="place.name" :src="profilePic(place.pic.filename)" />
             <figcaption>{{ place.blurb }}</figcaption>
           </figure>
           <address>
@@ -72,17 +63,10 @@
     <section id="food">
       <h2 class="mt0 center">Food &amp; Drinks</h2>
       <ol class="list-reset m0">
-        <li
-          :key="i"
-          class="card hover-shadow"
-          v-for="(place, i) in food"
-        >
+        <li :key="i" class="card" v-for="(place, i) in food">
           <p class="center">{{ place.name }}</p>
           <figure>
-            <img
-              :alt="place.name"
-              :src="profilePic(place.pic.filename)"
-            />
+            <img :alt="place.name" :src="profilePic(place.pic.filename)" />
             <figcaption>{{ place.blurb }}</figcaption>
           </figure>
         </li>
@@ -154,7 +138,8 @@ export default {
             "We’re not going to lie- the service here is some of the worst you’ll ever get anywhere, but the sushi is SO good that we don’t care. Just relax and accept that you’ll be there a while.",
           pic: {
             filename: "oishi.PNG",
-            source: "http://oishi-sushi.com/code/Brother%20Oishi-Front-Back2008.pdf"
+            source:
+              "http://oishi-sushi.com/code/Brother%20Oishi-Front-Back2008.pdf"
           }
         },
         {
@@ -313,18 +298,14 @@ figure + address {
 
 hr {
   height: 2px;
-  margin-top: 2rem;
-  margin-right: -1rem;
-  margin-bottom: 2rem;
-  margin-left: -1rem;
+  margin: 4rem -1rem;
   border: none;
   background-color: var(--soft-black);
 }
 @media screen and (min-width: 960px) {
   hr {
     height: 4px;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 6rem 0;
   }
 }
 </style>
