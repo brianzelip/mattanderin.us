@@ -1,5 +1,5 @@
 <template>
-  <main class="container">
+  <main>
     <h1 class="mt0 regular center pageTitle">Location</h1>
 
     <section id="wedding">
