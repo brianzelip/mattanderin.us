@@ -3,11 +3,6 @@ import VueRouter from 'vue-router';
 import ThePage from './components/ThePage.vue';
 
 const routes = [
-  // {
-  //   path: '/',
-  //   name: 'home',
-  //   component: TheHero
-  // },
   {
     path: '/',
     name: 'home',
@@ -72,7 +67,10 @@ const routes = [
 
 const router = new VueRouter({
   routes,
-  mode: 'history'
+  mode: 'history',
+  scrollBehavior (to, from, savedPosition) {
+    return savedPosition ? savedPosition : { x: 0, y: 0 }
+  }
 });
 
 export default router;

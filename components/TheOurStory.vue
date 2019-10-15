@@ -1,7 +1,7 @@
 <template>
   <main class="container">
     <h1 class="mt0 regular center pageTitle">Our Story</h1>
-    <p>It all started in a Griffin Hall computer room when Erin said, &ldquo;Nice mustache&rdquo; and Matt replied, &ldquo;You&rsquo;re in my seat.&rdquo; It was truly love at first insult. He had an old timey, western style mustache that turned up at the edges, kind of like he was an extra from Tombstone. Erin had to admit, though that, despite the alluring moustache,Matt was impolite at best. Lucky for him, he was quite cute, and Erin didn&rsquo;t forget that part.</p>
+    <p>It all started in a Griffin Hall computer room when Erin said, &ldquo;Nice mustache&rdquo; and Matt replied, &ldquo;You&rsquo;re in my seat.&rdquo; It was truly love at first insult. He had an old timey, western style mustache that turned up at the edges, kind of like he was an extra from Tombstone. Erin had to admit, though that, despite the alluring moustache, Matt was impolite at best. Lucky for him, he was quite cute, and Erin didn&rsquo;t forget that part.</p>
 
     <figure class="griffin-hall">
       <img
