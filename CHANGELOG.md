@@ -11,7 +11,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - branch: paypal-chrome
 - description: Fix the broken image UI shown on Chrome when the paypal button is hovered (this happens since the input has type="image" but no src attribute, although no other browsers that I tested on renders the broken image UI).
 
-### 1.1.2. Updated
+### 1.1.2. Screenshots
+
+BEFORE
+
+![chrome showing the broken image UI on hover](./img/screenshots/chrome-broken-img.gif)
+
+AFTER
+
+![chrome not showing the broken image UI on hover after fix](./img/screenshots/fixed-chrome-broken-img.gif)
+
+### 1.1.3. Updated
 
 - img/1x1-transparent-pixel.png: Add my own 1x1 pixel image instead of using [paypal's tracer gif](https://www.paypal.com/en_US/i/scr/pixel.gif) that was part of their default [donate button embed code](https://github.com/brianzelip/mattanderin.us/commit/911c0b658f255116e42ebe4809142177af37bd6f#diff-7b5db8f9829c3d6b8467626fd2559226R36)
 - TheHoneymoonFundDonateBtn.vue: dynamically bind the local pixel to .paypal-input, since for some reason Parcel wasn't handling the image provided by the src attribute (maybe some sort of issue since it's src on an input element?!)
@@ -693,6 +703,7 @@ FIXED by simply adding some bottom margin to the `<header>`!
 - [Changelog](#changelog)
   - [[v1.1.1] 2019-10-15](#v111-2019-10-15)
     - [Meta](#meta)
+    - [Screenshots](#screenshots)
     - [Updated](#updated)
   - [[v1.1.0] 2019-10-15](#v110-2019-10-15)
     - [Meta](#meta)
