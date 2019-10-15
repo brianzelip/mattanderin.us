@@ -19,6 +19,9 @@
           <h2>Jessica Hadwin Marchand</h2>
           <div class="story">
             <p>Jessica and I have been friends since the fifth grade. From walking home together every day after school to being college roommates and everything in between, she&rsquo;s been like a sister to me. When we weren&rsquo;t at each others&rsquo; houses, we were on the phone talking about hilariously overdramatized concerns. Most of the time you could find us lying on a trampoline at my house, looking up at the stars, and laughing about all kinds of nonsense. That, or we were working on a collaborative piece of genius called &ldquo;Mamma Like: A Soap Opera.&rdquo; Basically, we were with each other through every devastatingly bad haircut and heartbreak from age 10 to 22.</p>
+            <figure class="m0 square">
+              <img src="../img/Jessica.jpg" />
+            </figure>
           </div>
         </li>
         <li class="pb2">
