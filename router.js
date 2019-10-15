@@ -3,11 +3,6 @@ import VueRouter from 'vue-router';
 import ThePage from './components/ThePage.vue';
 
 const routes = [
-  // {
-  //   path: '/',
-  //   name: 'home',
-  //   component: TheHero
-  // },
   {
     path: '/',
     name: 'home',
