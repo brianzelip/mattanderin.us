@@ -13,6 +13,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### 1.1.2. Screenshots
 
+BEFORE
+
+![safari input border weirdness](./img/screenshots/safari-input-border-weirdness.gif)
+
+AFTER
+
+![fixed safari input border weirdness](./img/screenshots/fixed-safari-input-border-weirdness.gif)
 
 
 ### 1.1.3. Updated
