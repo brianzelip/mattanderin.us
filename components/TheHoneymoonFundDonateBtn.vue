@@ -32,12 +32,25 @@
         border="0"
         class="paypal-input"
         name="submit"
+        :src="pixel"
         title="PayPal - The safer, easier way to pay online!"
         type="image"
       />
     </label>
   </form>
 </template>
+
+<script>
+import pixel from "../img/1x1-transparent-pixel.png";
+
+export default {
+  data() {
+    return {
+      pixel
+    };
+  }
+};
+</script>
 
 <style scoped>
 .paypal-btn {
