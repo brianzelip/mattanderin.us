@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.2.2] 2019-10-16
+
+### Meta
+
+- branch: unsafari-hack
+- description: Undo the css browser hacks in TheHoneymoonFundDonateBtn.vue now that the `input[type="image"]` has a valid `src` attribute.
+
+### Updated
+
+- TheHoneymoonFundDonateBtn.vue: Delete the browser style that were explicitly set as Safari and Edge hacks for rendering `input[type="image"]` correctly. While the hacks worked, Chrome rendered a broken image UI. The answer for the chrome fix turned out to fix the need for the safari and edge hacks as well.
+
 ## 1.1. [v1.2.1] 2019-10-16
 
 ### 1.1.1. Meta
@@ -736,6 +747,9 @@ FIXED by simply adding some bottom margin to the `<header>`!
 <!-- TOC -->
 
 - [Changelog](#changelog)
+  - [[v1.2.2] 2019-10-16](#v122-2019-10-16)
+    - [Meta](#meta)
+    - [Updated](#updated)
   - [[v1.2.1] 2019-10-16](#v121-2019-10-16)
     - [Meta](#meta)
     - [Updated](#updated)
