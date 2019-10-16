@@ -51,7 +51,7 @@ export default {
         location: "Location",
         party: "Wedding Party",
         honeymoon: "Honeymoon Fund",
-        slideshow: "Slideshow of Love",
+        slideshow: "Slide Show of Love",
         rsvp: "RSVP",
         success: "Successful Response",
         fail: "Failed Response"
