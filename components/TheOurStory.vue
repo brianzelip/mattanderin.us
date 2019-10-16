@@ -52,6 +52,13 @@
 </template>
 
 <style scoped>
+.component p:not(:first-of-type) {
+  margin-top: 2rem;
+}
+.component p:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
 p:nth-of-type(1)::first-letter {
   font-size: 3.75rem;
   line-height: 0.6;
@@ -91,7 +98,7 @@ figcaption {
   figure.griffin-hall {
     max-width: 500px;
     float: right;
-    margin: 0.25rem 0 0 1.25rem;
+    margin: 0.25rem 0 0 1.75rem;
   }
   figure.griffin-hall img {
     max-height: 300px;
@@ -103,7 +110,7 @@ figcaption {
   figure.mustache {
     max-width: 300px;
     float: left;
-    margin: 0.25rem 1.25rem 0.75rem 0;
+    margin: 0.75rem 1.75rem 0.75rem 0;
   }
 }
 
@@ -111,7 +118,7 @@ figcaption {
   figure.linda {
     max-width: 250px;
     float: right;
-    margin: 0.5rem 0 0.5rem 1.25rem;
+    margin: 0.5rem 0 0.5rem 1.75rem;
   }
 }
 
@@ -119,7 +126,7 @@ figcaption {
   figure.wild-salmon {
     max-width: 375px;
     float: left;
-    margin: 0.5rem 1.25rem 0 0;
+    margin: 0.75rem 1.75rem 0.5rem 0;
   }
 }
 </style>
