@@ -93,16 +93,5 @@ export default {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 100%; /* Safari hack to hide input border on hover*/
-  height: 45px; /* Safari hack to hide input border on hover*/
-  min-height: 30px; /* Safari hack to hide input border on hover*/
-  max-height: 55px; /* Safari hack to hide input border on hover*/
-  color: #ffc439; /* Edge hack to hide "transparent" alt text on hover */
-  z-index: -1; /* Edge hack to hide "transparent" alt text */
-}
-@media screen and (min-width: 480px) {
-  .paypal-input {
-    max-width: 300px; /* Safari hack to hide input border on hover*/
-  }
 }
 </style>
