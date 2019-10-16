@@ -29,9 +29,6 @@ import TheRSVPSuccess from "./TheRSVPSuccess.vue";
 import TheRSVPFail from "./TheRSVPFail.vue";
 
 export default {
-  metaInfo: {
-    meta: [{ title: `` }]
-  },
   props: ["component"],
   components: {
     TheHeader,
@@ -61,6 +58,9 @@ export default {
     updateHeroColor(color) {
       this.$set(this, "heroColor", color);
     }
+  },
+  metaInfo() {
+    return { title: "" };
   }
 };
 </script>
