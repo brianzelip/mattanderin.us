@@ -22,7 +22,6 @@ import TheSchedule from "./TheSchedule.vue";
 import TheLocation from "./TheLocation.vue";
 import TheWeddingParty from "./TheWeddingParty.vue";
 import TheHoneymoonFund from "./TheHoneymoonFund.vue";
-import TheSlideShowOfLoveModal from "./TheSlideShowOfLoveModal.vue";
 import TheSlideShowOfLove from "./TheSlideShowOfLove.vue";
 import TheRSVP from "./TheRSVP.vue";
 import TheRSVPSuccess from "./TheRSVPSuccess.vue";
@@ -40,24 +39,47 @@ export default {
     TheLocation,
     TheWeddingParty,
     TheHoneymoonFund,
-    TheSlideShowOfLoveModal,
     TheSlideShowOfLove,
     TheRSVP
   },
   data() {
     return {
-      heroColor: ""
+      heroColor: "",
+      titleMap: {
+        story: "Our Story",
+        schedule: "Schedule",
+        location: "Location",
+        party: "Wedding Party",
+        honeymoon: "Honeymoon Fund",
+        slideshow: "Slideshow of Love",
+        rsvp: "RSVP",
+        success: "Successful Response",
+        fail: "Failed Response"
+      }
     };
   },
   computed: {
     isHome() {
       return this.$route.name === "home";
+    },
+    titlePrefix() {
+      return this.titleMap[this.$route.name];
+    },
+    title() {
+      const base =
+        "Erin ＆ Matt’s Wedding · Winter Solstice 2019 · Maurice, Louisiana";
+      return this.$route.name === "home"
+        ? base
+        : `${this.titlePrefix} | ${base}`;
     }
   },
   methods: {
     updateHeroColor(color) {
       this.$set(this, "heroColor", color);
     }
+  },
+  metaInfo() {
+    return { title: this.title };
   }
 };
 </script>
