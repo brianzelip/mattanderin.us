@@ -29,6 +29,7 @@
     "palette.css": "^0.3.4",
     "vue": "^2.6.10",
     "vue-hot-reload-api": "^2.3.3",
+    "vue-meta": "^2.3.1",
     "vue-router": "^3.0.7"
   },
   "devDependencies": {
