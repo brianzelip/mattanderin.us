@@ -52,11 +52,11 @@
 </template>
 
 <style scoped>
-.component p {
-  margin-bottom: 2rem;
-}
-.component p:not(:nth-of-type(1)) {
+.component p:not(:first-of-type) {
   margin-top: 2rem;
+}
+.component p:not(:last-of-type) {
+  margin-bottom: 2rem;
 }
 
 p:nth-of-type(1)::first-letter {
