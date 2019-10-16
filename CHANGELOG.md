@@ -17,7 +17,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### 1.1.3. Updated
 
-- ThePage.vue: Add `meta` object and dynamically set the page title by the current dynamic component
+- main.js: Use vue-meta
+- ThePage.vue:
+  - Dynamically set title based on $router
+    - Add `metaInfo` object with title key
+    - Add titleMap data property to look up title prefix based on $route
+    - Add computed properties to return title
+  - Unregister unused modal component
 
 ## 1.2. [v1.1.1] 2019-10-15
 
