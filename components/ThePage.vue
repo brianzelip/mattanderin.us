@@ -46,12 +46,33 @@ export default {
   },
   data() {
     return {
-      heroColor: ""
+      heroColor: "",
+      titleMap: {
+        story: "Our Story",
+        schedule: "Schedule",
+        location: "Location",
+        party: "Wedding Party",
+        honeymoon: "Honeymoon Fund",
+        slideshow: "Slideshow of Love",
+        rsvp: "RSVP",
+        success: "Successful Response",
+        fail: "Failed Response"
+      }
     };
   },
   computed: {
     isHome() {
       return this.$route.name === "home";
+    },
+    titlePrefix() {
+      return this.titleMap[this.$route.name];
+    },
+    title() {
+      const base =
+        "Erin ＆ Matt’s Wedding · Winter Solstice 2019 · Maurice, Louisiana";
+      return this.$route.name === "home"
+        ? base
+        : `${this.titlePrefix} | ${base}`;
     }
   },
   methods: {
@@ -60,7 +81,7 @@ export default {
     }
   },
   metaInfo() {
-    return { title: "" };
+    return { title: this.title };
   }
 };
 </script>
