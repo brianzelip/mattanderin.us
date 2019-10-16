@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.2.1] 2019-10-16
+
+### Meta
+
+- branch: whitespace
+- description: Add whitespace between page paragraphs, particularly TheOurStory.
+
+### Updated
+
+- ThePage: Update Slide Show title string
+
 ## 1.1. [v1.2.0] 2019-10-16
 
 ### 1.1.1. Meta
@@ -19,9 +30,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - main.js: Use vue-meta
 - ThePage.vue:
-  - Dynamically set title based on $router
+  - Dynamically set title based on \$router
     - Add `metaInfo` object with title key
-    - Add titleMap data property to look up title prefix based on $route
+    - Add titleMap data property to look up title prefix based on \$route
     - Add computed properties to return title
   - Unregister unused modal component
 - index.html: Delete title tag
@@ -722,6 +733,9 @@ FIXED by simply adding some bottom margin to the `<header>`!
 <!-- TOC -->
 
 - [Changelog](#changelog)
+  - [[v1.2.1] 2019-10-16](#v121-2019-10-16)
+    - [Meta](#meta)
+    - [Updated](#updated)
   - [[v1.2.0] 2019-10-16](#v120-2019-10-16)
     - [Meta](#meta)
     - [Added](#added)
