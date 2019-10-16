@@ -29,6 +29,9 @@ import TheRSVPSuccess from "./TheRSVPSuccess.vue";
 import TheRSVPFail from "./TheRSVPFail.vue";
 
 export default {
+  metaInfo: {
+    meta: [{ title: `` }]
+  },
   props: ["component"],
   components: {
     TheHeader,
