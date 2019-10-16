@@ -24,6 +24,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
     - Add titleMap data property to look up title prefix based on $route
     - Add computed properties to return title
   - Unregister unused modal component
+- index.html: Delete title tag
 
 ## 1.2. [v1.1.1] 2019-10-15
 
