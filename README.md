@@ -2,4 +2,23 @@
 
 Wedding website for Erin and Matt!
 
-See dev site at [https://dev--matt-and-erin.netlify.com/](https://dev--matt-and-erin.netlify.com/).
+## Description
+
+Prerendered static site that hydrates into a vue.js app on load.
+
+Includes
+
+- original design
+- RSVP form
+- original slide show
+- randomized home page full screen background image on load
+- 3rd party embeds
+
+## Stack
+
+- custom domain
+- GitHub
+- Netlify
+- Node
+- Vue
+- Parcel
