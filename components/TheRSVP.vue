@@ -242,7 +242,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 .heart {
   margin-right: 0.5rem;
