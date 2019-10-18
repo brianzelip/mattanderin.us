@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.3.0] 2019-10-18
+
+### Meta
+
+- branch: favicon
+- description: Use custom favicon to override the default favicon via the domain host for matteranderin.us
+
+### Added
+
+- img/favicon/:
+  - add source svg from font awesome 5, and its online generated gif via https://cloudconvert.com/svg-to-gif
+  - add favicon images generated from https://www.favicon-generator.org/
+- index.html: Add metadata generated from favicon-generator.org
+
 ## 1.1. [v1.2.5] 2019-10-17
 
 ### 1.1.1. Meta
@@ -781,6 +795,9 @@ FIXED by simply adding some bottom margin to the `<header>`!
 <!-- TOC -->
 
 - [Changelog](#changelog)
+  - [[v1.3.0] 2019-10-18](#v130-2019-10-18)
+    - [Meta](#meta)
+    - [Added](#added)
   - [[v1.2.5] 2019-10-17](#v125-2019-10-17)
     - [Meta](#meta)
     - [Updated](#updated)
