@@ -2,6 +2,14 @@
   <main class="container">
     <h1 class="mt0 regular center pageTitle">Honeymoon Fund</h1>
 
+    <figure>
+      <img
+        alt="A beach on Caye Caulker, a small island off the coast of Belize"
+        src="../img/CayeCaulker.jpg"
+        title="Caye Caulker, a small island off the coast of Belize where we'll be staying"
+      />
+    </figure>
+
     <p>
       If you know us at all, you know that we&rsquo;ve been living in sin for
       quite some time. That means we don&rsquo;t really need much more than
@@ -12,12 +20,10 @@
 
     <p>
       We are going to
-      <a href="https://en.wikipedia.org/wiki/Belize">Belize</a> 🎉
+      <a href="https://en.wikipedia.org/wiki/Caye_Caulker">Caye Caulker</a>, a small island in the Caribbean Sea off the coast of Belize.
     </p>
 
-    <p class="mb3">
-      Click the button below if you&rsquo;d like to contribute using PayPal.
-    </p>
+    <p class="mb3">Click the button below if you&rsquo;d like to contribute using PayPal.</p>
 
     <TheHoneymoonFundDonateBtn></TheHoneymoonFundDonateBtn>
   </main>
@@ -34,12 +40,15 @@ export default {
 </script>
 
 <style scoped>
-.belize {
-  font-size: 1.3rem;
+figure {
+  margin: 0 0 1rem 0;
 }
-@media screen and (min-width: 780px) {
-  .belize {
-    font-size: 1.5rem;
+img {
+  border: 2px solid var(--soft-black);
+}
+@media screen and (min-width: 960px) {
+  img {
+    border-width: 4px;
   }
 }
 </style>
