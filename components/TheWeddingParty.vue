@@ -86,7 +86,10 @@
       </ul>
     </section>
     <hr />
-    <section class="mt3">
+    <section
+      class="mt3"
+      id="dudes"
+    >
       <h1 class="mt0 regular center pageTitle">The Dudes</h1>
       <ul class="list-reset mb0">
         <li class="pb2">
