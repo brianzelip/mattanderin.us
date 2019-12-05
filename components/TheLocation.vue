@@ -29,13 +29,15 @@
         <p class="mb0 center">Brian &amp; Annette&rsquo;s place</p>
         <address>128 State Street, Lafayette, Louisiana 70506</address>
         <figure>
-          <img alt="The after party" src="../img/location/afterparty.png" />
+          <img
+            alt="The after party"
+            src="../img/location/afterparty.jpg"
+          />
         </figure>
         <address>
           <a
             href="https://www.google.com/maps/place/128+State+St,+Lafayette,+LA+70506/@30.2193673,-92.0362277,17z/data=!4m13!1m7!3m6!1s0x86249c65ebba3067:0xd1bb357208ce6c4c!2s128+State+St,+Lafayette,+LA+70506!3b1!8m2!3d30.219418!4d-92.0361017!3m4!1s0x86249c65ebba3067:0xd1bb357208ce6c4c!8m2!3d30.219418!4d-92.0361017?hl=en"
-            >Map</a
-          >
+          >Map</a>
         </address>
       </div>
     </section>
@@ -45,16 +47,26 @@
     <section id="accommodations">
       <h2 class="mt0 center">Accommodations</h2>
       <ol class="list-reset m0">
-        <li :key="i" class="card" v-for="(place, i) in accommodations">
+        <li
+          :key="i"
+          class="card"
+          v-for="(place, i) in accommodations"
+        >
           <p class="center">{{ place.name }}</p>
           <figure>
-            <img :alt="place.name" :src="profilePic(place.pic.filename)" />
+            <img
+              :alt="place.name"
+              :src="profilePic(place.pic.filename)"
+            />
             <figcaption>{{ place.blurb }}</figcaption>
           </figure>
           <address>
             <a :href="place.url">Website</a>
             <span v-if="place.url != '' && place.map != ''">|</span>
-            <a :href="place.map" v-if="place.map != ''">Map</a>
+            <a
+              :href="place.map"
+              v-if="place.map != ''"
+            >Map</a>
           </address>
         </li>
       </ol>
@@ -65,16 +77,29 @@
     <section id="recommendations">
       <h2 class="mt0 center">Recommendations</h2>
       <ol class="list-reset m0">
-        <li :key="i" class="card" v-for="(place, i) in recommendations">
+        <li
+          :key="i"
+          class="card"
+          v-for="(place, i) in recommendations"
+        >
           <p class="center">{{ place.name }}</p>
           <figure>
-            <img :alt="place.name" :src="profilePic(place.pic.filename)" />
+            <img
+              :alt="place.name"
+              :src="profilePic(place.pic.filename)"
+            />
             <figcaption>{{ place.blurb }}</figcaption>
           </figure>
           <address>
-            <a :href="place.url" v-if="place.url != ''">Website</a>
+            <a
+              :href="place.url"
+              v-if="place.url != ''"
+            >Website</a>
             <span v-if="place.url != '' && place.map != ''">|</span>
-            <a :href="place.map" v-if="place.map != ''">Map</a>
+            <a
+              :href="place.map"
+              v-if="place.map != ''"
+            >Map</a>
           </address>
         </li>
       </ol>
@@ -198,12 +223,14 @@ export default {
         {
           name: "Saint Francisville",
           url: "",
-          map: "https://www.google.com/maps/place/St+Francisville,+LA+70775/@30.7878663,-91.3953551,14z/data=!3m1!4b1!4m5!3m4!1s0x8624349d4752be27:0x8453e255c0a189cc!8m2!3d30.7880721!4d-91.3768479",
+          map:
+            "https://www.google.com/maps/place/St+Francisville,+LA+70775/@30.7878663,-91.3953551,14z/data=!3m1!4b1!4m5!3m4!1s0x8624349d4752be27:0x8453e255c0a189cc!8m2!3d30.7880721!4d-91.3768479",
           blurb:
             "If you are staying in the area for a while and don’t mind the drive (about an hour and a half), Saint Francisville is a beautiful place to visit with lots of history. Historic gardens, plantation homes, elaborate cemeteries, cute shops, and quaint restaurants—it’s worth the drive.",
           pic: {
             filename: "francisville.jpg",
-            source: "https://cbsnews2.cbsistatic.com/hub/i/r/2005/12/21/4aec2139-a642-11e2-a3f0-029118418759/resize/620x465/ad91bb12427e64e4c358ca4f829fa57a/image1156299.jpg"
+            source:
+              "https://cbsnews2.cbsistatic.com/hub/i/r/2005/12/21/4aec2139-a642-11e2-a3f0-029118418759/resize/620x465/ad91bb12427e64e4c358ca4f829fa57a/image1156299.jpg"
           }
         }
       ],
