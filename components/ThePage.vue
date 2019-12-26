@@ -1,9 +1,6 @@
 <template>
   <section>
-    <TheHeader
-      :color="isHome ? heroColor : 'black'"
-      class="header"
-    ></TheHeader>
+    <TheHeader :color="isHome ? heroColor : 'black'" class="header"></TheHeader>
     <keep-alive>
       <component
         :class="{ component: !isHome }"
@@ -24,23 +21,21 @@ import TheWeddingParty from "./TheWeddingParty.vue";
 import TheHoneymoonFund from "./TheHoneymoonFund.vue";
 import TheSlideShowOfLove from "./TheSlideShowOfLove.vue";
 import TheRSVP from "./TheRSVP.vue";
-import TheRSVPSuccess from "./TheRSVPSuccess.vue";
-import TheRSVPFail from "./TheRSVPFail.vue";
+import TheComments from "./TheComments.vue";
 
 export default {
   props: ["component"],
   components: {
     TheHeader,
     TheHero,
-    TheRSVPSuccess,
-    TheRSVPFail,
     TheOurStory,
     TheSchedule,
     TheLocation,
     TheWeddingParty,
     TheHoneymoonFund,
     TheSlideShowOfLove,
-    TheRSVP
+    TheRSVP,
+    TheComments
   },
   data() {
     return {
@@ -53,8 +48,7 @@ export default {
         honeymoon: "Honeymoon Fund",
         slideshow: "Slide Show of Love",
         rsvp: "RSVP",
-        success: "Successful Response",
-        fail: "Failed Response"
+        comments: "Comments"
       }
     };
   },
