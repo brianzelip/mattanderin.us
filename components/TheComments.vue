@@ -38,16 +38,13 @@
           class="field col-12"
           id="comments"
           name="comments"
+          required
           rows="3"
           v-model="comments"
         ></textarea>
       </section>
 
-      <button
-        :disabled="attending == null"
-        class="mt3 btn btn-primary regular"
-        type="submit"
-      >
+      <button class="mt3 btn btn-primary regular" type="submit">
         Submit
       </button>
     </form>
