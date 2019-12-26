@@ -10,16 +10,13 @@
       </button>
     </div>
     <ul class="list-reset mb0 flex flex-wrap">
-      <li
-        :key="i"
-        class="col-6"
-        v-for="(page, i) in pages"
-      >
+      <li :key="i" class="col-6" v-for="(page, i) in pages">
         <router-link
           :class="{ active: page.path === currentPath }"
           :to="page.path"
           class="button"
-        >{{ page.text }}</router-link>
+          >{{ page.text }}</router-link
+        >
       </li>
     </ul>
   </nav>
@@ -38,7 +35,7 @@ export default {
         { path: "/party", text: "Wedding Party" },
         { path: "/honeymoon", text: "Honeymoon Fund" },
         { path: "/slideshow", text: "Slide Show of Love" },
-        { path: "/rsvp", text: "RSVP" }
+        { path: "/comments", text: "Comments" }
       ]
     };
   },
