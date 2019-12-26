@@ -52,24 +52,30 @@ const routes = [
     props: { component: 'TheRSVP' }
   },
   {
-    path: '/rsvp/success',
-    name: 'success',
+    path: '/comments',
+    name: 'comments',
     component: ThePage,
-    props: { component: 'TheRSVPSuccess' }
+    props: { component: 'TheComments' }
   },
   {
-    path: '/rsvp/fail',
+    path: '/comments/success',
+    name: 'success',
+    component: ThePage,
+    props: { component: 'TheCommentsSuccess' }
+  },
+  {
+    path: '/comments/fail',
     name: 'fail',
     component: ThePage,
-    props: { component: 'TheRSVPFail' }
+    props: { component: 'TheCommentsFail' }
   }
 ];
 
 const router = new VueRouter({
   routes,
   mode: 'history',
-  scrollBehavior (to, from, savedPosition) {
-    return savedPosition ? savedPosition : { x: 0, y: 0 }
+  scrollBehavior(to, from, savedPosition) {
+    return savedPosition ? savedPosition : { x: 0, y: 0 };
   }
 });
 

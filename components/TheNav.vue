@@ -1,15 +1,17 @@
 <template>
   <nav class="flex justify-center">
     <ul class="list-reset mb0">
-      <li
-        :key="i"
-        v-for="(page, i) in pages"
-      >
+      <li :key="i" v-for="(page, i) in pages">
         <router-link
-          :class="{'soft-black': color === 'black', 'soft-white': color === 'white', active: page.path === currentPath}"
+          :class="{
+            'soft-black': color === 'black',
+            'soft-white': color === 'white',
+            active: page.path === currentPath
+          }"
           :to="page.path"
           class="button"
-        >{{ page.text }}</router-link>
+          >{{ page.text }}</router-link
+        >
       </li>
     </ul>
   </nav>
@@ -27,7 +29,7 @@ export default {
         { path: "/party", text: "Wedding Party" },
         { path: "/honeymoon", text: "Honeymoon Fund" },
         { path: "/slideshow", text: "Slide Show of Love" },
-        { path: "/rsvp", text: "RSVP" }
+        { path: "/comments", text: "Comments of Love" }
       ]
     };
   },
