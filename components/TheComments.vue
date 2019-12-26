@@ -16,13 +16,13 @@
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       method="POST"
-      name="RSVP"
+      name="Comments"
       v-on:submit.prevent="handleSubmit"
     >
-      <input name="form-name" type="hidden" value="RSVP" />
+      <input name="form-name" type="hidden" value="Comments" />
 
       <section id="respondentName">
-        <label class="block mb1" for="respondent">Your full name</label>
+        <label class="block mb1" for="respondent">Your name or party</label>
         <input
           class="col-12 field"
           id="respondent"
@@ -32,79 +32,8 @@
         />
       </section>
 
-      <section class="mt3" id="userEmail">
-        <label class="block mb1" for="email">Your email address</label>
-        <input
-          class="col-12 field"
-          id="email"
-          required
-          type="email"
-          v-model.trim="email"
-        />
-      </section>
-
-      <section class="mt3" id="attendance">
-        <p class="block mb1">Will you be attending?</p>
-        <div class="mb2">
-          <label for="yay">Yes</label>
-          <input
-            :value="true"
-            id="yay"
-            name="attending"
-            type="radio"
-            v-model="attending"
-          />
-        </div>
-        <div>
-          <label for="nay">No</label>
-          <input
-            :value="false"
-            id="nay"
-            name="attending"
-            type="radio"
-            v-model="attending"
-          />
-        </div>
-      </section>
-
-      <section class="mt3" id="adults" v-if="attending">
-        <label class="block mb1" for="num-adults"
-          >Total number of adults age 21+ in your party</label
-        >
-        <input
-          class="field"
-          id="num-adults"
-          type="number"
-          v-model.number="adults"
-        />
-      </section>
-
-      <section class="mt3" id="youth" v-if="attending">
-        <label class="block mb1" for="num-youth"
-          >Total number of youth age 8 to 20 in your party</label
-        >
-        <input
-          class="field"
-          id="num-youth"
-          type="number"
-          v-model.number="youth"
-        />
-      </section>
-
-      <section class="mt3" id="children" v-if="attending">
-        <label class="block mb1" for="num-children"
-          >Total number of children younger than 8 in your party</label
-        >
-        <input
-          class="field"
-          id="num-children"
-          type="number"
-          v-model.number="children"
-        />
-      </section>
-
       <section class="mt3" id="otherComments" v-if="attending">
-        <label class="block mb1" for="comments">Other comments</label>
+        <label class="block mb1" for="comments">Comments</label>
         <textarea
           class="field col-12"
           id="comments"
@@ -132,11 +61,6 @@ export default {
   data() {
     return {
       respondent: "",
-      attending: null,
-      email: "",
-      adults: 0,
-      youth: 0,
-      children: 0,
       comments: ""
     };
   },
@@ -144,12 +68,7 @@ export default {
     submissionData() {
       return {
         respondent: this.respondent,
-        email: this.email,
-        attending: this.attending == true ? "Yes" : "No",
-        "total adults": this.adults != null ? this.adults : 0,
-        "total youth": this.youth != null ? this.youth : 0,
-        "total children": this.children != null ? this.children : 0,
-        "other comments": this.comments
+        comments: this.comments
       };
     }
   },
@@ -170,16 +89,16 @@ export default {
         .post(
           "/",
           this.encode({
-            "form-name": "RSVP",
+            "form-name": "Comments",
             ...this.submissionData
           }),
           axiosConfig
         )
         .then(() => {
-          this.$router.push("/rsvp/success");
+          this.$router.push("/comments/success");
         })
         .catch(() => {
-          this.$router.push("/rsvp/fail");
+          this.$router.push("/comments/fail");
         });
     }
   }
