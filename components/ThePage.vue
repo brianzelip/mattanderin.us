@@ -48,7 +48,7 @@ export default {
         honeymoon: "Honeymoon Fund",
         slideshow: "Slide Show of Love",
         rsvp: "RSVP",
-        comments: "Comments"
+        comments: "Comments of Love"
       }
     };
   },
