@@ -32,7 +32,7 @@
         />
       </section>
 
-      <section class="mt3" id="otherComments" v-if="attending">
+      <section class="mt3" id="comments">
         <label class="block mb1" for="comments">Comments</label>
         <textarea
           class="field col-12"
