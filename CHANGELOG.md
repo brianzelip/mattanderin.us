@@ -31,7 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
   - update text (maybe)
 - router.js:
   - add comments route
-  - remove rsvp success and fail routes
+  - swap rsvp success and fail routes for comments
 - index.html: Update form markup
 
 ## 1.3. [v1.3.5] 2019-12-05
