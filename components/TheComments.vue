@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1 class="mt0 regular center pageTitle">Comments of Love</h1>
+    <h1 class="mt0 regular center pageTitle">Leave a Comment</h1>
     <p class="rsvpCopy">
       Thanks so much for coming to our wedding!
     </p>

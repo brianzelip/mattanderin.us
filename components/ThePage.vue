@@ -52,7 +52,7 @@ export default {
         honeymoon: "Honeymoon Fund",
         slideshow: "Slide Show of Love",
         rsvp: "RSVP",
-        comments: "Comments of Love",
+        comments: "Leave a Comment",
         success: "Successful Comment",
         fail: "Failed Comment"
       }

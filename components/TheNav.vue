@@ -29,7 +29,7 @@ export default {
         { path: "/party", text: "Wedding Party" },
         { path: "/honeymoon", text: "Honeymoon Fund" },
         { path: "/slideshow", text: "Slide Show of Love" },
-        { path: "/comments", text: "Comments of Love" }
+        { path: "/comments", text: "Leave a Comment" }
       ]
     };
   },
