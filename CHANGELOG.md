@@ -25,7 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - TheNav: update links
 - TheNavMobile: update links
-- ThePage: register TheComments.vue
+- ThePage: register TheComments*.vue
 - TheRSVP:
   - hide form
   - update text (maybe)
