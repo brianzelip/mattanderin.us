@@ -22,6 +22,8 @@ import TheHoneymoonFund from "./TheHoneymoonFund.vue";
 import TheSlideShowOfLove from "./TheSlideShowOfLove.vue";
 import TheRSVP from "./TheRSVP.vue";
 import TheComments from "./TheComments.vue";
+import TheCommentsFail from "./TheCommentsFail.vue";
+import TheCommentsSuccess from "./TheCommentsSuccess.vue";
 
 export default {
   props: ["component"],
@@ -35,7 +37,9 @@ export default {
     TheHoneymoonFund,
     TheSlideShowOfLove,
     TheRSVP,
-    TheComments
+    TheComments,
+    TheCommentsFail,
+    TheCommentsSuccess
   },
   data() {
     return {
@@ -48,7 +52,9 @@ export default {
         honeymoon: "Honeymoon Fund",
         slideshow: "Slide Show of Love",
         rsvp: "RSVP",
-        comments: "Comments of Love"
+        comments: "Comments of Love",
+        success: "Successful Comment",
+        fail: "Failed Comment"
       }
     };
   },
