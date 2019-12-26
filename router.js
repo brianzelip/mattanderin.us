@@ -56,6 +56,18 @@ const routes = [
     name: 'comments',
     component: ThePage,
     props: { component: 'TheComments' }
+  },
+  {
+    path: '/comments/success',
+    name: 'success',
+    component: ThePage,
+    props: { component: 'TheCommentsSuccess' }
+  },
+  {
+    path: '/comments/fail',
+    name: 'fail',
+    component: ThePage,
+    props: { component: 'TheCommentsFail' }
   }
 ];
 
