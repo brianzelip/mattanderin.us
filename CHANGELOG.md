@@ -25,7 +25,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - TheRSVP:
   - hide form
   - update text (maybe)
-- router.js: add comments route
+- router.js:
+  - add comments route
+  - remove rsvp success and fail routes
 
 ## 1.2. [v1.3.5] 2019-12-05
 
