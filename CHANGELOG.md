@@ -20,6 +20,8 @@ the `comment-handler` function uses the netlify api to ???, see:
 - https://docs.netlify.com/configure-builds/build-hooks/
 - https://docs.netlify.com/functions/build-with-javascript/#format
 
+Have to make the auth var work in the netlify build, see here for starters: https://community.netlify.com/t/common-issue-using-environment-variables-on-netlify-correctly/267
+
 ### 1.1.2. Added
 
 - lambda/: where the netlify functions go
