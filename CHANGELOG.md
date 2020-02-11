@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## 1.1. Unreleased
 
+- branch: render-comments
+- description: use the [jamstack comments demo](https://jamstack-comments.netlify.com) and [functions docs](https://docs.netlify.com/functions/build-with-javascript/) to auto render comments
+
+### 1.1.1. Notes
+
+user submits comment on site
+the `submission-created` event activates the `comment-handler` function
+the `comment-handler` function uses the netlify api to ???, see:
+
+- https://docs.netlify.com/forms/submissions/#form-submissions-ui
+- https://docs.netlify.com/functions/trigger-on-events/
+- https://docs.netlify.com/configure-builds/build-hooks/
+- https://docs.netlify.com/functions/build-with-javascript/#format
+
+### 1.1.2. Added
+
+- lambda/: where the netlify functions go
+
 ## 1.2. [v1.4.1] 2019-12-26
 
 - branch: master
@@ -14,7 +32,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### 1.2.1. Updated
 
 - TheComments.vue
-- TheNav*.vue
+- TheNav\*.vue
 - ThePage.vue
 
 ## 1.3. [v1.4.0] 2019-12-26
@@ -36,7 +54,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - TheNav: update links
 - TheNavMobile: update links
-- ThePage: register TheComments*.vue
+- ThePage: register TheComments\*.vue
 - TheRSVP:
   - hide form
   - update text (maybe)
@@ -898,6 +916,8 @@ FIXED by simply adding some bottom margin to the `<header>`!
 
 - [Changelog](#changelog)
   - [Unreleased](#unreleased)
+    - [Notes](#notes)
+    - [Added](#added)
   - [[v1.4.1] 2019-12-26](#v141-2019-12-26)
     - [Updated](#updated)
   - [[v1.4.0] 2019-12-26](#v140-2019-12-26)
