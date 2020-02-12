@@ -1,8 +1,8 @@
 <template>
   <article>
-    <p class="msg">{{ comment.msg }}</p>
-    <p class="by pt2 mb0">{{ comment.by }}</p>
-    <time :datetime="comment.date">{{ date }}</time>
+    <p class="msg">{{ comment.data.comments }}</p>
+    <p class="by pt2 mb0">{{ comment.data.respondent }}</p>
+    <time :datetime="comment.data.created_at">{{ date }}</time>
   </article>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   props: ["comment"],
   computed: {
     date() {
-      return dayjs(this.comment.date).format("MMMM DD, YYYY");
+      return dayjs(this.comment.data.created_at).format("MMMM DD, YYYY");
     }
   }
 };
