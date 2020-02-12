@@ -1,12 +1,8 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">Leave a Comment</h1>
-    <p class="rsvpCopy">
-      Thanks so much for coming to our wedding!
-    </p>
-    <p class="rsvpCopy">
-      Leave a comment for the newlyweds by using the form below.
-    </p>
+    <p class="rsvpCopy">Thanks so much for coming to our wedding!</p>
+    <p class="rsvpCopy">Leave a comment for the newlyweds by using the form below.</p>
     <div class="sincerely">
       <span class="heart">❤️</span>
       <p class="center Italianno signature">Erin &amp; Matt</p>
@@ -19,10 +15,17 @@
       name="Comments"
       v-on:submit.prevent="handleSubmit"
     >
-      <input name="form-name" type="hidden" value="Comments" />
+      <input
+        name="form-name"
+        type="hidden"
+        value="Comments"
+      />
 
       <section id="respondentName">
-        <label class="block mb1" for="respondent">Your name or party</label>
+        <label
+          class="block mb1"
+          for="respondent"
+        >Your name or party</label>
         <input
           class="col-12 field"
           id="respondent"
@@ -32,8 +35,14 @@
         />
       </section>
 
-      <section class="mt3" id="comments">
-        <label class="block mb1" for="comments">Comments</label>
+      <section
+        class="mt3"
+        id="comments"
+      >
+        <label
+          class="block mb1"
+          for="comments"
+        >Comments</label>
         <textarea
           class="field col-12"
           id="comments"
@@ -44,17 +53,26 @@
         ></textarea>
       </section>
 
-      <button class="mt3 btn btn-primary regular" type="submit">
-        Submit
-      </button>
+      <button
+        class="mt3 btn btn-primary regular"
+        type="submit"
+      >Submit</button>
     </form>
+    <hr
+      class="hr"
+      id="feed"
+    />
+    <TheCommentsFeed></TheCommentsFeed>
   </main>
 </template>
 
 <script>
 import axios from "axios";
 
+import TheCommentsFeed from "./TheCommentsFeed.vue";
+
 export default {
+  components: { TheCommentsFeed },
   data() {
     return {
       respondent: "",
