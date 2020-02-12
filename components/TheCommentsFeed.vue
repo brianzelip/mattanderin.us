@@ -1,47 +1,20 @@
 <template>
   <ul class="list-reset">
-    <li
-      :key="i"
-      v-for="(comment, i) in comments"
-    >
+    <li :key="i" v-for="(comment, i) in comments">
       <Comment :comment="comment"></Comment>
     </li>
   </ul>
 </template>
 
 <script>
+import comments from "../data/comments.json";
 import Comment from "./Comment.vue";
 
 export default {
   components: { Comment },
   data() {
     return {
-      comments: [
-        {
-          msg:
-            "I want to place some SVG images before some selected elements. I am using JQuery but that is irrelevant. I would like to have the :before element to be as:",
-          by: "Brian Zelip and family",
-          date: "2020-01-08T14:34:57.380Z"
-        },
-        {
-          msg:
-            "I want to place some SVG images before some selected elements. I am using JQuery but that is irrelevant. I would like to have the :before element to be as:",
-          by: "Brian Zelip and family",
-          date: "2019-12-26T15:37:06.201Z"
-        },
-        {
-          msg:
-            "I want to place some SVG images before some selected elements. I am using JQuery but that is irrelevant. I would like to have the :before element to be as:",
-          by: "Brian Zelip and family",
-          date: "2019-12-26T15:30:57.223Z"
-        },
-        {
-          msg:
-            "I want to place some SVG images before some selected elements. I am using JQuery but that is irrelevant. I would like to have the :before element to be as:",
-          by: "Brian Zelip and family",
-          date: "2019-12-26T15:37:06.201Z"
-        }
-      ]
+      comments
     };
   }
 };
