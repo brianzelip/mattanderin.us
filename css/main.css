@@ -160,3 +160,16 @@ a {
 .hover-text-decoration-none:hover {
   text-decoration: none;
 }
+
+.hr {
+  height: 2px;
+  margin: 4rem -1rem;
+  border: none;
+  background-color: var(--soft-black);
+}
+@media screen and (min-width: 960px) {
+  .hr {
+    height: 4px;
+    margin: 6rem 0;
+  }
+}
