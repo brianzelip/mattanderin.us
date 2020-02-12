@@ -4,8 +4,9 @@
   "description": "Website for Erin and Matt's wedding 🎉",
   "main": "src/index.html",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "rm -rf dist .cache && parcel build index.html"
+    "comments": "node getComments.js",
+    "start": "npm run comments && parcel index.html",
+    "build": "npm run comments && rm -rf dist .cache && parcel build index.html"
   },
   "repository": {
     "type": "git",
