@@ -107,7 +107,7 @@ export default {
           axiosConfig
         )
         .then(() => {
-          this.$refs.feed.scrollIntoView();
+          this.$router.push("/comments/success");
         })
         .catch(() => {
           this.$router.push("/comments/fail");
