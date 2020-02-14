@@ -93,6 +93,7 @@ export default {
         .join("&");
     },
     handleSubmit() {
+      const vm = this;
       const axiosConfig = {
         header: { "Content-Type": "application/x-www-form-urlencoded" }
       };
@@ -107,7 +108,7 @@ export default {
           axiosConfig
         )
         .then(() => {
-          this.$router.push("/comments/success");
+          vm.$refs.feed.scrollIntoView();
         })
         .catch(() => {
           this.$router.push("/comments/fail");
