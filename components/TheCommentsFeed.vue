@@ -1,6 +1,13 @@
 <template>
-  <ul class="list-reset" v-if="comments.length > 0">
-    <li :key="i" v-for="(comment, i) in comments">
+  <ul
+    class="list-reset"
+    id="feed"
+    v-if="comments.length > 0"
+  >
+    <li
+      :key="i"
+      v-for="(comment, i) in comments"
+    >
       <Comment :comment="comment"></Comment>
     </li>
   </ul>
