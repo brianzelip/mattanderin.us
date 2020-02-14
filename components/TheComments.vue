@@ -1,8 +1,8 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">Leave a Comment</h1>
-    <p class="rsvpCopy">Thanks so much for coming to our wedding!</p>
-    <p class="rsvpCopy">Leave a comment for the newlyweds by using the form below.</p>
+    <p class="rsvpCopy">Thanks so much for celebrating with us!</p>
+    <p class="rsvpCopy">Leave us a comment below.</p>
     <div class="sincerely">
       <span class="heart">❤️</span>
       <p class="center Italianno signature">Erin &amp; Matt</p>
@@ -21,7 +21,7 @@
         value="Comments"
       />
 
-      <section id="respondentName">
+      <section>
         <label
           class="block mb1"
           for="respondent"
@@ -35,21 +35,18 @@
         />
       </section>
 
-      <section
-        class="mt3"
-        id="comments"
-      >
+      <section class="mt3">
         <label
           class="block mb1"
-          for="comments"
+          for="message"
         >Comments</label>
         <textarea
           class="field col-12"
-          id="comments"
-          name="comments"
+          id="message"
+          name="message"
           required
           rows="3"
-          v-model="comments"
+          v-model="message"
         ></textarea>
       </section>
 
@@ -62,7 +59,7 @@
       class="hr"
       id="feed"
     />
-    <TheCommentsFeed></TheCommentsFeed>
+    <TheCommentsFeed ref="feed"></TheCommentsFeed>
   </main>
 </template>
 
@@ -76,14 +73,14 @@ export default {
   data() {
     return {
       respondent: "",
-      comments: ""
+      message: ""
     };
   },
   computed: {
     submissionData() {
       return {
         respondent: this.respondent,
-        comments: this.comments
+        message: this.message
       };
     }
   },
@@ -110,7 +107,7 @@ export default {
           axiosConfig
         )
         .then(() => {
-          this.$router.push("/comments/success");
+          this.$refs.feed.scrollIntoView();
         })
         .catch(() => {
           this.$router.push("/comments/fail");
