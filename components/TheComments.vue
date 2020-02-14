@@ -55,11 +55,8 @@
         type="submit"
       >Submit</button>
     </form>
-    <hr
-      class="hr"
-      id="feed"
-    />
-    <TheCommentsFeed ref="feed"></TheCommentsFeed>
+    <hr class="hr" />
+    <TheCommentsFeed ref="feedx"></TheCommentsFeed>
   </main>
 </template>
 
@@ -108,9 +105,11 @@ export default {
           axiosConfig
         )
         .then(() => {
-          vm.$refs.feed.scrollIntoView();
+          console.log("THEN: vm.$refs.feedx: ", vm.$refs.feedx);
+          vm.$refs.feedx.scrollIntoView();
         })
         .catch(() => {
+          console.log("CATCH: vm.$refs.feedx: ", vm.$refs.feedx);
           this.$router.push("/comments/fail");
         });
     }
