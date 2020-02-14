@@ -82,6 +82,10 @@ export default {
     }
   },
   methods: {
+    reset() {
+      this.$set(this, respondent, "");
+      this.$set(this, message, "");
+    },
     encode(data) {
       return Object.keys(data)
         .map(
@@ -105,11 +109,10 @@ export default {
           axiosConfig
         )
         .then(() => {
-          console.log("THEN: vm.$refs.feedx: ", vm.$refs.feedx);
-          vm.$refs.feedx.scrollIntoView();
+          vm.reset();
+          vm.$refs.feedx.$el.scrollIntoView();
         })
         .catch(() => {
-          console.log("CATCH: vm.$refs.feedx: ", vm.$refs.feedx);
           this.$router.push("/comments/fail");
         });
     }
