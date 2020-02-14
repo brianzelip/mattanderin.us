@@ -53,10 +53,11 @@
       <button
         class="mt3 btn btn-primary regular"
         type="submit"
+        v-scroll-to="'#feed'"
       >Submit</button>
     </form>
     <hr class="hr" />
-    <TheCommentsFeed ref="feedx"></TheCommentsFeed>
+    <TheCommentsFeed></TheCommentsFeed>
   </main>
 </template>
 
@@ -110,7 +111,7 @@ export default {
         )
         .then(() => {
           vm.reset();
-          vm.$refs.feedx.$el.scrollIntoView();
+          vm.$toasted.show("hello billo");
         })
         .catch(() => {
           this.$router.push("/comments/fail");
