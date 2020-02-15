@@ -29,7 +29,6 @@
         <input
           class="col-12 field"
           id="respondent"
-          required
           type="text"
           v-model="respondent"
         />
@@ -44,13 +43,13 @@
           class="field col-12"
           id="message"
           name="message"
-          required
           rows="3"
           v-model="message"
         ></textarea>
       </section>
 
       <button
+        :disabled="inputValidation"
         class="mt3 btn btn-primary regular"
         type="submit"
       >Submit</button>
@@ -74,6 +73,11 @@ export default {
     };
   },
   computed: {
+    inputValidation() {
+      return this.respondent.length > 3 && this.message.length > 5
+        ? false
+        : true;
+    },
     submissionData() {
       return {
         respondent: this.respondent,
@@ -113,7 +117,10 @@ export default {
           vm.$toasted.show("hello billo");
         })
         .catch(() => {
-          this.$router.push("/comments/fail");
+          console.log("SUBMIT FAILED!");
+          vm.reset();
+          vm.$toasted.show("hello billo");
+          // this.$router.push("/comments/fail");
         });
     }
   }
