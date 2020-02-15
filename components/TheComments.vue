@@ -53,7 +53,6 @@
       <button
         class="mt3 btn btn-primary regular"
         type="submit"
-        v-scroll-to="'#feed'"
       >Submit</button>
     </form>
     <hr class="hr" />
