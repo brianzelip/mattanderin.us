@@ -84,8 +84,8 @@ export default {
   },
   methods: {
     reset() {
-      this.$set(this, respondent, "");
-      this.$set(this, message, "");
+      this.respondent = "";
+      this.message = "";
     },
     encode(data) {
       return Object.keys(data)
