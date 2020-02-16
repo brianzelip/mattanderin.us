@@ -24,7 +24,17 @@ Have to make the auth var work in the netlify build, see here for starters: http
 
 ### 1.1.2. Added
 
+- TheCommentsFeed.vue
+- Comment.vue
 - lambda/: where the netlify functions go
+
+### 1.1.3. Updated
+
+- main.css
+
+### 1.1.4. Deleted
+
+- TheCommentsSuccess.vue
 
 ## 1.2. [v1.4.1] 2019-12-26
 
@@ -920,6 +930,8 @@ FIXED by simply adding some bottom margin to the `<header>`!
   - [Unreleased](#unreleased)
     - [Notes](#notes)
     - [Added](#added)
+    - [Updated](#updated)
+    - [Deleted](#deleted)
   - [[v1.4.1] 2019-12-26](#v141-2019-12-26)
     - [Updated](#updated)
   - [[v1.4.0] 2019-12-26](#v140-2019-12-26)
