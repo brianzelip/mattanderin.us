@@ -45,4 +45,7 @@ li::after {
     width: 110px;
   }
 }
+li:last-of-type::after {
+  display: none;
+}
 </style>
