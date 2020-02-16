@@ -1,6 +1,6 @@
 <template>
   <article>
-    <p class="msg">{{ comment.data.comments }}</p>
+    <p class="msg">{{ comment.data.message }}</p>
     <p class="by pt2 mb0">{{ comment.data.respondent }}</p>
     <time :datetime="comment.data.created_at">{{ date }}</time>
   </article>
