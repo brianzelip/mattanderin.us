@@ -113,14 +113,19 @@ export default {
           axiosConfig
         )
         .then(() => {
+          const successMsg =
+            "Thanks for leaving a comment! Refresh this page in a minute to see it.";
           vm.reset();
-          vm.$toasted.show("hello billo");
+          vm.$toasted.show(successMsg, {
+            theme: "toasted-primary",
+            position: "top-center",
+            duration: 5500,
+            className: "toast"
+          });
+          vm.$scrollTo("#feed");
         })
         .catch(() => {
-          console.log("SUBMIT FAILED!");
-          vm.reset();
-          vm.$toasted.show("hello billo");
-          // this.$router.push("/comments/fail");
+          this.$router.push("/comments/fail");
         });
     }
   }
