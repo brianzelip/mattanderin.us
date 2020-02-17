@@ -1,6 +1,9 @@
 <template>
   <section>
-    <TheHeader :color="isHome ? heroColor : 'black'" class="header"></TheHeader>
+    <TheHeader
+      :color="isHome ? heroColor : 'black'"
+      class="header"
+    ></TheHeader>
     <keep-alive>
       <component
         :class="{ component: !isHome }"
@@ -23,7 +26,6 @@ import TheSlideShowOfLove from "./TheSlideShowOfLove.vue";
 import TheRSVP from "./TheRSVP.vue";
 import TheComments from "./TheComments.vue";
 import TheCommentsFail from "./TheCommentsFail.vue";
-import TheCommentsSuccess from "./TheCommentsSuccess.vue";
 
 export default {
   props: ["component"],
@@ -38,8 +40,7 @@ export default {
     TheSlideShowOfLove,
     TheRSVP,
     TheComments,
-    TheCommentsFail,
-    TheCommentsSuccess
+    TheCommentsFail
   },
   data() {
     return {
@@ -53,7 +54,6 @@ export default {
         slideshow: "Slide Show of Love",
         rsvp: "RSVP",
         comments: "Leave a Comment",
-        success: "Successful Comment",
         fail: "Failed Comment"
       }
     };

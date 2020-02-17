@@ -8,10 +8,8 @@
 }
 
 /*
- 
-  BOX SIZING (via Tachyons.io)
-
-*/
+ * Border box by Tachyons - https://tachyons.io
+ */
 
 html,
 body,
@@ -159,4 +157,38 @@ a {
 
 .hover-text-decoration-none:hover {
   text-decoration: none;
+}
+
+.hr {
+  height: 2px;
+  margin: 4rem -1rem;
+  border: none;
+  background-color: var(--soft-black);
+}
+@media screen and (min-width: 960px) {
+  .hr {
+    height: 4px;
+    margin: 6rem 0;
+  }
+}
+
+/* 
+ * Toast
+ */
+.toasted.toast.toasted-primary.default {
+  font-size: 1.125rem;
+  background-color: rgba(51, 34, 34, 0.8);
+  color: var(--soft-white);
+}
+
+.toast::before {
+  content: '';
+  display: block;
+  height: 1rem;
+  width: 0;
+  margin-right: 20px;
+  padding-left: 20px;
+  background-image: url('../img/heart.png');
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
 }

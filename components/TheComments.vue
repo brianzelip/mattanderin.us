@@ -1,12 +1,8 @@
 <template>
   <main>
     <h1 class="mt0 regular center pageTitle">Leave a Comment</h1>
-    <p class="rsvpCopy">
-      Thanks so much for coming to our wedding!
-    </p>
-    <p class="rsvpCopy">
-      Leave a comment for the newlyweds by using the form below.
-    </p>
+    <p class="rsvpCopy">Thanks so much for celebrating with us!</p>
+    <p class="rsvpCopy">Leave us a comment below.</p>
     <div class="sincerely">
       <span class="heart">❤️</span>
       <p class="center Italianno signature">Erin &amp; Matt</p>
@@ -19,57 +15,81 @@
       name="Comments"
       v-on:submit.prevent="handleSubmit"
     >
-      <input name="form-name" type="hidden" value="Comments" />
+      <input
+        name="form-name"
+        type="hidden"
+        value="Comments"
+      />
 
-      <section id="respondentName">
-        <label class="block mb1" for="respondent">Your name or party</label>
+      <section>
+        <label
+          class="block mb1"
+          for="respondent"
+        >Your name or party</label>
         <input
           class="col-12 field"
           id="respondent"
-          required
           type="text"
           v-model="respondent"
         />
       </section>
 
-      <section class="mt3" id="comments">
-        <label class="block mb1" for="comments">Comments</label>
+      <section class="mt3">
+        <label
+          class="block mb1"
+          for="message"
+        >Comments</label>
         <textarea
           class="field col-12"
-          id="comments"
-          name="comments"
-          required
+          id="message"
+          name="message"
           rows="3"
-          v-model="comments"
+          v-model="message"
         ></textarea>
       </section>
 
-      <button class="mt3 btn btn-primary regular" type="submit">
-        Submit
-      </button>
+      <button
+        :disabled="inputValidation"
+        class="mt3 btn btn-primary regular"
+        type="submit"
+      >Submit</button>
     </form>
+    <hr class="hr" />
+    <TheCommentsFeed></TheCommentsFeed>
   </main>
 </template>
 
 <script>
 import axios from "axios";
 
+import TheCommentsFeed from "./TheCommentsFeed.vue";
+
 export default {
+  components: { TheCommentsFeed },
   data() {
     return {
       respondent: "",
-      comments: ""
+      message: ""
     };
   },
   computed: {
+    inputValidation() {
+      return this.respondent.length > 3 && this.message.length > 5
+        ? false
+        : true;
+    },
     submissionData() {
       return {
         respondent: this.respondent,
-        comments: this.comments
+        message: this.message
       };
     }
   },
   methods: {
+    reset() {
+      this.respondent = "";
+      this.message = "";
+    },
     encode(data) {
       return Object.keys(data)
         .map(
@@ -78,6 +98,7 @@ export default {
         .join("&");
     },
     handleSubmit() {
+      const vm = this;
       const axiosConfig = {
         header: { "Content-Type": "application/x-www-form-urlencoded" }
       };
@@ -92,9 +113,32 @@ export default {
           axiosConfig
         )
         .then(() => {
-          this.$router.push("/comments/success");
+          const successMsg =
+            "Thanks for leaving a comment! Refresh this page in a minute to see it published.";
+          const buildHook = `https://api.netlify.com/build_hooks/${process.env.HOOK_ID}`;
+          const branch = "master";
+          const title = "triggered+by+form+submission+build+hook";
+          const params = `?trigger_branch=${branch}&trigger_title=${title}`;
+
+          vm.reset();
+          vm.$toasted.show(successMsg, {
+            theme: "toasted-primary",
+            position: "top-center",
+            duration: 5500,
+            className: "toast"
+          });
+          vm.$scrollTo("#feed");
+          axios
+            .post(`${buildHook}${params}`, {})
+            .then(response => {
+              console.log(response);
+            })
+            .catch(error => {
+              console.log(error);
+            });
         })
-        .catch(() => {
+        .catch(error => {
+          console.log(error);
           this.$router.push("/comments/fail");
         });
     }

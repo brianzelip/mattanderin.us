@@ -21,7 +21,7 @@
       </div>
     </section>
 
-    <hr />
+    <hr class="hr" />
 
     <section id="afterparty">
       <h2 class="mt0 center">After Party</h2>
@@ -42,7 +42,7 @@
       </div>
     </section>
 
-    <hr />
+    <hr class="hr" />
 
     <section id="accommodations">
       <h2 class="mt0 center">Accommodations</h2>
@@ -72,7 +72,7 @@
       </ol>
     </section>
 
-    <hr />
+    <hr class="hr" />
 
     <section id="recommendations">
       <h2 class="mt0 center">Recommendations</h2>
@@ -105,7 +105,7 @@
       </ol>
     </section>
 
-    <hr />
+    <hr class="hr" />
 
     <section id="map">
       <h2 class="mt0 mb3 center">Erin &amp; Matt&rsquo;s Favorite Places</h2>
@@ -378,18 +378,5 @@ figure + address {
 .card figcaption {
   line-height: 1.25;
   font-size: 1rem;
-}
-
-hr {
-  height: 2px;
-  margin: 4rem -1rem;
-  border: none;
-  background-color: var(--soft-black);
-}
-@media screen and (min-width: 960px) {
-  hr {
-    height: 4px;
-    margin: 6rem 0;
-  }
 }
 </style>
