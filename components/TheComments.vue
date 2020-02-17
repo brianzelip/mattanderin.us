@@ -114,7 +114,12 @@ export default {
         )
         .then(() => {
           const successMsg =
-            "Thanks for leaving a comment! Refresh this page in a minute to see it.";
+            "Thanks for leaving a comment! Refresh this page in a minute to see it published.";
+          const buildHook = `https://api.netlify.com/build_hooks/${process.env.HOOK_ID}`;
+          const branch = "render-comments";
+          const title = "triggered+by+form+submission+build+hook";
+          const params = `?trigger_branch=${branch}&trigger_title=${title}`;
+
           vm.reset();
           vm.$toasted.show(successMsg, {
             theme: "toasted-primary",
@@ -123,8 +128,17 @@ export default {
             className: "toast"
           });
           vm.$scrollTo("#feed");
+          axios
+            .post(`${buildHook}${params}`, {})
+            .then(response => {
+              console.log(response);
+            })
+            .catch(error => {
+              console.log(error);
+            });
         })
-        .catch(() => {
+        .catch(error => {
+          console.log(error);
           this.$router.push("/comments/fail");
         });
     }
