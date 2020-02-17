@@ -116,7 +116,7 @@ export default {
           const successMsg =
             "Thanks for leaving a comment! Refresh this page in a minute to see it published.";
           const buildHook = `https://api.netlify.com/build_hooks/${process.env.HOOK_ID}`;
-          const branch = "render-comments";
+          const branch = "master";
           const title = "triggered+by+form+submission+build+hook";
           const params = `?trigger_branch=${branch}&trigger_title=${title}`;
 
