@@ -4,7 +4,7 @@ const axios = require('axios').default;
 require('dotenv').config();
 
 const buildHook = `https://api.netlify.com/build_hooks/${process.env.HOOK_ID}`;
-const branch = 'render-comments';
+const branch = 'master';
 const title = 'triggered+by+submission-created+build+hook';
 const params = `?trigger_branch=${branch}&trigger_title=${title}`;
 
